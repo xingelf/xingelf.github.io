@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DNS on live life to the fullest like elf</title>
+    <link>https://xingelf.github.io/tags/dns/</link>
+    <description>Recent content in DNS on live life to the fullest like elf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 14 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DNS Domain Name System</title>
+      <link>https://xingelf.github.io/security/dns/</link>
+      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/dns/</guid>
+      <description>DNS DNS is essential in terms of the foot printing of the target. DNS gives us a lot of information. DNS探索は初期調査(footprinting)の基本動作です。 whois DNS管理組織は下表の通り。RIPEが欧州＋中東・中央</description>
+    </item>
+    
+    <item>
+      <title>Pharming and Phising</title>
+      <link>https://xingelf.github.io/security/phaming-phising/</link>
+      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/phaming-phising/</guid>
+      <description>Pharming ファーミング https://csrc.nist.gov/glossary/term/pharming DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有</description>
+    </item>
+    
+  </channel>
+</rss>

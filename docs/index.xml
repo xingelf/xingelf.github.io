@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Time is life on live life to the fullest like elf</title>
+    <link>https://xingelf.github.io/</link>
+    <description>Recent content in Time is life on live life to the fullest like elf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Errors in Python</title>
+      <link>https://xingelf.github.io/tech/python-err/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/python-err/</guid>
+      <description>Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。 対処 AmericaのTZが付与されているのでUTCローカライズします。 start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq))</description>
+    </item>
+    
+    <item>
+      <title>DIRB</title>
+      <link>https://xingelf.github.io/security/dirb/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/dirb/</guid>
+      <description>DIRB https://www.kali.org/tools/dirb/ Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。 Web サーバー上の隠しファイルや隠しディレクトリを</description>
+    </item>
+    
+    <item>
+      <title>hping/hping3使い方</title>
+      <link>https://xingelf.github.io/security/hping/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/hping/</guid>
+      <description>hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ</description>
+    </item>
+    
+    <item>
+      <title>DoS/DDoS攻撃</title>
+      <link>https://xingelf.github.io/security/dos/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/dos/</guid>
+      <description>DDoS攻撃とは https://en.wikipedia.org/wiki/Denial-of-service_attack 分散型サービス妨害（DDoS）攻撃とは、 インターネット上の大量のトラフィックでターゲットやその周辺のインフラへ高負荷を与えるることで、 ターゲッ</description>
+    </item>
+    
+    <item>
+      <title>Rootkit ルートキット</title>
+      <link>https://xingelf.github.io/security/rootkit/</link>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/rootkit/</guid>
+      <description>Rootkitにはいくつか種類があります。 https://en.wikipedia.org/wiki/Rootkit カーネルレベル・ルートキット カーネルはオペレーティングシステムの中核であり、カーネルレベルルートキットは、デバイスド</description>
+    </item>
+    
+    <item>
+      <title>Pythonミニ関数 String/Object型の列にパーセントがある場合、数字に変換</title>
+      <link>https://xingelf.github.io/mlai/str_to_rate/</link>
+      <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
+      <description>割合の情報がString/Object型の列にパーセントとして与えられた、数字に変換 def str_to_rate(s): if pd.isnull(s)==False: return float(s.replace(&amp;#39;%&amp;#39;,&amp;#39;&amp;#39;)) else: return s 使い方 col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate)</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法　関数</title>
+      <link>https://xingelf.github.io/dao/solidity-function/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-function/</guid>
+      <description>Solidity Function 関数 基本的な関数の例は以下の通りです。 足し算 function add(uint a, uint b) public pure returns (uint){ return a + b; } メッセージ function add(uint a, uint b) public pure returns (uint){ return a + b; } Solidity Visibility Modifiers 関数可視性修飾子 private : 該当関数のコントラク</description>
+    </item>
+    
+    <item>
+      <title>iPhone メモ </title>
+      <link>https://xingelf.github.io/posts/iphone/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/iphone/</guid>
+      <description>ショートカット 位置情報のOFF/ONをホームボタンに配置 URLを開くのショートカットを作成してURLに以下を指定 prefs:root=Privacy&amp;amp;path=LOCATION ホームボタンに配置すれば、OFF/ONが簡単に</description>
+    </item>
+    
+    <item>
+      <title>Pythonミニ関数 String/Object型の列にブール文字がある場合、ブール型に変換</title>
+      <link>https://xingelf.github.io/mlai/str_to_bool/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
+      <description>真偽の情報がString/Object型の列にtやfとして与えられた場合、ブール型に変換 def str_to_bool(s): if s==&amp;#39;t&amp;#39;: return True else: return False 使い方 col = &amp;#34;Availabiliy&amp;#34; df[col] = df[col].apply(str_to_bool)</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu on Azure メモ</title>
+      <link>https://xingelf.github.io/tech/ubuntu/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/ubuntu/</guid>
+      <description>定期メンテナンス sudo apt update sudo apt upgrade 定期メンテ時のエラー 11: Resource temporarily unavailable sudo upgradeでリソース不足を検知した場合の対処です。 E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法　mapping マッピング</title>
+      <link>https://xingelf.github.io/dao/solidity-mapping/</link>
+      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-mapping/</guid>
+      <description>mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。 典型的な利用法があり、ブロックチェーン上のウォレットアドレス</description>
+    </item>
+    
+    <item>
+      <title>Social Engineering ソーシャルエンジニアリング</title>
+      <link>https://xingelf.github.io/security/social_engineering/</link>
+      <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/social_engineering/</guid>
+      <description>Social Engineeringとは ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、 特定の行動を取らせたりすることを目的としたすべての</description>
+    </item>
+    
+    <item>
+      <title>Solidity 最も簡単なコントラクトの作成</title>
+      <link>https://xingelf.github.io/dao/solidity-1stcontract/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-1stcontract/</guid>
+      <description>Solidity学習リソースでよく紹介されている最も簡単なコントラクトを REMIXを利用して作成します。 コントラクトの動作としては数字をセット/setしてそれを</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法 modifier　使い方</title>
+      <link>https://xingelf.github.io/dao/solidity_modifier/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity_modifier/</guid>
+      <description>初見では少し理解できないmodifierについて、簡単に説明します。 modifierは関数修飾子でfunction文の後半に記載して、関数を実行する前に 定型処理</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法　SafeMath</title>
+      <link>https://xingelf.github.io/dao/solidity-safemath/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-safemath/</guid>
+      <description>Solidity SafeMath 四足演算ライブラリ assertによりオーバーフロー対策を行うことができます。 /** * @title SafeMath * @dev Math operations with safety checks that throw on error */ library SafeMath { /** * @dev Multiplies two numbers, throws on overflow. */ function mul(uint256 a, uint256 b) internal pure returns (uint256) { if</description>
+    </item>
+    
+    <item>
+      <title>Zero Knowledge Proofs ゼロ知識証明</title>
+      <link>https://xingelf.github.io/dao/zeroknowledge/</link>
+      <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/zeroknowledge/</guid>
+      <description>ゼロ知識証明とは ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、 自分の持っている命題（通常、数学的な）が真であることを伝えるのに、</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法　型</title>
+      <link>https://xingelf.github.io/dao/solidity-type/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-type/</guid>
+      <description>データ型 Solidityは強く型付けが必要な言語です。 https://solidity-ja.readthedocs.io/ja/latest/types.html 整数 int b = -10; // 符号あり、正負の整数 uint a = 5; // unsinged int 符号なし、正の整数 ブール、ブーリアン bool bt = true; // 真 bool bf = false;</description>
+    </item>
+    
+    <item>
+      <title>Rootkit　ルートキット</title>
+      <link>https://xingelf.github.io/security/rootkits/</link>
+      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/rootkits/</guid>
+      <description>Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの</description>
+    </item>
+    
+    <item>
+      <title>DNS Domain Name System</title>
+      <link>https://xingelf.github.io/security/dns/</link>
+      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/dns/</guid>
+      <description>DNS DNS is essential in terms of the foot printing of the target. DNS gives us a lot of information. DNS探索は初期調査(footprinting)の基本動作です。 whois DNS管理組織は下表の通り。RIPEが欧州＋中東・中央</description>
+    </item>
+    
+    <item>
+      <title>Computer Virus/ウイルス 分類</title>
+      <link>https://xingelf.github.io/security/computer_virus/</link>
+      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/computer_virus/</guid>
+      <description>ウイルス種類 ポリモーフィック型ウイルス いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。 スペースフィラー型・キャヴィティ型ウイルス さ</description>
+    </item>
+    
+    <item>
+      <title>CHNTPW　Windowsパスワード初期化・リセット</title>
+      <link>https://xingelf.github.io/security/chntpw/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/chntpw/</guid>
+      <description>Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。 administratorパスワードをロストした場合の復旧手段の</description>
+    </item>
+    
+    <item>
+      <title>TailgatingとPiggybackingの違い</title>
+      <link>https://xingelf.github.io/security/tailgate_piggybacking/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/tailgate_piggybacking/</guid>
+      <description>Tailgating 隠れて後ろからゲート通過 車で後ろから追走したり、後ろに付いてETCゲートなどを通過することから、 従業員がゲートを通過する際に後ろからひっそりと一緒に通過するこ</description>
+    </item>
+    
+    <item>
+      <title>Cyber Kill Chain サイバーキルチェーン</title>
+      <link>https://xingelf.github.io/security/cyberkillchain/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/cyberkillchain/</guid>
+      <description>サイバーキルチェーンとは https://en.wikipedia.org/wiki/Kill_chain#Cyber ロッキードマーティン社のキルチェーンのプロセスをサイバー攻撃に適用したもの。 サイバー・キルチェーンは7つのステップで構成される。 1.偵</description>
+    </item>
+    
+    <item>
+      <title>Pharming and Phising</title>
+      <link>https://xingelf.github.io/security/phaming-phising/</link>
+      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/phaming-phising/</guid>
+      <description>Pharming ファーミング https://csrc.nist.gov/glossary/term/pharming DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有</description>
+    </item>
+    
+    <item>
+      <title>nmap cheat nmapチート</title>
+      <link>https://xingelf.github.io/security/nmap/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/nmap/</guid>
+      <description>nmapとは ポートスキャンツールです。ペネトレーション作業の基本ツールです。 -T5 insane 最速でスキャンを実行 https://nmap.org/man/ja/man-performance.html -T4 Aggresive スキャン処理の遅延は10msec以内 -F 簡易スキャン nm</description>
+    </item>
+    
+    <item>
+      <title>Rubber Hose Attack ゴムホース攻撃</title>
+      <link>https://xingelf.github.io/security/rubber_hose_attack/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/rubber_hose_attack/</guid>
+      <description>Rubber Hose Attack ゴムホース攻撃とは テクニカルな手法ではなく、物理的な手段などで人を脅迫してパスワードなどを入手する方法。 物理的な脅迫手段の１つとして、ゴムホースということ</description>
+    </item>
+    
+    <item>
+      <title>Bluethoothを利用した攻撃</title>
+      <link>https://xingelf.github.io/security/buluetooth-attack/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/buluetooth-attack/</guid>
+      <description>Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot</description>
+    </item>
+    
+    <item>
+      <title>Mac HKKB メモ </title>
+      <link>https://xingelf.github.io/posts/hkkb/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/hkkb/</guid>
+      <description>Happy Hacking Keyboard ⌨ Mac/OSXにてHKKB Type-Sを利用しています。 おすすめのキー配置などをメモです。 裏面SWの設定 Mac対応 SW1 OFF SW2 ON DEL = BackSpace SW3 ON SW4-SW5はOF</description>
+    </item>
+    
+    <item>
+      <title>Threat Intelligence　脅威インテリジェンス</title>
+      <link>https://xingelf.github.io/security/threat_intelligence/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/threat_intelligence/</guid>
+      <description>脅威インテリジェンスはいくつかカテゴリがあります。 https://info-savvy.com/types-of-threat-intelligence/ 技術的脅威情報 テクニカルインテリジェンス 技術的なサイバーインテリジェンスでは、コマンド＆コントロールチャネル</description>
+    </item>
+    
+    <item>
+      <title>書籍 Kaggleで勝つデータ分析</title>
+      <link>https://xingelf.github.io/tech/kaggle/</link>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/kaggle/</guid>
+      <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/</description>
+    </item>
+    
+    <item>
+      <title>pandas Dataredader</title>
+      <link>https://xingelf.github.io/tech/pandasdatareader/</link>
+      <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
+      <description>pandas Datareaderとは オンライン上のデータをダウンロードするライブラリです。 https://pandas-datareader.readthedocs.io/en/latest/index.html データソース一覧はこちらにあります。 APIキーの取得が必要なものもあります。 f</description>
+    </item>
+    
+    <item>
+      <title>オッズ比とリスク比</title>
+      <link>https://xingelf.github.io/tech/odds-risk/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/odds-risk/</guid>
+      <description>オッズ比とリスク比について理解する リスク比とは まずは理解が容易なリスク比からはじめます。 なお、以下の数字は完全に仮想的なものです。 コロナ罹患 コロナ未罹患 合計 罹患</description>
+    </item>
+    
+    <item>
+      <title>リカレントニューラルネット - Recurrent Nueral Net RNN　</title>
+      <link>https://xingelf.github.io/mlai/rnn/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/mlai/rnn/</guid>
+      <description>RNNとは 時系列や文章・音声など系列データを扱うネットワークです。 前の時点のデータを入力とすることが特徴です。 RNNの数学的記述 入力: $x^t$ 中間層の入力: $ u^t = w_{(in)}x^t +</description>
+    </item>
+    
+    <item>
+      <title>モデルの評価</title>
+      <link>https://xingelf.github.io/tech/_evalmodel/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/_evalmodel/</guid>
+      <description>モデル評価におけるデータの定義 訓練集合 機械学習モデルの訓練に用いるデータ 検証集合 ハイパーパラメータなどの調整に用いるデータ テスト集合 汎化性能の推定に用いるデータ</description>
+    </item>
+    
+    <item>
+      <title>情報理論</title>
+      <link>https://xingelf.github.io/mlai/entropy/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/mlai/entropy/</guid>
+      <description>目的：情報理論の基本を理解する。 情報量 事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。 $ I(A) = -\log P(A)$ 確率が小さいほど情報量は大きい。 レアな</description>
+    </item>
+    
+    <item>
+      <title>Softmax関数</title>
+      <link>https://xingelf.github.io/mlai/softmax/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/mlai/softmax/</guid>
+      <description>Softmax関数 Softmax関数は以下の式で定義される。 $ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$ $ i = 0,1,2,\dots n$ $y_i$をすべて足し算すると和が1になるため、それぞれの を確立と考えることが</description>
+    </item>
+    
+    <item>
+      <title>Tex/LaTexメモ</title>
+      <link>https://xingelf.github.io/tech/latex-md/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/latex-md/</guid>
+      <description>Markdown Tex形式で数式を書く partialsの設定 paritial templateの機能を使います。 https://gohugo.io/templates/partials/ \layouts配下にpartialsフォルダを作成します \layouts\partials 配下に2つのファ</description>
+    </item>
+    
+    <item>
+      <title>機械学習前処理</title>
+      <link>https://xingelf.github.io/tech/_pre-edit/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
+      <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
+    </item>
+    
+    <item>
+      <title>ショートカット - Shortcut</title>
+      <link>https://xingelf.github.io/posts/_shortcut/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/_shortcut/</guid>
+      <description>OSX/Macショートカットメモ OS全般 Spotlight Search Command + Space 画面ロック Control + Command + q 編集 コピー Command + c ペースト Command + v 書式なしペースト Command + Option + Shift + v orz もとに戻す/Undo Command + z も</description>
+    </item>
+    
+    <item>
+      <title>github 備忘・対処メモ</title>
+      <link>https://xingelf.github.io/tech/github/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/github/</guid>
+      <description>.gitignoreが効かない キャッシュ削除による解決を試みます。 git rm -r --cached . git push がreject ローカルが正/originであることを確認して、強制的にpushし</description>
+    </item>
+    
+    <item>
+      <title>Atom メモ</title>
+      <link>https://xingelf.github.io/tech/_atom/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/_atom/</guid>
+      <description>基本 タブや空白を表示 Preferences -&amp;gt; Editor Show Invisiblesをチェックします Atom パッケージ関連 atom-beautify ソースコードを整形します。 autocomplete-plus 自動補完機能です。 markdownファイルを編集す</description>
+    </item>
+    
+    <item>
+      <title>IUT and abc</title>
+      <link>https://xingelf.github.io/tech/iut-abc/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/iut-abc/</guid>
+      <description>一般向けIUT・abc予想について。 IUT・abc予想 足し算と掛け算に関わる関係を明らかにする理論と言われます。 また、強いabc予想のもとでは、フェルマーの最終</description>
+    </item>
+    
+    <item>
+      <title>ta-libのインストール</title>
+      <link>https://xingelf.github.io/tech/ta-lib/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/ta-lib/</guid>
+      <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
+    </item>
+    
+    <item>
+      <title>Freqtradeのインストール</title>
+      <link>https://xingelf.github.io/tech/freqtrade/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/freqtrade/</guid>
+      <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://xingelf.github.io/about/about/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/about/about/</guid>
+      <description>Just a geek about tech.
+Disclaimer All articles on this website written based on the information available at the time the article was posted. The purpose of this site is to explain in simple terms what is of interest to you. For this reason, we have avoided jargon and omitted details as much as possible. While every effort has been made to ensure the accuracy of the content, no warranty is given as to its accuracy. In addition, the content of this site contains personal opinions.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xingelf.github.io/security/_idle_scan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/security/_idle_scan/</guid>
+      <description>アイドルスキャンは、TCPポートスキャンの手法の一つで、コンピュータになりすましたパケットを送信し、利用可能なサービスを調べるものである。これは、ネットワークト</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://xingelf.github.io/tech/_ctf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/_ctf/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

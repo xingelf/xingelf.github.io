@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on live life to the fullest like elf</title>
+    <link>https://xingelf.github.io/posts/</link>
+    <description>Recent content in Posts on live life to the fullest like elf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iPhone メモ </title>
+      <link>https://xingelf.github.io/posts/iphone/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/iphone/</guid>
+      <description>ショートカット 位置情報のOFF/ONをホームボタンに配置 URLを開くのショートカットを作成してURLに以下を指定 prefs:root=Privacy&amp;amp;path=LOCATION ホームボタンに配置すれば、OFF/ONが簡単に</description>
+    </item>
+    
+    <item>
+      <title>Mac HKKB メモ </title>
+      <link>https://xingelf.github.io/posts/hkkb/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/hkkb/</guid>
+      <description>Happy Hacking Keyboard ⌨ Mac/OSXにてHKKB Type-Sを利用しています。 おすすめのキー配置などをメモです。 裏面SWの設定 Mac対応 SW1 OFF SW2 ON DEL = BackSpace SW3 ON SW4-SW5はOF</description>
+    </item>
+    
+    <item>
+      <title>ショートカット - Shortcut</title>
+      <link>https://xingelf.github.io/posts/_shortcut/</link>
+      <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/_shortcut/</guid>
+      <description>OSX/Macショートカットメモ OS全般 Spotlight Search Command + Space 画面ロック Control + Command + q 編集 コピー Command + c ペースト Command + v 書式なしペースト Command + Option + Shift + v orz もとに戻す/Undo Command + z も</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DAO on live life to the fullest like elf</title>
+    <link>https://xingelf.github.io/categories/dao/</link>
+    <description>Recent content in DAO on live life to the fullest like elf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/categories/dao/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solidity文法　関数</title>
+      <link>https://xingelf.github.io/dao/solidity-function/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-function/</guid>
+      <description>Solidity Function 関数 基本的な関数の例は以下の通りです。 足し算 function add(uint a, uint b) public pure returns (uint){ return a + b; } メッセージ function add(uint a, uint b) public pure returns (uint){ return a + b; } Solidity Visibility Modifiers 関数可視性修飾子 private : 該当関数のコントラク</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法　mapping マッピング</title>
+      <link>https://xingelf.github.io/dao/solidity-mapping/</link>
+      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-mapping/</guid>
+      <description>mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。 典型的な利用法があり、ブロックチェーン上のウォレットアドレス</description>
+    </item>
+    
+    <item>
+      <title>Solidity 最も簡単なコントラクトの作成</title>
+      <link>https://xingelf.github.io/dao/solidity-1stcontract/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-1stcontract/</guid>
+      <description>Solidity学習リソースでよく紹介されている最も簡単なコントラクトを REMIXを利用して作成します。 コントラクトの動作としては数字をセット/setしてそれを</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法 modifier　使い方</title>
+      <link>https://xingelf.github.io/dao/solidity_modifier/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity_modifier/</guid>
+      <description>初見では少し理解できないmodifierについて、簡単に説明します。 modifierは関数修飾子でfunction文の後半に記載して、関数を実行する前に 定型処理</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法　SafeMath</title>
+      <link>https://xingelf.github.io/dao/solidity-safemath/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-safemath/</guid>
+      <description>Solidity SafeMath 四足演算ライブラリ assertによりオーバーフロー対策を行うことができます。 /** * @title SafeMath * @dev Math operations with safety checks that throw on error */ library SafeMath { /** * @dev Multiplies two numbers, throws on overflow. */ function mul(uint256 a, uint256 b) internal pure returns (uint256) { if</description>
+    </item>
+    
+    <item>
+      <title>Zero Knowledge Proofs ゼロ知識証明</title>
+      <link>https://xingelf.github.io/dao/zeroknowledge/</link>
+      <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/zeroknowledge/</guid>
+      <description>ゼロ知識証明とは ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、 自分の持っている命題（通常、数学的な）が真であることを伝えるのに、</description>
+    </item>
+    
+    <item>
+      <title>Solidity文法　型</title>
+      <link>https://xingelf.github.io/dao/solidity-type/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/dao/solidity-type/</guid>
+      <description>データ型 Solidityは強く型付けが必要な言語です。 https://solidity-ja.readthedocs.io/ja/latest/types.html 整数 int b = -10; // 符号あり、正負の整数 uint a = 5; // unsinged int 符号なし、正の整数 ブール、ブーリアン bool bt = true; // 真 bool bf = false;</description>
+    </item>
+    
+  </channel>
+</rss>

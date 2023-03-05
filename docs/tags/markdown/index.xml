@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on live life to the fullest like elf</title>
+    <link>https://xingelf.github.io/tags/markdown/</link>
+    <description>Recent content in Markdown on live life to the fullest like elf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tex/LaTexメモ</title>
+      <link>https://xingelf.github.io/tech/latex-md/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/latex-md/</guid>
+      <description>Markdown Tex形式で数式を書く partialsの設定 paritial templateの機能を使います。 https://gohugo.io/templates/partials/ \layouts配下にpartialsフォルダを作成します \layouts\partials 配下に2つのファ</description>
+    </item>
+    
+  </channel>
+</rss>

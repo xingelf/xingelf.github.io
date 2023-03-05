@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Solidity 最も簡単なコントラクトの作成 - live life to the fullest like elf</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Solidity 最も簡単なコントラクトの作成" />
+<meta property="og:description" content="Solidity学習リソースでよく紹介されている最も簡単なコントラクトを REMIXを利用して作成します。 コントラクトの動作としては数字をセット/setしてそれを" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xingelf.github.io/dao/solidity-1stcontract/" /><meta property="article:section" content="dao" />
+<meta property="article:published_time" content="2022-09-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-19T00:00:00+00:00" />
+
+		<meta itemprop="name" content="Solidity 最も簡単なコントラクトの作成">
+<meta itemprop="description" content="Solidity学習リソースでよく紹介されている最も簡単なコントラクトを REMIXを利用して作成します。 コントラクトの動作としては数字をセット/setしてそれを"><meta itemprop="datePublished" content="2022-09-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-09-19T00:00:00+00:00" />
+<meta itemprop="wordCount" content="519">
+<meta itemprop="keywords" content="Solidity,DApps," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Solidity 最も簡単なコントラクトの作成"/>
+<meta name="twitter:description" content="Solidity学習リソースでよく紹介されている最も簡単なコントラクトを REMIXを利用して作成します。 コントラクトの動作としては数字をセット/setしてそれを"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GX2XH5ZWD"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-5GX2XH5ZWD', { 'anonymize_ip': false });
+}
+</script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="live life to the fullest with tech, @xingelf" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">live life to the fullest with tech, @xingelf</div>
+					<div class="logo__tagline">Technology is the magic of our ages.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dao">
+				
+				<span class="menu__text">DAO/Web3</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/security">
+				
+				<span class="menu__text">Cyber/Security</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Solidity 最も簡単なコントラクトの作成</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-09-19T00:00:00Z">2022-09-19</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/dao/" rel="category">DAO</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/blockchain.jpeg" alt="Solidity 最も簡単なコントラクトの作成">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-remixにアクセス">1. REMIXにアクセス</a></li>
+    <li><a href="#2-ソースファイルを作成">2. ソースファイルを作成</a></li>
+    <li><a href="#3-コントラクトをコード">3. コントラクトをコード</a></li>
+    <li><a href="#4-コンパイル">4. コンパイル</a></li>
+    <li><a href="#5-実行">5. 実行</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Solidity学習リソースでよく紹介されている最も簡単なコントラクトを
+REMIXを利用して作成します。</p>
+<p>コントラクトの動作としては数字をセット/setしてそれを表示/getするだけの単純なものです。</p>
+<p>これを実行するだけでもGAS代が消費されることを確認します。</p>
+<p>もちろん、ローカルEVM(テスト環境)で実行します。</p>
+<h1 id="remixで最も簡単なコントラクトを作成">REMIXで最も簡単なコントラクトを作成</h1>
+<h2 id="1-remixにアクセス">1. REMIXにアクセス</h2>
+<p><a href="https://remix.ethereum.org/">https://remix.ethereum.org/</a></p>
+<p>Environmentには[Remix VM (London)]と設定されていることを確認します。</p>
+<h2 id="2-ソースファイルを作成">2. ソースファイルを作成</h2>
+<p>Firstcontract.solを作成</p>
+<figure class="center"><img src="/images/sol01.png"/>
+</figure>
+
+<h2 id="3-コントラクトをコード">3. コントラクトをコード</h2>
+<p>実態の中身としては既に存在している1_Storage.solとほぼ同じです。。</p>
+<p>値をsetするstore関数と値をgetするretrive関数を作成します。</p>
+<figure class="center"><img src="/images/sol02.png"/>
+</figure>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#75715e">// SPDX-License-Identifier: GPL-3.0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pragma solidity</span> <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">7</span>.<span style="color:#ae81ff">0</span> <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">9</span>.<span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">contract</span> <span style="color:#a6e22e">simpleStorage</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint256</span> number;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">store</span>(<span style="color:#66d9ef">uint256</span> num) <span style="color:#66d9ef">public</span> {
+</span></span><span style="display:flex;"><span>        number <span style="color:#f92672">=</span> num;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">retrieve</span>() <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">view</span> <span style="color:#66d9ef">returns</span> (<span style="color:#66d9ef">uint256</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> number;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="4-コンパイル">4. コンパイル</h2>
+<p>autoコンパイルされていますが、一応コンパイル[Compile Firstcontract.sol]をクリックしましょう。</p>
+<figure class="center"><img src="/images/sol03.png"/>
+</figure>
+
+<h2 id="5-実行">5. 実行</h2>
+<p>Deployをクリックします。storeに任意の数字を入力(set)し、retriveにてその数値を得る(get)ことを確認します。</p>
+<figure class="center"><img src="/images/sol04.png"/>
+</figure>
+
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/solidity/" rel="tag">Solidity</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/dapps/" rel="tag">DApps</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="@xingelf avatar" src="/img/favicon.ico" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About @xingelf</span>
+	</div>
+	<div class="authorbox__description">
+		Elf, Ethical Geek, born and raised in Tokyo living in Asia, not having a good pedigree :)
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/dao/solidity_modifier/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Solidity文法 modifier　使い方</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/dao/solidity-mapping/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Solidity文法　mapping マッピング</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on live life to the fullest like elf</title>
+    <link>https://xingelf.github.io/tags/python/</link>
+    <description>Recent content in Python on live life to the fullest like elf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Errors in Python</title>
+      <link>https://xingelf.github.io/tech/python-err/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/python-err/</guid>
+      <description>Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。 対処 AmericaのTZが付与されているのでUTCローカライズします。 start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq))</description>
+    </item>
+    
+    <item>
+      <title>Pythonミニ関数 String/Object型の列にパーセントがある場合、数字に変換</title>
+      <link>https://xingelf.github.io/mlai/str_to_rate/</link>
+      <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
+      <description>割合の情報がString/Object型の列にパーセントとして与えられた、数字に変換 def str_to_rate(s): if pd.isnull(s)==False: return float(s.replace(&amp;#39;%&amp;#39;,&amp;#39;&amp;#39;)) else: return s 使い方 col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate)</description>
+    </item>
+    
+    <item>
+      <title>Pythonミニ関数 String/Object型の列にブール文字がある場合、ブール型に変換</title>
+      <link>https://xingelf.github.io/mlai/str_to_bool/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
+      <description>真偽の情報がString/Object型の列にtやfとして与えられた場合、ブール型に変換 def str_to_bool(s): if s==&amp;#39;t&amp;#39;: return True else: return False 使い方 col = &amp;#34;Availabiliy&amp;#34; df[col] = df[col].apply(str_to_bool)</description>
+    </item>
+    
+    <item>
+      <title>pandas Dataredader</title>
+      <link>https://xingelf.github.io/tech/pandasdatareader/</link>
+      <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
+      <description>pandas Datareaderとは オンライン上のデータをダウンロードするライブラリです。 https://pandas-datareader.readthedocs.io/en/latest/index.html データソース一覧はこちらにあります。 APIキーの取得が必要なものもあります。 f</description>
+    </item>
+    
+    <item>
+      <title>機械学習前処理</title>
+      <link>https://xingelf.github.io/tech/_pre-edit/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
+      <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
+    </item>
+    
+    <item>
+      <title>ta-libのインストール</title>
+      <link>https://xingelf.github.io/tech/ta-lib/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/ta-lib/</guid>
+      <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
+    </item>
+    
+    <item>
+      <title>Freqtradeのインストール</title>
+      <link>https://xingelf.github.io/tech/freqtrade/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/freqtrade/</guid>
+      <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>情報理論 - live life to the fullest like elf</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="情報理論" />
+<meta property="og:description" content="目的：情報理論の基本を理解する。 情報量 事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。 $ I(A) = -\log P(A)$ 確率が小さいほど情報量は大きい。 レアな" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xingelf.github.io/mlai/entropy/" /><meta property="article:section" content="mlai" />
+<meta property="article:published_time" content="2021-08-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-01T00:00:00+00:00" />
+
+		<meta itemprop="name" content="情報理論">
+<meta itemprop="description" content="目的：情報理論の基本を理解する。 情報量 事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。 $ I(A) = -\log P(A)$ 確率が小さいほど情報量は大きい。 レアな"><meta itemprop="datePublished" content="2021-08-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-01T00:00:00+00:00" />
+<meta itemprop="wordCount" content="487">
+<meta itemprop="keywords" content="Math,E資格," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="情報理論"/>
+<meta name="twitter:description" content="目的：情報理論の基本を理解する。 情報量 事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。 $ I(A) = -\log P(A)$ 確率が小さいほど情報量は大きい。 レアな"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5GX2XH5ZWD"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-5GX2XH5ZWD', { 'anonymize_ip': false });
+}
+</script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="live life to the fullest with tech, @xingelf" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">live life to the fullest with tech, @xingelf</div>
+					<div class="logo__tagline">Technology is the magic of our ages.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dao">
+				
+				<span class="menu__text">DAO/Web3</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/security">
+				
+				<span class="menu__text">Cyber/Security</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">情報理論</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-08-01T00:00:00Z">2021-08-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/artificial-intelligence.png" alt="情報理論">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#エントロピーと交差エントロピーとklダイバージェンスの関係">エントロピーと交差エントロピーとKLダイバージェンスの関係</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>目的：情報理論の基本を理解する。</p>
+<h1 id="情報量">情報量</h1>
+<p>事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。</p>
+<p>$ I(A) = -\log P(A)$</p>
+<p>確率が小さいほど情報量は大きい。
+レアな事象ほどインパクト（情報）が大きいとイメージすると覚えやすい。</p>
+<p>確率P(A)に対しては以下の特徴を持つ。</p>
+<ul>
+<li>確率が小さい時、大きくなる</li>
+<li>複数の独立な事象において、情報量はその和で表現される（確率は積で表現される）</li>
+</ul>
+<p>$ I(A \cap B) = I(A) + I(B)$</p>
+<h1 id="エントロピー">エントロピー</h1>
+<p>情報量の期待値で定義される。</p>
+<p>$ H(A) = -P(A)\log P(A)$</p>
+<h1 id="交差エントロピー">交差エントロピー</h1>
+<p>確率分布$p(x)$と$q(x)$の交差エントロピーは以下で定義される。</p>
+<p>$ H(p,q) = -\sum_{x} p(x)\log q(x)$</p>
+<h1 id="klダイバージェンス---kullback-leibler-divergence">KLダイバージェンス - Kullback-Leibler divergence</h1>
+<p>確率分布$p(x)$と$q(x)$のKLダイバージェンスは以下で定義される。</p>
+<p>$ D_{KL}(p||q) = \sum_{x} p(x)\log \frac{p(x)}{q(x)}$</p>
+<p>確率分布$p(x)$と$q(x)$に対して、非対称であるが、
+2つの確率分布の類似性や距離みたいなイメージに近い。
+$p(x)=q(x)$の場合は$\log$部分が1となるため、
+$D(p||q)$はゼロになる。</p>
+<h2 id="エントロピーと交差エントロピーとklダイバージェンスの関係">エントロピーと交差エントロピーとKLダイバージェンスの関係</h2>
+<p>この3つの量には以下の関係があります。</p>
+<p>$ H(p,q) = H(p) + D_{KL}(p||q)$</p>
+<hr>
+<h1 id="参考動画-情報理論">参考動画 情報理論</h1>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ErfnhcEV1O8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/math/" rel="tag">Math</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/e%E8%B3%87%E6%A0%BC/" rel="tag">E資格</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="@xingelf avatar" src="/img/favicon.ico" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About @xingelf</span>
+	</div>
+	<div class="authorbox__description">
+		Elf, Ethical Geek, born and raised in Tokyo living in Asia, not having a good pedigree :)
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/mlai/softmax/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Softmax関数</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/mlai/rnn/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">リカレントニューラルネット - Recurrent Nueral Net RNN　</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

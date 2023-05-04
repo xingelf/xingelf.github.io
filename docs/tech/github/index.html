@@ -14,6 +14,7 @@
 <meta property="article:published_time" content="2021-06-06T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-06-06T00:00:00+00:00" />
 
+
 		<meta itemprop="name" content="github 備忘・対処メモ">
 <meta itemprop="description" content=".gitignoreが効かない キャッシュ削除による解決を試みます。 git rm -r --cached . git push がreject ローカルが正/originであることを確認して、強制的にpushし"><meta itemprop="datePublished" content="2021-06-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-06-06T00:00:00+00:00" />
@@ -166,44 +167,45 @@ if (!doNotTrack) {
 </div><div class="content post__content clearfix">
 			<h2 id="gitignoreが効かない">.gitignoreが効かない</h2>
 <p>キャッシュ削除による解決を試みます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git rm -r --cached .
-</span></span></code></pre></div><h2 id="git-push-がreject">git push がreject</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git rm -r --cached .
+</code></pre></div><h2 id="git-push-がreject">git push がreject</h2>
 <p>ローカルが正/originであることを確認して、強制的にpushします。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git push -f origin master
-</span></span></code></pre></div><h2 id="git-pull-error-マージエラーが発生">git pull error マージエラーが発生</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>error: Your local changes to the following files would be overwritten by merge:
-</span></span><span style="display:flex;"><span>test.py
-</span></span><span style="display:flex;"><span>Please commit your changes or stash them before you merge.
-</span></span><span style="display:flex;"><span>Aborting
-</span></span></code></pre></div><h3 id="solve-it-by-overwriting-上書きして解決する場合">Solve it by overwriting 上書きして解決する場合</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push -f origin master
+</code></pre></div><h2 id="git-pull-error-マージエラーが発生">git pull error マージエラーが発生</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">error: Your local changes to the following files would be overwritten by merge:
+test.py
+Please commit your changes or stash them before you merge.
+Aborting
+</code></pre></div><h3 id="solve-it-by-overwriting-上書きして解決する場合">Solve it by overwriting 上書きして解決する場合</h3>
 <p>pull元が正しい前提で上書きを行います。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git fetch origin master
-</span></span><span style="display:flex;"><span>git reset --hard origin/master
-</span></span><span style="display:flex;"><span>git pull origin/master
-</span></span></code></pre></div><h2 id="sshで2つのgithubアカウントを管理">sshで2つのgithubアカウントを管理</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git fetch origin master
+git reset --hard origin/master
+git pull origin/master
+</code></pre></div><h2 id="sshで2つのgithubアカウントを管理">sshで2つのgithubアカウントを管理</h2>
 <p>~/.ssh/configに2つのアカウントを記載 2つ目をサブに設定</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Host github github.com
-</span></span><span style="display:flex;"><span>  HostName github.com
-</span></span><span style="display:flex;"><span>  IdentityFile ~/.ssh/rsa-git
-</span></span><span style="display:flex;"><span>  User git
-</span></span><span style="display:flex;"><span>Host github github.com.sub
-</span></span><span style="display:flex;"><span>  HostName github.com
-</span></span><span style="display:flex;"><span>  IdentityFile ~/.ssh/rsa-git-sub
-</span></span><span style="display:flex;"><span>  User git
-</span></span></code></pre></div><p>remote URLを以下に設定</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin git@github.com.sub:user2/repository.git
-</span></span></code></pre></div><p>.git/configに以下の様に設定されているかを確認</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>remote <span style="color:#e6db74">&#34;origin&#34;</span><span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>	url <span style="color:#f92672">=</span> git@github.com.sub:user2/repositry.git
-</span></span></code></pre></div><p>sshにて2つのアカウントが動作することを確認</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ssh -T git@github.com
-</span></span><span style="display:flex;"><span>Enter passphrase <span style="color:#66d9ef">for</span> key <span style="color:#e6db74">&#39;/Users/user/.ssh/rsa-git&#39;</span>:
-</span></span><span style="display:flex;"><span>Hi user1! You<span style="color:#e6db74">&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ssh -T git@github.com.sub
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Enter passphrase for key &#39;</span>/Users/user/.ssh/rsa-git-sub<span style="color:#e6db74">&#39;:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Hi user2! You&#39;</span>ve successfully authenticated, but GitHub does not provide shell access.
-</span></span></code></pre></div><h2 id="レポジトリ登録備忘メモ">レポジトリ登録備忘メモ</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Host github github.com
+  HostName github.com
+  IdentityFile ~/.ssh/rsa-git
+  User git
+Host github github.com.sub
+  HostName github.com
+  IdentityFile ~/.ssh/rsa-git-sub
+  User git
+</code></pre></div><p>remote URLを以下に設定</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git remote add origin git@github.com.sub:user2/repository.git
+</code></pre></div><p>.git/configに以下の様に設定されているかを確認</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>remote <span style="color:#e6db74">&#34;origin&#34;</span><span style="color:#f92672">]</span>
+	url <span style="color:#f92672">=</span> git@github.com.sub:user2/repositry.git
+</code></pre></div><p>sshにて2つのアカウントが動作することを確認</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh -T git@github.com
+Enter passphrase <span style="color:#66d9ef">for</span> key <span style="color:#e6db74">&#39;/Users/user/.ssh/rsa-git&#39;</span>:
+Hi user1! You<span style="color:#e6db74">&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">ssh -T git@github.com.sub
+</span><span style="color:#e6db74">Enter passphrase for key &#39;</span>/Users/user/.ssh/rsa-git-sub<span style="color:#e6db74">&#39;:
+</span><span style="color:#e6db74">Hi user2! You&#39;</span>ve successfully authenticated, but GitHub does not provide shell access.
+
+</code></pre></div><h2 id="レポジトリ登録備忘メモ">レポジトリ登録備忘メモ</h2>
 <h3 id="github側">github側</h3>
 <ol>
 <li>private repository新規登録</li>

@@ -14,6 +14,7 @@
 <meta property="article:published_time" content="2022-09-19T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-09-19T00:00:00+00:00" />
 
+
 		<meta itemprop="name" content="Solidity 最も簡単なコントラクトの作成">
 <meta itemprop="description" content="Solidity学習リソースでよく紹介されている最も簡単なコントラクトを REMIXを利用して作成します。 コントラクトの動作としては数字をセット/setしてそれを"><meta itemprop="datePublished" content="2022-09-19T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-09-19T00:00:00+00:00" />
@@ -175,23 +176,23 @@ REMIXを利用して作成します。</p>
 <figure class="center"><img src="/images/sol02.png"/>
 </figure>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#75715e">// SPDX-License-Identifier: GPL-3.0
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pragma solidity</span> <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">7</span>.<span style="color:#ae81ff">0</span> <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">9</span>.<span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">contract</span> <span style="color:#a6e22e">simpleStorage</span> {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint256</span> number;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">store</span>(<span style="color:#66d9ef">uint256</span> num) <span style="color:#66d9ef">public</span> {
-</span></span><span style="display:flex;"><span>        number <span style="color:#f92672">=</span> num;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">retrieve</span>() <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">view</span> <span style="color:#66d9ef">returns</span> (<span style="color:#66d9ef">uint256</span>){
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> number;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="4-コンパイル">4. コンパイル</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-solidity" data-lang="solidity"><span style="color:#75715e">// SPDX-License-Identifier: GPL-3.0
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">pragma solidity</span> <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">7</span>.<span style="color:#ae81ff">0</span> <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">9</span>.<span style="color:#ae81ff">0</span>;
+
+<span style="color:#66d9ef">contract</span> <span style="color:#a6e22e">simpleStorage</span> {
+
+    <span style="color:#66d9ef">uint256</span> number;
+
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">store</span>(<span style="color:#66d9ef">uint256</span> num) <span style="color:#66d9ef">public</span> {
+        number <span style="color:#f92672">=</span> num;
+    }
+
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">retrieve</span>() <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">view</span> <span style="color:#66d9ef">returns</span> (<span style="color:#66d9ef">uint256</span>){
+        <span style="color:#66d9ef">return</span> number;
+    }
+}
+</code></pre></div><h2 id="4-コンパイル">4. コンパイル</h2>
 <p>autoコンパイルされていますが、一応コンパイル[Compile Firstcontract.sol]をクリックしましょう。</p>
 <figure class="center"><img src="/images/sol03.png"/>
 </figure>

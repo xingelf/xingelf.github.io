@@ -14,6 +14,7 @@
 <meta property="article:published_time" content="2022-09-30T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-09-30T00:00:00+00:00" />
 
+
 		<meta itemprop="name" content="Solidity文法　mapping マッピング">
 <meta itemprop="description" content="mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。 典型的な利用法があり、ブロックチェーン上のウォレットアドレス"><meta itemprop="datePublished" content="2022-09-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-09-30T00:00:00+00:00" />
@@ -155,10 +156,10 @@ if (!doNotTrack) {
 			<p>mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。
 典型的な利用法があり、ブロックチェーン上のウォレットアドレスにある
 残高をマップするケースでほぼ必ず利用されます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#66d9ef">mapping</span>(_KeyType <span style="color:#f92672">=&gt;</span> _ValueType) <span style="color:#75715e">//定義
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">mapping</span>(<span style="color:#66d9ef">address</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">uint</span>) <span style="color:#66d9ef">public</span> valances; <span style="color:#75715e">//具体例
-</span></span></span></code></pre></div><h2 id="mappingで出来ること">mappingで出来ること</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-solidity" data-lang="solidity"><span style="color:#66d9ef">mapping</span>(_KeyType <span style="color:#f92672">=&gt;</span> _ValueType) <span style="color:#75715e">//定義
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">mapping</span>(<span style="color:#66d9ef">address</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">uint</span>) <span style="color:#66d9ef">public</span> valances; <span style="color:#75715e">//具体例
+</span></code></pre></div><h2 id="mappingで出来ること">mappingで出来ること</h2>
 <ul>
 <li>キーの型はなんでもOK</li>
 <li>アドレスから残高の参照</li>

@@ -14,6 +14,7 @@
 <meta property="article:published_time" content="2022-10-29T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-10-29T00:00:00+00:00" />
 
+
 		<meta itemprop="name" content="Pythonミニ関数 String/Object型の列にパーセントがある場合、数字に変換">
 <meta itemprop="description" content="割合の情報がString/Object型の列にパーセントとして与えられた、数字に変換 def str_to_rate(s): if pd.isnull(s)==False: return float(s.replace(&#39;%&#39;,&#39;&#39;)) else: return s 使い方 col = &#34;ReplyRate&#34; df[col] = df[col].apply(str_to_rate)"><meta itemprop="datePublished" content="2022-10-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-10-29T00:00:00+00:00" />
@@ -142,15 +143,15 @@ if (!doNotTrack) {
 		
 	</figure><div class="content post__content clearfix">
 			<p>割合の情報がString/Object型の列にパーセントとして与えられた、数字に変換</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">str_to_rate</span>(s):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> pd<span style="color:#f92672">.</span>isnull(s)<span style="color:#f92672">==</span><span style="color:#66d9ef">False</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> float(s<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;%&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>))
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> s
-</span></span></code></pre></div><p>使い方</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ReplyRate&#34;</span>
-</span></span><span style="display:flex;"><span>df[col] <span style="color:#f92672">=</span> df[col]<span style="color:#f92672">.</span>apply(str_to_rate)
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">str_to_rate</span>(s):
+    <span style="color:#66d9ef">if</span> pd<span style="color:#f92672">.</span>isnull(s)<span style="color:#f92672">==</span><span style="color:#66d9ef">False</span>:
+        <span style="color:#66d9ef">return</span> float(s<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;%&#39;</span>,<span style="color:#e6db74">&#39;&#39;</span>))
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">return</span> s
+</code></pre></div><p>使い方</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ReplyRate&#34;</span>
+df[col] <span style="color:#f92672">=</span> df[col]<span style="color:#f92672">.</span>apply(str_to_rate)
+</code></pre></div>
 		</div>
 		<footer class="post__footer">
 			

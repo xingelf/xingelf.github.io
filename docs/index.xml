@@ -6,7 +6,16 @@
     <description>Recent content in Time is life on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>autoGPT セットアップ</title>
+      <link>https://xingelf.github.io/tech/autogpt/</link>
+      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/tech/autogpt/</guid>
+      <description>AzureのUnbunt/Linux環境にautoGPTを導入しましたのでメモ。 https://github.com/Significant-Gravitas/Auto-GPT git clone git clone https://github.com/Torantulino/Auto-GPT.git Cloning into &#39;Auto-GPT&#39;... remote: Enumerating objects: 4896, done. remote: Counting objects: 100% (133/133), done. remote: Compressing objects: 100% (80/80), done. remote: Total 4896 (delta 68), reused 101 (delta 52), pack-reused 4763 Receiving objects: 100%</description>
+    </item>
+    
     <item>
       <title>Errors in Python</title>
       <link>https://xingelf.github.io/tech/python-err/</link>

@@ -14,6 +14,7 @@
 <meta property="article:published_time" content="2021-07-22T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-07-22T00:00:00+00:00" />
 
+
 		<meta itemprop="name" content="Tex/LaTexメモ">
 <meta itemprop="description" content="Markdown Tex形式で数式を書く partialsの設定 paritial templateの機能を使います。 https://gohugo.io/templates/partials/ \layouts配下にpartialsフォルダを作成します \layouts\partials 配下に2つのファ"><meta itemprop="datePublished" content="2021-07-22T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-22T00:00:00+00:00" />
@@ -157,23 +158,23 @@ if (!doNotTrack) {
 <ul>
 <li>mathjax.html</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/x-mathjax-config&#34;</span>&gt;
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">MathJax</span>.<span style="color:#a6e22e">Hub</span>.<span style="color:#a6e22e">Config</span>({
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">tex2jax</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">inlineMath</span><span style="color:#f92672">:</span> [[<span style="color:#e6db74">&#39;$&#39;</span>, <span style="color:#e6db74">&#39;$&#39;</span>] ],
-</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">displayMath</span><span style="color:#f92672">:</span> [ [<span style="color:#e6db74">&#39;$$&#39;</span>,<span style="color:#e6db74">&#39;$$&#39;</span>], [<span style="color:#e6db74">&#34;\\[&#34;</span>,<span style="color:#e6db74">&#34;\\]&#34;</span>] ]
-</span></span><span style="display:flex;"><span> }
-</span></span><span style="display:flex;"><span> });
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span>&gt;
+&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/x-mathjax-config&#34;</span>&gt;
+ <span style="color:#a6e22e">MathJax</span>.<span style="color:#a6e22e">Hub</span>.<span style="color:#a6e22e">Config</span>({
+ <span style="color:#a6e22e">tex2jax</span><span style="color:#f92672">:</span> {
+ <span style="color:#a6e22e">inlineMath</span><span style="color:#f92672">:</span> [[<span style="color:#e6db74">&#39;$&#39;</span>, <span style="color:#e6db74">&#39;$&#39;</span>] ],
+ <span style="color:#a6e22e">displayMath</span><span style="color:#f92672">:</span> [ [<span style="color:#e6db74">&#39;$$&#39;</span>,<span style="color:#e6db74">&#39;$$&#39;</span>], [<span style="color:#e6db74">&#34;\\[&#34;</span>,<span style="color:#e6db74">&#34;\\]&#34;</span>] ]
+ }
+ });
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><ul>
 <li>footer.html</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">footer</span>&gt;
-</span></span><span style="display:flex;"><span>  {{ partial &#34;mathjax.html&#34; . }}
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">footer</span>&gt;
-</span></span></code></pre></div><h2 id="数式の例">数式の例</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">footer</span>&gt;
+  {{ partial &#34;mathjax.html&#34; . }}
+&lt;/<span style="color:#f92672">footer</span>&gt;
+</code></pre></div><h2 id="数式の例">数式の例</h2>
 <p>tex表記を$で囲むだけです。</p>
 <ul>
 <li>2次方程式解の公式</li>
@@ -181,13 +182,13 @@ if (!doNotTrack) {
 <p>$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#e6db74">$</span> x <span style="color:#f92672">=</span> \frac{<span style="color:#f92672">-</span>b \pm \sqrt{b^<span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">4</span>ac}}{<span style="color:#ae81ff">2</span>a} <span style="color:#e6db74">$</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#e6db74">$</span> x <span style="color:#f92672">=</span> \frac{<span style="color:#f92672">-</span>b \pm \sqrt{b^<span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">4</span>ac}}{<span style="color:#ae81ff">2</span>a} <span style="color:#e6db74">$</span>
+</code></pre></div><ul>
 <li>ベイズの定理</li>
 </ul>
 <p>$ P(X=x| Y=y) = \frac{P(Y=y|X=x)P(X=x)}{P(Y=y)} $</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#e6db74">$</span> P<span style="color:#f92672">(</span>X<span style="color:#f92672">=</span>x| Y<span style="color:#f92672">=</span>y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> \frac{P<span style="color:#f92672">(</span>Y<span style="color:#f92672">=</span>y|X<span style="color:#f92672">=</span>x<span style="color:#f92672">)</span>P<span style="color:#f92672">(</span>X<span style="color:#f92672">=</span>x<span style="color:#f92672">)</span>}{P<span style="color:#f92672">(</span>Y<span style="color:#f92672">=</span>y<span style="color:#f92672">)</span>} <span style="color:#e6db74">$</span>
-</span></span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#e6db74">$</span> P<span style="color:#f92672">(</span>X<span style="color:#f92672">=</span>x| Y<span style="color:#f92672">=</span>y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> \frac{P<span style="color:#f92672">(</span>Y<span style="color:#f92672">=</span>y|X<span style="color:#f92672">=</span>x<span style="color:#f92672">)</span>P<span style="color:#f92672">(</span>X<span style="color:#f92672">=</span>x<span style="color:#f92672">)</span>}{P<span style="color:#f92672">(</span>Y<span style="color:#f92672">=</span>y<span style="color:#f92672">)</span>} <span style="color:#e6db74">$</span>
+</code></pre></div><ul>
 <li>ブラック・ショールズ方程式</li>
 </ul>
 <p>$
@@ -195,12 +196,12 @@ rC = \frac{\partial C}{\partial t}
 + \frac{1}{2}\sigma^2S^2_t\frac{\partial^2 C}{\partial S_t^2}
 + rS_t\frac{\partial C}{\partial S_t}
 $</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#e6db74">$</span>
-</span></span><span style="display:flex;"><span>rC <span style="color:#f92672">=</span> \frac{\partial C}{\partial t}
-</span></span><span style="display:flex;"><span>       <span style="color:#f92672">+</span> \frac{<span style="color:#ae81ff">1</span>}{<span style="color:#ae81ff">2</span>}\sigma^<span style="color:#ae81ff">2</span>S^<span style="color:#ae81ff">2</span>_t\frac{\partial^<span style="color:#ae81ff">2</span> C}{\partial S_t^<span style="color:#ae81ff">2</span>}
-</span></span><span style="display:flex;"><span>       <span style="color:#f92672">+</span> rS_t\frac{\partial C}{\partial S_t}
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">$</span>
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#e6db74">$</span>
+rC <span style="color:#f92672">=</span> \frac{\partial C}{\partial t}
+       <span style="color:#f92672">+</span> \frac{<span style="color:#ae81ff">1</span>}{<span style="color:#ae81ff">2</span>}\sigma^<span style="color:#ae81ff">2</span>S^<span style="color:#ae81ff">2</span>_t\frac{\partial^<span style="color:#ae81ff">2</span> C}{\partial S_t^<span style="color:#ae81ff">2</span>}
+       <span style="color:#f92672">+</span> rS_t\frac{\partial C}{\partial S_t}
+<span style="color:#e6db74">$</span>
+</code></pre></div>
 		</div>
 		<footer class="post__footer">
 			

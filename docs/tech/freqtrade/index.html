@@ -14,6 +14,7 @@
 <meta property="article:published_time" content="2020-04-01T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-04-01T00:00:00+00:00" />
 
+
 		<meta itemprop="name" content="Freqtradeのインストール">
 <meta itemprop="description" content="freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ"><meta itemprop="datePublished" content="2020-04-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-04-01T00:00:00+00:00" />
@@ -156,11 +157,13 @@ if (!doNotTrack) {
 <p><a href="https://github.com/freqtrade/freqtrade.git">https://github.com/freqtrade/freqtrade.git</a></p>
 <h2 id="python-venvのインストール">python venvのインストール</h2>
 <pre tabindex="0"><code>sudo apt-get install python3-venv
+
 </code></pre><h2 id="git-clone-にてパッケージを取得">git clone にてパッケージを取得</h2>
 <pre tabindex="0"><code>git clone https://github.com/freqtrade/freqtrade.git
 cd freqtrade
 git checkout develop
 ./setup.sh --install
+
 </code></pre><p>ta-libのインストールで時間が掛かりますが、ひたすら待ちます。</p>
 <p>1CPU/1GB MEMのAzure環境の場合、20分くらいで完了しました。</p>
 

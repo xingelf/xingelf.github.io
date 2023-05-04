@@ -14,6 +14,7 @@
 <meta property="article:published_time" content="2023-01-03T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-01-03T00:00:00+00:00" />
 
+
 		<meta itemprop="name" content="Errors in Python">
 <meta itemprop="description" content="Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。 対処 AmericaのTZが付与されているのでUTCローカライズします。 start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq))"><meta itemprop="datePublished" content="2023-01-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-01-03T00:00:00+00:00" />
@@ -160,12 +161,12 @@ if (!doNotTrack) {
 <p>Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。</p>
 <h4 id="対処">対処</h4>
 <p>AmericaのTZが付与されているのでUTCローカライズします。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>    start <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>datetime64(datetime<span style="color:#f92672">.</span>date<span style="color:#f92672">.</span>today() <span style="color:#f92672">-</span> datetime<span style="color:#f92672">.</span>timedelta(days<span style="color:#f92672">=</span>freq))
-</span></span><span style="display:flex;"><span>    df <span style="color:#f92672">=</span> df[ start <span style="color:#f92672">&lt;</span> df<span style="color:#f92672">.</span>index ]
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>    start <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>datetime64(datetime<span style="color:#f92672">.</span>date<span style="color:#f92672">.</span>today() <span style="color:#f92672">-</span> datetime<span style="color:#f92672">.</span>timedelta(days<span style="color:#f92672">=</span>freq))
-</span></span><span style="display:flex;"><span>    df<span style="color:#f92672">.</span>index <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>index<span style="color:#f92672">.</span>tz_localize(<span style="color:#66d9ef">None</span>) 
-</span></span><span style="display:flex;"><span>    df <span style="color:#f92672">=</span> df[ start <span style="color:#f92672">&lt;</span> df<span style="color:#f92672">.</span>index ]
-</span></span></code></pre></div><h2 id="could-not-import-the-lzma-module">Could not import the lzma module</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">    start <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>datetime64(datetime<span style="color:#f92672">.</span>date<span style="color:#f92672">.</span>today() <span style="color:#f92672">-</span> datetime<span style="color:#f92672">.</span>timedelta(days<span style="color:#f92672">=</span>freq))
+    df <span style="color:#f92672">=</span> df[ start <span style="color:#f92672">&lt;</span> df<span style="color:#f92672">.</span>index ]
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">    start <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>datetime64(datetime<span style="color:#f92672">.</span>date<span style="color:#f92672">.</span>today() <span style="color:#f92672">-</span> datetime<span style="color:#f92672">.</span>timedelta(days<span style="color:#f92672">=</span>freq))
+    df<span style="color:#f92672">.</span>index <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>index<span style="color:#f92672">.</span>tz_localize(<span style="color:#66d9ef">None</span>) 
+    df <span style="color:#f92672">=</span> df[ start <span style="color:#f92672">&lt;</span> df<span style="color:#f92672">.</span>index ]
+</code></pre></div><h2 id="could-not-import-the-lzma-module">Could not import the lzma module</h2>
 <h4 id="error-1">Error</h4>
 <p>UserWarning: Could not import the lzma module. Your installed Python is incomplete</p>
 <p>pandas 1.0系以降でpandasをimportすると以下のエラーが発生する</p>
@@ -173,12 +174,12 @@ if (!doNotTrack) {
 <p>warnings.warn(msg)</p>
 <h4 id="対処-1">対処</h4>
 <p>xzをbrewでインストール</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install xz
-</span></span><span style="display:flex;"><span>pyenv uninstall 3.7.3
-</span></span><span style="display:flex;"><span>pyenv install 3.7.3
-</span></span><span style="display:flex;"><span>pyenv global 3.7.3
-</span></span><span style="display:flex;"><span>pip install pandas
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install xz
+pyenv uninstall 3.7.3
+pyenv install 3.7.3
+pyenv global 3.7.3
+pip install pandas
+</code></pre></div>
 		</div>
 		<footer class="post__footer">
 			
@@ -211,6 +212,12 @@ if (!doNotTrack) {
 		<a class="pager__link" href="/tech/ubuntu/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
 			<p class="pager__title">Ubuntu on Azure メモ</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/autogpt/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">autoGPT セットアップ</p>
 		</a>
 	</div>
 </nav>

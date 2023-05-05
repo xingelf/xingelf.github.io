@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DAO(Decentralized Autonomous Organization) on live life to the fullest like elf</title>
+    <title>DAO(Decentralized Autonomous Organization) on Live Life to the fullest.</title>
     <link>https://xingelf.github.io/dao/</link>
-    <description>Recent content in DAO(Decentralized Autonomous Organization) on live life to the fullest like elf</description>
+    <description>Recent content in DAO(Decentralized Autonomous Organization) on Live Life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
     <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/dao/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solidity文法　関数</title>

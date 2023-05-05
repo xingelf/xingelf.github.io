@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DOS on live life to the fullest like elf</title>
+    <title>DOS on Live Life to the fullest.</title>
     <link>https://xingelf.github.io/tags/dos/</link>
-    <description>Recent content in DOS on live life to the fullest like elf</description>
+    <description>Recent content in DOS on Live Life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
     <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/dos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DoS/DDoS攻撃</title>
-      <link>https://xingelf.github.io/security/dos/</link>
+      <link>https://xingelf.github.io/posts/security/dos/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/security/dos/</guid>
+      <guid>https://xingelf.github.io/posts/security/dos/</guid>
       <description>DDoS攻撃とは https://en.wikipedia.org/wiki/Denial-of-service_attack 分散型サービス妨害（DDoS）攻撃とは、 インターネット上の大量のトラフィックでターゲットやその周辺のインフラへ高負荷を与えるることで、 ターゲッ</description>
     </item>
     
     <item>
       <title>Threat Intelligence　脅威インテリジェンス</title>
-      <link>https://xingelf.github.io/security/threat_intelligence/</link>
+      <link>https://xingelf.github.io/posts/security/threat_intelligence/</link>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/security/threat_intelligence/</guid>
+      <guid>https://xingelf.github.io/posts/security/threat_intelligence/</guid>
       <description>脅威インテリジェンスはいくつかカテゴリがあります。 https://info-savvy.com/types-of-threat-intelligence/ 技術的脅威情報 テクニカルインテリジェンス 技術的なサイバーインテリジェンスでは、コマンド＆コントロールチャネル</description>
     </item>
     

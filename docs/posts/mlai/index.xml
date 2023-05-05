@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Live Life to the fullest.</title>
+    <link>https://xingelf.github.io/posts/mlai/</link>
+    <description>Recent content on Live Life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
+    <lastBuildDate>Sat, 29 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/posts/mlai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pythonミニ関数 String/Object型の列にパーセントがある場合、数字に変換</title>
+      <link>https://xingelf.github.io/posts/mlai/str_to_rate/</link>
+      <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/mlai/str_to_rate/</guid>
+      <description>割合の情報がString/Object型の列にパーセントとして与えられた、数字に変換 def str_to_rate(s): if pd.isnull(s)==False: return float(s.replace(&amp;#39;%&amp;#39;,&amp;#39;&amp;#39;)) else: return s 使い方 col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate)</description>
+    </item>
+    
+    <item>
+      <title>Pythonミニ関数 String/Object型の列にブール文字がある場合、ブール型に変換</title>
+      <link>https://xingelf.github.io/posts/mlai/str_to_bool/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/mlai/str_to_bool/</guid>
+      <description>真偽の情報がString/Object型の列にtやfとして与えられた場合、ブール型に変換 def str_to_bool(s): if s==&amp;#39;t&amp;#39;: return True else: return False 使い方 col = &amp;#34;Availabiliy&amp;#34; df[col] = df[col].apply(str_to_bool)</description>
+    </item>
+    
+    <item>
+      <title>リカレントニューラルネット - Recurrent Nueral Net RNN　</title>
+      <link>https://xingelf.github.io/posts/mlai/rnn/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/mlai/rnn/</guid>
+      <description>RNNとは 時系列や文章・音声など系列データを扱うネットワークです。 前の時点のデータを入力とすることが特徴です。 RNNの数学的記述 入力: $x^t$ 中間層の入力: $ u^t = w_{(in)}x^t +</description>
+    </item>
+    
+    <item>
+      <title>情報理論</title>
+      <link>https://xingelf.github.io/posts/mlai/entropy/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/mlai/entropy/</guid>
+      <description>目的：情報理論の基本を理解する。 情報量 事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。 $ I(A) = -\log P(A)$ 確率が小さいほど情報量は大きい。 レアな</description>
+    </item>
+    
+    <item>
+      <title>Softmax関数</title>
+      <link>https://xingelf.github.io/posts/mlai/softmax/</link>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://xingelf.github.io/posts/mlai/softmax/</guid>
+      <description>Softmax関数 Softmax関数は以下の式で定義される。 $ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$ $ i = 0,1,2,\dots n$ $y_i$をすべて足し算すると和が1になるため、それぞれの を確立と考えることが</description>
+    </item>
+    
+  </channel>
+</rss>

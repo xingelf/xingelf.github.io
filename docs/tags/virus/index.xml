@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Virus on live life to the fullest like elf</title>
+    <title>Virus on Live Life to the fullest.</title>
     <link>https://xingelf.github.io/tags/virus/</link>
-    <description>Recent content in Virus on live life to the fullest like elf</description>
+    <description>Recent content in Virus on Live Life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
     <lastBuildDate>Thu, 11 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/virus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer Virus/ウイルス 分類</title>
-      <link>https://xingelf.github.io/security/computer_virus/</link>
+      <link>https://xingelf.github.io/posts/security/computer_virus/</link>
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/security/computer_virus/</guid>
+      <guid>https://xingelf.github.io/posts/security/computer_virus/</guid>
       <description>ウイルス種類 ポリモーフィック型ウイルス いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。 スペースフィラー型・キャヴィティ型ウイルス さ</description>
     </item>
     

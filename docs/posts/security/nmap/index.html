@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>nmap cheat nmapチート - Live Life to the fullest.</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://xingelf.github.io/css/style.css">
+	
+
+	<link rel="shortcut icon" href="https://xingelf.github.io/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="https://xingelf.github.io/" title="Live Life to the fullest." rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Live Life to the fullest.</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://xingelf.github.io/posts/security">
+				
+				<span class="menu__text">Cyber Security</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://xingelf.github.io/posts/dao">
+				
+				<span class="menu__text">🌎 Web3</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://xingelf.github.io/posts/tech">
+				
+				<span class="menu__text">Tech</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://xingelf.github.io/posts">
+				
+				<span class="menu__text">✍ All Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://xingelf.github.io/posts/about">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">nmap cheat nmapチート</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<h1 id="nmapとは">nmapとは</h1>
+<p>ポートスキャンツールです。ペネトレーション作業の基本ツールです。</p>
+<ul>
+<li>
+<p>-T5 insane 最速でスキャンを実行</p>
+<p><a href="https://nmap.org/man/ja/man-performance.html">https://nmap.org/man/ja/man-performance.html</a></p>
+</li>
+<li>
+<p>-T4 Aggresive スキャン処理の遅延は10msec以内</p>
+</li>
+<li>
+<p>-F 簡易スキャン　nmap-servicesに記載されたポートのみをスキャン</p>
+<p><a href="https://nmap.org/book/nmap-services.html">https://nmap.org/book/nmap-services.html</a></p>
+</li>
+<li>
+<p>-r ポートをランダムにしない</p>
+</li>
+</ul>
+<h2 id="christmass-scan">Christmass Scan</h2>
+<ul>
+<li>
+<p>-sX Christmass Scan</p>
+<ul>
+<li>FIN/PHS/URGのフラグを設定</li>
+<li>Control Flag がOn/Off/On/Off/On/OffのためXmasと呼ばれる</li>
+<li><strong>RSTを返さない場合、openと判定する</strong></li>
+<li>windowsでは一律RSTを返すため、Windows判定に利用される</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://nmap.org/man/ja/man-port-scanning-techniques.html">https://nmap.org/man/ja/man-port-scanning-techniques.html</a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ws0MeqfuA58" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="normal-scans">Normal Scans</h2>
+<ul>
+<li>
+<p>sT connect Scan</p>
+<ul>
+<li>Most visible and easily detected by IDS　IDSによって容易に検知される</li>
+</ul>
+</li>
+<li>
+<p>-sS Syn Scan or Stealth Scan</p>
+<ul>
+<li>SYNスキャン、ハーフスキャン</li>
+<li>接続を完了しないため、ログに残らないケースが多い</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Flags</th>
+<th>Windows Open</th>
+<th>Windows Closed</th>
+<th>Linux Open</th>
+<th>Linux Closed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-sS</td>
+<td>Syn</td>
+<td>Syn-Ack</td>
+<td>Rst-Ack</td>
+<td>Syn-Ack</td>
+<td>Rst-Ack</td>
+</tr>
+<tr>
+<td>-sT</td>
+<td>Syn</td>
+<td>Syn-Ack</td>
+<td>Rst-Ack</td>
+<td>Syn-Ack</td>
+<td>Rst-Ack</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-s-spoof-source-address-ソースip偽装">-S Spoof source address ソースIP偽装</h2>
+<p>ソースIPを偽装してスキャンを実行する。</p>
+<pre tabindex="0"><code>namp -S 192.168.10.1
+</code></pre><h2 id="-d-decoy-scan-デコイスキャンおとりスキャン">-D Decoy Scan デコイスキャン・おとりスキャン</h2>
+<p><a href="https://linux.die.net/man/1/nmap">https://linux.die.net/man/1/nmap</a></p>
+<p>おとりスキャンを実行する。引数に複数のおとり用IPアドレスを指定。</p>
+<pre tabindex="0"><code>namp -D decoy1[,decoy2]...
+</code></pre><p>リモートホストには、おとりとして指定したホストもターゲットネットワークをスキャンしているように見せる。
+そのため、IDSは固有のIPアドレスから5～10回のポートスキャンを報告するが、どのIPが実際にスキャンしていて、
+どれが無実のおとりであるかの判定を困難にする。</p>
+<h2 id="-o-os-detection">-O OS Detection</h2>
+<ul>
+<li>O OS判定</li>
+</ul>
+<h2 id="input-and-output">Input and Output</h2>
+<ul>
+<li>-oX XML形式でのファイル出力</li>
+</ul>
+<h2 id="maimon-scan-マイモンスキャン">Maimon scan マイモンスキャン</h2>
+<p>マイモンスキャンは、発見者であるウリエル・マイモンにちなんで名づけられた。
+ウリエル・マイモンは、Phrack Magazineの49号(1996年11月)でこの技法を説明した。</p>
+<p>このテクニックは、プローブがFIN/ACKであることを除けば、NULL、FIN、Xmasスキャンと全く同じである。</p>
+<p>RFC793（TCP）によれば、このようなプローブに対しては、ポートが開いていようと閉じていようと、RSTパケットを生成することになっている。
+しかし、ウリエルは、多くのBSD由来のシステムが、ポートが開いている場合は単にパケットをドロップしていることに気づいた。
+これによりBSD由来のシステムの特定が可能となる。</p>
+<p><a href="https://nmap.org/book/scan-methods-maimon-scan.html">https://nmap.org/book/scan-methods-maimon-scan.html</a></p>
+<h2 id="ping-sweep">Ping Sweep</h2>
+<p>アドレス指定範囲に対してpingを実行</p>
+<ul>
+<li>-sn ping指定</li>
+<li>-PE Echo Request</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">nmap -sn -PE x.x.x.x/yy
+</code></pre></div><hr>
+<h2 id="nmap学習動画">nmap学習動画</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4t4kBkMsDbQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="https://xingelf.github.io/tags/ceh/" rel="tag">CEH</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="https://xingelf.github.io/tags/network/" rel="tag">Network</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="https://xingelf.github.io/tags/nmap/" rel="tag">nmap</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 Live Life to the fullest..
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://xingelf.github.io/js/menu.js"></script>
+</body>
+</html>

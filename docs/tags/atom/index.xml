@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Atom on live life to the fullest like elf</title>
+    <title>Atom on Live Life to the fullest.</title>
     <link>https://xingelf.github.io/tags/atom/</link>
-    <description>Recent content in Atom on live life to the fullest like elf</description>
+    <description>Recent content in Atom on Live Life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
     <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/atom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atom メモ</title>
-      <link>https://xingelf.github.io/tech/_atom/</link>
+      <link>https://xingelf.github.io/posts/tech/_atom/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/tech/_atom/</guid>
+      <guid>https://xingelf.github.io/posts/tech/_atom/</guid>
       <description>基本 タブや空白を表示 Preferences -&amp;gt; Editor Show Invisiblesをチェックします Atom パッケージ関連 atom-beautify ソースコードを整形します。 autocomplete-plus 自動補完機能です。 markdownファイルを編集す</description>
     </item>
     

@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Finance on live life to the fullest like elf</title>
+    <title>Finance on Live Life to the fullest.</title>
     <link>https://xingelf.github.io/tags/finance/</link>
-    <description>Recent content in Finance on live life to the fullest like elf</description>
+    <description>Recent content in Finance on Live Life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
     <lastBuildDate>Sun, 19 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/finance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pandas Dataredader</title>
-      <link>https://xingelf.github.io/tech/pandasdatareader/</link>
+      <link>https://xingelf.github.io/posts/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
+      <guid>https://xingelf.github.io/posts/tech/pandasdatareader/</guid>
       <description>pandas Datareaderとは オンライン上のデータをダウンロードするライブラリです。 https://pandas-datareader.readthedocs.io/en/latest/index.html データソース一覧はこちらにあります。 APIキーの取得が必要なものもあります。 f</description>
     </item>
     
     <item>
       <title>ta-libのインストール</title>
-      <link>https://xingelf.github.io/tech/ta-lib/</link>
+      <link>https://xingelf.github.io/posts/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/tech/ta-lib/</guid>
+      <guid>https://xingelf.github.io/posts/tech/ta-lib/</guid>
       <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
     </item>
     
     <item>
       <title>Freqtradeのインストール</title>
-      <link>https://xingelf.github.io/tech/freqtrade/</link>
+      <link>https://xingelf.github.io/posts/tech/freqtrade/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/tech/freqtrade/</guid>
+      <guid>https://xingelf.github.io/posts/tech/freqtrade/</guid>
       <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
     </item>
     

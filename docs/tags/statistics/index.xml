@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statistics on live life to the fullest like elf</title>
+    <title>Statistics on Live Life to the fullest.</title>
     <link>https://xingelf.github.io/tags/statistics/</link>
-    <description>Recent content in Statistics on live life to the fullest like elf</description>
+    <description>Recent content in Statistics on Live Life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
     <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>オッズ比とリスク比</title>
-      <link>https://xingelf.github.io/tech/odds-risk/</link>
+      <link>https://xingelf.github.io/posts/tech/odds-risk/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/tech/odds-risk/</guid>
+      <guid>https://xingelf.github.io/posts/tech/odds-risk/</guid>
       <description>オッズ比とリスク比について理解する リスク比とは まずは理解が容易なリスク比からはじめます。 なお、以下の数字は完全に仮想的なものです。 コロナ罹患 コロナ未罹患 合計 罹患</description>
     </item>
     

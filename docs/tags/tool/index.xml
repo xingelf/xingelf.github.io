@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tool on live life to the fullest like elf</title>
+    <title>tool on Live Life to the fullest.</title>
     <link>https://xingelf.github.io/tags/tool/</link>
-    <description>Recent content in tool on live life to the fullest like elf</description>
+    <description>Recent content in tool on Live Life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
     <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hping/hping3使い方</title>
-      <link>https://xingelf.github.io/security/hping/</link>
+      <link>https://xingelf.github.io/posts/security/hping/</link>
       <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/security/hping/</guid>
+      <guid>https://xingelf.github.io/posts/security/hping/</guid>
       <description>hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ</description>
     </item>
     

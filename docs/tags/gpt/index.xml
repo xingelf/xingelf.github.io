@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GPT on live life to the fullest like elf</title>
+    <title>GPT on Live Life to the fullest.</title>
     <link>https://xingelf.github.io/tags/gpt/</link>
-    <description>Recent content in GPT on live life to the fullest like elf</description>
+    <description>Recent content in GPT on Live Life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <copyright>Copyright @xingelf</copyright>
     <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/gpt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>autoGPT セットアップ</title>
-      <link>https://xingelf.github.io/tech/autogpt/</link>
+      <link>https://xingelf.github.io/posts/tech/autogpt/</link>
       <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://xingelf.github.io/tech/autogpt/</guid>
+      <guid>https://xingelf.github.io/posts/tech/autogpt/</guid>
       <description>AzureのUnbunt/Linux環境にautoGPTを導入しましたのでメモ。 https://github.com/Significant-Gravitas/Auto-GPT git clone git clone https://github.com/Torantulino/Auto-GPT.git Cloning into &#39;Auto-GPT&#39;... remote: Enumerating objects: 4896, done. remote: Counting objects: 100% (133/133), done. remote: Compressing objects: 100% (80/80), done. remote: Total 4896 (delta 68), reused 101 (delta 52), pack-reused 4763 Receiving objects: 100%</description>
     </item>
     

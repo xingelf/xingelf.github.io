@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Function on Live Life to the fullest.</title>
+    <title>Function on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/tags/function/</link>
-    <description>Recent content in Function on Live Life to the fullest.</description>
+    <description>Recent content in Function on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/function/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/function/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solidity文法　関数</title>
-      <link>https://xingelf.github.io/posts/dao/solidity-function/</link>
+      <link>https://xingelf.github.io/dao/solidity-function/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/dao/solidity-function/</guid>
+      <guid>https://xingelf.github.io/dao/solidity-function/</guid>
       <description>Solidity Function 関数 基本的な関数の例は以下の通りです。 足し算 function add(uint a, uint b) public pure returns (uint){ return a + b; } メッセージ function add(uint a, uint b) public pure returns (uint){ return a + b; } Solidity Visibility Modifiers 関数可視性修飾子 private : 該当関数のコントラク</description>
     </item>
-    
   </channel>
 </rss>

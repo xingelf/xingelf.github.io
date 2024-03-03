@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kaggle on Live Life to the fullest.</title>
+    <title>Kaggle on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/tags/kaggle/</link>
-    <description>Recent content in Kaggle on Live Life to the fullest.</description>
+    <description>Recent content in Kaggle on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Sat, 29 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/kaggle/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/kaggle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pythonミニ関数 String/Object型の列にパーセントがある場合、数字に変換</title>
-      <link>https://xingelf.github.io/posts/mlai/str_to_rate/</link>
+      <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/mlai/str_to_rate/</guid>
+      <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
       <description>割合の情報がString/Object型の列にパーセントとして与えられた、数字に変換 def str_to_rate(s): if pd.isnull(s)==False: return float(s.replace(&amp;#39;%&amp;#39;,&amp;#39;&amp;#39;)) else: return s 使い方 col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate)</description>
     </item>
-    
     <item>
       <title>Pythonミニ関数 String/Object型の列にブール文字がある場合、ブール型に変換</title>
-      <link>https://xingelf.github.io/posts/mlai/str_to_bool/</link>
+      <link>https://xingelf.github.io/mlai/str_to_bool/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/mlai/str_to_bool/</guid>
+      <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
       <description>真偽の情報がString/Object型の列にtやfとして与えられた場合、ブール型に変換 def str_to_bool(s): if s==&amp;#39;t&amp;#39;: return True else: return False 使い方 col = &amp;#34;Availabiliy&amp;#34; df[col] = df[col].apply(str_to_bool)</description>
     </item>
-    
     <item>
       <title>書籍 Kaggleで勝つデータ分析</title>
-      <link>https://xingelf.github.io/posts/tech/kaggle/</link>
+      <link>https://xingelf.github.io/tech/kaggle/</link>
       <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/kaggle/</guid>
+      <guid>https://xingelf.github.io/tech/kaggle/</guid>
       <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/</description>
     </item>
-    
   </channel>
 </rss>

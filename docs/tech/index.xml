@@ -1,147 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on Live Life to the fullest.</title>
+    <title>Tech on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/tech/</link>
-    <description>Recent content in Tech on Live Life to the fullest.</description>
+    <description>Recent content in Tech on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>autoGPT セットアップ</title>
-      <link>https://xingelf.github.io/tech/autogpt/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/tech/autogpt/</guid>
-      <description>AzureのUnbunt/Linux環境にautoGPTを導入しましたのでメモ。 https://github.com/Significant-Gravitas/Auto-GPT git clone git clone https://github.com/Torantulino/Auto-GPT.git Cloning into &#39;Auto-GPT&#39;... remote: Enumerating objects: 4896, done. remote: Counting objects: 100% (133/133), done. remote: Compressing objects: 100% (80/80), done. remote: Total 4896 (delta 68), reused 101 (delta 52), pack-reused 4763 Receiving objects: 100%</description>
-    </item>
-    
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Errors in Python</title>
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/python-err/</guid>
       <description>Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。 対処 AmericaのTZが付与されているのでUTCローカライズします。 start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq))</description>
     </item>
-    
     <item>
       <title>Ubuntu on Azure メモ</title>
       <link>https://xingelf.github.io/tech/ubuntu/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/ubuntu/</guid>
       <description>定期メンテナンス sudo apt update sudo apt upgrade 定期メンテ時のエラー 11: Resource temporarily unavailable sudo upgradeでリソース不足を検知した場合の対処です。 E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using</description>
     </item>
-    
     <item>
       <title>書籍 Kaggleで勝つデータ分析</title>
       <link>https://xingelf.github.io/tech/kaggle/</link>
       <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/kaggle/</guid>
       <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/</description>
     </item>
-    
     <item>
       <title>pandas Dataredader</title>
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
       <description>pandas Datareaderとは オンライン上のデータをダウンロードするライブラリです。 https://pandas-datareader.readthedocs.io/en/latest/index.html データソース一覧はこちらにあります。 APIキーの取得が必要なものもあります。 f</description>
     </item>
-    
     <item>
       <title>オッズ比とリスク比</title>
       <link>https://xingelf.github.io/tech/odds-risk/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/odds-risk/</guid>
       <description>オッズ比とリスク比について理解する リスク比とは まずは理解が容易なリスク比からはじめます。 なお、以下の数字は完全に仮想的なものです。 コロナ罹患 コロナ未罹患 合計 罹患</description>
     </item>
-    
     <item>
       <title>モデルの評価</title>
       <link>https://xingelf.github.io/tech/_evalmodel/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/_evalmodel/</guid>
       <description>モデル評価におけるデータの定義 訓練集合 機械学習モデルの訓練に用いるデータ 検証集合 ハイパーパラメータなどの調整に用いるデータ テスト集合 汎化性能の推定に用いるデータ</description>
     </item>
-    
     <item>
       <title>Tex/LaTexメモ</title>
       <link>https://xingelf.github.io/tech/latex-md/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/latex-md/</guid>
       <description>Markdown Tex形式で数式を書く partialsの設定 paritial templateの機能を使います。 https://gohugo.io/templates/partials/ \layouts配下にpartialsフォルダを作成します \layouts\partials 配下に2つのファ</description>
     </item>
-    
     <item>
       <title>機械学習前処理</title>
       <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
       <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
     </item>
-    
     <item>
       <title>github 備忘・対処メモ</title>
       <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/github/</guid>
       <description>.gitignoreが効かない キャッシュ削除による解決を試みます。 git rm -r --cached . git push がreject ローカルが正/originであることを確認して、強制的にpushし</description>
     </item>
-    
     <item>
       <title>Atom メモ</title>
       <link>https://xingelf.github.io/tech/_atom/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/_atom/</guid>
       <description>基本 タブや空白を表示 Preferences -&amp;gt; Editor Show Invisiblesをチェックします Atom パッケージ関連 atom-beautify ソースコードを整形します。 autocomplete-plus 自動補完機能です。 markdownファイルを編集す</description>
     </item>
-    
     <item>
       <title>IUT and abc</title>
       <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/iut-abc/</guid>
       <description>一般向けIUT・abc予想について。 IUT・abc予想 足し算と掛け算に関わる関係を明らかにする理論と言われます。 また、強いabc予想のもとでは、フェルマーの最終</description>
     </item>
-    
     <item>
       <title>ta-libのインストール</title>
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
       <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
     </item>
-    
     <item>
       <title>Freqtradeのインストール</title>
       <link>https://xingelf.github.io/tech/freqtrade/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/freqtrade/</guid>
       <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://xingelf.github.io/tech/_ctf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/tech/_ctf/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

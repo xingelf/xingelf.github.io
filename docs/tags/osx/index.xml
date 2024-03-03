@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>osx on Live Life to the fullest.</title>
+    <title>osx on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/tags/osx/</link>
-    <description>Recent content in osx on Live Life to the fullest.</description>
+    <description>Recent content in osx on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/osx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/osx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ショートカット - Shortcut</title>
       <link>https://xingelf.github.io/posts/_shortcut/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/posts/_shortcut/</guid>
       <description>OSX/Macショートカットメモ OS全般 Spotlight Search Command + Space 画面ロック Control + Command + q 編集 コピー Command + c ペースト Command + v 書式なしペースト Command + Option + Shift + v orz もとに戻す/Undo Command + z も</description>
     </item>
-    
   </channel>
 </rss>

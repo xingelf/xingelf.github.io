@@ -1,93 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cyber Security on Live Life to the fullest.</title>
+    <title>Cyber Security on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/categories/cyber-security/</link>
-    <description>Recent content in Cyber Security on Live Life to the fullest.</description>
+    <description>Recent content in Cyber Security on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DIRB</title>
-      <link>https://xingelf.github.io/posts/security/dirb/</link>
-      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/dirb/</guid>
-      <description>DIRB https://www.kali.org/tools/dirb/ Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。 Web サーバー上の隠しファイルや隠しディレクトリを</description>
-    </item>
-    
-    <item>
-      <title>hping/hping3使い方</title>
-      <link>https://xingelf.github.io/posts/security/hping/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/hping/</guid>
-      <description>hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ</description>
-    </item>
-    
+    <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DoS/DDoS攻撃</title>
-      <link>https://xingelf.github.io/posts/security/dos/</link>
+      <link>https://xingelf.github.io/security/dos/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/dos/</guid>
+      <guid>https://xingelf.github.io/security/dos/</guid>
       <description>DDoS攻撃とは https://en.wikipedia.org/wiki/Denial-of-service_attack 分散型サービス妨害（DDoS）攻撃とは、 インターネット上の大量のトラフィックでターゲットやその周辺のインフラへ高負荷を与えるることで、 ターゲッ</description>
     </item>
-    
     <item>
       <title>Social Engineering ソーシャルエンジニアリング</title>
-      <link>https://xingelf.github.io/posts/security/social_engineering/</link>
+      <link>https://xingelf.github.io/security/social_engineering/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/social_engineering/</guid>
+      <guid>https://xingelf.github.io/security/social_engineering/</guid>
       <description>Social Engineeringとは ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、 特定の行動を取らせたりすることを目的としたすべての</description>
     </item>
-    
     <item>
       <title>Rootkit　ルートキット</title>
-      <link>https://xingelf.github.io/posts/security/rootkits/</link>
+      <link>https://xingelf.github.io/security/rootkits/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/rootkits/</guid>
+      <guid>https://xingelf.github.io/security/rootkits/</guid>
       <description>Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの</description>
     </item>
-    
-    <item>
-      <title>DNS Domain Name System</title>
-      <link>https://xingelf.github.io/posts/security/dns/</link>
-      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/dns/</guid>
-      <description>DNS DNS is essential in terms of the foot printing of the target. DNS gives us a lot of information. DNS探索は初期調査(footprinting)の基本動作です。 whois DNS管理組織は下表の通り。RIPEが欧州＋中東・中央</description>
-    </item>
-    
     <item>
       <title>Pharming and Phising</title>
-      <link>https://xingelf.github.io/posts/security/phaming-phising/</link>
+      <link>https://xingelf.github.io/security/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/phaming-phising/</guid>
+      <guid>https://xingelf.github.io/security/phaming-phising/</guid>
       <description>Pharming ファーミング https://csrc.nist.gov/glossary/term/pharming DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有</description>
     </item>
-    
     <item>
       <title>Rubber Hose Attack ゴムホース攻撃</title>
-      <link>https://xingelf.github.io/posts/security/rubber_hose_attack/</link>
+      <link>https://xingelf.github.io/security/rubber_hose_attack/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/rubber_hose_attack/</guid>
+      <guid>https://xingelf.github.io/security/rubber_hose_attack/</guid>
       <description>Rubber Hose Attack ゴムホース攻撃とは テクニカルな手法ではなく、物理的な手段などで人を脅迫してパスワードなどを入手する方法。 物理的な脅迫手段の１つとして、ゴムホースということ</description>
     </item>
-    
     <item>
       <title>Threat Intelligence　脅威インテリジェンス</title>
-      <link>https://xingelf.github.io/posts/security/threat_intelligence/</link>
+      <link>https://xingelf.github.io/security/threat_intelligence/</link>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/threat_intelligence/</guid>
+      <guid>https://xingelf.github.io/security/threat_intelligence/</guid>
       <description>脅威インテリジェンスはいくつかカテゴリがあります。 https://info-savvy.com/types-of-threat-intelligence/ 技術的脅威情報 テクニカルインテリジェンス 技術的なサイバーインテリジェンスでは、コマンド＆コントロールチャネル</description>
     </item>
-    
   </channel>
 </rss>

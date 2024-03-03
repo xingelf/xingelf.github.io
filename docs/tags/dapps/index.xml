@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DApps on Live Life to the fullest.</title>
+    <title>DApps on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/tags/dapps/</link>
-    <description>Recent content in DApps on Live Life to the fullest.</description>
+    <description>Recent content in DApps on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/dapps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/dapps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solidity 最も簡単なコントラクトの作成</title>
-      <link>https://xingelf.github.io/posts/dao/solidity-1stcontract/</link>
+      <link>https://xingelf.github.io/dao/solidity-1stcontract/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/dao/solidity-1stcontract/</guid>
+      <guid>https://xingelf.github.io/dao/solidity-1stcontract/</guid>
       <description>Solidity学習リソースでよく紹介されている最も簡単なコントラクトを REMIXを利用して作成します。 コントラクトの動作としては数字をセット/setしてそれを</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,228 +1,180 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tech on Live Life to the fullest.</title>
+    <title>Tech on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/categories/tech/</link>
-    <description>Recent content in tech on Live Life to the fullest.</description>
+    <description>Recent content in Tech on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>autoGPT セットアップ</title>
-      <link>https://xingelf.github.io/posts/tech/autogpt/</link>
-      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/autogpt/</guid>
-      <description>AzureのUnbunt/Linux環境にautoGPTを導入しましたのでメモ。 https://github.com/Significant-Gravitas/Auto-GPT git clone git clone https://github.com/Torantulino/Auto-GPT.git Cloning into &#39;Auto-GPT&#39;... remote: Enumerating objects: 4896, done. remote: Counting objects: 100% (133/133), done. remote: Compressing objects: 100% (80/80), done. remote: Total 4896 (delta 68), reused 101 (delta 52), pack-reused 4763 Receiving objects: 100%</description>
-    </item>
-    
+    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rootkit ルートキット</title>
-      <link>https://xingelf.github.io/posts/security/rootkit/</link>
+      <link>https://xingelf.github.io/security/rootkit/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/rootkit/</guid>
+      <guid>https://xingelf.github.io/security/rootkit/</guid>
       <description>Rootkitにはいくつか種類があります。 https://en.wikipedia.org/wiki/Rootkit カーネルレベル・ルートキット カーネルはオペレーティングシステムの中核であり、カーネルレベルルートキットは、デバイスド</description>
     </item>
-    
     <item>
       <title>iPhone メモ </title>
       <link>https://xingelf.github.io/posts/iphone/</link>
       <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/posts/iphone/</guid>
       <description>ショートカット 位置情報のOFF/ONをホームボタンに配置 URLを開くのショートカットを作成してURLに以下を指定 prefs:root=Privacy&amp;amp;path=LOCATION ホームボタンに配置すれば、OFF/ONが簡単に</description>
     </item>
-    
     <item>
       <title>Ubuntu on Azure メモ</title>
-      <link>https://xingelf.github.io/posts/tech/ubuntu/</link>
+      <link>https://xingelf.github.io/tech/ubuntu/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/ubuntu/</guid>
+      <guid>https://xingelf.github.io/tech/ubuntu/</guid>
       <description>定期メンテナンス sudo apt update sudo apt upgrade 定期メンテ時のエラー 11: Resource temporarily unavailable sudo upgradeでリソース不足を検知した場合の対処です。 E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using</description>
     </item>
-    
     <item>
       <title>Computer Virus/ウイルス 分類</title>
-      <link>https://xingelf.github.io/posts/security/computer_virus/</link>
+      <link>https://xingelf.github.io/security/computer_virus/</link>
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/computer_virus/</guid>
+      <guid>https://xingelf.github.io/security/computer_virus/</guid>
       <description>ウイルス種類 ポリモーフィック型ウイルス いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。 スペースフィラー型・キャヴィティ型ウイルス さ</description>
     </item>
-    
     <item>
       <title>CHNTPW　Windowsパスワード初期化・リセット</title>
-      <link>https://xingelf.github.io/posts/security/chntpw/</link>
+      <link>https://xingelf.github.io/security/chntpw/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/chntpw/</guid>
+      <guid>https://xingelf.github.io/security/chntpw/</guid>
       <description>Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。 administratorパスワードをロストした場合の復旧手段の</description>
     </item>
-    
     <item>
       <title>TailgatingとPiggybackingの違い</title>
-      <link>https://xingelf.github.io/posts/security/tailgate_piggybacking/</link>
+      <link>https://xingelf.github.io/security/tailgate_piggybacking/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/tailgate_piggybacking/</guid>
+      <guid>https://xingelf.github.io/security/tailgate_piggybacking/</guid>
       <description>Tailgating 隠れて後ろからゲート通過 車で後ろから追走したり、後ろに付いてETCゲートなどを通過することから、 従業員がゲートを通過する際に後ろからひっそりと一緒に通過するこ</description>
     </item>
-    
     <item>
       <title>Cyber Kill Chain サイバーキルチェーン</title>
-      <link>https://xingelf.github.io/posts/security/cyberkillchain/</link>
+      <link>https://xingelf.github.io/security/cyberkillchain/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/cyberkillchain/</guid>
+      <guid>https://xingelf.github.io/security/cyberkillchain/</guid>
       <description>サイバーキルチェーンとは https://en.wikipedia.org/wiki/Kill_chain#Cyber ロッキードマーティン社のキルチェーンのプロセスをサイバー攻撃に適用したもの。 サイバー・キルチェーンは7つのステップで構成される。 1.偵</description>
     </item>
-    
     <item>
       <title>nmap cheat nmapチート</title>
-      <link>https://xingelf.github.io/posts/security/nmap/</link>
+      <link>https://xingelf.github.io/security/nmap/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/nmap/</guid>
+      <guid>https://xingelf.github.io/security/nmap/</guid>
       <description>nmapとは ポートスキャンツールです。ペネトレーション作業の基本ツールです。 -T5 insane 最速でスキャンを実行 https://nmap.org/man/ja/man-performance.html -T4 Aggresive スキャン処理の遅延は10msec以内 -F 簡易スキャン nm</description>
     </item>
-    
     <item>
       <title>Bluethoothを利用した攻撃</title>
-      <link>https://xingelf.github.io/posts/security/buluetooth-attack/</link>
+      <link>https://xingelf.github.io/security/buluetooth-attack/</link>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/security/buluetooth-attack/</guid>
+      <guid>https://xingelf.github.io/security/buluetooth-attack/</guid>
       <description>Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot</description>
     </item>
-    
     <item>
       <title>Mac HKKB メモ </title>
       <link>https://xingelf.github.io/posts/hkkb/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/posts/hkkb/</guid>
       <description>Happy Hacking Keyboard ⌨ Mac/OSXにてHKKB Type-Sを利用しています。 おすすめのキー配置などをメモです。 裏面SWの設定 Mac対応 SW1 OFF SW2 ON DEL = BackSpace SW3 ON SW4-SW5はOF</description>
     </item>
-    
     <item>
       <title>書籍 Kaggleで勝つデータ分析</title>
-      <link>https://xingelf.github.io/posts/tech/kaggle/</link>
+      <link>https://xingelf.github.io/tech/kaggle/</link>
       <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/kaggle/</guid>
+      <guid>https://xingelf.github.io/tech/kaggle/</guid>
       <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/</description>
     </item>
-    
     <item>
       <title>pandas Dataredader</title>
-      <link>https://xingelf.github.io/posts/tech/pandasdatareader/</link>
+      <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/pandasdatareader/</guid>
+      <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
       <description>pandas Datareaderとは オンライン上のデータをダウンロードするライブラリです。 https://pandas-datareader.readthedocs.io/en/latest/index.html データソース一覧はこちらにあります。 APIキーの取得が必要なものもあります。 f</description>
     </item>
-    
     <item>
       <title>オッズ比とリスク比</title>
-      <link>https://xingelf.github.io/posts/tech/odds-risk/</link>
+      <link>https://xingelf.github.io/tech/odds-risk/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/odds-risk/</guid>
+      <guid>https://xingelf.github.io/tech/odds-risk/</guid>
       <description>オッズ比とリスク比について理解する リスク比とは まずは理解が容易なリスク比からはじめます。 なお、以下の数字は完全に仮想的なものです。 コロナ罹患 コロナ未罹患 合計 罹患</description>
     </item>
-    
     <item>
       <title>リカレントニューラルネット - Recurrent Nueral Net RNN　</title>
-      <link>https://xingelf.github.io/posts/mlai/rnn/</link>
+      <link>https://xingelf.github.io/mlai/rnn/</link>
       <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/mlai/rnn/</guid>
+      <guid>https://xingelf.github.io/mlai/rnn/</guid>
       <description>RNNとは 時系列や文章・音声など系列データを扱うネットワークです。 前の時点のデータを入力とすることが特徴です。 RNNの数学的記述 入力: $x^t$ 中間層の入力: $ u^t = w_{(in)}x^t +</description>
     </item>
-    
     <item>
       <title>モデルの評価</title>
-      <link>https://xingelf.github.io/posts/tech/_evalmodel/</link>
+      <link>https://xingelf.github.io/tech/_evalmodel/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/_evalmodel/</guid>
+      <guid>https://xingelf.github.io/tech/_evalmodel/</guid>
       <description>モデル評価におけるデータの定義 訓練集合 機械学習モデルの訓練に用いるデータ 検証集合 ハイパーパラメータなどの調整に用いるデータ テスト集合 汎化性能の推定に用いるデータ</description>
     </item>
-    
     <item>
       <title>Tex/LaTexメモ</title>
-      <link>https://xingelf.github.io/posts/tech/latex-md/</link>
+      <link>https://xingelf.github.io/tech/latex-md/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/latex-md/</guid>
+      <guid>https://xingelf.github.io/tech/latex-md/</guid>
       <description>Markdown Tex形式で数式を書く partialsの設定 paritial templateの機能を使います。 https://gohugo.io/templates/partials/ \layouts配下にpartialsフォルダを作成します \layouts\partials 配下に2つのファ</description>
     </item>
-    
     <item>
       <title>機械学習前処理</title>
-      <link>https://xingelf.github.io/posts/tech/_pre-edit/</link>
+      <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/_pre-edit/</guid>
+      <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
       <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
     </item>
-    
     <item>
       <title>ショートカット - Shortcut</title>
       <link>https://xingelf.github.io/posts/_shortcut/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://xingelf.github.io/posts/_shortcut/</guid>
       <description>OSX/Macショートカットメモ OS全般 Spotlight Search Command + Space 画面ロック Control + Command + q 編集 コピー Command + c ペースト Command + v 書式なしペースト Command + Option + Shift + v orz もとに戻す/Undo Command + z も</description>
     </item>
-    
     <item>
       <title>github 備忘・対処メモ</title>
-      <link>https://xingelf.github.io/posts/tech/github/</link>
+      <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/github/</guid>
+      <guid>https://xingelf.github.io/tech/github/</guid>
       <description>.gitignoreが効かない キャッシュ削除による解決を試みます。 git rm -r --cached . git push がreject ローカルが正/originであることを確認して、強制的にpushし</description>
     </item>
-    
     <item>
       <title>Atom メモ</title>
-      <link>https://xingelf.github.io/posts/tech/_atom/</link>
+      <link>https://xingelf.github.io/tech/_atom/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/_atom/</guid>
+      <guid>https://xingelf.github.io/tech/_atom/</guid>
       <description>基本 タブや空白を表示 Preferences -&amp;gt; Editor Show Invisiblesをチェックします Atom パッケージ関連 atom-beautify ソースコードを整形します。 autocomplete-plus 自動補完機能です。 markdownファイルを編集す</description>
     </item>
-    
+    <item>
+      <title>iOS</title>
+      <link>https://xingelf.github.io/ios/ios/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/ios/ios/</guid>
+      <description>aaaa</description>
+    </item>
     <item>
       <title>IUT and abc</title>
-      <link>https://xingelf.github.io/posts/tech/iut-abc/</link>
+      <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/iut-abc/</guid>
+      <guid>https://xingelf.github.io/tech/iut-abc/</guid>
       <description>一般向けIUT・abc予想について。 IUT・abc予想 足し算と掛け算に関わる関係を明らかにする理論と言われます。 また、強いabc予想のもとでは、フェルマーの最終</description>
     </item>
-    
     <item>
       <title>ta-libのインストール</title>
-      <link>https://xingelf.github.io/posts/tech/ta-lib/</link>
+      <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/ta-lib/</guid>
+      <guid>https://xingelf.github.io/tech/ta-lib/</guid>
       <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
     </item>
-    
     <item>
       <title>Freqtradeのインストール</title>
-      <link>https://xingelf.github.io/posts/tech/freqtrade/</link>
+      <link>https://xingelf.github.io/tech/freqtrade/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/freqtrade/</guid>
+      <guid>https://xingelf.github.io/tech/freqtrade/</guid>
       <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
     </item>
-    
   </channel>
 </rss>

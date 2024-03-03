@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Neural Network on Live Life to the fullest.</title>
+    <title>Neural Network on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/tags/neural-network/</link>
-    <description>Recent content in Neural Network on Live Life to the fullest.</description>
+    <description>Recent content in Neural Network on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/neural-network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/neural-network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>リカレントニューラルネット - Recurrent Nueral Net RNN　</title>
-      <link>https://xingelf.github.io/posts/mlai/rnn/</link>
+      <link>https://xingelf.github.io/mlai/rnn/</link>
       <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/mlai/rnn/</guid>
+      <guid>https://xingelf.github.io/mlai/rnn/</guid>
       <description>RNNとは 時系列や文章・音声など系列データを扱うネットワークです。 前の時点のデータを入力とすることが特徴です。 RNNの数学的記述 入力: $x^t$ 中間層の入力: $ u^t = w_{(in)}x^t +</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Live Life to the fullest.</title>
+    <title>Python on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/categories/python/</link>
-    <description>Recent content in Python on Live Life to the fullest.</description>
+    <description>Recent content in Python on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Errors in Python</title>
-      <link>https://xingelf.github.io/posts/tech/python-err/</link>
+      <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/python-err/</guid>
+      <guid>https://xingelf.github.io/tech/python-err/</guid>
       <description>Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。 対処 AmericaのTZが付与されているのでUTCローカライズします。 start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq))</description>
     </item>
-    
   </channel>
 </rss>

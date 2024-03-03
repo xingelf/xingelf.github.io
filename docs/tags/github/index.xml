@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>github on Live Life to the fullest.</title>
+    <title>github on live life to the fullest like elf</title>
     <link>https://xingelf.github.io/tags/github/</link>
-    <description>Recent content in github on Live Life to the fullest.</description>
+    <description>Recent content in github on live life to the fullest like elf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <copyright>Copyright @xingelf</copyright>
-    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://xingelf.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>github 備忘・対処メモ</title>
-      <link>https://xingelf.github.io/posts/tech/github/</link>
+      <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://xingelf.github.io/posts/tech/github/</guid>
+      <guid>https://xingelf.github.io/tech/github/</guid>
       <description>.gitignoreが効かない キャッシュ削除による解決を試みます。 git rm -r --cached . git push がreject ローカルが正/originであることを確認して、強制的にpushし</description>
     </item>
-    
   </channel>
 </rss>

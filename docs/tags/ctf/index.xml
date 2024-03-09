@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CTF on live life to the fullest.</title>
+    <link>https://xingelf.github.io/tags/ctf/</link>
+    <description>Recent content in CTF on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>サイバーセキュリティ関連 - Cyber Security</title>
+      <link>https://xingelf.github.io/sec/_cybersec/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/_cybersec/</guid>
+      <description>サイバーセキュリティ関連気になったトピックの雑記メモです フレームワーク NIST Cyber Security Framework NIST CSFポイント 従来のISO-27001が予防や防御を中心に対策を要求していました</description>
+    </item>
+    <item>
+      <title>Capture the Flag</title>
+      <link>https://xingelf.github.io/sec/_ctf/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/_ctf/</guid>
+      <description>title: &amp;ldquo;Capture the Flag&amp;rdquo; date: &amp;ldquo;2021-06-02&amp;rdquo; draft: true categories: &amp;ldquo;tech&amp;rdquo; tags: &amp;ldquo;CTF&amp;rdquo; &amp;ldquo;python&amp;rdquo; CTF基礎 暗号解読 換字式暗号 文字の変換テーブルベースの暗号です。 zipパスワード解読 pkcrack 暗号化されたzipファイルのうち平文が分かるもの</description>
+    </item>
+    <item>
+      <title>Kali Linux Memo</title>
+      <link>https://xingelf.github.io/sec/_kali-linux/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/_kali-linux/</guid>
+      <description>Update sudo apt update sudo apt upgrade Install pkcrack tar xvzf pkcrack cd test sudo make cd ../src/ pkcrack fcrackzip zipパスワード解析 sudo apt install fcrackzip exiftool sudo apt install exiftool Network 443通信しているアプリケーションと通信先を特定 sudo lsof -i:443 Linux Fundamentals ファイル検索 findで</description>
+    </item>
+  </channel>
+</rss>

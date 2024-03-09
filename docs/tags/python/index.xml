@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on live life to the fullest like elf</title>
+    <title>Python on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/python/</link>
-    <description>Recent content in Python on live life to the fullest like elf</description>
+    <description>Recent content in Python on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
@@ -13,28 +13,28 @@
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/python-err/</guid>
-      <description>Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。 対処 AmericaのTZが付与されているのでUTCローカライズします。 start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq))</description>
+      <description>1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error This error occurs when comparing timestamps in Yahoo Finance with different timezones.&#xA;Solution To fix this error, we need to localize the timestamps to UTC before comparing them.&#xA;start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq)) df.index = df.index.tz_localize(None) # Localize to UTC df = df[start &amp;lt; df.index] 2. Could not import the lzma module Error This error occurs when importing pandas 1.0 or later with an incomplete Python installation.&#xA;Solution To fix this error, we need to install the xz module using brew and reinstall pandas.</description>
     </item>
     <item>
-      <title>Pythonミニ関数 String/Object型の列にパーセントがある場合、数字に変換</title>
+      <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>
       <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>割合の情報がString/Object型の列にパーセントとして与えられた、数字に変換 def str_to_rate(s): if pd.isnull(s)==False: return float(s.replace(&amp;#39;%&amp;#39;,&amp;#39;&amp;#39;)) else: return s 使い方 col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate)</description>
+      <description>Converts percentage information given in String/Object type columns into numbers.&#xA;def str_to_rate(s): if pd.isnull(s) == False: return float(s.replace(&amp;#39;%&amp;#39;, &amp;#39;&amp;#39;)) else: return s Usage:&#xA;col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate) </description>
     </item>
     <item>
-      <title>Pythonミニ関数 String/Object型の列にブール文字がある場合、ブール型に変換</title>
+      <title>Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</title>
       <link>https://xingelf.github.io/mlai/str_to_bool/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>真偽の情報がString/Object型の列にtやfとして与えられた場合、ブール型に変換 def str_to_bool(s): if s==&amp;#39;t&amp;#39;: return True else: return False 使い方 col = &amp;#34;Availabiliy&amp;#34; df[col] = df[col].apply(str_to_bool)</description>
+      <description>Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&#xA;def str_to_bool(s): if s == &amp;#39;t&amp;#39;: return True else: return False Usage&#xA;col = &amp;#34;Availability&amp;#34; df[col] = df[col].apply(str_to_bool) </description>
     </item>
     <item>
       <title>pandas Dataredader</title>
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>pandas Datareaderとは オンライン上のデータをダウンロードするライブラリです。 https://pandas-datareader.readthedocs.io/en/latest/index.html データソース一覧はこちらにあります。 APIキーの取得が必要なものもあります。 f</description>
+      <description>What is pandas Datareader It is a library to download data online.&#xA;Official Documentation&#xA;Here is a list of data sources. Some require an API key. fred and stooq can obtain data without an API key.&#xA;Remote Data Access&#xA;Fred Economic Data Data source provided by the St. Louis Fed.&#xA;Federal Reserve Economic Data&#xA;Time Series Graph of Fred NASDAQ Let&amp;rsquo;s create a time series graph of NASDAQ. Also, let&amp;rsquo;s display the 200-period moving average SMA200. This can be done in just about 10 lines.</description>
     </item>
     <item>
       <title>機械学習前処理</title>

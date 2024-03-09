@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Solidity 環境構築 - live life to the fullest.</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Solidity 環境構築" />
+<meta property="og:description" content="node.jsのインストール nvmによるインストール（複数バージョン管理できるため推奨） https://github.com/nvm-sh/nvm curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash .bashrcの最後に以下が追加されます tail .bashrc export NVM_DIR=&#34;$HOME/.nvm&#34; [ -s &#34;$NVM_DIR/nvm.sh&#34; ] &amp;&amp; \." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xingelf.github.io/dapps/solidity-env/" /><meta property="article:section" content="dapps" />
+<meta property="article:published_time" content="2022-09-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-03T00:00:00+00:00" />
+
+
+		<meta itemprop="name" content="Solidity 環境構築">
+<meta itemprop="description" content="node.jsのインストール nvmによるインストール（複数バージョン管理できるため推奨） https://github.com/nvm-sh/nvm curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash .bashrcの最後に以下が追加されます tail .bashrc export NVM_DIR=&#34;$HOME/.nvm&#34; [ -s &#34;$NVM_DIR/nvm.sh&#34; ] &amp;&amp; \."><meta itemprop="datePublished" content="2022-09-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-09-03T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1117">
+<meta itemprop="keywords" content="Solidity,DApps," />
+		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Solidity 環境構築"/>
+<meta name="twitter:description" content="node.jsのインストール nvmによるインストール（複数バージョン管理できるため推奨） https://github.com/nvm-sh/nvm curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash .bashrcの最後に以下が追加されます tail .bashrc export NVM_DIR=&#34;$HOME/.nvm&#34; [ -s &#34;$NVM_DIR/nvm.sh&#34; ] &amp;&amp; \."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="live life to the fullest with tech, @xingelf" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">live life to the fullest with tech, @xingelf</div>
+					<div class="logo__tagline">Technology is the magic of our ages.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Dapps🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/sec">
+				
+				<span class="menu__text">Sec🧙</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">iOS📱</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Solidity 環境構築</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-09-03T00:00:00Z">2022-09-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#nvmによるインストール複数バージョン管理できるため推奨">nvmによるインストール（複数バージョン管理できるため推奨）</a></li>
+    <li><a href="#aptによる通常のインストール">aptによる通常のインストール</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="nodejsのインストール">node.jsのインストール</h1>
+<h2 id="nvmによるインストール複数バージョン管理できるため推奨">nvmによるインストール（複数バージョン管理できるため推奨）</h2>
+<p><a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a></p>
+<pre tabindex="0"><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+</code></pre><p>.bashrcの最後に以下が追加されます</p>
+<pre tabindex="0"><code>tail .bashrc
+export NVM_DIR=&#34;$HOME/.nvm&#34;
+[ -s &#34;$NVM_DIR/nvm.sh&#34; ] &amp;&amp; \. &#34;$NVM_DIR/nvm.sh&#34;  # This loads nvm
+[ -s &#34;$NVM_DIR/bash_completion&#34; ] &amp;&amp; \. &#34;$NVM_DIR/bash_completion&#34;  # This loads nvm bash_completion
+</code></pre><p>sourceで.bashrcを読み込みます</p>
+<pre tabindex="0"><code>source .bashrc
+</code></pre><p>バージョンリストを取得</p>
+<pre tabindex="0"><code>nvm list-remote
+
+....
+v16.17.0   (Latest LTS: Gallium)
+ v17.0.0
+ v17.0.1
+ v17.1.0
+ v17.2.0
+ v17.3.0
+ v17.3.1
+ v17.4.0
+ v17.5.0
+ v17.6.0
+ v17.7.0
+ v17.7.1
+ v17.7.2
+ v17.8.0
+ v17.9.0
+ v17.9.1
+ v18.0.0
+ v18.1.0
+ v18.2.0
+ v18.3.0
+ v18.4.0
+ v18.5.0
+ v18.6.0
+ v18.7.0
+ v18.8.0
+</code></pre><p>ここではv16をインストールします。</p>
+<pre tabindex="0"><code>nvm install v16.17.0
+</code></pre><p>list コマンドで確認</p>
+<pre tabindex="0"><code>$ nvm list
+-&gt;     v16.17.0
+default -&gt; v16.17.0
+iojs -&gt; N/A (default)
+unstable -&gt; N/A (default)
+node -&gt; stable (-&gt; v16.17.0) (default)
+stable -&gt; 16.17 (-&gt; v16.17.0) (default)
+lts/* -&gt; lts/gallium (-&gt; v16.17.0)
+lts/argon -&gt; v4.9.1 (-&gt; N/A)
+lts/boron -&gt; v6.17.1 (-&gt; N/A)
+lts/carbon -&gt; v8.17.0 (-&gt; N/A)
+lts/dubnium -&gt; v10.24.1 (-&gt; N/A)
+lts/erbium -&gt; v12.22.12 (-&gt; N/A)
+lts/fermium -&gt; v14.20.0 (-&gt; N/A)
+lts/gallium -&gt; v16.17.0
+</code></pre><h2 id="aptによる通常のインストール">aptによる通常のインストール</h2>
+<p>nodejsに加えてnpmもインストールします。
+npmの場合、最新版がインストールされないケースもあるようです。</p>
+<p>現在のバージョンを確認</p>
+<pre tabindex="0"><code>$ sudo apt show nodejs
+Package: nodejs
+Version: 10.19.0~dfsg-3ubuntu1
+Priority: extra
+Section: universe/web
+Origin: Ubuntu
+</code></pre><p>aptによりインストール</p>
+<pre tabindex="0"><code>sudo apt install nodejs
+
+nodejs -v
+</code></pre><p>npmのインストール</p>
+<p>aptによりインストール</p>
+<pre tabindex="0"><code>sudo apt install npm
+
+npm -v
+</code></pre><h1 id="truffle-プロジェクトの作成">Truffle プロジェクトの作成</h1>
+<p>プロジェクトのディレクトリを作成</p>
+<pre tabindex="0"><code>mkdir helloworld
+cd helloworld
+</code></pre><p>truffleをインストール。メモリが少ないとOOMでエラーとなります。
+1GB程度割り当ててください。</p>
+<pre tabindex="0"><code>npm init
+npm install truffle --save
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated mkdirp-promise@5.0.1: This package is broken and no longer maintained. &#39;mkdirp&#39; itself supports promises now, please switch to that.
+npm WARN deprecated multibase@0.6.1: This module has been superseded by the multiformats module
+npm WARN deprecated node-pre-gyp@0.11.0: Please upgrade to @mapbox/node-pre-gyp: the non-scoped node-pre-gyp package is deprecated and only the @mapbox scoped package will recieve updates in the future
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated multicodec@0.5.7: This module has been superseded by the multiformats module
+npm WARN deprecated multicodec@1.0.4: This module has been superseded by the multiformats module
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@3.3.2: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@3.2.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@2.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@3.2.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated multibase@0.7.0: This module has been superseded by the multiformats module
+npm WARN deprecated cids@0.7.5: This module has been superseded by the multiformats module
+
+added 547 packages, and audited 579 packages in 55s
+
+91 packages are looking for funding
+  run `npm fund` for details
+
+11 moderate severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+</code></pre><p>truffleプロジェクトを作成</p>
+<pre tabindex="0"><code>$(npm bin)/truffle init
+
+Starting init...
+================
+
+&gt; Copying project files to /home/botuser/dapp/helloworld
+
+Init successful, sweet!
+
+Try our scaffold commands to get started:
+  $ truffle create contract YourContractName # scaffold a contract
+  $ truffle create test YourTestName         # scaffold a test
+
+http://trufflesuite.com/docs
+</code></pre><pre tabindex="0"><code>$ tree -L 1 .
+.
+├── contracts
+├── migrations
+├── node_modules
+├── package-lock.json
+├── package.json
+├── test
+└── truffle-config.js
+
+4 directories, 3 files
+</code></pre><h1 id="コンパイル">コンパイル</h1>
+<pre tabindex="0"><code>$(npm bin)/truffle compile
+
+Compiling your contracts...
+===========================
+&gt; Compiling ./contracts/Hello.sol solc-bin. Attempt #1
+✓ Downloading compiler. Attempt #1.
+CompileError: ParserError: Source file requires different compiler version (current compiler is 0.8.16+commit.07a7930e.Emscripten.clang) - note that nightly builds are considered to be strictly less than the released version
+--&gt; project:/contracts/Hello.sol:1:1:
+ |
+1 | pragma solidity ^0.5.0;
+ | ^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Error: Truffle is currently using solc 0.8.16, but one or more of your contracts specify &#34;pragma solidity ^0.5.0&#34;.
+Please update your truffle config or pragma statement(s).
+(See https://trufflesuite.com/docs/truffle/reference/configuration#compiler-configuration for information on
+configuring Truffle to use a specific solc compiler version.)
+
+Compilation failed. See above.
+   at /home/botuser/dapp/helloworld/node_modules/truffle/build/webpack:/packages/compile-solidity/dist/run.js:95:1
+   at Generator.next (&lt;anonymous&gt;)
+   at fulfilled (/home/botuser/dapp/helloworld/node_modules/truffle/build/webpack:/packages/compile-solidity/dist/run.js:28:43)
+Truffle v5.5.28 (core: 5.5.28)
+Node v16.17.0
+</code></pre><pre tabindex="0"><code>$(npm bin)/truffle compile
+
+Compiling your contracts...
+===========================
+&gt; Compiling ./contracts/Hello.sol
+&gt; Compilation warnings encountered:
+
+   Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing &#34;SPDX-License-Identifier: &lt;SPDX-License&gt;&#34; to each source file. Use &#34;SPDX-License-Identifier: UNLICENSED&#34; for non-open-source code. Please see https://spdx.org for more information.
+--&gt; project:/contracts/Hello.sol
+
+,Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it &#34;abstract&#34; is sufficient.
+--&gt; project:/contracts/Hello.sol:5:3:
+ |
+5 |   constructor(string memory initMessage) public {
+ |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+&gt; Artifacts written to /home/botuser/dapp/helloworld/build/contracts
+&gt; Compiled successfully using:
+  - solc: 0.8.16+commit.07a7930e.Emscripten.clang
+</code></pre>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/solidity/" rel="tag">Solidity</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/dapps/" rel="tag">DApps</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="@xingelf avatar" src="/img/favicon.ico" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About @xingelf</span>
+	</div>
+	<div class="authorbox__description">
+		Elf, Ethical Geek, born and raised in TKY, not having a good pedigree.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/dapps/solidity-type/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Solidity文法　型</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/dapps/__solidity/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Solidity 学習</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

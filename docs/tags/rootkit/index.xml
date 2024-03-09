@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rootkit on live life to the fullest like elf</title>
+    <title>Rootkit on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/rootkit/</link>
-    <description>Recent content in Rootkit on live life to the fullest like elf</description>
+    <description>Recent content in Rootkit on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/rootkit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rootkit ルートキット</title>
-      <link>https://xingelf.github.io/security/rootkit/</link>
+      <link>https://xingelf.github.io/sec/rootkit/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/rootkit/</guid>
+      <guid>https://xingelf.github.io/sec/rootkit/</guid>
       <description>Rootkitにはいくつか種類があります。 https://en.wikipedia.org/wiki/Rootkit カーネルレベル・ルートキット カーネルはオペレーティングシステムの中核であり、カーネルレベルルートキットは、デバイスド</description>
     </item>
     <item>
       <title>Rootkit　ルートキット</title>
-      <link>https://xingelf.github.io/security/rootkits/</link>
+      <link>https://xingelf.github.io/sec/rootkits/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/rootkits/</guid>
+      <guid>https://xingelf.github.io/sec/rootkits/</guid>
       <description>Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの</description>
     </item>
   </channel>

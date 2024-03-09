@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ubuntu on live life to the fullest like elf</title>
+    <title>Ubuntu on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/ubuntu/</link>
-    <description>Recent content in Ubuntu on live life to the fullest like elf</description>
+    <description>Recent content in Ubuntu on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ubuntu on Azure メモ</title>
+      <title>Ubuntu on Azure Notes</title>
       <link>https://xingelf.github.io/tech/ubuntu/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ubuntu/</guid>
-      <description>定期メンテナンス sudo apt update sudo apt upgrade 定期メンテ時のエラー 11: Resource temporarily unavailable sudo upgradeでリソース不足を検知した場合の対処です。 E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using</description>
+      <description>Regular Maintenance sudo apt update sudo apt upgrade Error during Regular Maintenance: 11: Resource temporarily unavailable This is a solution for handling resource shortage detected during sudo upgrade.&#xA;E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it? Check if apt exists with the ps command. If it does, wait a bit and retry, or if possible, restarting may be quicker.&#xA;ps aux | grep -i apt Stopping Regular apt update There were symptoms of OOM (Out-of-Memory) resulting from apt running every day at 6 AM and 6 PM (memory is limited).</description>
     </item>
   </channel>
 </rss>

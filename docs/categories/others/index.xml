@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on live life to the fullest.</title>
+    <link>https://xingelf.github.io/categories/others/</link>
+    <description>Recent content in Others on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/categories/others/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OSCP取得</title>
+      <link>https://xingelf.github.io/sec/_oscp/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/_oscp/</guid>
+      <description>受験録、受験記 2022 イエラエ CSIRT支援室 第 23 回 未経験から OSCP保持者へ 私の OSCP受験記 https://scan.netsecurity.ne.jp/article/2022/04/28/47537.html https://kakyouim.hatenablog.com/entry/2020/05/11/225348 OSCP、OSCE、そしてOSEE…… 世界最高峰難度のセキュリティ</description>
+    </item>
+  </channel>
+</rss>

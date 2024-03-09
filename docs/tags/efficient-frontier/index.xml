@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Efficient Frontier on live life to the fullest.</title>
+    <link>https://xingelf.github.io/tags/efficient-frontier/</link>
+    <description>Recent content in Efficient Frontier on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/efficient-frontier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ポートフォリオ最適化　PyPortfolioOpt</title>
+      <link>https://xingelf.github.io/tech/_pyportfolioopt/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_pyportfolioopt/</guid>
+      <description>PyPortfolioOptのインストール ポートフォリオデータの入手 今回はQuandlからデータを入手します。</description>
+    </item>
+  </channel>
+</rss>

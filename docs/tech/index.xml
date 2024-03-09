@@ -1,54 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on live life to the fullest like elf</title>
+    <title>Tech on live life to the fullest.</title>
     <link>https://xingelf.github.io/tech/</link>
-    <description>Recent content in Tech on live life to the fullest like elf</description>
+    <description>Recent content in Tech on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Happy Hacking Keyboard for mac</title>
+      <link>https://xingelf.github.io/tech/hhkb/</link>
+      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/hhkb/</guid>
+      <description>Happy Hacking Keyboard ⌨ I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&#xA;Configuration of DIP Switches on the Backside Mac Compatibility&#xA;SW1: OFF SW2: ON DEL key as Backspace&#xA;SW3: ON SW4 and SW5 should be set to OFF.&#xA;PowerSave SW6: ON/OFF It&amp;rsquo;s up to personal preference, but for efficiency, OFF is recommended. Combination with Mac App Magnet As the keyboard lacks arrow keys, I&amp;rsquo;ve configured the following shortcuts using the Command key for screen arrangement.</description>
+    </item>
     <item>
       <title>Errors in Python</title>
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/python-err/</guid>
-      <description>Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。 対処 AmericaのTZが付与されているのでUTCローカライズします。 start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq))</description>
+      <description>1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error This error occurs when comparing timestamps in Yahoo Finance with different timezones.&#xA;Solution To fix this error, we need to localize the timestamps to UTC before comparing them.&#xA;start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq)) df.index = df.index.tz_localize(None) # Localize to UTC df = df[start &amp;lt; df.index] 2. Could not import the lzma module Error This error occurs when importing pandas 1.0 or later with an incomplete Python installation.&#xA;Solution To fix this error, we need to install the xz module using brew and reinstall pandas.</description>
     </item>
     <item>
-      <title>Ubuntu on Azure メモ</title>
+      <title>Ubuntu on Azure Notes</title>
       <link>https://xingelf.github.io/tech/ubuntu/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ubuntu/</guid>
-      <description>定期メンテナンス sudo apt update sudo apt upgrade 定期メンテ時のエラー 11: Resource temporarily unavailable sudo upgradeでリソース不足を検知した場合の対処です。 E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using</description>
-    </item>
-    <item>
-      <title>書籍 Kaggleで勝つデータ分析</title>
-      <link>https://xingelf.github.io/tech/kaggle/</link>
-      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/kaggle/</guid>
-      <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/</description>
+      <description>Regular Maintenance sudo apt update sudo apt upgrade Error during Regular Maintenance: 11: Resource temporarily unavailable This is a solution for handling resource shortage detected during sudo upgrade.&#xA;E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it? Check if apt exists with the ps command. If it does, wait a bit and retry, or if possible, restarting may be quicker.&#xA;ps aux | grep -i apt Stopping Regular apt update There were symptoms of OOM (Out-of-Memory) resulting from apt running every day at 6 AM and 6 PM (memory is limited).</description>
     </item>
     <item>
       <title>pandas Dataredader</title>
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>pandas Datareaderとは オンライン上のデータをダウンロードするライブラリです。 https://pandas-datareader.readthedocs.io/en/latest/index.html データソース一覧はこちらにあります。 APIキーの取得が必要なものもあります。 f</description>
-    </item>
-    <item>
-      <title>オッズ比とリスク比</title>
-      <link>https://xingelf.github.io/tech/odds-risk/</link>
-      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/odds-risk/</guid>
-      <description>オッズ比とリスク比について理解する リスク比とは まずは理解が容易なリスク比からはじめます。 なお、以下の数字は完全に仮想的なものです。 コロナ罹患 コロナ未罹患 合計 罹患</description>
-    </item>
-    <item>
-      <title>モデルの評価</title>
-      <link>https://xingelf.github.io/tech/_evalmodel/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_evalmodel/</guid>
-      <description>モデル評価におけるデータの定義 訓練集合 機械学習モデルの訓練に用いるデータ 検証集合 ハイパーパラメータなどの調整に用いるデータ テスト集合 汎化性能の推定に用いるデータ</description>
+      <description>What is pandas Datareader It is a library to download data online.&#xA;Official Documentation&#xA;Here is a list of data sources. Some require an API key. fred and stooq can obtain data without an API key.&#xA;Remote Data Access&#xA;Fred Economic Data Data source provided by the St. Louis Fed.&#xA;Federal Reserve Economic Data&#xA;Time Series Graph of Fred NASDAQ Let&amp;rsquo;s create a time series graph of NASDAQ. Also, let&amp;rsquo;s display the 200-period moving average SMA200. This can be done in just about 10 lines.</description>
     </item>
     <item>
       <title>Tex/LaTexメモ</title>
@@ -98,6 +84,13 @@
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/freqtrade/</guid>
       <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
+    </item>
+    <item>
+      <title>書籍 Kaggleで勝つデータ分析</title>
+      <link>https://xingelf.github.io/tech/kaggle/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/kaggle/</guid>
+      <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/ 書籍「Kaggleで勝つデータ分析」 概要 書籍「Kagg</description>
     </item>
     <item>
       <title></title>

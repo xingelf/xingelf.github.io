@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AD on live life to the fullest.</title>
+    <link>https://xingelf.github.io/tags/ad/</link>
+    <description>Recent content in AD on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/ad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active Directory</title>
+      <link>https://xingelf.github.io/sec/_active_directory/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/_active_directory/</guid>
+      <description>Identify devices on the interanet How to identify active directory domain controllers on the intranet by using DNS lookup Example for Domain Name abc.local&#xA;nslookup -type=any _ldap._tcp.abc.local nslookup -type=any _kerberos._tcp.abc.local</description>
+    </item>
+  </channel>
+</rss>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scanner on live life to the fullest like elf</title>
+    <title>Scanner on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/scanner/</link>
-    <description>Recent content in Scanner on live life to the fullest like elf</description>
+    <description>Recent content in Scanner on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/scanner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DIRB</title>
-      <link>https://xingelf.github.io/security/dirb/</link>
+      <link>https://xingelf.github.io/sec/dirb/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/dirb/</guid>
+      <guid>https://xingelf.github.io/sec/dirb/</guid>
       <description>DIRB https://www.kali.org/tools/dirb/ Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。 Web サーバー上の隠しファイルや隠しディレクトリを</description>
     </item>
   </channel>

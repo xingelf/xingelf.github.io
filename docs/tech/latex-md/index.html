@@ -3,19 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tex/LaTexメモ - Live Life to the fullest.</title>
+	<title>Tex/LaTexメモ - live life to the fullest.</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
+		<meta property="og:title" content="Tex/LaTexメモ" />
+<meta property="og:description" content="Markdown Tex形式で数式を書く partialsの設定 paritial templateの機能を使います。 https://gohugo.io/templates/partials/ \layouts配下にpartialsフォルダを作成します \layouts\partials 配下に2つのファ" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xingelf.github.io/tech/latex-md/" /><meta property="article:section" content="tech" />
+<meta property="article:published_time" content="2021-07-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-22T00:00:00+00:00" />
+
+
+		<meta itemprop="name" content="Tex/LaTexメモ">
+<meta itemprop="description" content="Markdown Tex形式で数式を書く partialsの設定 paritial templateの機能を使います。 https://gohugo.io/templates/partials/ \layouts配下にpartialsフォルダを作成します \layouts\partials 配下に2つのファ"><meta itemprop="datePublished" content="2021-07-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-22T00:00:00+00:00" />
+<meta itemprop="wordCount" content="227">
+<meta itemprop="keywords" content="Hugo,Tex,Markdown," />
+		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Tex/LaTexメモ"/>
+<meta name="twitter:description" content="Markdown Tex形式で数式を書く partialsの設定 paritial templateの機能を使います。 https://gohugo.io/templates/partials/ \layouts配下にpartialsフォルダを作成します \layouts\partials 配下に2つのファ"/>
+
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 
-	<link rel="stylesheet" href="https://xingelf.github.io/css/style.css">
-	
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
 
-	<link rel="shortcut icon" href="https://xingelf.github.io/favicon.ico">
+	<link rel="shortcut icon" href="/favicon.ico">
 		
 </head>
 <body class="body">
@@ -23,11 +38,13 @@
 		<header class="header">
 	<div class="container header__container">
 		
-	<div class="logo">
-		<a class="logo__link" href="https://xingelf.github.io/" title="Live Life to the fullest." rel="home">
-			<div class="logo__item logo__text">
-					<div class="logo__title">Live Life to the fullest.</div>
-					
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Live Life to the Fullest" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Live Life to the Fullest</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
 				</div>
 		</a>
 	</div>
@@ -38,37 +55,58 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="https://xingelf.github.io/posts/security">
+			<a class="menu__link" href="/">
 				
-				<span class="menu__text">📖 Cyber Security</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="https://xingelf.github.io/posts/dao">
-				
-				<span class="menu__text">🌎 Web3</span>
+				<span class="menu__text">Top</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="https://xingelf.github.io/posts/tech">
+			<a class="menu__link" href="/posts">
 				
-				<span class="menu__text">🧘 Tech</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="https://xingelf.github.io/posts">
-				
-				<span class="menu__text">✍ All Posts</span>
+				<span class="menu__text">Posts</span>
 				
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="https://xingelf.github.io/posts/about">
+			<a class="menu__link" href="/tech">
 				
-				<span class="menu__text">🦹 About 👻</span>
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Dapps🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/sec">
+				
+				<span class="menu__text">Sec🧙</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">iOS📱</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
 				
 			</a>
 		</li>
@@ -84,9 +122,26 @@
 	<article class="post">
 		<header class="post__header">
 			<h1 class="post__title">Tex/LaTexメモ</h1>
-			
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-07-22T00:00:00Z">2021-07-22</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	</span>
+</div></div>
 		</header>
-		<div class="content post__content clearfix">
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#partialsの設定">partialsの設定</a></li>
+    <li><a href="#数式の例">数式の例</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
 			<h1 id="markdown-tex形式で数式を書く">Markdown Tex形式で数式を書く</h1>
 <h2 id="partialsの設定">partialsの設定</h2>
 <p>paritial templateの機能を使います。</p>
@@ -97,23 +152,23 @@
 <ul>
 <li>mathjax.html</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span>&gt;
-&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/x-mathjax-config&#34;</span>&gt;
- <span style="color:#a6e22e">MathJax</span>.<span style="color:#a6e22e">Hub</span>.<span style="color:#a6e22e">Config</span>({
- <span style="color:#a6e22e">tex2jax</span><span style="color:#f92672">:</span> {
- <span style="color:#a6e22e">inlineMath</span><span style="color:#f92672">:</span> [[<span style="color:#e6db74">&#39;$&#39;</span>, <span style="color:#e6db74">&#39;$&#39;</span>] ],
- <span style="color:#a6e22e">displayMath</span><span style="color:#f92672">:</span> [ [<span style="color:#e6db74">&#39;$$&#39;</span>,<span style="color:#e6db74">&#39;$$&#39;</span>], [<span style="color:#e6db74">&#34;\\[&#34;</span>,<span style="color:#e6db74">&#34;\\]&#34;</span>] ]
- }
- });
-&lt;/<span style="color:#f92672">script</span>&gt;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/x-mathjax-config&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">MathJax</span>.<span style="color:#a6e22e">Hub</span>.<span style="color:#a6e22e">Config</span>({
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">tex2jax</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">inlineMath</span><span style="color:#f92672">:</span> [[<span style="color:#e6db74">&#39;$&#39;</span>, <span style="color:#e6db74">&#39;$&#39;</span>] ],
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">displayMath</span><span style="color:#f92672">:</span> [ [<span style="color:#e6db74">&#39;$$&#39;</span>,<span style="color:#e6db74">&#39;$$&#39;</span>], [<span style="color:#e6db74">&#34;\\[&#34;</span>,<span style="color:#e6db74">&#34;\\]&#34;</span>] ]
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span> });
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><ul>
 <li>footer.html</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">footer</span>&gt;
-  {{ partial &#34;mathjax.html&#34; . }}
-&lt;/<span style="color:#f92672">footer</span>&gt;
-</code></pre></div><h2 id="数式の例">数式の例</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">footer</span>&gt;
+</span></span><span style="display:flex;"><span>  {{ partial &#34;mathjax.html&#34; . }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">footer</span>&gt;
+</span></span></code></pre></div><h2 id="数式の例">数式の例</h2>
 <p>tex表記を$で囲むだけです。</p>
 <ul>
 <li>2次方程式解の公式</li>
@@ -121,13 +176,13 @@
 <p>$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#e6db74">$</span> x <span style="color:#f92672">=</span> \frac{<span style="color:#f92672">-</span>b \pm \sqrt{b^<span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">4</span>ac}}{<span style="color:#ae81ff">2</span>a} <span style="color:#e6db74">$</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#e6db74">$</span> x <span style="color:#f92672">=</span> \frac{<span style="color:#f92672">-</span>b \pm \sqrt{b^<span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">4</span>ac}}{<span style="color:#ae81ff">2</span>a} <span style="color:#e6db74">$</span>
+</span></span></code></pre></div><ul>
 <li>ベイズの定理</li>
 </ul>
 <p>$ P(X=x| Y=y) = \frac{P(Y=y|X=x)P(X=x)}{P(Y=y)} $</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#e6db74">$</span> P<span style="color:#f92672">(</span>X<span style="color:#f92672">=</span>x| Y<span style="color:#f92672">=</span>y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> \frac{P<span style="color:#f92672">(</span>Y<span style="color:#f92672">=</span>y|X<span style="color:#f92672">=</span>x<span style="color:#f92672">)</span>P<span style="color:#f92672">(</span>X<span style="color:#f92672">=</span>x<span style="color:#f92672">)</span>}{P<span style="color:#f92672">(</span>Y<span style="color:#f92672">=</span>y<span style="color:#f92672">)</span>} <span style="color:#e6db74">$</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#e6db74">$</span> P<span style="color:#f92672">(</span>X<span style="color:#f92672">=</span>x| Y<span style="color:#f92672">=</span>y<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> \frac{P<span style="color:#f92672">(</span>Y<span style="color:#f92672">=</span>y|X<span style="color:#f92672">=</span>x<span style="color:#f92672">)</span>P<span style="color:#f92672">(</span>X<span style="color:#f92672">=</span>x<span style="color:#f92672">)</span>}{P<span style="color:#f92672">(</span>Y<span style="color:#f92672">=</span>y<span style="color:#f92672">)</span>} <span style="color:#e6db74">$</span>
+</span></span></code></pre></div><ul>
 <li>ブラック・ショールズ方程式</li>
 </ul>
 <p>$
@@ -135,12 +190,12 @@ rC = \frac{\partial C}{\partial t}
 + \frac{1}{2}\sigma^2S^2_t\frac{\partial^2 C}{\partial S_t^2}
 + rS_t\frac{\partial C}{\partial S_t}
 $</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#e6db74">$</span>
-rC <span style="color:#f92672">=</span> \frac{\partial C}{\partial t}
-       <span style="color:#f92672">+</span> \frac{<span style="color:#ae81ff">1</span>}{<span style="color:#ae81ff">2</span>}\sigma^<span style="color:#ae81ff">2</span>S^<span style="color:#ae81ff">2</span>_t\frac{\partial^<span style="color:#ae81ff">2</span> C}{\partial S_t^<span style="color:#ae81ff">2</span>}
-       <span style="color:#f92672">+</span> rS_t\frac{\partial C}{\partial S_t}
-<span style="color:#e6db74">$</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#e6db74">$</span>
+</span></span><span style="display:flex;"><span>rC <span style="color:#f92672">=</span> \frac{\partial C}{\partial t}
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">+</span> \frac{<span style="color:#ae81ff">1</span>}{<span style="color:#ae81ff">2</span>}\sigma^<span style="color:#ae81ff">2</span>S^<span style="color:#ae81ff">2</span>_t\frac{\partial^<span style="color:#ae81ff">2</span> C}{\partial S_t^<span style="color:#ae81ff">2</span>}
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">+</span> rS_t\frac{\partial C}{\partial S_t}
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">$</span>
+</span></span></code></pre></div>
 		</div>
 		<footer class="post__footer">
 			
@@ -148,13 +203,13 @@ rC <span style="color:#f92672">=</span> \frac{\partial C}{\partial t}
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="https://xingelf.github.io/tags/hugo/" rel="tag">Hugo</a>
+			<a class="tags__link btn" href="/tags/hugo/" rel="tag">Hugo</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="https://xingelf.github.io/tags/tex/" rel="tag">Tex</a>
+			<a class="tags__link btn" href="/tags/tex/" rel="tag">Tex</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="https://xingelf.github.io/tags/markdown/" rel="tag">Markdown</a>
+			<a class="tags__link btn" href="/tags/markdown/" rel="tag">Markdown</a>
 		</li>
 	</ul>
 </div>
@@ -162,7 +217,32 @@ rC <span style="color:#f92672">=</span> \frac{\partial C}{\partial t}
 	</article>
 </main>
 
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="@xingelf avatar" src="/img/favicon.ico" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About @xingelf</span>
+	</div>
+	<div class="authorbox__description">
+		Elf, Ethical Geek, born and raised in TKY, not having a good pedigree.
+	</div>
+</div>
 
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/_pre-edit/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">機械学習前処理</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/pandasdatareader/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">pandas Dataredader</p>
+		</a>
+	</div>
+</nav>
 
 
 			</div>
@@ -172,12 +252,21 @@ rC <span style="color:#f92672">=</span> \frac{\partial C}{\partial t}
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2023 Live Life to the fullest..
+			&copy; 2024 @xingelf.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>
 </footer>
 	</div>
-<script async defer src="https://xingelf.github.io/js/menu.js"></script>
-</body>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
 </html>

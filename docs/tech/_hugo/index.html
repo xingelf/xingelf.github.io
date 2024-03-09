@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hugo備忘メモ - live life to the fullest.</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Hugo備忘メモ" />
+<meta property="og:description" content="Install Hugo homebrewでインストールするのが定番ですが、セキュリティなどを考慮して tarボールでインストールします。 https://gohugo.io/getting-started/installing/ ファイルの展開 $HOME配下にbinを作成し" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xingelf.github.io/tech/_hugo/" /><meta property="article:section" content="tech" />
+<meta property="article:published_time" content="2021-08-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-20T00:00:00+00:00" />
+
+
+		<meta itemprop="name" content="Hugo備忘メモ">
+<meta itemprop="description" content="Install Hugo homebrewでインストールするのが定番ですが、セキュリティなどを考慮して tarボールでインストールします。 https://gohugo.io/getting-started/installing/ ファイルの展開 $HOME配下にbinを作成し"><meta itemprop="datePublished" content="2021-08-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="592">
+<meta itemprop="keywords" content="Hugo,MarkDown," />
+		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Hugo備忘メモ"/>
+<meta name="twitter:description" content="Install Hugo homebrewでインストールするのが定番ですが、セキュリティなどを考慮して tarボールでインストールします。 https://gohugo.io/getting-started/installing/ ファイルの展開 $HOME配下にbinを作成し"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="live life to the fullest with tech, @xingelf" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">live life to the fullest with tech, @xingelf</div>
+					<div class="logo__tagline">Technology is the magic of our ages.</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Dapps🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/sec">
+				
+				<span class="menu__text">Sec🧙</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">iOS📱</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Hugo備忘メモ</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-08-20T00:00:00Z">2021-08-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#新たにサイトを作成">新たにサイトを作成</a>
+      <ul>
+        <li><a href="#gitを初期化">gitを初期化</a></li>
+        <li><a href="#記事の作成">記事の作成</a></li>
+        <li><a href="#github側にてpublicレポジトリ作成">github側にてpublicレポジトリ作成</a></li>
+      </ul>
+    </li>
+    <li><a href="#ドラフトを確認する">ドラフトを確認する</a></li>
+    <li><a href="#wordpress-to-hugo">Wordpress to Hugo</a></li>
+    <li><a href="#テーマの変更">テーマの変更</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="install-hugo">Install Hugo</h1>
+<p>homebrewでインストールするのが定番ですが、セキュリティなどを考慮して
+tarボールでインストールします。</p>
+<p><a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a></p>
+<ol>
+<li>ファイルの展開</li>
+</ol>
+<p>$HOME配下にbinを作成し、そこに配置します。</p>
+<pre tabindex="0"><code>make dir ~/bin
+tar -xvzf ~/Downloads/hugo_X.Y_osx-64bit.tgz
+./hugo version
+mv hugo ~/bin
+</code></pre><ol start="2">
+<li>パスの設定</li>
+</ol>
+<p>export PATH=&quot;$HOME/bin:$PATH&quot;</p>
+<h1 id="github-x-hugo">GitHub x Hugo</h1>
+<p>GitHubでHugoを使う方法です</p>
+<h2 id="新たにサイトを作成">新たにサイトを作成</h2>
+<p>以下のコマンドによりドメイン名のディレクトリが作成されます。</p>
+<pre tabindex="0"><code>hugo new site new-site.com
+
+Congratulations! Your new Hugo site is created in xxxx
+
+Just a few more steps and you&#39;re ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/ or
+   create your own with the &#34;hugo new theme &lt;THEMENAME&gt;&#34; command.
+2. Perhaps you want to add some content. You can add single files
+   with &#34;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;.
+3. Start the built-in live server via &#34;hugo server&#34;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+</code></pre><h3 id="gitを初期化">gitを初期化</h3>
+<pre tabindex="0"><code>git init
+Initialized empty Git repository in xxx/.git/
+</code></pre><pre tabindex="0"><code>echo &#34;# earth&#34; &gt;&gt; README.md
+
+git add README.md
+git commit -m &#34;first commit&#34;
+git remote add origin git@github.com:account_name/git_rep.git
+</code></pre><ul>
+<li>サブアカウントの場合</li>
+</ul>
+<pre tabindex="0"><code>
+git remote set-url origin git@github.com.sub:account_name/git_rep.git
+
+git config remote.origin.url
+git@github.com:aitil/earth.git
+</code></pre><p>config.tomlファイルにpublishDir = &ldquo;docs&quot;の1行を追加する</p>
+<p>テーマの導入</p>
+<pre tabindex="0"><code>git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+</code></pre><p>ローカルで確認</p>
+<pre tabindex="0"><code>hugo server
+</code></pre><h3 id="記事の作成">記事の作成</h3>
+<pre tabindex="0"><code>hugo new posts/test.md
+</code></pre><h3 id="github側にてpublicレポジトリ作成">github側にてpublicレポジトリ作成</h3>
+<h2 id="ドラフトを確認する">ドラフトを確認する</h2>
+<p>draft Trueにしたものをローカルで確認する方法です。</p>
+<pre tabindex="0"><code>$ hugo server --watch --buildDrafts
+</code></pre><h2 id="wordpress-to-hugo">Wordpress to Hugo</h2>
+<h2 id="テーマの変更">テーマの変更</h2>
+<p>config.tomlでテーマを変更します。次に、docsを削除してから、サイト再作成を行います。
+独自ドメインの場合はCNAMEを維持してgit pushします。</p>
+<ol>
+<li>config.tomlでテーマを変更</li>
+</ol>
+<pre tabindex="0"><code>#theme = &#34;ananke&#34;
+theme = &#34;hugo-clarity&#34;
+</code></pre><ol start="2">
+<li>docsを削除して、サイト再作成</li>
+</ol>
+<pre tabindex="0"><code>cp -p ./docs ./docs-old
+hugo
+cp -p ./docs-old/CNAME ./docs
+</code></pre><ol start="3">
+<li></li>
+</ol>
+<pre tabindex="0"><code>git add.
+git branch -m master main
+git origin main
+git push
+</code></pre><hr>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/hugo/" rel="tag">Hugo</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/markdown/" rel="tag">MarkDown</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="@xingelf avatar" src="/img/favicon.ico" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About @xingelf</span>
+	</div>
+	<div class="authorbox__description">
+		Elf, Ethical Geek, born and raised in TKY, not having a good pedigree.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/_evalmodel/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">モデルの評価</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/odds-risk/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">オッズ比とリスク比</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

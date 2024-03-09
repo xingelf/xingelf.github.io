@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>E資格 on live life to the fullest like elf</title>
+    <title>E資格 on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/e%E8%B3%87%E6%A0%BC/</link>
-    <description>Recent content in E資格 on live life to the fullest like elf</description>
+    <description>Recent content in E資格 on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/e%E8%B3%87%E6%A0%BC/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>リカレントニューラルネット - Recurrent Nueral Net RNN　</title>
-      <link>https://xingelf.github.io/mlai/rnn/</link>
-      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/rnn/</guid>
-      <description>RNNとは 時系列や文章・音声など系列データを扱うネットワークです。 前の時点のデータを入力とすることが特徴です。 RNNの数学的記述 入力: $x^t$ 中間層の入力: $ u^t = w_{(in)}x^t +</description>
-    </item>
-    <item>
-      <title>モデルの評価</title>
-      <link>https://xingelf.github.io/tech/_evalmodel/</link>
+      <title>Model Evaluation in ML</title>
+      <link>https://xingelf.github.io/mlai/evalmodel/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_evalmodel/</guid>
-      <description>モデル評価におけるデータの定義 訓練集合 機械学習モデルの訓練に用いるデータ 検証集合 ハイパーパラメータなどの調整に用いるデータ テスト集合 汎化性能の推定に用いるデータ</description>
+      <guid>https://xingelf.github.io/mlai/evalmodel/</guid>
+      <description>Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&amp;gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data. Holdout Method: A method of dividing the data set into two parts, using one for training and the other for testing evaluation metrics. It is common to split the training</description>
     </item>
     <item>
       <title>情報理論</title>

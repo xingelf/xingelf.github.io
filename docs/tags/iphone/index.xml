@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iPhone on live life to the fullest like elf</title>
+    <title>iPhone on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/iphone/</link>
-    <description>Recent content in iPhone on live life to the fullest like elf</description>
+    <description>Recent content in iPhone on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>iPhone メモ </title>
-      <link>https://xingelf.github.io/posts/iphone/</link>
-      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/posts/iphone/</guid>
-      <description>ショートカット 位置情報のOFF/ONをホームボタンに配置 URLを開くのショートカットを作成してURLに以下を指定 prefs:root=Privacy&amp;amp;path=LOCATION ホームボタンに配置すれば、OFF/ONが簡単に</description>
+      <title>iPhone Memo </title>
+      <link>https://xingelf.github.io/ios/iphone/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/ios/iphone/</guid>
+      <description>Shortcuts Placing Location Settings ON/OFF on the Home Button Create a shortcut to open the URL and specify the following for the URL:&#xA;prefs:root=Privacy&amp;amp;path=LOCATION&#xA;Placing it on the home button makes toggling OFF/ON easier.&#xA;Kindle Auto-Read Aloud on iPhone Enabling AssistiveTouch Settings → Accessibility → Touch → AssistiveTouch → ON&#xA;Screen Reading Open the Kindle app and select screen reading from AssistiveTouch◎.&#xA;iPhone Reading Aloud Challenges Pauses on image pages - Japanese books often have numerous inserted images, unlike English books&amp;rsquo; translations, resulting in frequent pauses.</description>
     </item>
   </channel>
 </rss>

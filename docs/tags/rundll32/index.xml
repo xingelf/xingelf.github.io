@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rundll32 on live life to the fullest.</title>
+    <link>https://xingelf.github.io/tags/rundll32/</link>
+    <description>Recent content in rundll32 on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/rundll32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>carbanak</title>
+      <link>https://xingelf.github.io/sec/_carbanak/</link>
+      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/_carbanak/</guid>
+      <description>MITRE ATT&amp;amp;CK https://attack.mitre.org/groups/G0008 Kaspersky https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf rundll32 攻撃検知回避のためrundll32.exeを利用 https://www.cybereason.co.jp/blog/security/8909/</description>
+    </item>
+  </channel>
+</rss>

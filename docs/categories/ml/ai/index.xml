@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ML/AI on live life to the fullest like elf</title>
+    <title>ML/AI on live life to the fullest.</title>
     <link>https://xingelf.github.io/categories/ml/ai/</link>
-    <description>Recent content in ML/AI on live life to the fullest like elf</description>
+    <description>Recent content in ML/AI on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <atom:link href="https://xingelf.github.io/categories/ml/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Pythonミニ関数 String/Object型の列にパーセントがある場合、数字に変換</title>
+      <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>
       <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>割合の情報がString/Object型の列にパーセントとして与えられた、数字に変換 def str_to_rate(s): if pd.isnull(s)==False: return float(s.replace(&amp;#39;%&amp;#39;,&amp;#39;&amp;#39;)) else: return s 使い方 col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate)</description>
+      <description>Converts percentage information given in String/Object type columns into numbers.&#xA;def str_to_rate(s): if pd.isnull(s) == False: return float(s.replace(&amp;#39;%&amp;#39;, &amp;#39;&amp;#39;)) else: return s Usage:&#xA;col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate) </description>
     </item>
     <item>
-      <title>Pythonミニ関数 String/Object型の列にブール文字がある場合、ブール型に変換</title>
+      <title>Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</title>
       <link>https://xingelf.github.io/mlai/str_to_bool/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>真偽の情報がString/Object型の列にtやfとして与えられた場合、ブール型に変換 def str_to_bool(s): if s==&amp;#39;t&amp;#39;: return True else: return False 使い方 col = &amp;#34;Availabiliy&amp;#34; df[col] = df[col].apply(str_to_bool)</description>
+      <description>Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&#xA;def str_to_bool(s): if s == &amp;#39;t&amp;#39;: return True else: return False Usage&#xA;col = &amp;#34;Availability&amp;#34; df[col] = df[col].apply(str_to_bool) </description>
+    </item>
+    <item>
+      <title>Model Evaluation in ML</title>
+      <link>https://xingelf.github.io/mlai/evalmodel/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/evalmodel/</guid>
+      <description>Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&amp;gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data. Holdout Method: A method of dividing the data set into two parts, using one for training and the other for testing evaluation metrics. It is common to split the training</description>
     </item>
     <item>
       <title>情報理論</title>

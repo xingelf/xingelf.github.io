@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on live life to the fullest like elf</title>
+    <title>Categories on live life to the fullest.</title>
     <link>https://xingelf.github.io/categories/</link>
-    <description>Recent content in Categories on live life to the fullest like elf</description>
+    <description>Recent content in Categories on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dapps</title>
+      <link>https://xingelf.github.io/categories/dapps/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/dapps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>https://xingelf.github.io/categories/tech/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyber Security</title>
+      <link>https://xingelf.github.io/categories/cyber-security/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/cyber-security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Python</title>
       <link>https://xingelf.github.io/categories/python/</link>
@@ -27,20 +48,6 @@
       <link>https://xingelf.github.io/categories/security/</link>
       <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/categories/security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cyber Security</title>
-      <link>https://xingelf.github.io/categories/cyber-security/</link>
-      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/cyber-security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tech</title>
-      <link>https://xingelf.github.io/categories/tech/</link>
-      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/tech/</guid>
       <description></description>
     </item>
     <item>

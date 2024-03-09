@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CEH on live life to the fullest like elf</title>
+    <title>CEH on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/ceh/</link>
-    <description>Recent content in CEH on live life to the fullest like elf</description>
+    <description>Recent content in CEH on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/ceh/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>DoS/DDoS攻撃</title>
-      <link>https://xingelf.github.io/security/dos/</link>
-      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/dos/</guid>
-      <description>DDoS攻撃とは https://en.wikipedia.org/wiki/Denial-of-service_attack 分散型サービス妨害（DDoS）攻撃とは、 インターネット上の大量のトラフィックでターゲットやその周辺のインフラへ高負荷を与えるることで、 ターゲッ</description>
+      <title>DoS/DDoS Attack</title>
+      <link>https://xingelf.github.io/sec/dos/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/dos/</guid>
+      <description>Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:&#xA;Understanding DDoS Attacks A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.</description>
     </item>
     <item>
       <title>Rootkit ルートキット</title>
-      <link>https://xingelf.github.io/security/rootkit/</link>
+      <link>https://xingelf.github.io/sec/rootkit/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/rootkit/</guid>
+      <guid>https://xingelf.github.io/sec/rootkit/</guid>
       <description>Rootkitにはいくつか種類があります。 https://en.wikipedia.org/wiki/Rootkit カーネルレベル・ルートキット カーネルはオペレーティングシステムの中核であり、カーネルレベルルートキットは、デバイスド</description>
     </item>
     <item>
       <title>Rootkit　ルートキット</title>
-      <link>https://xingelf.github.io/security/rootkits/</link>
+      <link>https://xingelf.github.io/sec/rootkits/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/rootkits/</guid>
+      <guid>https://xingelf.github.io/sec/rootkits/</guid>
       <description>Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの</description>
     </item>
     <item>
       <title>Computer Virus/ウイルス 分類</title>
-      <link>https://xingelf.github.io/security/computer_virus/</link>
+      <link>https://xingelf.github.io/sec/computer_virus/</link>
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/computer_virus/</guid>
+      <guid>https://xingelf.github.io/sec/computer_virus/</guid>
       <description>ウイルス種類 ポリモーフィック型ウイルス いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。 スペースフィラー型・キャヴィティ型ウイルス さ</description>
     </item>
     <item>
       <title>CHNTPW　Windowsパスワード初期化・リセット</title>
-      <link>https://xingelf.github.io/security/chntpw/</link>
+      <link>https://xingelf.github.io/sec/chntpw/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/chntpw/</guid>
+      <guid>https://xingelf.github.io/sec/chntpw/</guid>
       <description>Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。 administratorパスワードをロストした場合の復旧手段の</description>
     </item>
     <item>
       <title>TailgatingとPiggybackingの違い</title>
-      <link>https://xingelf.github.io/security/tailgate_piggybacking/</link>
+      <link>https://xingelf.github.io/sec/tailgate_piggybacking/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/tailgate_piggybacking/</guid>
+      <guid>https://xingelf.github.io/sec/tailgate_piggybacking/</guid>
       <description>Tailgating 隠れて後ろからゲート通過 車で後ろから追走したり、後ろに付いてETCゲートなどを通過することから、 従業員がゲートを通過する際に後ろからひっそりと一緒に通過するこ</description>
     </item>
     <item>
       <title>Cyber Kill Chain サイバーキルチェーン</title>
-      <link>https://xingelf.github.io/security/cyberkillchain/</link>
+      <link>https://xingelf.github.io/sec/cyberkillchain/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/cyberkillchain/</guid>
+      <guid>https://xingelf.github.io/sec/cyberkillchain/</guid>
       <description>サイバーキルチェーンとは https://en.wikipedia.org/wiki/Kill_chain#Cyber ロッキードマーティン社のキルチェーンのプロセスをサイバー攻撃に適用したもの。 サイバー・キルチェーンは7つのステップで構成される。 1.偵</description>
     </item>
     <item>
       <title>Pharming and Phising</title>
-      <link>https://xingelf.github.io/security/phaming-phising/</link>
+      <link>https://xingelf.github.io/sec/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/phaming-phising/</guid>
+      <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
       <description>Pharming ファーミング https://csrc.nist.gov/glossary/term/pharming DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有</description>
     </item>
     <item>
       <title>nmap cheat nmapチート</title>
-      <link>https://xingelf.github.io/security/nmap/</link>
+      <link>https://xingelf.github.io/sec/nmap/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/nmap/</guid>
+      <guid>https://xingelf.github.io/sec/nmap/</guid>
       <description>nmapとは ポートスキャンツールです。ペネトレーション作業の基本ツールです。 -T5 insane 最速でスキャンを実行 https://nmap.org/man/ja/man-performance.html -T4 Aggresive スキャン処理の遅延は10msec以内 -F 簡易スキャン nm</description>
     </item>
     <item>
       <title>Rubber Hose Attack ゴムホース攻撃</title>
-      <link>https://xingelf.github.io/security/rubber_hose_attack/</link>
+      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/rubber_hose_attack/</guid>
+      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
       <description>Rubber Hose Attack ゴムホース攻撃とは テクニカルな手法ではなく、物理的な手段などで人を脅迫してパスワードなどを入手する方法。 物理的な脅迫手段の１つとして、ゴムホースということ</description>
     </item>
     <item>
       <title>Bluethoothを利用した攻撃</title>
-      <link>https://xingelf.github.io/security/buluetooth-attack/</link>
+      <link>https://xingelf.github.io/sec/buluetooth-attack/</link>
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/security/buluetooth-attack/</guid>
+      <guid>https://xingelf.github.io/sec/buluetooth-attack/</guid>
       <description>Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot</description>
     </item>
   </channel>

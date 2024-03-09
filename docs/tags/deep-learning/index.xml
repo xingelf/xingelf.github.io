@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deep Learning on live life to the fullest like elf</title>
+    <title>Deep Learning on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/deep-learning/</link>
-    <description>Recent content in Deep Learning on live life to the fullest like elf</description>
+    <description>Recent content in Deep Learning on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 16 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>リカレントニューラルネット - Recurrent Nueral Net RNN　</title>
-      <link>https://xingelf.github.io/mlai/rnn/</link>
-      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/rnn/</guid>
-      <description>RNNとは 時系列や文章・音声など系列データを扱うネットワークです。 前の時点のデータを入力とすることが特徴です。 RNNの数学的記述 入力: $x^t$ 中間層の入力: $ u^t = w_{(in)}x^t +</description>
-    </item>
     <item>
       <title>機械学習前処理</title>
       <link>https://xingelf.github.io/tech/_pre-edit/</link>

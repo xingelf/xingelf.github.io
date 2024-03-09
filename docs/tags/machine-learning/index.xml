@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine Learning on live life to the fullest like elf</title>
+    <title>Machine Learning on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/machine-learning/</link>
-    <description>Recent content in Machine Learning on live life to the fullest like elf</description>
+    <description>Recent content in Machine Learning on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jul 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>オッズ比とリスク比</title>
-      <link>https://xingelf.github.io/tech/odds-risk/</link>
-      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/odds-risk/</guid>
-      <description>オッズ比とリスク比について理解する リスク比とは まずは理解が容易なリスク比からはじめます。 なお、以下の数字は完全に仮想的なものです。 コロナ罹患 コロナ未罹患 合計 罹患</description>
-    </item>
     <item>
       <title>Softmax関数</title>
       <link>https://xingelf.github.io/mlai/softmax/</link>
@@ -28,6 +21,13 @@
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
       <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
+    </item>
+    <item>
+      <title>書籍 Kaggleで勝つデータ分析</title>
+      <link>https://xingelf.github.io/tech/kaggle/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/kaggle/</guid>
+      <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/ 書籍「Kaggleで勝つデータ分析」 概要 書籍「Kagg</description>
     </item>
   </channel>
 </rss>

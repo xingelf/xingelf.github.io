@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ZKP on live life to the fullest like elf</title>
+    <title>ZKP on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/zkp/</link>
-    <description>Recent content in ZKP on live life to the fullest like elf</description>
+    <description>Recent content in ZKP on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/zkp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zero Knowledge Proofs ゼロ知識証明</title>
-      <link>https://xingelf.github.io/dao/zeroknowledge/</link>
+      <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dao/zeroknowledge/</guid>
+      <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
       <description>ゼロ知識証明とは ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、 自分の持っている命題（通常、数学的な）が真であることを伝えるのに、</description>
     </item>
   </channel>

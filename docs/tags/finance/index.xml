@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Finance on live life to the fullest like elf</title>
+    <title>Finance on live life to the fullest.</title>
     <link>https://xingelf.github.io/tags/finance/</link>
-    <description>Recent content in Finance on live life to the fullest like elf</description>
+    <description>Recent content in Finance on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 19 Sep 2021 00:00:00 +0000</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>pandas Datareaderとは オンライン上のデータをダウンロードするライブラリです。 https://pandas-datareader.readthedocs.io/en/latest/index.html データソース一覧はこちらにあります。 APIキーの取得が必要なものもあります。 f</description>
+      <description>What is pandas Datareader It is a library to download data online.&#xA;Official Documentation&#xA;Here is a list of data sources. Some require an API key. fred and stooq can obtain data without an API key.&#xA;Remote Data Access&#xA;Fred Economic Data Data source provided by the St. Louis Fed.&#xA;Federal Reserve Economic Data&#xA;Time Series Graph of Fred NASDAQ Let&amp;rsquo;s create a time series graph of NASDAQ. Also, let&amp;rsquo;s display the 200-period moving average SMA200. This can be done in just about 10 lines.</description>
     </item>
     <item>
       <title>ta-libのインストール</title>

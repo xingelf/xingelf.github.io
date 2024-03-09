@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keyboard on live life to the fullest.</title>
+    <link>https://xingelf.github.io/tags/keyboard/</link>
+    <description>Recent content in Keyboard on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 03 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Happy Hacking Keyboard for mac</title>
+      <link>https://xingelf.github.io/tech/hhkb/</link>
+      <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/hhkb/</guid>
+      <description>Happy Hacking Keyboard ⌨ I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&#xA;Configuration of DIP Switches on the Backside Mac Compatibility&#xA;SW1: OFF SW2: ON DEL key as Backspace&#xA;SW3: ON SW4 and SW5 should be set to OFF.&#xA;PowerSave SW6: ON/OFF It&amp;rsquo;s up to personal preference, but for efficiency, OFF is recommended. Combination with Mac App Magnet As the keyboard lacks arrow keys, I&amp;rsquo;ve configured the following shortcuts using the Command key for screen arrangement.</description>
+    </item>
+  </channel>
+</rss>

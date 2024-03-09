@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on live life to the fullest.</title>
+    <link>https://xingelf.github.io/tags/vim/</link>
+    <description>Recent content in vim on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 20 Feb 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VIM メモ</title>
+      <link>https://xingelf.github.io/tech/_vim/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0800</pubDate>
+      <guid>https://xingelf.github.io/tech/_vim/</guid>
+      <description>vim editorの備忘メモ https://www.vim.org/ vim特化の学習サイト vimate 基礎はこちらのサイトで学習できます。 https://vimate.jp/ vim基本操作 ファイル操作 操作 コマンド ファイルを開く :e 上書き保存 :w 終了 :q</description>
+    </item>
+  </channel>
+</rss>

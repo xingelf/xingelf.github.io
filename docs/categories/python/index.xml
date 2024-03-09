@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on live life to the fullest like elf</title>
+    <title>Python on live life to the fullest.</title>
     <link>https://xingelf.github.io/categories/python/</link>
-    <description>Recent content in Python on live life to the fullest like elf</description>
+    <description>Recent content in Python on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/python-err/</guid>
-      <description>Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error Yahoo Financeにおいて、時刻の比較を行った際に発生したエラー。 対処 AmericaのTZが付与されているのでUTCローカライズします。 start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq))</description>
+      <description>1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error This error occurs when comparing timestamps in Yahoo Finance with different timezones.&#xA;Solution To fix this error, we need to localize the timestamps to UTC before comparing them.&#xA;start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq)) df.index = df.index.tz_localize(None) # Localize to UTC df = df[start &amp;lt; df.index] 2. Could not import the lzma module Error This error occurs when importing pandas 1.0 or later with an incomplete Python installation.&#xA;Solution To fix this error, we need to install the xz module using brew and reinstall pandas.</description>
     </item>
   </channel>
 </rss>

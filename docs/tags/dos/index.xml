@@ -15,12 +15,5 @@
       <guid>https://xingelf.github.io/sec/dos/</guid>
       <description>Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:&#xA;Understanding DDoS Attacks A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.</description>
     </item>
-    <item>
-      <title>Threat Intelligence　脅威インテリジェンス</title>
-      <link>https://xingelf.github.io/sec/threat_intelligence/</link>
-      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/threat_intelligence/</guid>
-      <description>脅威インテリジェンスはいくつかカテゴリがあります。 https://info-savvy.com/types-of-threat-intelligence/ 技術的脅威情報 テクニカルインテリジェンス 技術的なサイバーインテリジェンスでは、コマンド＆コントロールチャネル</description>
-    </item>
   </channel>
 </rss>

@@ -3,10 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/javascript/</loc>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/js-promise/</loc>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/tech/</loc>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/</loc>
+    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/cti/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/sec/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/security/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/threat-intelligence/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/sec/threat_intelligence/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/dapps/</loc>
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
@@ -32,19 +62,10 @@
     <loc>https://xingelf.github.io/tags/solidity/</loc>
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/tech/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/ceh/</loc>
     <lastmod>2024-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/cyber-security/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/sec/</loc>
     <lastmod>2024-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/dos/</loc>
@@ -57,9 +78,6 @@
     <lastmod>2024-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/keyboard/</loc>
-    <lastmod>2024-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tech/</loc>
     <lastmod>2024-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/python-err/</loc>
@@ -84,9 +102,6 @@
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/network/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/security/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/tool/</loc>
@@ -220,12 +235,6 @@
   </url><url>
     <loc>https://xingelf.github.io/tags/bluetooth/</loc>
     <lastmod>2022-03-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/cti/</loc>
-    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/sec/threat_intelligence/</loc>
-    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/finance/</loc>
     <lastmod>2021-09-19T00:00:00+00:00</lastmod>

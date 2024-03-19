@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Threat Intelligence on live life to the fullest.</title>
+    <link>https://xingelf.github.io/tags/threat-intelligence/</link>
+    <description>Recent content in Threat Intelligence on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/threat-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Threat Intelligence</title>
+      <link>https://xingelf.github.io/sec/threat_intelligence/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/threat_intelligence/</guid>
+      <description>There are several categories of threat intelligence.&#xA;https://info-savvy.com/types-of-threat-intelligence/&#xA;Technical Threat Intelligence Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics.</description>
+    </item>
+  </channel>
+</rss>

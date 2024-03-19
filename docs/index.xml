@@ -6,8 +6,22 @@
     <description>Recent content on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript&#39;s Promise, Async, Await in 3 minutes </title>
+      <link>https://xingelf.github.io/tech/js-promise/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/js-promise/</guid>
+      <description>JavaScript&amp;rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.&#xA;Promise: A Placeholder for the Future A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:&#xA;Pending: The operation is still underway. Resolved: The operation completed successfully, and a result is available. Rejected: The operation encountered an error.</description>
+    </item>
+    <item>
+      <title>Threat Intelligence</title>
+      <link>https://xingelf.github.io/sec/threat_intelligence/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/threat_intelligence/</guid>
+      <description>There are several categories of threat intelligence.&#xA;https://info-savvy.com/types-of-threat-intelligence/&#xA;Technical Threat Intelligence Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics.</description>
+    </item>
     <item>
       <title>iPhone Memo </title>
       <link>https://xingelf.github.io/ios/iphone/</link>
@@ -210,13 +224,6 @@
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/buluetooth-attack/</guid>
       <description>Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot</description>
-    </item>
-    <item>
-      <title>Threat Intelligence　脅威インテリジェンス</title>
-      <link>https://xingelf.github.io/sec/threat_intelligence/</link>
-      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/threat_intelligence/</guid>
-      <description>脅威インテリジェンスはいくつかカテゴリがあります。 https://info-savvy.com/types-of-threat-intelligence/ 技術的脅威情報 テクニカルインテリジェンス 技術的なサイバーインテリジェンスでは、コマンド＆コントロールチャネル</description>
     </item>
     <item>
       <title>pandas Dataredader</title>

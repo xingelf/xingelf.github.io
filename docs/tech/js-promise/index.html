@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript&#39;s Promise, Async, Await in 3 minutes  - live life to the fullest.</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="JavaScript&#39;s Promise, Async, Await in 3 minutes " />
+<meta property="og:description" content="JavaScript&rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.
+Promise: A Placeholder for the Future A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:
+Pending: The operation is still underway. Resolved: The operation completed successfully, and a result is available. Rejected: The operation encountered an error." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xingelf.github.io/tech/js-promise/" /><meta property="article:section" content="tech" />
+<meta property="article:published_time" content="2024-03-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-19T00:00:00+00:00" />
+
+
+		<meta itemprop="name" content="JavaScript&#39;s Promise, Async, Await in 3 minutes ">
+<meta itemprop="description" content="JavaScript&rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.
+Promise: A Placeholder for the Future A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:
+Pending: The operation is still underway. Resolved: The operation completed successfully, and a result is available. Rejected: The operation encountered an error."><meta itemprop="datePublished" content="2024-03-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-03-19T00:00:00+00:00" />
+<meta itemprop="wordCount" content="345">
+<meta itemprop="keywords" content="Javascript," />
+		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="JavaScript&#39;s Promise, Async, Await in 3 minutes "/>
+<meta name="twitter:description" content="JavaScript&rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.
+Promise: A Placeholder for the Future A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:
+Pending: The operation is still underway. Resolved: The operation completed successfully, and a result is available. Rejected: The operation encountered an error."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Live Life to the Fullest" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Live Life to the Fullest</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Dapps🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/sec">
+				
+				<span class="menu__text">Sec🧙</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">iOS📱</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">JavaScript&#39;s Promise, Async, Await in 3 minutes </h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-19T00:00:00Z">2024-03-19</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/js-promise.jpg" alt="JavaScript&#39;s Promise, Async, Await in 3 minutes ">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascripts-promise-async-and-await-mastering-asynchronous-programming">JavaScript&rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming</a>
+      <ul>
+        <li><a href="#promise-a-placeholder-for-the-future">Promise: A Placeholder for the Future</a></li>
+        <li><a href="#async-marking-the-path-to-asynchrony">Async: Marking the Path to Asynchrony</a></li>
+        <li><a href="#await-the-patient-waiter">Await: The Patient Waiter</a></li>
+        <li><a href="#putting-it-all-together-a-powerful-trio">Putting It All Together: A Powerful Trio</a></li>
+      </ul>
+    </li>
+    <li><a href="#example-bringing-it-to-life">Example: Bringing It to Life</a></li>
+    <li><a href="#resources-for-further-exploration">Resources for Further Exploration</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="javascripts-promise-async-and-await-mastering-asynchronous-programming">JavaScript&rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming</h2>
+<p>JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.</p>
+<h3 id="promise-a-placeholder-for-the-future">Promise: A Placeholder for the Future</h3>
+<p>A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:</p>
+<ul>
+<li><strong>Pending:</strong> The operation is still underway.</li>
+<li><strong>Resolved:</strong> The operation completed successfully, and a result is available.</li>
+<li><strong>Rejected:</strong> The operation encountered an error.</li>
+</ul>
+<p>Promises offer several advantages:</p>
+<ul>
+<li><strong>Taming Asynchronous Operations:</strong> Promises allow you to write asynchronous code in a more synchronous-like style.</li>
+<li><strong>Simplified Error Handling:</strong> With Promises, retrieving error information upon failure becomes effortless.</li>
+<li><strong>Enhanced Code Readability:</strong> Promise-based code tends to be clearer and easier to understand.</li>
+</ul>
+<h3 id="async-marking-the-path-to-asynchrony">Async: Marking the Path to Asynchrony</h3>
+<p>The <code>async</code> keyword transforms a function into an asynchronous function. Asynchronous functions are designed to return Promises.</p>
+<p>Benefits of <code>async</code> functions include:</p>
+<ul>
+<li><strong>Streamlining Asynchronous Code:</strong> <code>async</code> functions provide a more straightforward way to write asynchronous code.</li>
+<li><strong>Improved Code Readability:</strong> Code using <code>async</code> functions often boasts better readability.</li>
+</ul>
+<h3 id="await-the-patient-waiter">Await: The Patient Waiter</h3>
+<p>The <code>await</code> keyword instructs the code to pause until a Promise resolves. You can only use <code>await</code> within an <code>async</code> function.</p>
+<p>The advantages of <code>await</code>:</p>
+<ul>
+<li><strong>Synchronous-like Asynchronous Code:</strong> <code>await</code> enables you to write asynchronous code that resembles synchronous code, enhancing readability.</li>
+</ul>
+<h3 id="putting-it-all-together-a-powerful-trio">Putting It All Together: A Powerful Trio</h3>
+<p>Promise, Async, and Await form a formidable team for managing asynchronous operations in JavaScript. By leveraging these tools, you can write cleaner, more efficient asynchronous code.</p>
+<h2 id="example-bringing-it-to-life">Example: Bringing It to Life</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Promise Example
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">promise</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>);
+</span></span><span style="display:flex;"><span>  }, <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">promise</span>.<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">result</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">// &#39;Hello, world!&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Async/Await Example
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">helloWorld</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">resolve</span>(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>);
+</span></span><span style="display:flex;"><span>    }, <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">// &#39;Hello, world!&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">helloWorld</span>();
+</span></span></code></pre></div><h2 id="resources-for-further-exploration">Resources for Further Exploration</h2>
+<p><a href="https://leetcode.com/problems/add-two-promises/">https://leetcode.com/problems/add-two-promises/</a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/DHvZLI7Db8E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I hope this blog post empowers you to conquer asynchronous programming in JavaScript with Promise, Async, and Await!</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/javascript/" rel="tag">Javascript</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="@xingelf avatar" src="/img/favicon.ico" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About @xingelf</span>
+	</div>
+	<div class="authorbox__description">
+		a security researcher and pentester.
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/hhkb/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Happy Hacking Keyboard for mac</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

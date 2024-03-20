@@ -15,12 +15,5 @@
       <guid>https://xingelf.github.io/mlai/evalmodel/</guid>
       <description>Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&amp;gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data. Holdout Method: A method of dividing the data set into two parts, using one for training and the other for testing evaluation metrics. It is common to split the training</description>
     </item>
-    <item>
-      <title>情報理論</title>
-      <link>https://xingelf.github.io/mlai/entropy/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/entropy/</guid>
-      <description>目的：情報理論の基本を理解する。 情報量 事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。 $ I(A) = -\log P(A)$ 確率が小さいほど情報量は大きい。 レアな</description>
-    </item>
   </channel>
 </rss>

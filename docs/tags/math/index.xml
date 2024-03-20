@@ -6,21 +6,21 @@
     <description>Recent content in Math on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>情報理論</title>
+      <title>Information Theory</title>
       <link>https://xingelf.github.io/mlai/entropy/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/entropy/</guid>
-      <description>目的：情報理論の基本を理解する。 情報量 事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。 $ I(A) = -\log P(A)$ 確率が小さいほど情報量は大きい。 レアな</description>
+      <description>Purpose: To understand the basics of information theory. Information Quantity When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&#xA;$ I(A) = -\log P(A)$&#xA;The smaller the probability, the greater the information quantity. It is easy to remember that rare events have a greater impact (information).&#xA;The following characteristics apply to probability P(A).&#xA;It increases when the probability is small. In the case of multiple independent events, the information quantity is represented by their sum (probabilities are represented by products).</description>
     </item>
     <item>
-      <title>Softmax関数</title>
+      <title>Softmax Function</title>
       <link>https://xingelf.github.io/mlai/softmax/</link>
-      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/softmax/</guid>
-      <description>Softmax関数 Softmax関数は以下の式で定義される。 $ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$ $ i = 0,1,2,\dots n$ $y_i$をすべて足し算すると和が1になるため、それぞれの を確立と考えることが</description>
+      <description>Softmax Function The softmax function is a mathematical function that converts a vector of numbers into a probability distribution. It is defined by the following equation.&#xA;$ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$&#xA;$ i = 0,1,2,\dots n$&#xA;When all $y_i$ values are summed, the total is always 1, which allows the output to be interpreted as probabilities. This property makes softmax particularly useful in multi-class classification problems.&#xA;One important property of the softmax function is that it remains unchanged when a constant value is added to all elements of the input vector, as shown by the equation:</description>
     </item>
     <item>
       <title>iOS</title>

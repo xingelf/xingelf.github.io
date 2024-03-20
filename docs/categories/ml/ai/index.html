@@ -120,6 +120,62 @@
 	</header><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/mlai/entropy/">
+		<img class="thumbnail__image" src="/images/artificial-intelligence.png" alt="Information Theory">
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/mlai/entropy/" rel="bookmark">
+			Information Theory
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-20T00:00:00Z">2024-03-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Purpose: To understand the basics of information theory. Information Quantity When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.
+$ I(A) = -\log P(A)$
+The smaller the probability, the greater the information quantity. It is easy to remember that rare events have a greater impact (information).
+The following characteristics apply to probability P(A).
+It increases when the probability is small. In the case of multiple independent events, the information quantity is represented by their sum (probabilities are represented by products).
+	</div>
+</article><article class="list__item post">
+	
+	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/mlai/softmax/">
+		<img class="thumbnail__image" src="/images/math.webp" alt="Softmax Function">
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/mlai/softmax/" rel="bookmark">
+			Softmax Function
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-16T00:00:00Z">2024-03-16</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Softmax Function The softmax function is a mathematical function that converts a vector of numbers into a probability distribution. It is defined by the following equation.
+$ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$
+$ i = 0,1,2,\dots n$
+When all $y_i$ values are summed, the total is always 1, which allows the output to be interpreted as probabilities. This property makes softmax particularly useful in multi-class classification problems.
+One important property of the softmax function is that it remains unchanged when a constant value is added to all elements of the input vector, as shown by the equation:
+	</div>
+</article><article class="list__item post">
+	
+	<figure class="list__thumbnail thumbnail">
 		<a class="thumbnail__link" href="/mlai/str_to_rate/">
 		<img class="thumbnail__image" src="/images/code.jpeg" alt="Python a Function Convert Percentage in String/Object Type Columns to Numbers">
 		</a>
@@ -188,54 +244,6 @@ col = &#34;Availability&#34; df[col] = df[col].apply(str_to_bool)
 	<div class="content list__excerpt post__content clearfix">
 		Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data. Holdout Method: A method of dividing the data set into two parts, using one for training and the other for testing evaluation metrics. It is common to split the training
 	</div>
-</article><article class="list__item post">
-	
-	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/mlai/entropy/">
-		<img class="thumbnail__image" src="/images/artificial-intelligence.png" alt="情報理論">
-		</a>
-	</figure>
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/mlai/entropy/" rel="bookmark">
-			情報理論
-			</a>
-		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
-</div>
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-08-01T00:00:00Z">2021-08-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		目的：情報理論の基本を理解する。 情報量 事象Aが発生する確率をP(A)とした時、情報量I(A)は以下で定義される。 $ I(A) = -\log P(A)$ 確率が小さいほど情報量は大きい。 レアな
-	</div>
-</article><article class="list__item post">
-	
-	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/mlai/softmax/">
-		<img class="thumbnail__image" src="/images/math.webp" alt="Softmax関数">
-		</a>
-	</figure>
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/mlai/softmax/" rel="bookmark">
-			Softmax関数
-			</a>
-		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
-</div>
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-07-31T00:00:00Z">2021-07-31</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Softmax関数 Softmax関数は以下の式で定義される。 $ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$ $ i = 0,1,2,\dots n$ $y_i$をすべて足し算すると和が1になるため、それぞれの を確立と考えることが
-	</div>
 </article>
 </main>
 
@@ -256,11 +264,11 @@ col = &#34;Availability&#34; df[col] = df[col].apply(str_to_bool)
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/mlai/entropy/">Information Theory</a></li>
 			<li class="widget__item"><a class="widget__link" href="/tech/js-promise/">JavaScript&#39;s Promise, Async, Await in 3 minutes </a></li>
+			<li class="widget__item"><a class="widget__link" href="/mlai/softmax/">Softmax Function</a></li>
 			<li class="widget__item"><a class="widget__link" href="/tech/hhkb/">Happy Hacking Keyboard for mac</a></li>
 			<li class="widget__item"><a class="widget__link" href="/tech/python-err/">Errors in Python</a></li>
-			<li class="widget__item"><a class="widget__link" href="/mlai/str_to_rate/">Python a Function Convert Percentage in String/Object Type Columns to Numbers</a></li>
-			<li class="widget__item"><a class="widget__link" href="/mlai/str_to_bool/">Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</a></li>
 		</ul>
 	</div>
 </div>
@@ -317,7 +325,7 @@ col = &#34;Availability&#34; df[col] = df[col].apply(str_to_bool)
 		<a class="widget-taglist__link widget__link btn" href="/tags/dns/" title="DNS">DNS (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dos/" title="DOS">DOS (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/email/" title="email">email (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/e%E8%B3%87%E6%A0%BC/" title="E資格">E資格 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/e%E8%B3%87%E6%A0%BC/" title="E資格">E資格 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/finance/" title="Finance">Finance (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/function/" title="Function">Function (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="github">github (1)</a>
@@ -326,6 +334,8 @@ col = &#34;Availability&#34; df[col] = df[col].apply(str_to_bool)
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/japanese/" title="Japanese">Japanese (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="Javascript">Javascript (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/jdla-e-engineer/" title="JDLA e-engineer">JDLA e-engineer (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/jdla-engineer/" title="JDLA engineer">JDLA engineer (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kaggle/" title="Kaggle">Kaggle (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/keyboard/" title="Keyboard">Keyboard (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/killchain/" title="KillChain">KillChain (1)</a>

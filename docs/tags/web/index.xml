@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on live life to the fullest.</title>
+    <link>https://xingelf.github.io/tags/web/</link>
+    <description>Recent content in Web on live life to the fullest.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 21 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSRF Tokens</title>
+      <link>https://xingelf.github.io/sec/csrf_token/</link>
+      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/csrf_token/</guid>
+      <description>CSRF Tokens: A Comprehensive Guide for Security Professionals Introduction&#xA;Cross-Site Request Forgery (CSRF) is a malicious attack that tricks a user&amp;rsquo;s browser into performing unintended actions on a trusted website where the user is logged in. This can lead to unauthorized data access, financial losses, and other serious consequences.&#xA;How CSRF Attacks Work:&#xA;Victim logs in: The victim logs into a trusted website (e.g., a bank) and their browser stores a session cookie. Attacker creates a malicious link or form: The attacker creates a link or form on a different website (e.</description>
+    </item>
+  </channel>
+</rss>

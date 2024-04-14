@@ -6,8 +6,29 @@
     <description>Recent content in Tags on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CORS</title>
+      <link>https://xingelf.github.io/tags/cors/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/cors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web</title>
+      <link>https://xingelf.github.io/tags/web/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSRF</title>
+      <link>https://xingelf.github.io/tags/csrf/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/csrf/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hugo</title>
       <link>https://xingelf.github.io/tags/hugo/</link>
@@ -34,20 +55,6 @@
       <link>https://xingelf.github.io/tags/tex/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/tex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CSRF</title>
-      <link>https://xingelf.github.io/tags/csrf/</link>
-      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/csrf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web</title>
-      <link>https://xingelf.github.io/tags/web/</link>
-      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/web/</guid>
       <description></description>
     </item>
     <item>

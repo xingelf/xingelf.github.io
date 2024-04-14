@@ -15,12 +15,5 @@
       <guid>https://xingelf.github.io/ios/iphone/</guid>
       <description>Shortcuts Placing Location Settings ON/OFF on the Home Button Create a shortcut to open the URL and specify the following for the URL:&#xA;prefs:root=Privacy&amp;amp;path=LOCATION&#xA;Placing it on the home button makes toggling OFF/ON easier.&#xA;Kindle Auto-Read Aloud on iPhone Enabling AssistiveTouch Settings → Accessibility → Touch → AssistiveTouch → ON&#xA;Screen Reading Open the Kindle app and select screen reading from AssistiveTouch◎.&#xA;iPhone Reading Aloud Challenges Pauses on image pages - Japanese books often have numerous inserted images, unlike English books&amp;rsquo; translations, resulting in frequent pauses.</description>
     </item>
-    <item>
-      <title>iOS</title>
-      <link>https://xingelf.github.io/ios/_ios/</link>
-      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/ios/_ios/</guid>
-      <description>aaaa</description>
-    </item>
   </channel>
 </rss>

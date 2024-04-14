@@ -6,8 +6,22 @@
     <description>Recent content on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cross-Origin Resource Sharing (CORS)</title>
+      <link>https://xingelf.github.io/sec/cors/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/cors/</guid>
+      <description>Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&#xA;What is CORS? CORS is a security feature implemented by web browsers to prevent malicious websites from accessing resources from another domain without permission.</description>
+    </item>
+    <item>
+      <title>CSRF Cross Site Request Forgery</title>
+      <link>https://xingelf.github.io/sec/csrf/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/csrf/</guid>
+      <description>Cross-Site Request Forgery (CSRF) What is CSRF?&#xA;Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.&#xA;How does CSRF work?&#xA;There are two main ways that CSRF attacks can be carried out:&#xA;Image tag attack: The attacker embeds an image tag on a malicious website that points to a URL on the victim&amp;rsquo;s web application.</description>
+    </item>
     <item>
       <title>Tex/LaTex with Markdown</title>
       <link>https://xingelf.github.io/tech/latex-md/</link>
@@ -294,13 +308,6 @@
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_atom/</guid>
       <description>基本 タブや空白を表示 Preferences -&amp;gt; Editor Show Invisiblesをチェックします Atom パッケージ関連 atom-beautify ソースコードを整形します。 autocomplete-plus 自動補完機能です。 markdownファイルを編集す</description>
-    </item>
-    <item>
-      <title>iOS</title>
-      <link>https://xingelf.github.io/ios/_ios/</link>
-      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/ios/_ios/</guid>
-      <description>aaaa</description>
     </item>
     <item>
       <title>IUT and abc</title>

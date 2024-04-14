@@ -6,8 +6,15 @@
     <description>Recent content in CSRF on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 21 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/csrf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSRF Cross Site Request Forgery</title>
+      <link>https://xingelf.github.io/sec/csrf/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/csrf/</guid>
+      <description>Cross-Site Request Forgery (CSRF) What is CSRF?&#xA;Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.&#xA;How does CSRF work?&#xA;There are two main ways that CSRF attacks can be carried out:&#xA;Image tag attack: The attacker embeds an image tag on a malicious website that points to a URL on the victim&amp;rsquo;s web application.</description>
+    </item>
     <item>
       <title>CSRF Tokens</title>
       <link>https://xingelf.github.io/sec/csrf_token/</link>

@@ -3,10 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/sec/</loc>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/http/</loc>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/sec/http_request_smuggling/</loc>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/security/</loc>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/web/</loc>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/cors/</loc>
     <lastmod>2024-04-13T00:00:00+00:00</lastmod>
@@ -14,17 +32,14 @@
     <loc>https://xingelf.github.io/sec/cors/</loc>
     <lastmod>2024-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/sec/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/sec/dirb/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/security/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/categories/kali-linux/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/web/</loc>
-    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/tags/scanner/</loc>
+    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/csrf/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
@@ -140,15 +155,6 @@
     <loc>https://xingelf.github.io/categories/python/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/ceh/</loc>
-    <lastmod>2022-12-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/sec/dirb/</loc>
-    <lastmod>2022-12-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/scanner/</loc>
-    <lastmod>2022-12-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/sec/hping/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -232,6 +238,9 @@
   </url><url>
     <loc>https://xingelf.github.io/sec/rootkits/</loc>
     <lastmod>2022-08-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/ceh/</loc>
+    <lastmod>2022-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/dns/</loc>
     <lastmod>2022-08-14T00:00:00+00:00</lastmod>

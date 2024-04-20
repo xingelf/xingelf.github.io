@@ -7,20 +7,20 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="DIRB" />
-<meta property="og:description" content="DIRB https://www.kali.org/tools/dirb/ Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。 Web サーバー上の隠しファイルや隠しディレクトリを" />
+<meta property="og:description" content="Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xingelf.github.io/sec/dirb/" /><meta property="article:section" content="sec" />
-<meta property="article:published_time" content="2022-12-11T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-12-11T00:00:00+00:00" />
+<meta property="article:published_time" content="2024-04-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-06T00:00:00+00:00" />
 
 
 		<meta itemprop="name" content="DIRB">
-<meta itemprop="description" content="DIRB https://www.kali.org/tools/dirb/ Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。 Web サーバー上の隠しファイルや隠しディレクトリを"><meta itemprop="datePublished" content="2022-12-11T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-12-11T00:00:00+00:00" />
-<meta itemprop="wordCount" content="179">
-<meta itemprop="keywords" content="Scanner," />
+<meta itemprop="description" content="Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool."><meta itemprop="datePublished" content="2024-04-06T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-04-06T00:00:00+00:00" />
+<meta itemprop="wordCount" content="550">
+<meta itemprop="keywords" content="Scanner,Web,http," />
 		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="DIRB"/>
-<meta name="twitter:description" content="DIRB https://www.kali.org/tools/dirb/ Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。 Web サーバー上の隠しファイルや隠しディレクトリを"/>
+<meta name="twitter:description" content="Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool."/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -126,22 +126,67 @@
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-12-11T00:00:00Z">2022-12-11</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ceh/" rel="category">CEH</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-04-06T00:00:00Z">2024-04-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/kali-linux/" rel="category">Kali Linux</a>
 	</span>
 </div></div>
 		</header>
-		<div class="content post__content clearfix">
-			<h1 id="dirb">DIRB</h1>
-<p><a href="https://www.kali.org/tools/dirb/">https://www.kali.org/tools/dirb/</a></p>
-<p>Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。
-Web サーバー上の隠しファイルや隠しディレクトリを検索するためにも使用されます。</p>
-<p>DIRBは、一般的にセキュリティ専門家がWebアプリケーションのセキュリティ評価を行うために使用されます。</p>
-<p>ウェブサーバーの所有者の許可なしに実行しないようにしましょう。</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Hnz1d4WmD5Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/dirb.webp" alt="DIRB">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing">Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h3 id="exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing">Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing</h3>
+<p>In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.</p>
+<h4 id="introduction-to-dirb">Introduction to DIRB</h4>
+<p>DIRB is a Web Content Scanner. It launches a dictionary-based attack against a web server and analyzes the response to figure out whether specific web objects exist or not. Originally designed to bypass security oversight by automating the discovery of accessible but hidden directories and files, DIRB serves as a valuable tool in the security assessment arsenal.</p>
+<h4 id="how-does-dirb-work">How Does DIRB Work?</h4>
+<p>DIRB works by attempting to locate resources by making HTTP requests for different URLs, based on a list of pre-defined words from a wordlist which it uses to guess filenames and directories. These wordlists contain names of common directories and files. When DIRB requests a URL that does exist, the server will return an HTTP status that indicates success (e.g., 200 OK), which is then logged by DIRB as a found object.</p>
+<h4 id="setting-up-dirb-on-kali-linux">Setting Up DIRB on Kali Linux</h4>
+<p>To use DIRB on Kali Linux, you typically begin by ensuring your system is updated:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get install dirb
+</span></span></code></pre></div><p>Once installed, you can start using DIRB by simply typing <code>dirb</code> in the terminal followed by the URL you want to scan. For instance:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dirb http://example.com
+</span></span></code></pre></div><h4 id="key-features-and-commands">Key Features and Commands</h4>
+<p>DIRB’s simplicity does not detract from its power. Here are some of its key features and commands:</p>
+<ul>
+<li>
+<p><strong>Custom Wordlists:</strong> While DIRB includes some default wordlists, users can specify their own wordlist to make the scan more tailored to the target.</p>
+</li>
+<li>
+<p><strong>Recursive Scanning:</strong> DIRB can perform recursive scanning to delve deeper into subdirectories, a crucial feature when exploring complex websites.</p>
+</li>
+<li>
+<p><strong>Proxy Usage:</strong> DIRB allows the use of proxies to perform attacks, adding an extra layer of anonymity for the tester.</p>
+</li>
+<li>
+<p><strong>Avoiding False Positives:</strong> DIRB includes functionalities to calibrate the tool to differentiate between actual content and custom 404 errors, reducing false positives.</p>
+</li>
+</ul>
+<h4 id="practical-examples">Practical Examples</h4>
+<p>Here’s how you might typically use DIRB for a more advanced scan:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dirb http://example.com /usr/share/dirb/wordlists/common.txt -r -o results.txt
+</span></span></code></pre></div><p>This command tells DIRB to scan the website at <code>http://example.com</code> using the <code>common.txt</code> wordlist, recursively (-r), and output the results to <code>results.txt</code>.</p>
+<h4 id="security-and-ethical-considerations">Security and Ethical Considerations</h4>
+<p>While DIRB is a powerful tool for security professionals, it should be used with caution and ethical consideration. Always ensure that you have permission to test a website. Unauthorized scanning can be considered illegal and unethical.</p>
+<h4 id="conclusion">Conclusion</h4>
+<p>DIRB remains an essential tool for penetration testers and security enthusiasts. Its ability to uncover hidden resources can be pivotal in assessing the security of a web application. By understanding and utilizing DIRB effectively, Kali Linux users can enhance their security testing capabilities, ensuring that their systems or the systems they are responsible for are more secure against potential threats.</p>
+<p>In the fast-evolving cybersecurity landscape, tools like DIRB help maintain a robust defense posture by revealing what is hidden, thus preempting possible exploits.</p>
 
 		</div>
 		<footer class="post__footer">
@@ -151,6 +196,12 @@ Web サーバー上の隠しファイルや隠しディレクトリを検索す�
 	<ul class="tags__list">
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/scanner/" rel="tag">Scanner</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/web/" rel="tag">Web</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/http/" rel="tag">http</a>
 		</li>
 	</ul>
 </div>
@@ -172,15 +223,15 @@ Web サーバー上の隠しファイルや隠しディレクトリを検索す�
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/sec/hping/" rel="prev">
+		<a class="pager__link" href="/sec/csrf/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">hping/hping3使い方</p>
+			<p class="pager__title">CSRF Cross Site Request Forgery</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/sec/dos/" rel="next">
+		<a class="pager__link" href="/sec/cors/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">DoS/DDoS Attack</p>
+			<p class="pager__title">Cross-Origin Resource Sharing (CORS)</p>
 		</a>
 	</div>
 </nav>

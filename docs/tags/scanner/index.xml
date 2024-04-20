@@ -6,14 +6,14 @@
     <description>Recent content in Scanner on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/scanner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DIRB</title>
       <link>https://xingelf.github.io/sec/dirb/</link>
-      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/dirb/</guid>
-      <description>DIRB https://www.kali.org/tools/dirb/ Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。 Web サーバー上の隠しファイルや隠しディレクトリを</description>
+      <description>Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.</description>
     </item>
   </channel>
 </rss>

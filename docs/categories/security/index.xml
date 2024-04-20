@@ -6,8 +6,15 @@
     <description>Recent content in Security on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTTP Request Smuggling (HRS)</title>
+      <link>https://xingelf.github.io/sec/http_request_smuggling/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/http_request_smuggling/</guid>
+      <description>Understanding HTTP Request Smuggling: A Deep Dive into Web Security In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.</description>
+    </item>
     <item>
       <title>Cross-Origin Resource Sharing (CORS)</title>
       <link>https://xingelf.github.io/sec/cors/</link>

@@ -119,273 +119,254 @@
 	<article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/tech/latex-md/">
-		<img class="thumbnail__image" src="/images/math.webp" alt="Tex/LaTex with Markdown">
+		<a class="thumbnail__link" href="/sec/http_request_smuggling/">
+		<img class="thumbnail__image" src="/images/hrs.webp" alt="HTTP Request Smuggling (HRS)">
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/tech/latex-md/" rel="bookmark">
-			Tex/LaTex with Markdown
+			<a href="/sec/http_request_smuggling/" rel="bookmark">
+			HTTP Request Smuggling (HRS)
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-24T00:00:00Z">2024-03-24</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-04-20T00:00:00Z">2024-04-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Writing Mathematical Equations in Markdown Tex Format Setting up partials We will use the functionality of partial templates.
-https://gohugo.io/templates/partials/
-Create a folder named partials under the layouts directory.
-\layouts\partials
-Place two files in this directory.
-mathjax.html &lt;script type=&#34;text/javascript&#34; async src=&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&#34;&gt; &lt;/script&gt; &lt;script type=&#34;text/x-mathjax-config&#34;&gt; MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;, &#39;$&#39;] ], displayMath: [ [&#39;$$&#39;,&#39;$$&#39;], [&#34;\\[&#34;,&#34;\\]&#34;] ] } }); &lt;/script&gt; footer.html &lt;footer&gt; {{ partial &#34;mathjax.html&#34; . }} &lt;/footer&gt; Example of Mathematical Equations Simply surround the tex notation with $.
-Formula for solving quadratic equations $ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $
+		Understanding HTTP Request Smuggling: A Deep Dive into Web Security In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.
 	</div>
 </article><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/mlai/entropy/">
-		<img class="thumbnail__image" src="/images/artificial-intelligence.png" alt="Information Theory">
+		<a class="thumbnail__link" href="/sec/cors/">
+		<img class="thumbnail__image" src="/images/cors.webp" alt="Cross-Origin Resource Sharing (CORS)">
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/mlai/entropy/" rel="bookmark">
-			Information Theory
+			<a href="/sec/cors/" rel="bookmark">
+			Cross-Origin Resource Sharing (CORS)
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-20T00:00:00Z">2024-03-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-04-13T00:00:00Z">2024-04-13</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Purpose: To understand the basics of information theory. Information Quantity When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.
-$ I(A) = -\log P(A)$
-The smaller the probability, the greater the information quantity. It is easy to remember that rare events have a greater impact (information).
-The following characteristics apply to probability P(A).
-It increases when the probability is small. In the case of multiple independent events, the information quantity is represented by their sum (probabilities are represented by products).
+		Understanding Cross-Origin Resource Sharing (CORS): A Beginner&rsquo;s Guide In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&rsquo;ll break down CORS in a way that&rsquo;s easy to understand and implement.
+What is CORS? CORS is a security feature implemented by web browsers to prevent malicious websites from accessing resources from another domain without permission.
 	</div>
 </article><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/tech/js-promise/">
-		<img class="thumbnail__image" src="/images/js-promise.jpg" alt="JavaScript&#39;s Promise, Async, Await in 3 minutes ">
+		<a class="thumbnail__link" href="/sec/dirb/">
+		<img class="thumbnail__image" src="/images/dirb.webp" alt="DIRB">
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/tech/js-promise/" rel="bookmark">
-			JavaScript&#39;s Promise, Async, Await in 3 minutes 
+			<a href="/sec/dirb/" rel="bookmark">
+			DIRB
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-19T00:00:00Z">2024-03-19</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-04-06T00:00:00Z">2024-04-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/kali-linux/" rel="category">Kali Linux</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		JavaScript&rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.
-Promise: A Placeholder for the Future A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:
-Pending: The operation is still underway. Resolved: The operation completed successfully, and a result is available. Rejected: The operation encountered an error.
+		Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.
 	</div>
 </article><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/mlai/softmax/">
-		<img class="thumbnail__image" src="/images/math.webp" alt="Softmax Function">
+		<a class="thumbnail__link" href="/sec/csrf/">
+		<img class="thumbnail__image" src="/images/cyber-security.png" alt="CSRF Cross Site Request Forgery">
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/mlai/softmax/" rel="bookmark">
-			Softmax Function
+			<a href="/sec/csrf/" rel="bookmark">
+			CSRF Cross Site Request Forgery
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-16T00:00:00Z">2024-03-16</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-04-01T00:00:00Z">2024-04-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Softmax Function The softmax function is a mathematical function that converts a vector of numbers into a probability distribution. It is defined by the following equation.
-$ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$
-$ i = 0,1,2,\dots n$
-When all $y_i$ values are summed, the total is always 1, which allows the output to be interpreted as probabilities. This property makes softmax particularly useful in multi-class classification problems.
-One important property of the softmax function is that it remains unchanged when a constant value is added to all elements of the input vector, as shown by the equation:
+		Cross-Site Request Forgery (CSRF) What is CSRF?
+Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.
+How does CSRF work?
+There are two main ways that CSRF attacks can be carried out:
+Image tag attack: The attacker embeds an image tag on a malicious website that points to a URL on the victim&rsquo;s web application.
 	</div>
 </article><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/tech/hhkb/">
-		<img class="thumbnail__image" src="/images/hhkb.jpg" alt="Happy Hacking Keyboard for mac">
+		<a class="thumbnail__link" href="/sec/csrf_token/">
+		<img class="thumbnail__image" src="/images/cyber-security.png" alt="CSRF Tokens">
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/tech/hhkb/" rel="bookmark">
-			Happy Hacking Keyboard for mac
+			<a href="/sec/csrf_token/" rel="bookmark">
+			CSRF Tokens
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-03T00:00:00Z">2024-03-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-21T00:00:00Z">2024-03-21</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Happy Hacking Keyboard ⌨ I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.
-Configuration of DIP Switches on the Backside Mac Compatibility
-SW1: OFF SW2: ON DEL key as Backspace
-SW3: ON SW4 and SW5 should be set to OFF.
-PowerSave SW6: ON/OFF It&rsquo;s up to personal preference, but for efficiency, OFF is recommended. Combination with Mac App Magnet As the keyboard lacks arrow keys, I&rsquo;ve configured the following shortcuts using the Command key for screen arrangement.
+		CSRF Tokens: A Comprehensive Guide for Security Professionals Introduction
+Cross-Site Request Forgery (CSRF) is a malicious attack that tricks a user&rsquo;s browser into performing unintended actions on a trusted website where the user is logged in. This can lead to unauthorized data access, financial losses, and other serious consequences.
+How CSRF Attacks Work:
+Victim logs in: The victim logs into a trusted website (e.g., a bank) and their browser stores a session cookie. Attacker creates a malicious link or form: The attacker creates a link or form on a different website (e.
 	</div>
 </article><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/tech/python-err/">
-		<img class="thumbnail__image" src="/images/code.jpeg" alt="Errors in Python">
+		<a class="thumbnail__link" href="/sec/threat_intelligence/">
+		<img class="thumbnail__image" src="/images/cyber-security.png" alt="Threat Intelligence">
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/tech/python-err/" rel="bookmark">
-			Errors in Python
+			<a href="/sec/threat_intelligence/" rel="bookmark">
+			Threat Intelligence
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-01-03T00:00:00Z">2023-01-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/python/" rel="category">Python</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-10T00:00:00Z">2024-03-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error This error occurs when comparing timestamps in Yahoo Finance with different timezones.
-Solution To fix this error, we need to localize the timestamps to UTC before comparing them.
-start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq)) df.index = df.index.tz_localize(None) # Localize to UTC df = df[start &lt; df.index] 2. Could not import the lzma module Error This error occurs when importing pandas 1.0 or later with an incomplete Python installation.
-Solution To fix this error, we need to install the xz module using brew and reinstall pandas.
+		There are several categories of threat intelligence.
+https://info-savvy.com/types-of-threat-intelligence/
+Technical Threat Intelligence Technical cyber intelligence involves collecting information about the attacker&rsquo;s resources, such as command &amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics.
 	</div>
 </article><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/mlai/str_to_rate/">
-		<img class="thumbnail__image" src="/images/code.jpeg" alt="Python a Function Convert Percentage in String/Object Type Columns to Numbers">
+		<a class="thumbnail__link" href="/sec/dos/">
+		<img class="thumbnail__image" src="/images/cyber-security.png" alt="DoS/DDoS Attack">
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/mlai/str_to_rate/" rel="bookmark">
-			Python a Function Convert Percentage in String/Object Type Columns to Numbers
+			<a href="/sec/dos/" rel="bookmark">
+			DoS/DDoS Attack
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-10-29T00:00:00Z">2022-10-29</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-03-08T00:00:00Z">2024-03-08</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cyber-security/" rel="category">Cyber Security</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Converts percentage information given in String/Object type columns into numbers.
-def str_to_rate(s): if pd.isnull(s) == False: return float(s.replace(&#39;%&#39;, &#39;&#39;)) else: return s Usage:
-col = &#34;ReplyRate&#34; df[col] = df[col].apply(str_to_rate) 
+		Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:
+Understanding DDoS Attacks A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &ldquo;bots&rdquo; or &ldquo;zombies,&rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/sec/hping/" rel="bookmark">
+			hping/hping3使い方
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-12-10T00:00:00Z">2022-12-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ
 	</div>
 </article><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
-		<a class="thumbnail__link" href="/mlai/str_to_bool/">
-		<img class="thumbnail__image" src="/images/code.jpeg" alt="Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns">
+		<a class="thumbnail__link" href="/sec/rootkit/">
+		<img class="thumbnail__image" src="/images/cyber-security.png" alt="Rootkit ルートキット">
 		</a>
 	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/mlai/str_to_bool/" rel="bookmark">
-			Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns
+			<a href="/sec/rootkit/" rel="bookmark">
+			Rootkit ルートキット
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-10-01T00:00:00Z">2022-10-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-11-27T00:00:00Z">2022-11-27</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Converts boolean characters to boolean type if provided as &rsquo;t&rsquo; or &lsquo;f&rsquo; in String/Object type columns.
-def str_to_bool(s): if s == &#39;t&#39;: return True else: return False Usage
-col = &#34;Availability&#34; df[col] = df[col].apply(str_to_bool) 
+		Rootkitにはいくつか種類があります。 https://en.wikipedia.org/wiki/Rootkit カーネルレベル・ルートキット カーネルはオペレーティングシステムの中核であり、カーネルレベルルートキットは、デバイスド
 	</div>
 </article><article class="list__item post">
 	
+	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/sec/social_engineering/">
+		<img class="thumbnail__image" src="/images/cyber-security.png" alt="Social Engineering ソーシャルエンジニアリング">
+		</a>
+	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/tech/ubuntu/" rel="bookmark">
-			Ubuntu on Azure Notes
+			<a href="/sec/social_engineering/" rel="bookmark">
+			Social Engineering ソーシャルエンジニアリング
 			</a>
 		</h2>
 		<div class="list__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-10-01T00:00:00Z">2022-10-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-09-20T00:00:00Z">2022-09-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Regular Maintenance sudo apt update sudo apt upgrade Error during Regular Maintenance: 11: Resource temporarily unavailable This is a solution for handling resource shortage detected during sudo upgrade.
-E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it? Check if apt exists with the ps command. If it does, wait a bit and retry, or if possible, restarting may be quicker.
-ps aux | grep -i apt Stopping Regular apt update There were symptoms of OOM (Out-of-Memory) resulting from apt running every day at 6 AM and 6 PM (memory is limited).
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/tech/pandasdatareader/" rel="bookmark">
-			pandas Dataredader
-			</a>
-		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
-</div>
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-09-19T00:00:00Z">2021-09-19</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		What is pandas Datareader It is a library to download data online.
-Official Documentation
-Here is a list of data sources. Some require an API key. fred and stooq can obtain data without an API key.
-Remote Data Access
-Fred Economic Data Data source provided by the St. Louis Fed.
-Federal Reserve Economic Data
-Time Series Graph of Fred NASDAQ Let&rsquo;s create a time series graph of NASDAQ. Also, let&rsquo;s display the 200-period moving average SMA200. This can be done in just about 10 lines.
+		Social Engineeringとは ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、 特定の行動を取らせたりすることを目的としたすべての
 	</div>
 </article>
 </main>
 
 <div class="pagination">
-	<span class="pagination__item pagination__item--current">1/2</span>
+	<span class="pagination__item pagination__item--current">1/3</span>
 	<a class="pagination__item pagination__item--next btn" href="/page/2/">»</a>
 </div>
 
@@ -404,11 +385,11 @@ Time Series Graph of Fred NASDAQ Let&rsquo;s create a time series graph of NASDA
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/tech/latex-md/">Tex/LaTex with Markdown</a></li>
-			<li class="widget__item"><a class="widget__link" href="/mlai/entropy/">Information Theory</a></li>
-			<li class="widget__item"><a class="widget__link" href="/tech/js-promise/">JavaScript&#39;s Promise, Async, Await in 3 minutes </a></li>
-			<li class="widget__item"><a class="widget__link" href="/mlai/softmax/">Softmax Function</a></li>
-			<li class="widget__item"><a class="widget__link" href="/tech/hhkb/">Happy Hacking Keyboard for mac</a></li>
+			<li class="widget__item"><a class="widget__link" href="/sec/http_request_smuggling/">HTTP Request Smuggling (HRS)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/sec/cors/">Cross-Origin Resource Sharing (CORS)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/sec/dirb/">DIRB</a></li>
+			<li class="widget__item"><a class="widget__link" href="/sec/csrf/">CSRF Cross Site Request Forgery</a></li>
+			<li class="widget__item"><a class="widget__link" href="/sec/csrf_token/">CSRF Tokens</a></li>
 		</ul>
 	</div>
 </div>
@@ -418,7 +399,7 @@ Time Series Graph of Fred NASDAQ Let&rsquo;s create a time series graph of NASDA
 		<ul class="widget__list">
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/ceh/">CEH</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">2</span>
+				<span class="widget__counter widget__counter--bubble">1</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/cyber-security/">Cyber Security</a>&nbsp;
@@ -433,6 +414,10 @@ Time Series Graph of Fred NASDAQ Let&rsquo;s create a time series graph of NASDA
 				<span class="widget__counter widget__counter--bubble">1</span>
 				</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/kali-linux/">Kali Linux</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/ml/ai/">ML/AI</a>&nbsp;
 				<span class="widget__counter widget__counter--bubble">5</span>
 				</li>
@@ -442,7 +427,7 @@ Time Series Graph of Fred NASDAQ Let&rsquo;s create a time series graph of NASDA
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/security/">Security</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">9</span>
+				<span class="widget__counter widget__counter--bubble">10</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/tech/">Tech</a>&nbsp;
@@ -472,6 +457,7 @@ Time Series Graph of Fred NASDAQ Let&rsquo;s create a time series graph of NASDA
 		<a class="widget-taglist__link widget__link btn" href="/tags/function/" title="Function">Function (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="github">github (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hardhat/" title="hardhat">hardhat (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/japanese/" title="Japanese">Japanese (1)</a>
@@ -504,7 +490,7 @@ Time Series Graph of Fred NASDAQ Let&rsquo;s create a time series graph of NASDA
 		<a class="widget-taglist__link widget__link btn" href="/tags/type/" title="Type">Type (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="Ubuntu">Ubuntu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/virus/" title="Virus">Virus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/web/" title="Web">Web (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/web/" title="Web">Web (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/windows/" title="Windows">Windows (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/zkp/" title="ZKP">ZKP (1)</a>
 	</div>

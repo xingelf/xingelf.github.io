@@ -6,13 +6,20 @@
     <description>Recent content in Categories on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security</title>
       <link>https://xingelf.github.io/categories/security/</link>
-      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/categories/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kali Linux</title>
+      <link>https://xingelf.github.io/categories/kali-linux/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/kali-linux/</guid>
       <description></description>
     </item>
     <item>
@@ -44,17 +51,17 @@
       <description></description>
     </item>
     <item>
-      <title>CEH</title>
-      <link>https://xingelf.github.io/categories/ceh/</link>
-      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/ceh/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>DAO</title>
       <link>https://xingelf.github.io/categories/dao/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/categories/dao/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CEH</title>
+      <link>https://xingelf.github.io/categories/ceh/</link>
+      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/ceh/</guid>
       <description></description>
     </item>
     <item>

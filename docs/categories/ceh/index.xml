@@ -6,15 +6,8 @@
     <description>Recent content in CEH on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Aug 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/ceh/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DIRB</title>
-      <link>https://xingelf.github.io/sec/dirb/</link>
-      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/dirb/</guid>
-      <description>DIRB https://www.kali.org/tools/dirb/ Webアプリケーションの既知の脆弱性を検索するために使用されるWebアプリケーションセキュリティスキャナです。 Web サーバー上の隠しファイルや隠しディレクトリを</description>
-    </item>
     <item>
       <title>DNS Domain Name System</title>
       <link>https://xingelf.github.io/sec/dns/</link>

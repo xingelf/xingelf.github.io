@@ -6,14 +6,28 @@
     <description>Recent content in Web on live life to the fullest.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTTP Request Smuggling (HRS)</title>
+      <link>https://xingelf.github.io/sec/http_request_smuggling/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/http_request_smuggling/</guid>
+      <description>Understanding HTTP Request Smuggling: A Deep Dive into Web Security In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.</description>
+    </item>
     <item>
       <title>Cross-Origin Resource Sharing (CORS)</title>
       <link>https://xingelf.github.io/sec/cors/</link>
       <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/cors/</guid>
       <description>Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&#xA;What is CORS? CORS is a security feature implemented by web browsers to prevent malicious websites from accessing resources from another domain without permission.</description>
+    </item>
+    <item>
+      <title>DIRB</title>
+      <link>https://xingelf.github.io/sec/dirb/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/dirb/</guid>
+      <description>Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.</description>
     </item>
     <item>
       <title>CSRF Cross Site Request Forgery</title>

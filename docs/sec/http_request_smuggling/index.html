@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>HTTP Request Smuggling (HRS) - live life to the fullest.</title>
+	<title>HTTP Request Smuggling (HRS) - Diary of Geek</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="HTTP Request Smuggling (HRS)" />
@@ -17,7 +17,7 @@
 		<meta itemprop="name" content="HTTP Request Smuggling (HRS)">
 <meta itemprop="description" content="Understanding HTTP Request Smuggling: A Deep Dive into Web Security In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat."><meta itemprop="datePublished" content="2024-04-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-04-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="594">
+<meta itemprop="wordCount" content="597">
 <meta itemprop="keywords" content="HTTP,Web," />
 		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="HTTP Request Smuggling (HRS)"/>
 <meta name="twitter:description" content="Understanding HTTP Request Smuggling: A Deep Dive into Web Security In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat."/>
@@ -141,20 +141,25 @@
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#understanding-http-request-smuggling-a-deep-dive-into-web-security">Understanding HTTP Request Smuggling: A Deep Dive into Web Security</a>
       <ul>
-        <li><a href="#understanding-http-request-smuggling-a-deep-dive-into-web-security">Understanding HTTP Request Smuggling: A Deep Dive into Web Security</a></li>
+        <li><a href="#what-is-http-request-smuggling">What is HTTP Request Smuggling?</a></li>
+        <li><a href="#how-does-it-work">How Does It Work?</a></li>
+        <li><a href="#real-world-impact">Real-World Impact</a></li>
+        <li><a href="#defensive-measures">Defensive Measures</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
+    <li><a href="#resources">Resources</a></li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h3 id="understanding-http-request-smuggling-a-deep-dive-into-web-security">Understanding HTTP Request Smuggling: A Deep Dive into Web Security</h3>
+			<h2 id="understanding-http-request-smuggling-a-deep-dive-into-web-security">Understanding HTTP Request Smuggling: A Deep Dive into Web Security</h2>
 <p>In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.</p>
-<h4 id="what-is-http-request-smuggling">What is HTTP Request Smuggling?</h4>
+<h3 id="what-is-http-request-smuggling">What is HTTP Request Smuggling?</h3>
 <p>HTTP request smuggling is a technique that manipulates the way web servers and proxies handle HTTP requests. This manipulation can cause the servers or proxies to misinterpret the boundaries of HTTP requests, allowing attackers to &ldquo;smuggle&rdquo; a hidden request inside another request. The primary goal of this exploit is to bypass security measures, gain unauthorized access, or destabilize web applications.</p>
-<h4 id="how-does-it-work">How Does It Work?</h4>
+<h3 id="how-does-it-work">How Does It Work?</h3>
 <p>The core of HTTP request smuggling revolves around discrepancies in interpreting request boundaries between two entities in a chain, typically involving a front-end proxy and a back-end server. This discrepancy arises from differences in handling request transfer encoding methods like <code>Content-Length</code> and <code>Transfer-Encoding</code>.</p>
 <p>Here’s a simplified breakdown of the attack process:</p>
 <ol>
@@ -168,9 +173,9 @@
 <p><strong>Execution of the Smuggled Request:</strong> This misinterpretation can lead to unauthorized actions being performed without the knowledge or permission of the legitimate user or system administrator.</p>
 </li>
 </ol>
-<h4 id="real-world-impact">Real-World Impact</h4>
+<h3 id="real-world-impact">Real-World Impact</h3>
 <p>The implications of HTTP request smuggling can be severe, ranging from credential theft, unauthorized access, and session hijacking to cross-site scripting (XSS) attacks. It can compromise sensitive data and disrupt the normal functioning of web applications, leading to significant security breaches.</p>
-<h4 id="defensive-measures">Defensive Measures</h4>
+<h3 id="defensive-measures">Defensive Measures</h3>
 <p>Protecting against HTTP request smuggling requires a multi-faceted approach:</p>
 <ul>
 <li>
@@ -186,9 +191,14 @@
 <p><strong>Security Audits and Testing:</strong> Regular security audits and penetration testing can help identify and rectify vulnerabilities before they are exploited in the wild.</p>
 </li>
 </ul>
-<h4 id="conclusion">Conclusion</h4>
+<h3 id="conclusion">Conclusion</h3>
 <p>HTTP request smuggling is a potent reminder of the intricate security challenges that web administrators face. While the technique is sophisticated and relies on specific discrepancies in HTTP request handling, awareness and proactive security practices can significantly diminish its threats. By fostering a thorough understanding of HTTP request smuggling among IT professionals, and implementing stringent security measures, organizations can defend themselves against these hidden attacks, ensuring the integrity and safety of their digital environments.</p>
 <p>In an era where cyber threats evolve rapidly, staying informed and prepared is the best defense. HTTP request smuggling, with its unique approach and potential for damage, is a prime example of why continuous education and vigilance are indispensable in the realm of cybersecurity.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://tryhackme.com/r/room/httprequestsmuggling">https://tryhackme.com/r/room/httprequestsmuggling</a></li>
+<li><a href="https://portswigger.net/web-security/request-smuggling">https://portswigger.net/web-security/request-smuggling</a></li>
+</ul>
 
 		</div>
 		<footer class="post__footer">

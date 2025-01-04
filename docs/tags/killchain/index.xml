@@ -6,14 +6,14 @@
     <description>Recent content in KillChain on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/killchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cyber Kill Chain サイバーキルチェーン</title>
+      <title>What is the Cyber Kill Chain?</title>
       <link>https://xingelf.github.io/sec/cyberkillchain/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/cyberkillchain/</guid>
-      <description>&lt;h1 id=&#34;サイバーキルチェーンとは&#34;&gt;サイバーキルチェーンとは&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Kill_chain#Cyber&#34;&gt;https://en.wikipedia.org/wiki/Kill_chain#Cyber&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;ロッキードマーティン社のキルチェーンのプロセスをサイバー攻撃に適用したもの。&lt;/p&gt;</description>
+      <description>&lt;p&gt;The &lt;strong&gt;Cyber Kill Chain&lt;/strong&gt; is a framework that applies the principles of Lockheed Martin’s Kill Chain process to cyberattacks. It consists of &lt;strong&gt;seven sequential stages&lt;/strong&gt; that outline the steps attackers typically follow to infiltrate and compromise a target system.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

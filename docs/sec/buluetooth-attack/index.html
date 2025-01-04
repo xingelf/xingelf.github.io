@@ -3,24 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bluethoothを利用した攻撃 - Tech note of @xingelf</title>
+	<title>Bluetooth Attack Techniques - Note about technology</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Bluethoothを利用した攻撃" />
-<meta property="og:description" content="Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://xingelf.github.io/sec/buluetooth-attack/" /><meta property="article:section" content="sec" />
-<meta property="article:published_time" content="2022-03-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-03-17T00:00:00+00:00" />
+		<meta property="og:url" content="https://xingelf.github.io/sec/buluetooth-attack/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="Bluetooth Attack Techniques">
+  <meta property="og:description" content="Bluetooth, a wireless technology that allows devices to exchange data over short distances, is widely used in smartphones, laptops, headphones, and other devices. While it offers convenience, it is also susceptible to certain types of security threats. Two notable methods of attack exploiting Bluetooth vulnerabilities are Bluejacking and Bluesnarfing. Below is an overview of these techniques and their implications.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="sec">
+    <meta property="article:published_time" content="2024-12-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-22T00:00:00+00:00">
+    <meta property="article:tag" content="Bluetooth">
 
-
-		<meta itemprop="name" content="Bluethoothを利用した攻撃">
-<meta itemprop="description" content="Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot"><meta itemprop="datePublished" content="2022-03-17T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-03-17T00:00:00+00:00" />
-<meta itemprop="wordCount" content="342">
-<meta itemprop="keywords" content="CEH,Bluetooth," />
-		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Bluethoothを利用した攻撃"/>
-<meta name="twitter:description" content="Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot"/>
+		
+  <meta itemprop="name" content="Bluetooth Attack Techniques">
+  <meta itemprop="description" content="Bluetooth, a wireless technology that allows devices to exchange data over short distances, is widely used in smartphones, laptops, headphones, and other devices. While it offers convenience, it is also susceptible to certain types of security threats. Two notable methods of attack exploiting Bluetooth vulnerabilities are Bluejacking and Bluesnarfing. Below is an overview of these techniques and their implications.">
+  <meta itemprop="datePublished" content="2024-12-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="387">
+  <meta itemprop="keywords" content="Bluetooth">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bluetooth Attack Techniques">
+  <meta name="twitter:description" content="Bluetooth, a wireless technology that allows devices to exchange data over short distances, is widely used in smartphones, laptops, headphones, and other devices. While it offers convenience, it is also susceptible to certain types of security threats. Two notable methods of attack exploiting Bluetooth vulnerabilities are Bluejacking and Bluesnarfing. Below is an overview of these techniques and their implications.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -32,17 +39,21 @@
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-1C3VFJB0MW', { 'anonymize_ip': false });
-}
-</script>
-
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -50,11 +61,11 @@ if (!doNotTrack) {
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Tech Note of @xingelf" rel="home">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
 			<div class="logo__item logo__imagebox">
 					<img class="logo__img" src="/icons/favicon.ico">
 				</div><div class="logo__item logo__text">
-					<div class="logo__title">Tech Note of @xingelf</div>
+					<div class="logo__title">Tech Note</div>
 					<div class="logo__tagline">Control your own destiny or someone else will</div>
 				</div>
 		</a>
@@ -96,7 +107,7 @@ if (!doNotTrack) {
 		<li class="menu__item">
 			<a class="menu__link" href="/sec">
 				
-				<span class="menu__text">Sec🧙</span>
+				<span class="menu__text">Security🧙</span>
 				
 			</a>
 		</li>
@@ -132,47 +143,90 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Bluethoothを利用した攻撃</h1>
-			<div class="post__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
-</div>
+			<h1 class="post__title">Bluetooth Attack Techniques</h1>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-03-17T00:00:00Z">2022-03-17</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-12-22T00:00:00Z">2024-12-22</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
 	</span>
 </div></div>
 		</header>
 		
-	<figure class="post__thumbnail thumbnail">
-		
-		<img class="thumbnail__image" src="/images/cyber-security.png" alt="Bluethoothを利用した攻撃">
-		
-	</figure><div class="content post__content clearfix">
-			<h1 id="bluejacking-ブルージャッキング">Bluejacking ブルージャッキング</h1>
-<p>周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。</p>
-<h1 id="bluesnarfing-ブルースナーフィイング">Bluesnarfing ブルースナーフィイング</h1>
-<p><a href="https://en.wikipedia.org/wiki/Bluesnarfing">https://en.wikipedia.org/wiki/Bluesnarfing</a></p>
-<p>ブルースナーフィングとは、Bluetooth接続により無線機器から情報に不正にアクセスする。
-対象は、スマホ、ノートパソコン、PDAなど。
-これにより、カレンダー、連絡先リスト、電子メール、テキストメッセージにアクセスでき、
-一部のスマホでは、写真やプライベートビデオをコピーすることが可能。</p>
-<p>BluesnarfingとBluejackingのどちらも、他人のBluetooth接続を知らないうちに悪用します。
-Bluejackingはターゲットデバイスにデータを送信するだけなので基本的に無害ですが、
-Bluesnarfingはターゲットデバイスから情報を盗み出すことが可能。</p>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Bluetooth, a wireless technology that allows devices to exchange data over short distances, is widely used in smartphones, laptops, headphones, and other devices. While it offers convenience, it is also susceptible to certain types of security threats. Two notable methods of attack exploiting Bluetooth vulnerabilities are <strong>Bluejacking</strong> and <strong>Bluesnarfing</strong>. Below is an overview of these techniques and their implications.</p>
+<h1 id="bluetooth-attack-techniques-bluejacking-and-bluesnarfing">Bluetooth Attack Techniques: Bluejacking and Bluesnarfing</h1>
+<hr>
+<h4 id="1-bluejacking">1. <strong>Bluejacking</strong></h4>
+<p><strong>Definition:</strong>
+Bluejacking is the act of sending unsolicited messages to Bluetooth-enabled devices. This technique is often considered more of an annoyance than a serious security threat.</p>
+<p><strong>How It Works:</strong></p>
+<ul>
+<li>Bluejacking exploits the Bluetooth device discovery process.</li>
+<li>An attacker sends messages via Bluetooth to nearby devices that are in discoverable mode.</li>
+<li>Typically, the attacker uses contact cards (vCards) to deliver the message, as older Bluetooth protocols allowed this without authentication.</li>
+</ul>
+<p><strong>Impact:</strong></p>
+<ul>
+<li>The victim receives random messages on their device, which can be confusing or intrusive.</li>
+<li>It does not give the attacker access to the victim&rsquo;s device or data.</li>
+<li>Bluejacking is mostly a prank or marketing tactic rather than a malicious activity.</li>
+</ul>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Set your device’s Bluetooth to “invisible” or “non-discoverable” mode.</li>
+<li>Accept Bluetooth communications only from trusted sources.</li>
+</ul>
+<hr>
+<h4 id="2-bluesnarfing">2. <strong>Bluesnarfing</strong></h4>
+<p><strong>Definition:</strong>
+Bluesnarfing is a more serious attack compared to Bluejacking. It involves unauthorized access to a Bluetooth-enabled device to steal information such as contacts, messages, emails, and other sensitive data.</p>
+<p><strong>How It Works:</strong></p>
+<ul>
+<li>The attacker scans for devices in discoverable mode.</li>
+<li>Using specialized software, the attacker exploits vulnerabilities in the Bluetooth implementation to bypass authentication protocols.</li>
+<li>Once access is gained, the attacker can retrieve private data stored on the victim’s device.</li>
+</ul>
+<p><strong>Impact:</strong></p>
+<ul>
+<li>Compromised personal information, including contact lists, SMS messages, and even sensitive files.</li>
+<li>Potential identity theft or data misuse.</li>
+<li>The attack is stealthy, meaning victims often remain unaware of the breach.</li>
+</ul>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Keep your Bluetooth turned off when not in use.</li>
+<li>Avoid using discoverable mode in public spaces.</li>
+<li>Regularly update your device’s software to patch known vulnerabilities.</li>
+<li>Use strong PINs or authentication methods for Bluetooth connections.</li>
+</ul>
+<hr>
+<h4 id="conclusion">Conclusion</h4>
+<p>While Bluetooth technology provides significant convenience, it also opens the door to potential security risks like Bluejacking and Bluesnarfing. Users should remain vigilant by adjusting their device settings, applying security updates, and using Bluetooth responsibly. Awareness and preventive measures are key to mitigating these threats and ensuring the safe use of Bluetooth technology.</p>
+<hr>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ofTKPoLOxnA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ofTKPoLOxnA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
 
 
 		</div>
 		<footer class="post__footer">
 			
 <div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/ceh/" rel="tag">CEH</a>
-		</li>
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/bluetooth/" rel="tag">Bluetooth</a>
 		</li>
@@ -182,29 +236,18 @@ Bluesnarfingはターゲットデバイスから情報を盗み出すことが�
 	</article>
 </main>
 
-<div class="authorbox clearfix">
-	<figure class="authorbox__avatar">
-		<img alt="@xingelf avatar" src="/img/favicon.png" class="avatar" height="90" width="90">
-	</figure>
-	<div class="authorbox__header">
-		<span class="authorbox__name">About @xingelf</span>
-	</div>
-	<div class="authorbox__description">
-		a security researcher and pentester.
-	</div>
-</div>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/sec/_idle_scan/" rel="prev">
+		<a class="pager__link" href="/sec/hping/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title"></p>
+			<p class="pager__title">How to Use hping/hping3: A Beginner&#39;s Guide</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="/sec/rubber_hose_attack/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Rubber Hose Attack ゴムホース攻撃</p>
+			<p class="pager__title">What is a Rubber Hose Attack?</p>
 		</a>
 	</div>
 </nav>
@@ -217,7 +260,7 @@ Bluesnarfingはターゲットデバイスから情報を盗み出すことが�
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2024 @xingelf.
+			&copy; 2025 @xingelf.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

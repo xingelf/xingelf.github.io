@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Tech note of @xingelf</title>
+    <title>Python on Note about technology</title>
     <link>https://xingelf.github.io/tags/python/</link>
-    <description>Recent content in Python on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Python on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,49 +13,49 @@
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/python-err/</guid>
-      <description>1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error This error occurs when comparing timestamps in Yahoo Finance with different timezones.&#xA;Solution To fix this error, we need to localize the timestamps to UTC before comparing them.&#xA;start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq)) df.index = df.index.tz_localize(None) # Localize to UTC df = df[start &amp;lt; df.index] 2. Could not import the lzma module Error This error occurs when importing pandas 1.0 or later with an incomplete Python installation.&#xA;Solution To fix this error, we need to install the xz module using brew and reinstall pandas.</description>
+      <description>&lt;h2 id=&#34;1-invalid-comparison-between-dtypedatetime64ns-americanew_york-and-datetime64&#34;&gt;1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64&lt;/h2&gt;&#xA;&lt;h3 id=&#34;error&#34;&gt;Error&lt;/h3&gt;&#xA;&lt;p&gt;This error occurs when comparing timestamps in Yahoo Finance with different timezones.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>
       <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>Converts percentage information given in String/Object type columns into numbers.&#xA;def str_to_rate(s): if pd.isnull(s) == False: return float(s.replace(&amp;#39;%&amp;#39;, &amp;#39;&amp;#39;)) else: return s Usage:&#xA;col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate) </description>
+      <description>&lt;p&gt;Converts percentage information given in String/Object type columns into numbers.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str_to_rate&lt;/span&gt;(s):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;isnull(s) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; float(s&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;col &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ReplyRate&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df[col] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; df[col]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;apply(str_to_rate)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</title>
       <link>https://xingelf.github.io/mlai/str_to_bool/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&#xA;def str_to_bool(s): if s == &amp;#39;t&amp;#39;: return True else: return False Usage&#xA;col = &amp;#34;Availability&amp;#34; df[col] = df[col].apply(str_to_bool) </description>
+      <description>&lt;p&gt;Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str_to_bool&lt;/span&gt;(s):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t&amp;#39;&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage&lt;/p&gt;</description>
     </item>
     <item>
       <title>pandas Dataredader</title>
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>What is pandas Datareader It is a library to download data online.&#xA;Official Documentation&#xA;Here is a list of data sources. Some require an API key. fred and stooq can obtain data without an API key.&#xA;Remote Data Access&#xA;Fred Economic Data Data source provided by the St. Louis Fed.&#xA;Federal Reserve Economic Data&#xA;Time Series Graph of Fred NASDAQ Let&amp;rsquo;s create a time series graph of NASDAQ. Also, let&amp;rsquo;s display the 200-period moving average SMA200. This can be done in just about 10 lines.</description>
+      <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas-datareader.readthedocs.io/en/latest/index.html&#34;&gt;Official Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is a list of data sources.&#xA;Some require an API key.&#xA;fred and stooq can obtain data without an API key.&lt;/p&gt;</description>
     </item>
     <item>
       <title>機械学習前処理</title>
       <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
-      <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
+      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
-      <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
+      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Freqtradeのインストール</title>
       <link>https://xingelf.github.io/tech/freqtrade/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/freqtrade/</guid>
-      <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
+      <description>&lt;h1 id=&#34;freqtradeのインストール&#34;&gt;freqtradeのインストール&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/freqtrade/freqtrade.git&#34;&gt;https://github.com/freqtrade/freqtrade.git&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;python-venvのインストール&#34;&gt;python venvのインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt-get install python3-venv&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git-clone-にてパッケージを取得&#34;&gt;git clone にてパッケージを取得&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/freqtrade/freqtrade.git&#xA;cd freqtrade&#xA;git checkout develop&#xA;./setup.sh --install&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ta-libのインストールで時間が掛かりますが、ひたすら待ちます。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

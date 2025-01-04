@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Tech note of @xingelf</title>
+    <title>Tags on Note about technology</title>
     <link>https://xingelf.github.io/tags/</link>
-    <description>Recent content in Tags on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 21 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <description>Recent content in Tags on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>https://xingelf.github.io/tags/coding/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>XML</title>
+      <link>https://xingelf.github.io/tags/xml/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/xml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CEH</title>
+      <link>https://xingelf.github.io/tags/ceh/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/ceh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rootkit</title>
+      <link>https://xingelf.github.io/tags/rootkit/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/rootkit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bluetooth</title>
+      <link>https://xingelf.github.io/tags/bluetooth/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/bluetooth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>https://xingelf.github.io/tags/network/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool</title>
+      <link>https://xingelf.github.io/tags/tool/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/tool/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Java</title>
       <link>https://xingelf.github.io/tags/java/</link>
@@ -23,7 +72,35 @@
       <description></description>
     </item>
     <item>
-      <title>http</title>
+      <title>Machine Learning</title>
+      <link>https://xingelf.github.io/tags/machine-learning/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Math</title>
+      <link>https://xingelf.github.io/tags/math/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DNS</title>
+      <link>https://xingelf.github.io/tags/dns/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Physical Security</title>
+      <link>https://xingelf.github.io/tags/physical-security/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/physical-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTP</title>
       <link>https://xingelf.github.io/tags/http/</link>
       <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/http/</guid>
@@ -65,13 +142,6 @@
       <description></description>
     </item>
     <item>
-      <title>Math</title>
-      <link>https://xingelf.github.io/tags/math/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/math/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Tex</title>
       <link>https://xingelf.github.io/tags/tex/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
@@ -79,31 +149,10 @@
       <description></description>
     </item>
     <item>
-      <title>JDLA engineer</title>
-      <link>https://xingelf.github.io/tags/jdla-engineer/</link>
-      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/jdla-engineer/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Javascript</title>
       <link>https://xingelf.github.io/tags/javascript/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JDLA e-engineer</title>
-      <link>https://xingelf.github.io/tags/jdla-e-engineer/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/jdla-e-engineer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Machine Learning</title>
-      <link>https://xingelf.github.io/tags/machine-learning/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
@@ -121,14 +170,14 @@
       <description></description>
     </item>
     <item>
-      <title>hardhat</title>
+      <title>Hardhat</title>
       <link>https://xingelf.github.io/tags/hardhat/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/hardhat/</guid>
       <description></description>
     </item>
     <item>
-      <title>iPhone</title>
+      <title>IPhone</title>
       <link>https://xingelf.github.io/tags/iphone/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/iphone/</guid>
@@ -139,13 +188,6 @@
       <link>https://xingelf.github.io/tags/solidity/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/solidity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CEH</title>
-      <link>https://xingelf.github.io/tags/ceh/</link>
-      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/ceh/</guid>
       <description></description>
     </item>
     <item>
@@ -167,27 +209,6 @@
       <link>https://xingelf.github.io/tags/python/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>network</title>
-      <link>https://xingelf.github.io/tags/network/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/network/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>tool</title>
-      <link>https://xingelf.github.io/tags/tool/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/tool/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rootkit</title>
-      <link>https://xingelf.github.io/tags/rootkit/</link>
-      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/rootkit/</guid>
       <description></description>
     </item>
     <item>
@@ -254,17 +275,10 @@
       <description></description>
     </item>
     <item>
-      <title>Type</title>
-      <link>https://xingelf.github.io/tags/type/</link>
+      <title>Blockchain</title>
+      <link>https://xingelf.github.io/tags/blockchain/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/type/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DNS</title>
-      <link>https://xingelf.github.io/tags/dns/</link>
-      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/dns/</guid>
+      <guid>https://xingelf.github.io/tags/blockchain/</guid>
       <description></description>
     </item>
     <item>
@@ -296,24 +310,17 @@
       <description></description>
     </item>
     <item>
-      <title>email</title>
+      <title>Email</title>
       <link>https://xingelf.github.io/tags/email/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/email/</guid>
       <description></description>
     </item>
     <item>
-      <title>nmap</title>
+      <title>Nmap</title>
       <link>https://xingelf.github.io/tags/nmap/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/nmap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bluetooth</title>
-      <link>https://xingelf.github.io/tags/bluetooth/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/bluetooth/</guid>
       <description></description>
     </item>
     <item>
@@ -338,14 +345,14 @@
       <description></description>
     </item>
     <item>
-      <title>mac</title>
+      <title>Mac</title>
       <link>https://xingelf.github.io/tags/mac/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/mac/</guid>
       <description></description>
     </item>
     <item>
-      <title>osx</title>
+      <title>Osx</title>
       <link>https://xingelf.github.io/tags/osx/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/osx/</guid>
@@ -359,7 +366,7 @@
       <description></description>
     </item>
     <item>
-      <title>github</title>
+      <title>Github</title>
       <link>https://xingelf.github.io/tags/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/github/</guid>
@@ -370,6 +377,13 @@
       <link>https://xingelf.github.io/tags/atom/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/atom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>https://xingelf.github.io/tags/books/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/books/</guid>
       <description></description>
     </item>
     <item>

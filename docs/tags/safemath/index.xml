@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SafeMath on Tech note of @xingelf</title>
+    <title>SafeMath on Note about technology</title>
     <link>https://xingelf.github.io/tags/safemath/</link>
-    <description>Recent content in SafeMath on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in SafeMath on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/safemath/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/dapps/solidity-safemath/</link>
       <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-safemath/</guid>
-      <description>Solidity SafeMath 四足演算ライブラリ assertによりオーバーフロー対策を行うことができます。 /** * @title SafeMath * @dev Math operations with safety checks that throw on error */ library SafeMath { /** * @dev Multiplies two numbers, throws on overflow. */ function mul(uint256 a, uint256 b) internal pure returns (uint256) { if</description>
+      <description>&lt;h1 id=&#34;solidity-safemath-四足演算ライブラリ&#34;&gt;Solidity SafeMath 四足演算ライブラリ&lt;/h1&gt;&#xA;&lt;p&gt;assertによりオーバーフロー対策を行うことができます。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rootkit　ルートキット - Tech note of @xingelf</title>
+	<title>Rootkits: The Hidden Threat - Note about technology</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Rootkit　ルートキット" />
-<meta property="og:description" content="Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://xingelf.github.io/sec/rootkits/" /><meta property="article:section" content="sec" />
-<meta property="article:published_time" content="2022-08-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-08-28T00:00:00+00:00" />
+		<meta property="og:url" content="http://localhost:1313/sec/rootkits/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="Rootkits: The Hidden Threat">
+  <meta property="og:description" content="Rootkits: The Hidden Threat Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="sec">
+    <meta property="article:published_time" content="2025-01-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-03T00:00:00+00:00">
+    <meta property="article:tag" content="CEH">
+    <meta property="article:tag" content="Rootkit">
 
-
-		<meta itemprop="name" content="Rootkit　ルートキット">
-<meta itemprop="description" content="Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの"><meta itemprop="datePublished" content="2022-08-28T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-08-28T00:00:00+00:00" />
-<meta itemprop="wordCount" content="619">
-<meta itemprop="keywords" content="CEH,Rootkit," />
-		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Rootkit　ルートキット"/>
-<meta name="twitter:description" content="Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの"/>
+		
+  <meta itemprop="name" content="Rootkits: The Hidden Threat">
+  <meta itemprop="description" content="Rootkits: The Hidden Threat Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.">
+  <meta itemprop="datePublished" content="2025-01-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-01-03T00:00:00+00:00">
+  <meta itemprop="wordCount" content="320">
+  <meta itemprop="keywords" content="CEH,Rootkit">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rootkits: The Hidden Threat">
+  <meta name="twitter:description" content="Rootkits: The Hidden Threat Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -32,17 +40,6 @@
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-1C3VFJB0MW', { 'anonymize_ip': false });
-}
-</script>
-
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -96,7 +93,7 @@ if (!doNotTrack) {
 		<li class="menu__item">
 			<a class="menu__link" href="/sec">
 				
-				<span class="menu__text">Sec🧙</span>
+				<span class="menu__text">Security🧙</span>
 				
 			</a>
 		</li>
@@ -132,19 +129,17 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Rootkit　ルートキット</h1>
-			<div class="post__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
-</div>
+			<h1 class="post__title">Rootkits: The Hidden Threat</h1>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-28T00:00:00Z">2022-08-28</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-01-03T00:00:00Z">2025-01-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
 	</span>
 </div></div>
 		</header>
 		
 	<figure class="post__thumbnail thumbnail">
 		
-		<img class="thumbnail__image" src="/images/cyber-security.png" alt="Rootkit　ルートキット">
+		<img class="thumbnail__image" src="/images/cyber-security.png" alt="Rootkits: The Hidden Threat">
 		
 	</figure>
 <div class="post__toc toc">
@@ -152,42 +147,42 @@ if (!doNotTrack) {
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#hypervisor-level-rootkit-ハイパーバイザーレベルルートキット">Hypervisor Level Rootkit ハイパーバイザーレベルルートキット</a></li>
-    <li><a href="#kernel-level-rootkits-カーネルレベルルートキット">Kernel Level Rootkits カーネルレベルルートキット</a></li>
-    <li><a href="#application-rootkit-アプリケーションルートキット">Application Rootkit アプリケーションルートキット</a></li>
+    <li><a href="#rootkits-the-hidden-threat">Rootkits: The Hidden Threat</a>
+      <ul>
+        <li><a href="#1-hypervisor-level-rootkits">1. Hypervisor Level Rootkits</a></li>
+        <li><a href="#2-kernel-level-rootkits">2. Kernel Level Rootkits</a></li>
+        <li><a href="#3-application-rootkits">3. Application Rootkits</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h1 id="rootkitとは">Rootkitとは</h1>
-<p>侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。</p>
-<h2 id="hypervisor-level-rootkit-ハイパーバイザーレベルルートキット">Hypervisor Level Rootkit ハイパーバイザーレベルルートキット</h2>
+			<h2 id="rootkits-the-hidden-threat">Rootkits: The Hidden Threat</h2>
+<p>Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.</p>
+<p>Here are the main types of rootkits:</p>
+<h3 id="1-hypervisor-level-rootkits">1. Hypervisor Level Rootkits</h3>
 <ul>
-<li>ハードウェアの仮想化を利用し、ハードウェアとカーネルの間にインストールされ、実際のハードウェアとして動作</li>
-<li>ハードウェアとホストOS間の通信や要求を傍受することが可能。</li>
-<li>カーネルが正規のハードウェア上で実行されているかどうか分からない可能性があり、
-ユーザーモードまたはカーネルモードで実行される一般的な検知機能は、有効ではない。</li>
+<li><strong>How they work:</strong> These rootkits exploit hardware virtualization technology to install themselves between the hardware and the operating system kernel. They essentially act as a virtual machine monitor, intercepting communication and requests between the hardware and the host OS.</li>
+<li><strong>Why they&rsquo;re dangerous:</strong>  Since the kernel runs on top of the rootkit, it has no way of knowing that the underlying hardware has been compromised. This makes traditional detection methods, which operate at the user or kernel level, ineffective.</li>
 </ul>
-<h2 id="kernel-level-rootkits-カーネルレベルルートキット">Kernel Level Rootkits カーネルレベルルートキット</h2>
-<p>カーネルはオペレーティングシステムの中核</p>
+<h3 id="2-kernel-level-rootkits">2. Kernel Level Rootkits</h3>
 <ul>
-<li>デバイスドライバ（Windowsの場合）またはローダブルカーネルモジュール（Linux）を介して、
-追加のコードを追加したり、コアオペレーティングシステムの一部を変更したコードで置き換えたりして作成される</li>
-<li>キットのコードにバグが含まれている場合、システムの安定性に深刻な影響を与える可能性がある。</li>
-<li>オペレーティングシステムと同じ権限を持つため、オペレーティングシステムの操作を傍受したり、破壊したりすることができるため、検出が困難。</li>
+<li><strong>How they work:</strong> The kernel is the core of an operating system. These rootkits modify the kernel by adding code through device drivers (in Windows) or loadable kernel modules (in Linux). They can also replace parts of the core operating system code with modified versions.</li>
+<li><strong>Why they&rsquo;re dangerous:</strong> Kernel level rootkits operate with the same privileges as the operating system, allowing them to intercept or disrupt any operation. This makes them very difficult to detect. Additionally, bugs in the rootkit code can severely impact system stability.</li>
 </ul>
-<h2 id="application-rootkit-アプリケーションルートキット">Application Rootkit アプリケーションルートキット</h2>
+<h3 id="3-application-rootkits">3. Application Rootkits</h3>
 <ul>
-<li>単純なルートキットは、ユーザーモードで実行され、ユーザーモードルートキットと呼ばれる</li>
-<li>プロセス、ネットワーク接続、ファイル、イベント、およびシステム・サービスを変更する</li>
-<li>一般的なウイルス対策アプリケーションで検出可能な唯一のタイプのルートキット</li>
+<li><strong>How they work:</strong> These are the simplest type of rootkit and run in user mode. They modify existing applications or processes to hide their presence or the presence of other malicious activities. They can alter processes, network connections, files, events, and system services.</li>
+<li><strong>Why they&rsquo;re less dangerous:</strong> This is the only type of rootkit that can be reliably detected by common antivirus applications.</li>
 </ul>
+<p><strong>In summary:</strong> Rootkits pose a serious threat to computer security due to their stealthy nature. Understanding the different types of rootkits and how they operate is crucial for effective defense against these threats.</p>
 
 		</div>
 		<footer class="post__footer">
 			
 <div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/ceh/" rel="tag">CEH</a>
@@ -202,28 +197,22 @@ if (!doNotTrack) {
 </main>
 
 <div class="authorbox clearfix">
-	<figure class="authorbox__avatar">
-		<img alt="@xingelf avatar" src="/img/favicon.png" class="avatar" height="90" width="90">
-	</figure>
-	<div class="authorbox__header">
-		<span class="authorbox__name">About @xingelf</span>
-	</div>
-	<div class="authorbox__description">
-		a security researcher and pentester.
-	</div>
+	<p class="authorbox__warning">
+		<strong>WARNING:</strong> Authorbox is activated, but [Author] parameters are not specified.
+	</p>
 </div>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/sec/dns/" rel="prev">
+		<a class="pager__link" href="/sec/rubber_hose_attack/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">DNS Domain Name System</p>
+			<p class="pager__title">What is a Rubber Hose Attack?</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/sec/social_engineering/" rel="next">
+		<a class="pager__link" href="/sec/xml_serialization/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Social Engineering ソーシャルエンジニアリング</p>
+			<p class="pager__title">XML serialization</p>
 		</a>
 	</div>
 </nav>
@@ -236,7 +225,7 @@ if (!doNotTrack) {
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2024 @xingelf.
+			&copy; 2025 @xingelf.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Threat Intelligence on Tech note of @xingelf</title>
+    <title>Threat Intelligence on Note about technology</title>
     <link>https://xingelf.github.io/tags/threat-intelligence/</link>
-    <description>Recent content in Threat Intelligence on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Threat Intelligence on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/threat-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/sec/threat_intelligence/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/threat_intelligence/</guid>
-      <description>There are several categories of threat intelligence.&#xA;https://info-savvy.com/types-of-threat-intelligence/&#xA;Technical Threat Intelligence Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics.</description>
+      <description>&lt;p&gt;There are several categories of threat intelligence.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://info-savvy.com/types-of-threat-intelligence/&#34;&gt;https://info-savvy.com/types-of-threat-intelligence/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;technical-threat-intelligence&#34;&gt;Technical Threat Intelligence&lt;/h1&gt;&#xA;&lt;p&gt;Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics. It is crucial to detect and analyze IOCs at the right time. Tactical intelligence is used by SOC team members. The information obtained here leads to new rules being written into the organization&amp;rsquo;s current security products (IDS/IP, firewalls, endpoint security systems, etc.). Suspicious IPs may also be detected from spam emails. The information obtained is directly fed back into the organization&amp;rsquo;s products.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

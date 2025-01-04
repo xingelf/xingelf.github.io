@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockchain on Note about technology</title>
+    <link>https://xingelf.github.io/categories/blockchain/</link>
+    <description>Recent content in Blockchain on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Types in Solidity</title>
+      <link>https://xingelf.github.io/dapps/solidity-type/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-type/</guid>
+      <description>&lt;h1 id=&#34;data-types-in-solidity&#34;&gt;Data Types in Solidity&lt;/h1&gt;&#xA;&lt;p&gt;Solidity is a statically-typed language, meaning that you need to specify the data type of a variable when you declare it. This allows the compiler to check for type errors and ensure that your code is safe and efficient.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

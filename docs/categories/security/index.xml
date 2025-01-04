@@ -1,89 +1,96 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Security on Tech note of @xingelf</title>
+    <title>Security on Note about technology</title>
     <link>https://xingelf.github.io/categories/security/</link>
-    <description>Recent content in Security on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 21 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <description>Recent content in Security on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XML serialization</title>
+      <link>https://xingelf.github.io/sec/xml_serialization/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/xml_serialization/</guid>
+      <description>&lt;p&gt;XML serialization is the process of transforming data objects or object graphs into an XML document.  Think of it like taking a structured box of toys and laying each item out individually, labeled with XML tags, so it can be easily shipped and reconstructed later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rootkits: The Hidden Threat</title>
+      <link>https://xingelf.github.io/sec/rootkit/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/rootkit/</guid>
+      <description>&lt;h2 id=&#34;rootkits-the-hidden-threat&#34;&gt;Rootkits: The Hidden Threat&lt;/h2&gt;&#xA;&lt;p&gt;Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is a Rubber Hose Attack?</title>
+      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
+      <description>&lt;p&gt;A &lt;strong&gt;Rubber Hose Attack&lt;/strong&gt; refers to a technique in cryptography and cybersecurity where &lt;strong&gt;physical or psychological coercion is used to extract information&lt;/strong&gt;. This term is often used metaphorically to contrast with theoretical or technical methods of breaking encryption.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Use hping/hping3: A Beginner&#39;s Guide</title>
+      <link>https://xingelf.github.io/sec/hping/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/hping/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;hping&lt;/strong&gt; or &lt;strong&gt;hping3&lt;/strong&gt; is a versatile network tool that can be used for testing, troubleshooting, and analyzing network connections. It is commonly used by network administrators and cybersecurity professionals. Below is a guide to help you understand and start using hping/hping3 effectively.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Understanding Servlet Mappings</title>
       <link>https://xingelf.github.io/sec/servletmappings/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/servletmappings/</guid>
-      <description>Servlet Mappings Made Simple: A Beginner&amp;rsquo;s Guide Servlet mappings are a fundamental concept in Java web development. They define how requests from a web browser are directed to specific servlets on a server. Think of servlet mappings as traffic signs on a highway—they guide incoming requests to the right destination for processing.&#xA;What is a Servlet? A servlet is a Java program that runs on a server and handles client requests. For example, it might process form data, interact with a database, or generate dynamic web pages.</description>
+      <description>&lt;h2 id=&#34;servlet-mappings-made-simple-a-beginners-guide&#34;&gt;Servlet Mappings Made Simple: A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;Servlet mappings are a fundamental concept in Java web development. They define how requests from a web browser are directed to specific servlets on a server. Think of servlet mappings as traffic signs on a highway—they guide incoming requests to the right destination for processing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tailgating vs. Piggybacking: Understanding the Difference</title>
+      <link>https://xingelf.github.io/sec/tailgate_piggybacking/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/tailgate_piggybacking/</guid>
+      <description>&lt;p&gt;In the realm of physical security, &amp;ldquo;tailgating&amp;rdquo; and &amp;ldquo;piggybacking&amp;rdquo; are two common methods used to gain unauthorized access to restricted areas. While both involve an unauthorized individual entering a secure area, there is a key distinction between the two.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTTP Request Smuggling (HRS)</title>
       <link>https://xingelf.github.io/sec/http_request_smuggling/</link>
       <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/http_request_smuggling/</guid>
-      <description>Understanding HTTP Request Smuggling: A Deep Dive into Web Security In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.</description>
+      <description>&lt;h2 id=&#34;understanding-http-request-smuggling-a-deep-dive-into-web-security&#34;&gt;Understanding HTTP Request Smuggling: A Deep Dive into Web Security&lt;/h2&gt;&#xA;&lt;p&gt;In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cross-Origin Resource Sharing (CORS)</title>
       <link>https://xingelf.github.io/sec/cors/</link>
       <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/cors/</guid>
-      <description>Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&#xA;What is CORS? CORS is a security feature implemented by web browsers to prevent malicious websites from accessing resources from another domain without permission.</description>
+      <description>&lt;h2 id=&#34;understanding-cross-origin-resource-sharing-cors-a-beginners-guide&#34;&gt;Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Threat Intelligence</title>
       <link>https://xingelf.github.io/sec/threat_intelligence/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/threat_intelligence/</guid>
-      <description>There are several categories of threat intelligence.&#xA;https://info-savvy.com/types-of-threat-intelligence/&#xA;Technical Threat Intelligence Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics.</description>
-    </item>
-    <item>
-      <title>hping/hping3使い方</title>
-      <link>https://xingelf.github.io/sec/hping/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/hping/</guid>
-      <description>hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ</description>
-    </item>
-    <item>
-      <title>Rootkit ルートキット</title>
-      <link>https://xingelf.github.io/sec/rootkit/</link>
-      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rootkit/</guid>
-      <description>Rootkitにはいくつか種類があります。 https://en.wikipedia.org/wiki/Rootkit カーネルレベル・ルートキット カーネルはオペレーティングシステムの中核であり、カーネルレベルルートキットは、デバイスド</description>
+      <description>&lt;p&gt;There are several categories of threat intelligence.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://info-savvy.com/types-of-threat-intelligence/&#34;&gt;https://info-savvy.com/types-of-threat-intelligence/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;technical-threat-intelligence&#34;&gt;Technical Threat Intelligence&lt;/h1&gt;&#xA;&lt;p&gt;Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics. It is crucial to detect and analyze IOCs at the right time. Tactical intelligence is used by SOC team members. The information obtained here leads to new rules being written into the organization&amp;rsquo;s current security products (IDS/IP, firewalls, endpoint security systems, etc.). Suspicious IPs may also be detected from spam emails. The information obtained is directly fed back into the organization&amp;rsquo;s products.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Social Engineering ソーシャルエンジニアリング</title>
       <link>https://xingelf.github.io/sec/social_engineering/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/social_engineering/</guid>
-      <description>Social Engineeringとは ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、 特定の行動を取らせたりすることを目的としたすべての</description>
-    </item>
-    <item>
-      <title>Rootkit　ルートキット</title>
-      <link>https://xingelf.github.io/sec/rootkits/</link>
-      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rootkits/</guid>
-      <description>Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの</description>
+      <description>&lt;h1 id=&#34;social-engineeringとは&#34;&gt;Social Engineeringとは&lt;/h1&gt;&#xA;&lt;p&gt;ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、&#xA;特定の行動を取らせたりすることを目的としたすべてのテクニックのことを指す。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pharming and Phising</title>
       <link>https://xingelf.github.io/sec/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
-      <description>Pharming ファーミング https://csrc.nist.gov/glossary/term/pharming DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有</description>
+      <description>&lt;h2 id=&#34;pharmingファーミング&#34;&gt;Pharming　ファーミング&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://csrc.nist.gov/glossary/term/pharming&#34;&gt;https://csrc.nist.gov/glossary/term/pharming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。&lt;/p&gt;</description>
     </item>
     <item>
       <title>nmap cheat nmapチート</title>
       <link>https://xingelf.github.io/sec/nmap/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/nmap/</guid>
-      <description>nmapとは ポートスキャンツールです。ペネトレーション作業の基本ツールです。 -T5 insane 最速でスキャンを実行 https://nmap.org/man/ja/man-performance.html -T4 Aggresive スキャン処理の遅延は10msec以内 -F 簡易スキャン nm</description>
-    </item>
-    <item>
-      <title>Rubber Hose Attack ゴムホース攻撃</title>
-      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
-      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
-      <description>Rubber Hose Attack ゴムホース攻撃とは テクニカルな手法ではなく、物理的な手段などで人を脅迫してパスワードなどを入手する方法。 物理的な脅迫手段の１つとして、ゴムホースということ</description>
+      <description>&lt;h1 id=&#34;nmapとは&#34;&gt;nmapとは&lt;/h1&gt;&#xA;&lt;p&gt;ポートスキャンツールです。ペネトレーション作業の基本ツールです。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

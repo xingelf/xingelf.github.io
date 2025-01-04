@@ -1,46 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ML/AI on Tech note of @xingelf</title>
+    <title>ML/AI on Note about technology</title>
     <link>https://xingelf.github.io/categories/ml/ai/</link>
-    <description>Recent content in ML/AI on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in ML/AI on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/ml/ai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Information Theory</title>
-      <link>https://xingelf.github.io/mlai/entropy/</link>
-      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/entropy/</guid>
-      <description>Purpose: To understand the basics of information theory. Information Quantity When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&#xA;$ I(A) = -\log P(A)$&#xA;The smaller the probability, the greater the information quantity. It is easy to remember that rare events have a greater impact (information).&#xA;The following characteristics apply to probability P(A).&#xA;It increases when the probability is small. In the case of multiple independent events, the information quantity is represented by their sum (probabilities are represented by products).</description>
-    </item>
     <item>
       <title>Softmax Function</title>
       <link>https://xingelf.github.io/mlai/softmax/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/softmax/</guid>
-      <description>Softmax Function The softmax function is a mathematical function that converts a vector of numbers into a probability distribution. It is defined by the following equation.&#xA;$ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$&#xA;$ i = 0,1,2,\dots n$&#xA;When all $y_i$ values are summed, the total is always 1, which allows the output to be interpreted as probabilities. This property makes softmax particularly useful in multi-class classification problems.&#xA;One important property of the softmax function is that it remains unchanged when a constant value is added to all elements of the input vector, as shown by the equation:</description>
+      <description>&lt;h2 id=&#34;demystifying-the-softmax-function&#34;&gt;Demystifying the Softmax Function&lt;/h2&gt;&#xA;&lt;p&gt;The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems.  Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>
       <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>Converts percentage information given in String/Object type columns into numbers.&#xA;def str_to_rate(s): if pd.isnull(s) == False: return float(s.replace(&amp;#39;%&amp;#39;, &amp;#39;&amp;#39;)) else: return s Usage:&#xA;col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate) </description>
+      <description>&lt;p&gt;Converts percentage information given in String/Object type columns into numbers.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str_to_rate&lt;/span&gt;(s):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;isnull(s) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; float(s&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;col &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ReplyRate&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df[col] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; df[col]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;apply(str_to_rate)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</title>
       <link>https://xingelf.github.io/mlai/str_to_bool/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&#xA;def str_to_bool(s): if s == &amp;#39;t&amp;#39;: return True else: return False Usage&#xA;col = &amp;#34;Availability&amp;#34; df[col] = df[col].apply(str_to_bool) </description>
+      <description>&lt;p&gt;Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str_to_bool&lt;/span&gt;(s):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t&amp;#39;&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage&lt;/p&gt;</description>
     </item>
     <item>
       <title>Model Evaluation in ML</title>
       <link>https://xingelf.github.io/mlai/evalmodel/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/evalmodel/</guid>
-      <description>Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&amp;gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data. Holdout Method: A method of dividing the data set into two parts, using one for training and the other for testing evaluation metrics. It is common to split the training</description>
+      <description>&lt;h1 id=&#34;model-evaluation&#34;&gt;Model Evaluation&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Definition of Data in Model Evaluation&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Data used for training machine learning models.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Data used for adjusting hyperparameters, etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Data used to estimate generalization performance -&amp;gt; Final evaluation of the model.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Holdout Method, k-Fold Cross-Validation&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

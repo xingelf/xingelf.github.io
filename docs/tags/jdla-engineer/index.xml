@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JDLA engineer on Tech note of @xingelf</title>
-    <link>https://xingelf.github.io/tags/jdla-engineer/</link>
-    <description>Recent content in JDLA engineer on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/tags/jdla-engineer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Information Theory</title>
-      <link>https://xingelf.github.io/mlai/entropy/</link>
-      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/entropy/</guid>
-      <description>Purpose: To understand the basics of information theory. Information Quantity When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&#xA;$ I(A) = -\log P(A)$&#xA;The smaller the probability, the greater the information quantity. It is easy to remember that rare events have a greater impact (information).&#xA;The following characteristics apply to probability P(A).&#xA;It increases when the probability is small. In the case of multiple independent events, the information quantity is represented by their sum (probabilities are represented by products).</description>
-    </item>
+    <title>JDLA Engineer on Note about technology</title>
+    <link>http://localhost:1313/tags/jdla-engineer/</link>
+    <description>Recent content in JDLA Engineer on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/jdla-engineer/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

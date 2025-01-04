@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mac on Tech note of @xingelf</title>
+    <title>Mac on Note about technology</title>
     <link>https://xingelf.github.io/tags/mac/</link>
-    <description>Recent content in mac on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Mac on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 20 Jun 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/posts/_shortcut/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/posts/_shortcut/</guid>
-      <description>OSX/Macショートカットメモ OS全般 Spotlight Search Command + Space 画面ロック Control + Command + q 編集 コピー Command + c ペースト Command + v 書式なしペースト Command + Option + Shift + v orz もとに戻す/Undo Command + z も</description>
+      <description>&lt;h1 id=&#34;osxmacショートカットメモ&#34;&gt;OSX/Macショートカットメモ&lt;/h1&gt;&#xA;&lt;h2 id=&#34;os全般&#34;&gt;OS全般&lt;/h2&gt;&#xA;&lt;h3 id=&#34;spotlight-search&#34;&gt;Spotlight Search&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Space&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;画面ロック&#34;&gt;画面ロック&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Control + Command + q&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;編集&#34;&gt;編集&lt;/h2&gt;&#xA;&lt;h3 id=&#34;コピー&#34;&gt;コピー&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;ペースト&#34;&gt;ペースト&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;書式なしペースト&#34;&gt;書式なしペースト　&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Option + Shift + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;orz&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

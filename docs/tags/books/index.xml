@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>books on live life to the fullest.</title>
+    <title>Books on Note about technology</title>
     <link>https://xingelf.github.io/tags/books/</link>
-    <description>Recent content in books on live life to the fullest.</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    <description>Recent content in Books on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Jan 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/books/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OSCP取得</title>
-      <link>https://xingelf.github.io/sec/_oscp/</link>
-      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/_oscp/</guid>
-      <description>受験録、受験記 2022 イエラエ CSIRT支援室 第 23 回 未経験から OSCP保持者へ 私の OSCP受験記 https://scan.netsecurity.ne.jp/article/2022/04/28/47537.html https://kakyouim.hatenablog.com/entry/2020/05/11/225348 OSCP、OSCE、そしてOSEE…… 世界最高峰難度のセキュリティ</description>
+      <title>書籍 Kaggleで勝つデータ分析</title>
+      <link>https://xingelf.github.io/tech/kaggle/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/kaggle/</guid>
+      <description>&lt;h2 id=&#34;書籍-kaggleで勝つデータ分析---門脇-大輔&#34;&gt;書籍 Kaggleで勝つデータ分析   門脇 大輔&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;良い点：網羅的、リファレンス多数&lt;/li&gt;&#xA;&lt;li&gt;注意点：精読が必要、中級者向け&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/dp/B07YTDBC3Z/&#34;&gt;https://www.amazon.co.jp/dp/B07YTDBC3Z/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

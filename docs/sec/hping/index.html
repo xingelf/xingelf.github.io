@@ -3,24 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>hping/hping3使い方 - Tech note of @xingelf</title>
+	<title>How to Use hping/hping3: A Beginner&#39;s Guide - Note about technology</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="hping/hping3使い方" />
-<meta property="og:description" content="hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://xingelf.github.io/sec/hping/" /><meta property="article:section" content="sec" />
-<meta property="article:published_time" content="2022-12-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-12-10T00:00:00+00:00" />
+		<meta property="og:url" content="https://xingelf.github.io/sec/hping/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="How to Use hping/hping3: A Beginner&#39;s Guide">
+  <meta property="og:description" content="hping or hping3 is a versatile network tool that can be used for testing, troubleshooting, and analyzing network connections. It is commonly used by network administrators and cybersecurity professionals. Below is a guide to help you understand and start using hping/hping3 effectively.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="sec">
+    <meta property="article:published_time" content="2024-12-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-22T00:00:00+00:00">
+    <meta property="article:tag" content="Tool">
+    <meta property="article:tag" content="Network">
 
-
-		<meta itemprop="name" content="hping/hping3使い方">
-<meta itemprop="description" content="hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ"><meta itemprop="datePublished" content="2022-12-10T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-12-10T00:00:00+00:00" />
-<meta itemprop="wordCount" content="207">
-<meta itemprop="keywords" content="tool,network," />
-		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="hping/hping3使い方"/>
-<meta name="twitter:description" content="hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ"/>
+		
+  <meta itemprop="name" content="How to Use hping/hping3: A Beginner&#39;s Guide">
+  <meta itemprop="description" content="hping or hping3 is a versatile network tool that can be used for testing, troubleshooting, and analyzing network connections. It is commonly used by network administrators and cybersecurity professionals. Below is a guide to help you understand and start using hping/hping3 effectively.">
+  <meta itemprop="datePublished" content="2024-12-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="406">
+  <meta itemprop="keywords" content="Tool,Network">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to Use hping/hping3: A Beginner&#39;s Guide">
+  <meta name="twitter:description" content="hping or hping3 is a versatile network tool that can be used for testing, troubleshooting, and analyzing network connections. It is commonly used by network administrators and cybersecurity professionals. Below is a guide to help you understand and start using hping/hping3 effectively.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -32,17 +40,21 @@
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-1C3VFJB0MW', { 'anonymize_ip': false });
-}
-</script>
-
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -50,11 +62,11 @@ if (!doNotTrack) {
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Tech Note of @xingelf" rel="home">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
 			<div class="logo__item logo__imagebox">
 					<img class="logo__img" src="/icons/favicon.ico">
 				</div><div class="logo__item logo__text">
-					<div class="logo__title">Tech Note of @xingelf</div>
+					<div class="logo__title">Tech Note</div>
 					<div class="logo__tagline">Control your own destiny or someone else will</div>
 				</div>
 		</a>
@@ -96,7 +108,7 @@ if (!doNotTrack) {
 		<li class="menu__item">
 			<a class="menu__link" href="/sec">
 				
-				<span class="menu__text">Sec🧙</span>
+				<span class="menu__text">Security🧙</span>
 				
 			</a>
 		</li>
@@ -132,12 +144,10 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">hping/hping3使い方</h1>
-			<div class="post__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
-</div>
+			<h1 class="post__title">How to Use hping/hping3: A Beginner&#39;s Guide</h1>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-12-10T00:00:00Z">2022-12-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-12-22T00:00:00Z">2024-12-22</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
 	</span>
 </div></div>
 		</header>
@@ -147,39 +157,107 @@ if (!doNotTrack) {
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#hping3-コマンドサンプル-1">hping3 コマンドサンプル 1</a></li>
-    <li><a href="#hpingコマンドサンプル-2">hpingコマンドサンプル 2</a></li>
+    <li>
+      <ul>
+        <li><a href="#what-is-hping3"><strong>What is hping3?</strong></a></li>
+        <li><a href="#installing-hping3"><strong>Installing hping3</strong></a></li>
+        <li><a href="#basic-usage-of-hping3"><strong>Basic Usage of hping3</strong></a></li>
+        <li><a href="#common-use-cases"><strong>Common Use Cases</strong></a></li>
+        <li><a href="#important-notes"><strong>Important Notes</strong></a></li>
+        <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<p>hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。</p>
-<p>ネットワークスキャン、ファイアウォールテスト、ネットワークテストなど、さまざまなタスクに使用することができます。</p>
-<h2 id="hping3-コマンドサンプル-1">hping3 コマンドサンプル 1</h2>
+			<p><strong>hping</strong> or <strong>hping3</strong> is a versatile network tool that can be used for testing, troubleshooting, and analyzing network connections. It is commonly used by network administrators and cybersecurity professionals. Below is a guide to help you understand and start using hping/hping3 effectively.</p>
+<h1 id="how-to-use-hpinghping3-a-beginners-guide">How to Use hping/hping3: A Beginner&rsquo;s Guide</h1>
+<h3 id="what-is-hping3"><strong>What is hping3?</strong></h3>
+<p>hping3 is a command-line packet assembler and analyzer. It is similar to <code>ping</code> but offers much more flexibility. You can use it to send custom packets, perform TCP/IP testing, and even conduct basic penetration testing.</p>
+<h3 id="installing-hping3"><strong>Installing hping3</strong></h3>
+<p>To use hping3, you need to install it on your system. Here&rsquo;s how you can do it:</p>
 <ul>
-<li>eth0 インターフェース</li>
-<li>10パケット</li>
-<li>2.2.2.2で送信元を偽装</li>
-<li>TTLを100</li>
+<li><strong>For Debian/Ubuntu-based systems:</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install hping3
+</span></span></code></pre></div></li>
+<li><strong>For CentOS/RHEL-based systems:</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo yum install hping3
+</span></span></code></pre></div></li>
+<li><strong>For macOS:</strong>
+Install using Homebrew:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install hping
+</span></span></code></pre></div></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hping3 -I eth0 -c <span style="color:#ae81ff">10</span> -a 2.2.2.2 -t <span style="color:#ae81ff">100</span> <span style="color:#f92672">[</span>targetIP<span style="color:#f92672">]</span>
-</span></span></code></pre></div><h2 id="hpingコマンドサンプル-2">hpingコマンドサンプル 2</h2>
+<h3 id="basic-usage-of-hping3"><strong>Basic Usage of hping3</strong></h3>
+<ol>
+<li>
+<p><strong>Check if a Host is Reachable</strong>
+Similar to the <code>ping</code> command, you can use hping3 to check if a host is reachable:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 &lt;target-ip&gt;
+</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 192.168.1.1
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Send TCP SYN Packets</strong>
+Test if a specific port on a target is open by sending TCP SYN packets:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 -S -p &lt;port&gt; &lt;target-ip&gt;
+</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 -S -p <span style="color:#ae81ff">80</span> 192.168.1.1
+</span></span></code></pre></div><p>This will send SYN packets to port 80 (HTTP) of the target host.</p>
+</li>
+<li>
+<p><strong>Flood Test</strong>
+Conduct a flood test by sending a high volume of packets:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 --flood &lt;target-ip&gt;
+</span></span></code></pre></div><p><strong>Note:</strong> Use this responsibly and only on systems you own or have permission to test.</p>
+</li>
+<li>
+<p><strong>Send UDP Packets</strong>
+Test the reachability of UDP ports:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 --udp -p &lt;port&gt; &lt;target-ip&gt;
+</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 --udp -p <span style="color:#ae81ff">53</span> 192.168.1.1
+</span></span></code></pre></div><p>This sends UDP packets to port 53 (DNS) on the target.</p>
+</li>
+<li>
+<p><strong>Traceroute</strong>
+Perform a traceroute to analyze the path packets take to the destination:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 --traceroute &lt;target-ip&gt;
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Set a Custom Source Port</strong>
+Specify the source port for your packets:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hping3 -S -p &lt;target-port&gt; -s &lt;source-port&gt; &lt;target-ip&gt;
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="common-use-cases"><strong>Common Use Cases</strong></h3>
 <ul>
-<li>TCP port 80</li>
-<li>SYN Packet</li>
+<li><strong>Firewall Testing</strong>: Check if firewalls block specific ports or packet types.</li>
+<li><strong>Network Performance Testing</strong>: Measure latency and packet loss for network optimization.</li>
+<li><strong>Security Testing</strong>: Identify vulnerabilities in your network configuration.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hping3 -S -p <span style="color:#ae81ff">80</span> <span style="color:#f92672">[</span>targetIP<span style="color:#f92672">]</span>
-</span></span></code></pre></div>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/H5UsvAUoas8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+<h3 id="important-notes"><strong>Important Notes</strong></h3>
+<ul>
+<li>Always use hping3 ethically and within the bounds of the law.</li>
+<li>Unauthorized use of hping3 against networks you don’t own is illegal and may result in severe penalties.</li>
+</ul>
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>hping3 is a powerful tool for network analysis, troubleshooting, and security testing. With its wide range of features, it is invaluable for network professionals. Start by practicing basic commands and gradually explore its advanced capabilities to become proficient.</p>
+<p>Happy networking!</p>
+<hr>
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/H5UsvAUoas8?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
 
 
 		</div>
 		<footer class="post__footer">
 			
 <div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/tool/" rel="tag">tool</a>
@@ -193,29 +271,18 @@ if (!doNotTrack) {
 	</article>
 </main>
 
-<div class="authorbox clearfix">
-	<figure class="authorbox__avatar">
-		<img alt="@xingelf avatar" src="/img/favicon.png" class="avatar" height="90" width="90">
-	</figure>
-	<div class="authorbox__header">
-		<span class="authorbox__name">About @xingelf</span>
-	</div>
-	<div class="authorbox__description">
-		a security researcher and pentester.
-	</div>
-</div>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/sec/rootkit/" rel="prev">
+		<a class="pager__link" href="/sec/servletmappings/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Rootkit ルートキット</p>
+			<p class="pager__title">Understanding Servlet Mappings</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/sec/dos/" rel="next">
+		<a class="pager__link" href="/sec/buluetooth-attack/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">DoS/DDoS Attack</p>
+			<p class="pager__title">Bluetooth Attack Techniques</p>
 		</a>
 	</div>
 </nav>
@@ -228,7 +295,7 @@ if (!doNotTrack) {
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2024 @xingelf.
+			&copy; 2025 @xingelf.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

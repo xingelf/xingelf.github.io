@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cyber Security on Tech note of @xingelf</title>
+    <title>Cyber Security on Note about technology</title>
     <link>https://xingelf.github.io/categories/cyber-security/</link>
-    <description>Recent content in Cyber Security on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Cyber Security on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Fri, 08 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/sec/dos/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/dos/</guid>
-      <description>Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:&#xA;Understanding DDoS Attacks A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.</description>
+      <description>&lt;p&gt;Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;understanding-ddos-attacks&#34;&gt;Understanding DDoS Attacks&lt;/h1&gt;&#xA;&lt;p&gt;A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

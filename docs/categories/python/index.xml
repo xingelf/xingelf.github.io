@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Tech note of @xingelf</title>
+    <title>Python on Note about technology</title>
     <link>https://xingelf.github.io/categories/python/</link>
-    <description>Recent content in Python on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Python on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/python-err/</guid>
-      <description>1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error This error occurs when comparing timestamps in Yahoo Finance with different timezones.&#xA;Solution To fix this error, we need to localize the timestamps to UTC before comparing them.&#xA;start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq)) df.index = df.index.tz_localize(None) # Localize to UTC df = df[start &amp;lt; df.index] 2. Could not import the lzma module Error This error occurs when importing pandas 1.0 or later with an incomplete Python installation.&#xA;Solution To fix this error, we need to install the xz module using brew and reinstall pandas.</description>
+      <description>&lt;h2 id=&#34;1-invalid-comparison-between-dtypedatetime64ns-americanew_york-and-datetime64&#34;&gt;1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64&lt;/h2&gt;&#xA;&lt;h3 id=&#34;error&#34;&gt;Error&lt;/h3&gt;&#xA;&lt;p&gt;This error occurs when comparing timestamps in Yahoo Finance with different timezones.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

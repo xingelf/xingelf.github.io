@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine Learning on Tech note of @xingelf</title>
+    <title>Machine Learning on Note about technology</title>
     <link>https://xingelf.github.io/tags/machine-learning/</link>
-    <description>Recent content in Machine Learning on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <description>Recent content in Machine Learning on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Softmax Function</title>
       <link>https://xingelf.github.io/mlai/softmax/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/softmax/</guid>
-      <description>Softmax Function The softmax function is a mathematical function that converts a vector of numbers into a probability distribution. It is defined by the following equation.&#xA;$ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$&#xA;$ i = 0,1,2,\dots n$&#xA;When all $y_i$ values are summed, the total is always 1, which allows the output to be interpreted as probabilities. This property makes softmax particularly useful in multi-class classification problems.&#xA;One important property of the softmax function is that it remains unchanged when a constant value is added to all elements of the input vector, as shown by the equation:</description>
+      <description>&lt;h2 id=&#34;demystifying-the-softmax-function&#34;&gt;Demystifying the Softmax Function&lt;/h2&gt;&#xA;&lt;p&gt;The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems.  Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.&lt;/p&gt;</description>
     </item>
     <item>
       <title>機械学習前処理</title>
       <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
-      <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
-    </item>
-    <item>
-      <title>書籍 Kaggleで勝つデータ分析</title>
-      <link>https://xingelf.github.io/tech/kaggle/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/kaggle/</guid>
-      <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/ 書籍「Kaggleで勝つデータ分析」 概要 書籍「Kagg</description>
+      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

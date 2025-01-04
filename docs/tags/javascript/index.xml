@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on Tech note of @xingelf</title>
+    <title>Javascript on Note about technology</title>
     <link>https://xingelf.github.io/tags/javascript/</link>
-    <description>Recent content in Javascript on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Javascript on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/tech/js-promise/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/js-promise/</guid>
-      <description>JavaScript&amp;rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.&#xA;Promise: A Placeholder for the Future A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:&#xA;Pending: The operation is still underway. Resolved: The operation completed successfully, and a result is available. Rejected: The operation encountered an error.</description>
+      <description>&lt;h2 id=&#34;javascripts-promise-async-and-await-mastering-asynchronous-programming&#34;&gt;JavaScript&amp;rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming&lt;/h2&gt;&#xA;&lt;p&gt;JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

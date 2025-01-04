@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Finance on Tech note of @xingelf</title>
+    <title>Finance on Note about technology</title>
     <link>https://xingelf.github.io/tags/finance/</link>
-    <description>Recent content in Finance on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Finance on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Sep 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/finance/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,21 +13,21 @@
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>What is pandas Datareader It is a library to download data online.&#xA;Official Documentation&#xA;Here is a list of data sources. Some require an API key. fred and stooq can obtain data without an API key.&#xA;Remote Data Access&#xA;Fred Economic Data Data source provided by the St. Louis Fed.&#xA;Federal Reserve Economic Data&#xA;Time Series Graph of Fred NASDAQ Let&amp;rsquo;s create a time series graph of NASDAQ. Also, let&amp;rsquo;s display the 200-period moving average SMA200. This can be done in just about 10 lines.</description>
+      <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas-datareader.readthedocs.io/en/latest/index.html&#34;&gt;Official Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is a list of data sources.&#xA;Some require an API key.&#xA;fred and stooq can obtain data without an API key.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
-      <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
+      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Freqtradeのインストール</title>
       <link>https://xingelf.github.io/tech/freqtrade/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/freqtrade/</guid>
-      <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
+      <description>&lt;h1 id=&#34;freqtradeのインストール&#34;&gt;freqtradeのインストール&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/freqtrade/freqtrade.git&#34;&gt;https://github.com/freqtrade/freqtrade.git&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;python-venvのインストール&#34;&gt;python venvのインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt-get install python3-venv&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git-clone-にてパッケージを取得&#34;&gt;git clone にてパッケージを取得&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/freqtrade/freqtrade.git&#xA;cd freqtrade&#xA;git checkout develop&#xA;./setup.sh --install&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ta-libのインストールで時間が掛かりますが、ひたすら待ちます。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

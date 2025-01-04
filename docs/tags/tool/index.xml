@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tool on Tech note of @xingelf</title>
+    <title>Tool on Note about technology</title>
     <link>https://xingelf.github.io/tags/tool/</link>
-    <description>Recent content in tool on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <description>Recent content in Tool on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>hping/hping3使い方</title>
+      <title>How to Use hping/hping3: A Beginner&#39;s Guide</title>
       <link>https://xingelf.github.io/sec/hping/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/hping/</guid>
-      <description>hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ</description>
+      <description>&lt;p&gt;&lt;strong&gt;hping&lt;/strong&gt; or &lt;strong&gt;hping3&lt;/strong&gt; is a versatile network tool that can be used for testing, troubleshooting, and analyzing network connections. It is commonly used by network administrators and cybersecurity professionals. Below is a guide to help you understand and start using hping/hping3 effectively.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

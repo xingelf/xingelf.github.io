@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XML on Note about technology</title>
+    <link>https://xingelf.github.io/tags/xml/</link>
+    <description>Recent content in XML on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/xml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XML serialization</title>
+      <link>https://xingelf.github.io/sec/xml_serialization/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/xml_serialization/</guid>
+      <description>&lt;p&gt;XML serialization is the process of transforming data objects or object graphs into an XML document.  Think of it like taking a structured box of toys and laying each item out individually, labeled with XML tags, so it can be easily shipped and reconstructed later.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

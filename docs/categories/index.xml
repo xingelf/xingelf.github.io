@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Tech note of @xingelf</title>
+    <title>Categories on Note about technology</title>
     <link>https://xingelf.github.io/categories/</link>
-    <description>Recent content in Categories on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 21 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <description>Recent content in Categories on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security</title>
       <link>https://xingelf.github.io/categories/security/</link>
-      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/categories/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>https://xingelf.github.io/categories/tech/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ML/AI</title>
+      <link>https://xingelf.github.io/categories/ml/ai/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/ml/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>https://xingelf.github.io/categories/network/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/network/</guid>
       <description></description>
     </item>
     <item>
@@ -23,10 +44,10 @@
       <description></description>
     </item>
     <item>
-      <title>Tech</title>
-      <link>https://xingelf.github.io/categories/tech/</link>
-      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/tech/</guid>
+      <title>Machine Learning</title>
+      <link>https://xingelf.github.io/categories/machine-learning/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/machine-learning/</guid>
       <description></description>
     </item>
     <item>
@@ -58,17 +79,10 @@
       <description></description>
     </item>
     <item>
-      <title>CEH</title>
-      <link>https://xingelf.github.io/categories/ceh/</link>
-      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/ceh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ML/AI</title>
-      <link>https://xingelf.github.io/categories/ml/ai/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/ml/ai/</guid>
+      <title>Blockchain</title>
+      <link>https://xingelf.github.io/categories/blockchain/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/blockchain/</guid>
       <description></description>
     </item>
   </channel>

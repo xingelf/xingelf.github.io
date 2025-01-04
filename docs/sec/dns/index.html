@@ -3,24 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DNS Domain Name System - Tech note of @xingelf</title>
+	<title>DNS Domain Name System - Note about technology</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="DNS Domain Name System" />
-<meta property="og:description" content="DNS DNS is essential in terms of the foot printing of the target. DNS gives us a lot of information. DNS探索は初期調査(footprinting)の基本動作です。 whois DNS管理組織は下表の通り。RIPEが欧州＋中東・中央" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://xingelf.github.io/sec/dns/" /><meta property="article:section" content="sec" />
-<meta property="article:published_time" content="2022-08-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-08-14T00:00:00+00:00" />
+		<meta property="og:url" content="https://xingelf.github.io/sec/dns/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="DNS Domain Name System">
+  <meta property="og:description" content="DNS (Domain Name System) DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization’s network infrastructure.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="sec">
+    <meta property="article:published_time" content="2024-12-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-15T00:00:00+00:00">
+    <meta property="article:tag" content="DNS">
+    <meta property="article:tag" content="Network">
 
-
-		<meta itemprop="name" content="DNS Domain Name System">
-<meta itemprop="description" content="DNS DNS is essential in terms of the foot printing of the target. DNS gives us a lot of information. DNS探索は初期調査(footprinting)の基本動作です。 whois DNS管理組織は下表の通り。RIPEが欧州＋中東・中央"><meta itemprop="datePublished" content="2022-08-14T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-08-14T00:00:00+00:00" />
-<meta itemprop="wordCount" content="856">
-<meta itemprop="keywords" content="DNS," />
-		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="DNS Domain Name System"/>
-<meta name="twitter:description" content="DNS DNS is essential in terms of the foot printing of the target. DNS gives us a lot of information. DNS探索は初期調査(footprinting)の基本動作です。 whois DNS管理組織は下表の通り。RIPEが欧州＋中東・中央"/>
+		
+  <meta itemprop="name" content="DNS Domain Name System">
+  <meta itemprop="description" content="DNS (Domain Name System) DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization’s network infrastructure.">
+  <meta itemprop="datePublished" content="2024-12-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="355">
+  <meta itemprop="keywords" content="DNS,Network">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DNS Domain Name System">
+  <meta name="twitter:description" content="DNS (Domain Name System) DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization’s network infrastructure.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -32,17 +40,21 @@
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-1C3VFJB0MW', { 'anonymize_ip': false });
-}
-</script>
-
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -50,11 +62,11 @@ if (!doNotTrack) {
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Tech Note of @xingelf" rel="home">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
 			<div class="logo__item logo__imagebox">
 					<img class="logo__img" src="/icons/favicon.ico">
 				</div><div class="logo__item logo__text">
-					<div class="logo__title">Tech Note of @xingelf</div>
+					<div class="logo__title">Tech Note</div>
 					<div class="logo__tagline">Control your own destiny or someone else will</div>
 				</div>
 		</a>
@@ -96,7 +108,7 @@ if (!doNotTrack) {
 		<li class="menu__item">
 			<a class="menu__link" href="/sec">
 				
-				<span class="menu__text">Sec🧙</span>
+				<span class="menu__text">Security🧙</span>
 				
 			</a>
 		</li>
@@ -133,11 +145,9 @@ if (!doNotTrack) {
 	<article class="post">
 		<header class="post__header">
 			<h1 class="post__title">DNS Domain Name System</h1>
-			<div class="post__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">@xingelf</span>
-</div>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-14T00:00:00Z">2022-08-14</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ceh/" rel="category">CEH</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-12-15T00:00:00Z">2024-12-15</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/network/" rel="category">Network</a>
 	</span>
 </div></div>
 		</header>
@@ -147,77 +157,74 @@ if (!doNotTrack) {
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#whois">whois</a></li>
-    <li><a href="#dnsコマンド">DNSコマンド</a>
+    <li><a href="#dns-domain-name-system">DNS (Domain Name System)</a>
       <ul>
-        <li><a href="#nslookup">nslookup</a></li>
-        <li><a href="#dig">dig</a></li>
+        <li><a href="#whois">Whois</a></li>
+        <li><a href="#dns-commands">DNS Commands</a></li>
+        <li><a href="#zone-transfer">Zone Transfer</a></li>
+        <li><a href="#dnssec">DNSSEC</a></li>
+        <li><a href="#other-important-concepts">Other Important Concepts</a></li>
       </ul>
     </li>
-    <li><a href="#zone-transfer--dnsゾーン転送">Zone Transfer / DNSゾーン転送</a></li>
-    <li><a href="#dnssec">DNSSEC</a></li>
-    <li><a href="#その他">その他</a></li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h1 id="dns">DNS</h1>
-<p>DNS is essential in terms of the foot printing of the target.
-DNS gives us a lot of information.</p>
-<p>DNS探索は初期調査(footprinting)の基本動作です。</p>
-<h2 id="whois">whois</h2>
-<p>DNS管理組織は下表の通り。RIPEが欧州＋中東・中央アジアであることを意識しておけばOK.</p>
+			<h2 id="dns-domain-name-system">DNS (Domain Name System)</h2>
+<p>DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization&rsquo;s network infrastructure.</p>
+<h3 id="whois">Whois</h3>
+<p>The <code>whois</code> command reveals information about domain registration and ownership. Understanding the regional distribution of DNS management organizations is helpful.</p>
 <table>
-<thead>
-<tr>
-<th>Registrar</th>
-<th>Region</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ARIN</td>
-<td>North America</td>
-</tr>
-<tr>
-<td>APNIC</td>
-<td>Asia Pacific</td>
-</tr>
-<tr>
-<td>LACNIC</td>
-<td>Southern and Central America and Caribbean</td>
-</tr>
-<tr>
-<td>RIPE NCC</td>
-<td>Europe, the Middle East and Central Asia</td>
-</tr>
-<tr>
-<td>AfriNIC</td>
-<td>Africa</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Registrar</th>
+          <th>Region</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ARIN</td>
+          <td>North America</td>
+      </tr>
+      <tr>
+          <td>APNIC</td>
+          <td>Asia Pacific</td>
+      </tr>
+      <tr>
+          <td>LACNIC</td>
+          <td>Southern and Central America and Caribbean</td>
+      </tr>
+      <tr>
+          <td>RIPE NCC</td>
+          <td>Europe, the Middle East and Central Asia</td>
+      </tr>
+      <tr>
+          <td>AfriNIC</td>
+          <td>Africa</td>
+      </tr>
+  </tbody>
 </table>
-<h2 id="dnsコマンド">DNSコマンド</h2>
-<h3 id="nslookup">nslookup</h3>
-<p>windows 系ではこれしかありません。</p>
+<h3 id="dns-commands">DNS Commands</h3>
+<h4 id="nslookup">nslookup</h4>
+<p>This is the primary DNS query tool available on Windows systems. Useful options include:</p>
 <ul>
-<li>type=HINFO additional information about host such as OS, hardware and software.</li>
-<li>type=any 何でも</li>
+<li><code>type=HINFO</code>: Retrieves additional information about the host, such as operating system, hardware, and software.</li>
+<li><code>type=any</code>: Queries all available DNS record types.</li>
 </ul>
-<h3 id="dig">dig</h3>
-<p>Unix系でもnslookupは使えますが、digが便利です。</p>
-<h2 id="zone-transfer--dnsゾーン転送">Zone Transfer / DNSゾーン転送</h2>
-<p>zone transferの実験ができるサイト　</p>
-<p><a href="https://digi.ninja/projects/zonetransferme.php">https://digi.ninja/projects/zonetransferme.php</a></p>
+<h4 id="dig">dig</h4>
+<p>While <code>nslookup</code> is available on Unix-like systems, <code>dig</code> offers more advanced features and is generally preferred.</p>
+<h3 id="zone-transfer">Zone Transfer</h3>
+<p>Zone transfer is a mechanism for replicating DNS data across multiple servers.  However, misconfigured DNS servers can allow unauthorized zone transfers, leaking sensitive information about a domain&rsquo;s internal network structure.</p>
+<p><strong>Example using zonetransfer.me (a site specifically designed for zone transfer testing):</strong></p>
 <ol>
-<li>NSサーバを確認</li>
+<li><strong>Identify the NS servers:</strong></li>
 </ol>
 <pre tabindex="0"><code>host -t ns zonetransfer.me
 
 zonetransfer.me name server nsztm2.digi.ninja.
 zonetransfer.me name server nsztm1.digi.ninja.
 </code></pre><ol start="2">
-<li>host コマンドで登録されているホスト一覧をリスト ゾーン転送</li>
+<li><strong>Perform zone transfer using <code>host</code>:</strong></li>
 </ol>
 <pre tabindex="0"><code>host -l zonetransfer.me nsztm1.digi.ninja.
 
@@ -228,104 +235,36 @@ Aliases:
 
 zonetransfer.me has address 5.196.105.14
 zonetransfer.me name server nsztm1.digi.ninja.
-zonetransfer.me name server nsztm2.digi.ninja.
-14.105.196.5.IN-ADDR.ARPA.zonetransfer.me domain name pointer www.zonetransfer.me.
-asfdbbox.zonetransfer.me has address 127.0.0.1
-canberra-office.zonetransfer.me has address 202.14.81.230
-dc-office.zonetransfer.me has address 143.228.181.132
-deadbeef.zonetransfer.me has IPv6 address dead:beaf::
-email.zonetransfer.me has address 74.125.206.26
-home.zonetransfer.me has address 127.0.0.1
-internal.zonetransfer.me name server intns1.zonetransfer.me.
-internal.zonetransfer.me name server intns2.zonetransfer.me.
-intns1.zonetransfer.me has address 81.4.108.41
-intns2.zonetransfer.me has address 167.88.42.94
-office.zonetransfer.me has address 4.23.39.254
-ipv6actnow.org.zonetransfer.me has IPv6 address 2001:67c:2e8:11::c100:1332
-owa.zonetransfer.me has address 207.46.197.32
-alltcpportsopen.firewall.test.zonetransfer.me has address 127.0.0.1
-vpn.zonetransfer.me has address 174.36.59.154
-www.zonetransfer.me has address 5.196.105.14
+... (truncated output) ...
 </code></pre><ol start="3">
-<li>dig コマンドで登録されているホスト一覧をリスト ゾーン転送</li>
+<li><strong>Perform zone transfer using <code>dig</code>:</strong></li>
 </ol>
 <pre tabindex="0"><code>dig axfr zonetransfer.me @nsztm1.digi.ninja.
 
 ; &lt;&lt;&gt;&gt; DiG 9.10.6 &lt;&lt;&gt;&gt; axfr zonetransfer.me @nsztm1.digi.ninja.
 ;; global options: +cmd
-zonetransfer.me.	7200	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. 2019100801 172800 900 1209600 3600
-zonetransfer.me.	300	IN	HINFO	&#34;Casio fx-700G&#34; &#34;Windows XP&#34;
-zonetransfer.me.	301	IN	TXT	&#34;google-site-verification=tyP28J7JAUHA9fw2sHXMgcCC0I6XBmmoVi04VlMewxA&#34;
-zonetransfer.me.	7200	IN	MX	0 ASPMX.L.GOOGLE.COM.
-zonetransfer.me.	7200	IN	MX	10 ALT1.ASPMX.L.GOOGLE.COM.
-zonetransfer.me.	7200	IN	MX	10 ALT2.ASPMX.L.GOOGLE.COM.
-zonetransfer.me.	7200	IN	MX	20 ASPMX2.GOOGLEMAIL.COM.
-zonetransfer.me.	7200	IN	MX	20 ASPMX3.GOOGLEMAIL.COM.
-zonetransfer.me.	7200	IN	MX	20 ASPMX4.GOOGLEMAIL.COM.
-zonetransfer.me.	7200	IN	MX	20 ASPMX5.GOOGLEMAIL.COM.
-zonetransfer.me.	7200	IN	A	5.196.105.14
-zonetransfer.me.	7200	IN	NS	nsztm1.digi.ninja.
-zonetransfer.me.	7200	IN	NS	nsztm2.digi.ninja.
-_acme-challenge.zonetransfer.me. 301 IN	TXT	&#34;6Oa05hbUJ9xSsvYy7pApQvwCUSSGgxvrbdizjePEsZI&#34;
-_sip._tcp.zonetransfer.me. 14000 IN	SRV	0 0 5060 www.zonetransfer.me.
-14.105.196.5.IN-ADDR.ARPA.zonetransfer.me. 7200	IN PTR www.zonetransfer.me.
-asfdbauthdns.zonetransfer.me. 7900 IN	AFSDB	1 asfdbbox.zonetransfer.me.
-asfdbbox.zonetransfer.me. 7200	IN	A	127.0.0.1
-asfdbvolume.zonetransfer.me. 7800 IN	AFSDB	1 asfdbbox.zonetransfer.me.
-canberra-office.zonetransfer.me. 7200 IN A	202.14.81.230
-cmdexec.zonetransfer.me. 300	IN	TXT	&#34;; ls&#34;
-contact.zonetransfer.me. 2592000 IN	TXT	&#34;Remember to call or email Pippa on +44 123 4567890 or pippa@zonetransfer.me when making DNS changes&#34;
-dc-office.zonetransfer.me. 7200	IN	A	143.228.181.132
-deadbeef.zonetransfer.me. 7201	IN	AAAA	dead:beaf::
-dr.zonetransfer.me.	300	IN	LOC	53 20 56.558 N 1 38 33.526 W 0.00m 1m 10000m 10m
-DZC.zonetransfer.me.	7200	IN	TXT	&#34;AbCdEfG&#34;
-email.zonetransfer.me.	2222	IN	NAPTR	1 1 &#34;P&#34; &#34;E2U+email&#34; &#34;&#34; email.zonetransfer.me.zonetransfer.me.
-email.zonetransfer.me.	7200	IN	A	74.125.206.26
-Hello.zonetransfer.me.	7200	IN	TXT	&#34;Hi to Josh and all his class&#34;
-home.zonetransfer.me.	7200	IN	A	127.0.0.1
-Info.zonetransfer.me.	7200	IN	TXT	&#34;ZoneTransfer.me service provided by Robin Wood - robin@digi.ninja. See http://digi.ninja/projects/zonetransferme.php for more information.&#34;
-internal.zonetransfer.me. 300	IN	NS	intns1.zonetransfer.me.
-internal.zonetransfer.me. 300	IN	NS	intns2.zonetransfer.me.
-intns1.zonetransfer.me.	300	IN	A	81.4.108.41
-intns2.zonetransfer.me.	300	IN	A	167.88.42.94
-office.zonetransfer.me.	7200	IN	A	4.23.39.254
-ipv6actnow.org.zonetransfer.me.	7200 IN	AAAA	2001:67c:2e8:11::c100:1332
-owa.zonetransfer.me.	7200	IN	A	207.46.197.32
-robinwood.zonetransfer.me. 302	IN	TXT	&#34;Robin Wood&#34;
-rp.zonetransfer.me.	321	IN	RP	robin.zonetransfer.me. robinwood.zonetransfer.me.
-sip.zonetransfer.me.	3333	IN	NAPTR	2 3 &#34;P&#34; &#34;E2U+sip&#34; &#34;!^.*$!sip:customer-service@zonetransfer.me!&#34; .
-sqli.zonetransfer.me.	300	IN	TXT	&#34;&#39; or 1=1 --&#34;
-sshock.zonetransfer.me.	7200	IN	TXT	&#34;() { :]}; echo ShellShocked&#34;
-staging.zonetransfer.me. 7200	IN	CNAME	www.sydneyoperahouse.com.
-alltcpportsopen.firewall.test.zonetransfer.me. 301 IN A	127.0.0.1
-testing.zonetransfer.me. 301	IN	CNAME	www.zonetransfer.me.
-vpn.zonetransfer.me.	4000	IN	A	174.36.59.154
-www.zonetransfer.me.	7200	IN	A	5.196.105.14
-xss.zonetransfer.me.	300	IN	TXT	&#34;&#39;&gt;&lt;script&gt;alert(&#39;Boo&#39;)&lt;/script&gt;&#34;
-zonetransfer.me.	7200	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. 2019100801 172800 900 1209600 3600
-;; Query time: 240 msec
-;; SERVER: 81.4.108.41#53(81.4.108.41)
-;; WHEN: Sun Aug 14 14:10:43 JST 2022
-;; XFR size: 50 records (messages 1, bytes 1994)
-</code></pre><p><a href="https://www.youtube.com/watch?v=kdYnSfzb3UA">https://www.youtube.com/watch?v=kdYnSfzb3UA</a></p>
-<h2 id="dnssec">DNSSEC</h2>
-<p>DNS階層にデジタル署名を導入することで、不正なDNSサーバによるDNSクエリを防止</p>
-<p><a href="https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en">https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en</a></p>
-<p><a href="https://www.youtube.com/watch?v=MrtsKTC3KDM">https://www.youtube.com/watch?v=MrtsKTC3KDM</a></p>
-<p><a href="https://www.youtube.com/watch?v=rQ-dc5kwRtU">https://www.youtube.com/watch?v=rQ-dc5kwRtU</a></p>
-<h2 id="その他">その他</h2>
+zonetransfer.me.  7200  IN  SOA nsztm1.digi.ninja. robin.digi.ninja. 2019100801 172800 900 1209600 3600
+... (truncated output) ...
+</code></pre><h3 id="dnssec">DNSSEC</h3>
+<p>DNS Security Extensions (DNSSEC) enhance DNS security by adding digital signatures to DNS records. This helps prevent DNS spoofing and other attacks that compromise the integrity of DNS data.</p>
+<h3 id="other-important-concepts">Other Important Concepts</h3>
 <ul>
-<li>再起・非再帰問い合わせ Recursive, Non-Recursive問い合わせ</li>
+<li><strong>Recursive Queries:</strong> A DNS resolver (e.g., your ISP&rsquo;s DNS server) performs all necessary lookups on behalf of the client to find the final answer.</li>
+<li><strong>Non-Recursive Queries:</strong>  A DNS resolver only provides information it already knows or refers the client to another server.</li>
 </ul>
+<p>This rewritten version provides a more comprehensive and informative overview of DNS, including its importance in security assessments, key commands, zone transfer vulnerabilities, and DNSSEC.</p>
 
 		</div>
 		<footer class="post__footer">
 			
 <div class="post__tags tags clearfix">
-	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/dns/" rel="tag">DNS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/network/" rel="tag">Network</a>
 		</li>
 	</ul>
 </div>
@@ -333,29 +272,18 @@ zonetransfer.me.	7200	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. 2019100801 172
 	</article>
 </main>
 
-<div class="authorbox clearfix">
-	<figure class="authorbox__avatar">
-		<img alt="@xingelf avatar" src="/img/favicon.png" class="avatar" height="90" width="90">
-	</figure>
-	<div class="authorbox__header">
-		<span class="authorbox__name">About @xingelf</span>
-	</div>
-	<div class="authorbox__description">
-		a security researcher and pentester.
-	</div>
-</div>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/sec/computer_virus/" rel="prev">
+		<a class="pager__link" href="/sec/tailgate_piggybacking/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Computer Virus/ウイルス 分類</p>
+			<p class="pager__title">Tailgating vs. Piggybacking: Understanding the Difference</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/sec/rootkits/" rel="next">
+		<a class="pager__link" href="/sec/servletmappings/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Rootkit　ルートキット</p>
+			<p class="pager__title">Understanding Servlet Mappings</p>
 		</a>
 	</div>
 </nav>
@@ -368,7 +296,7 @@ zonetransfer.me.	7200	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. 2019100801 172
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2024 @xingelf.
+			&copy; 2025 @xingelf.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

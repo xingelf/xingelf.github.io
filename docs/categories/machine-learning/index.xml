@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Note about technology</title>
+    <link>https://xingelf.github.io/categories/machine-learning/</link>
+    <description>Recent content in Machine Learning on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Information Theory</title>
+      <link>https://xingelf.github.io/mlai/entropy/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/entropy/</guid>
+      <description>&lt;h1 id=&#34;purpose-to-understand-the-basics-of-information-theory&#34;&gt;Purpose: To understand the basics of information theory.&lt;/h1&gt;&#xA;&lt;h2 id=&#34;information-quantity&#34;&gt;Information Quantity&lt;/h2&gt;&#xA;&lt;p&gt;When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>書籍 Kaggleで勝つデータ分析</title>
+      <link>https://xingelf.github.io/tech/kaggle/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/kaggle/</guid>
+      <description>&lt;h2 id=&#34;書籍-kaggleで勝つデータ分析---門脇-大輔&#34;&gt;書籍 Kaggleで勝つデータ分析   門脇 大輔&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;良い点：網羅的、リファレンス多数&lt;/li&gt;&#xA;&lt;li&gt;注意点：精読が必要、中級者向け&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/dp/B07YTDBC3Z/&#34;&gt;https://www.amazon.co.jp/dp/B07YTDBC3Z/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

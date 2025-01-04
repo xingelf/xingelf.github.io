@@ -1,159 +1,145 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on Tech note of @xingelf</title>
+    <title>Tech on Note about technology</title>
     <link>https://xingelf.github.io/categories/tech/</link>
-    <description>Recent content in Tech on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <description>Recent content in Tech on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bluetooth Attack Techniques</title>
+      <link>https://xingelf.github.io/sec/buluetooth-attack/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/buluetooth-attack/</guid>
+      <description>&lt;p&gt;Bluetooth, a wireless technology that allows devices to exchange data over short distances, is widely used in smartphones, laptops, headphones, and other devices. While it offers convenience, it is also susceptible to certain types of security threats. Two notable methods of attack exploiting Bluetooth vulnerabilities are &lt;strong&gt;Bluejacking&lt;/strong&gt; and &lt;strong&gt;Bluesnarfing&lt;/strong&gt;. Below is an overview of these techniques and their implications.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CSRF Cross Site Request Forgery</title>
       <link>https://xingelf.github.io/sec/csrf/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/csrf/</guid>
-      <description>Cross-Site Request Forgery (CSRF) What is CSRF?&#xA;Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.&#xA;How does CSRF work?&#xA;There are two main ways that CSRF attacks can be carried out:&#xA;Image tag attack: The attacker embeds an image tag on a malicious website that points to a URL on the victim&amp;rsquo;s web application.</description>
+      <description>&lt;h2 id=&#34;cross-site-request-forgery-csrf&#34;&gt;Cross-Site Request Forgery (CSRF)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is CSRF?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tex/LaTex with Markdown</title>
       <link>https://xingelf.github.io/tech/latex-md/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/latex-md/</guid>
-      <description>Writing Mathematical Equations in Markdown Tex Format Setting up partials We will use the functionality of partial templates.&#xA;https://gohugo.io/templates/partials/&#xA;Create a folder named partials under the layouts directory.&#xA;\layouts\partials&#xA;Place two files in this directory.&#xA;mathjax.html &amp;lt;script type=&amp;#34;text/javascript&amp;#34; async src=&amp;#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&amp;#34;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/x-mathjax-config&amp;#34;&amp;gt; MathJax.Hub.Config({ tex2jax: { inlineMath: [[&amp;#39;$&amp;#39;, &amp;#39;$&amp;#39;] ], displayMath: [ [&amp;#39;$$&amp;#39;,&amp;#39;$$&amp;#39;], [&amp;#34;\\[&amp;#34;,&amp;#34;\\]&amp;#34;] ] } }); &amp;lt;/script&amp;gt; footer.html &amp;lt;footer&amp;gt; {{ partial &amp;#34;mathjax.html&amp;#34; . }} &amp;lt;/footer&amp;gt; Example of Mathematical Equations Simply surround the tex notation with $.&#xA;Formula for solving quadratic equations $ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $</description>
+      <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;https://gohugo.io/templates/partials/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Create a folder named partials under the layouts directory.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CSRF Tokens</title>
       <link>https://xingelf.github.io/sec/csrf_token/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/csrf_token/</guid>
-      <description>CSRF Tokens: A Comprehensive Guide for Security Professionals Introduction&#xA;Cross-Site Request Forgery (CSRF) is a malicious attack that tricks a user&amp;rsquo;s browser into performing unintended actions on a trusted website where the user is logged in. This can lead to unauthorized data access, financial losses, and other serious consequences.&#xA;How CSRF Attacks Work:&#xA;Victim logs in: The victim logs into a trusted website (e.g., a bank) and their browser stores a session cookie. Attacker creates a malicious link or form: The attacker creates a link or form on a different website (e.</description>
+      <description>&lt;h2 id=&#34;csrf-tokens-a-comprehensive-guide-for-security-professionals&#34;&gt;CSRF Tokens: A Comprehensive Guide for Security Professionals&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-Site Request Forgery (CSRF) is a malicious attack that tricks a user&amp;rsquo;s browser into performing unintended actions on a trusted website where the user is logged in. This can lead to unauthorized data access, financial losses, and other serious consequences.&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript&#39;s Promise, Async, Await in 3 minutes </title>
       <link>https://xingelf.github.io/tech/js-promise/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/js-promise/</guid>
-      <description>JavaScript&amp;rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.&#xA;Promise: A Placeholder for the Future A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:&#xA;Pending: The operation is still underway. Resolved: The operation completed successfully, and a result is available. Rejected: The operation encountered an error.</description>
+      <description>&lt;h2 id=&#34;javascripts-promise-async-and-await-mastering-asynchronous-programming&#34;&gt;JavaScript&amp;rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming&lt;/h2&gt;&#xA;&lt;p&gt;JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.&lt;/p&gt;</description>
     </item>
     <item>
       <title>iPhone Memo </title>
       <link>https://xingelf.github.io/ios/iphone/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/ios/iphone/</guid>
-      <description>Shortcuts Placing Location Settings ON/OFF on the Home Button Create a shortcut to open the URL and specify the following for the URL:&#xA;prefs:root=Privacy&amp;amp;path=LOCATION&#xA;Placing it on the home button makes toggling OFF/ON easier.&#xA;Kindle Auto-Read Aloud on iPhone Enabling AssistiveTouch Settings → Accessibility → Touch → AssistiveTouch → ON&#xA;Screen Reading Open the Kindle app and select screen reading from AssistiveTouch◎.&#xA;iPhone Reading Aloud Challenges Pauses on image pages - Japanese books often have numerous inserted images, unlike English books&amp;rsquo; translations, resulting in frequent pauses.</description>
+      <description>&lt;h1 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h1&gt;&#xA;&lt;h2 id=&#34;placing-location-settings-onoff-on-the-home-button&#34;&gt;Placing Location Settings ON/OFF on the Home Button&lt;/h2&gt;&#xA;&lt;p&gt;Create a shortcut to open the URL and specify the following for the URL:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Happy Hacking Keyboard for mac</title>
       <link>https://xingelf.github.io/tech/hhkb/</link>
       <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/hhkb/</guid>
-      <description>Happy Hacking Keyboard ⌨ I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&#xA;Configuration of DIP Switches on the Backside Mac Compatibility&#xA;SW1: OFF SW2: ON DEL key as Backspace&#xA;SW3: ON SW4 and SW5 should be set to OFF.&#xA;PowerSave SW6: ON/OFF It&amp;rsquo;s up to personal preference, but for efficiency, OFF is recommended. Combination with Mac App Magnet As the keyboard lacks arrow keys, I&amp;rsquo;ve configured the following shortcuts using the Command key for screen arrangement.</description>
+      <description>&lt;h1 id=&#34;happy-hacking-keyboard-&#34;&gt;Happy Hacking Keyboard ⌨&lt;/h1&gt;&#xA;&lt;p&gt;I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configuration-of-dip-switches-on-the-backside&#34;&gt;Configuration of DIP Switches on the Backside&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Mac Compatibility&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ubuntu on Azure Notes</title>
       <link>https://xingelf.github.io/tech/ubuntu/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ubuntu/</guid>
-      <description>Regular Maintenance sudo apt update sudo apt upgrade Error during Regular Maintenance: 11: Resource temporarily unavailable This is a solution for handling resource shortage detected during sudo upgrade.&#xA;E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it? Check if apt exists with the ps command. If it does, wait a bit and retry, or if possible, restarting may be quicker.&#xA;ps aux | grep -i apt Stopping Regular apt update There were symptoms of OOM (Out-of-Memory) resulting from apt running every day at 6 AM and 6 PM (memory is limited).</description>
+      <description>&lt;h1 id=&#34;regular-maintenance&#34;&gt;Regular Maintenance&lt;/h1&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update&#xA;sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;error-during-regular-maintenance-11-resource-temporarily-unavailable&#34;&gt;Error during Regular Maintenance: 11: Resource temporarily unavailable&lt;/h2&gt;&#xA;&lt;p&gt;This is a solution for handling resource shortage detected during &lt;code&gt;sudo upgrade&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computer Virus/ウイルス 分類</title>
       <link>https://xingelf.github.io/sec/computer_virus/</link>
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/computer_virus/</guid>
-      <description>ウイルス種類 ポリモーフィック型ウイルス いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。 スペースフィラー型・キャヴィティ型ウイルス さ</description>
+      <description>&lt;h1 id=&#34;ウイルス種類&#34;&gt;ウイルス種類&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ポリモーフィック型ウイルス&#34;&gt;ポリモーフィック型ウイルス&lt;/h2&gt;&#xA;&lt;p&gt;いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHNTPW　Windowsパスワード初期化・リセット</title>
       <link>https://xingelf.github.io/sec/chntpw/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/chntpw/</guid>
-      <description>Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。 administratorパスワードをロストした場合の復旧手段の</description>
-    </item>
-    <item>
-      <title>TailgatingとPiggybackingの違い</title>
-      <link>https://xingelf.github.io/sec/tailgate_piggybacking/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/tailgate_piggybacking/</guid>
-      <description>Tailgating 隠れて後ろからゲート通過 車で後ろから追走したり、後ろに付いてETCゲートなどを通過することから、 従業員がゲートを通過する際に後ろからひっそりと一緒に通過するこ</description>
+      <description>&lt;p&gt;Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。&#xA;administratorパスワードをロストした場合の復旧手段の１つとなります。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cyber Kill Chain サイバーキルチェーン</title>
       <link>https://xingelf.github.io/sec/cyberkillchain/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/cyberkillchain/</guid>
-      <description>サイバーキルチェーンとは https://en.wikipedia.org/wiki/Kill_chain#Cyber ロッキードマーティン社のキルチェーンのプロセスをサイバー攻撃に適用したもの。 サイバー・キルチェーンは7つのステップで構成される。 1.偵</description>
-    </item>
-    <item>
-      <title>Bluethoothを利用した攻撃</title>
-      <link>https://xingelf.github.io/sec/buluetooth-attack/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/buluetooth-attack/</guid>
-      <description>Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot</description>
+      <description>&lt;h1 id=&#34;サイバーキルチェーンとは&#34;&gt;サイバーキルチェーンとは&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Kill_chain#Cyber&#34;&gt;https://en.wikipedia.org/wiki/Kill_chain#Cyber&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;ロッキードマーティン社のキルチェーンのプロセスをサイバー攻撃に適用したもの。&lt;/p&gt;</description>
     </item>
     <item>
       <title>pandas Dataredader</title>
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>What is pandas Datareader It is a library to download data online.&#xA;Official Documentation&#xA;Here is a list of data sources. Some require an API key. fred and stooq can obtain data without an API key.&#xA;Remote Data Access&#xA;Fred Economic Data Data source provided by the St. Louis Fed.&#xA;Federal Reserve Economic Data&#xA;Time Series Graph of Fred NASDAQ Let&amp;rsquo;s create a time series graph of NASDAQ. Also, let&amp;rsquo;s display the 200-period moving average SMA200. This can be done in just about 10 lines.</description>
+      <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas-datareader.readthedocs.io/en/latest/index.html&#34;&gt;Official Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is a list of data sources.&#xA;Some require an API key.&#xA;fred and stooq can obtain data without an API key.&lt;/p&gt;</description>
     </item>
     <item>
       <title>機械学習前処理</title>
       <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
-      <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
+      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ショートカット - Shortcut</title>
       <link>https://xingelf.github.io/posts/_shortcut/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/posts/_shortcut/</guid>
-      <description>OSX/Macショートカットメモ OS全般 Spotlight Search Command + Space 画面ロック Control + Command + q 編集 コピー Command + c ペースト Command + v 書式なしペースト Command + Option + Shift + v orz もとに戻す/Undo Command + z も</description>
+      <description>&lt;h1 id=&#34;osxmacショートカットメモ&#34;&gt;OSX/Macショートカットメモ&lt;/h1&gt;&#xA;&lt;h2 id=&#34;os全般&#34;&gt;OS全般&lt;/h2&gt;&#xA;&lt;h3 id=&#34;spotlight-search&#34;&gt;Spotlight Search&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Space&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;画面ロック&#34;&gt;画面ロック&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Control + Command + q&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;編集&#34;&gt;編集&lt;/h2&gt;&#xA;&lt;h3 id=&#34;コピー&#34;&gt;コピー&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;ペースト&#34;&gt;ペースト&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;書式なしペースト&#34;&gt;書式なしペースト　&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Option + Shift + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;orz&lt;/p&gt;</description>
     </item>
     <item>
       <title>github 備忘・対処メモ</title>
       <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/github/</guid>
-      <description>.gitignoreが効かない キャッシュ削除による解決を試みます。 git rm -r --cached . git push がreject ローカルが正/originであることを確認して、強制的にpushし</description>
+      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-push-がreject&#34;&gt;git push がreject&lt;/h2&gt;&#xA;&lt;p&gt;ローカルが正/originであることを確認して、強制的にpushします。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Atom メモ</title>
       <link>https://xingelf.github.io/tech/_atom/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_atom/</guid>
-      <description>基本 タブや空白を表示 Preferences -&amp;gt; Editor Show Invisiblesをチェックします Atom パッケージ関連 atom-beautify ソースコードを整形します。 autocomplete-plus 自動補完機能です。 markdownファイルを編集す</description>
+      <description>&lt;h2 id=&#34;基本&#34;&gt;基本&lt;/h2&gt;&#xA;&lt;h3 id=&#34;タブや空白を表示&#34;&gt;タブや空白を表示&lt;/h3&gt;&#xA;&lt;p&gt;Preferences -&amp;gt; Editor&lt;/p&gt;&#xA;&lt;p&gt;Show Invisiblesをチェックします&lt;/p&gt;</description>
     </item>
     <item>
       <title>IUT and abc</title>
       <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/iut-abc/</guid>
-      <description>一般向けIUT・abc予想について。 IUT・abc予想 足し算と掛け算に関わる関係を明らかにする理論と言われます。 また、強いabc予想のもとでは、フェルマーの最終</description>
+      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;&#xA;&lt;h1 id=&#34;iutabc予想&#34;&gt;IUT・abc予想&lt;/h1&gt;&#xA;&lt;p&gt;足し算と掛け算に関わる関係を明らかにする理論と言われます。&#xA;また、強いabc予想のもとでは、フェルマーの最終定理が背理法により簡単に導出されます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
-      <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
+      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Freqtradeのインストール</title>
       <link>https://xingelf.github.io/tech/freqtrade/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/freqtrade/</guid>
-      <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
-    </item>
-    <item>
-      <title>書籍 Kaggleで勝つデータ分析</title>
-      <link>https://xingelf.github.io/tech/kaggle/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/kaggle/</guid>
-      <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/ 書籍「Kaggleで勝つデータ分析」 概要 書籍「Kagg</description>
+      <description>&lt;h1 id=&#34;freqtradeのインストール&#34;&gt;freqtradeのインストール&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/freqtrade/freqtrade.git&#34;&gt;https://github.com/freqtrade/freqtrade.git&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;python-venvのインストール&#34;&gt;python venvのインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt-get install python3-venv&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git-clone-にてパッケージを取得&#34;&gt;git clone にてパッケージを取得&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/freqtrade/freqtrade.git&#xA;cd freqtrade&#xA;git checkout develop&#xA;./setup.sh --install&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ta-libのインストールで時間が掛かりますが、ひたすら待ちます。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

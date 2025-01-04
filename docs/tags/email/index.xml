@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>email on Tech note of @xingelf</title>
+    <title>Email on Note about technology</title>
     <link>https://xingelf.github.io/tags/email/</link>
-    <description>Recent content in email on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Email on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Thu, 26 May 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/email/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/sec/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
-      <description>Pharming ファーミング https://csrc.nist.gov/glossary/term/pharming DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有</description>
+      <description>&lt;h2 id=&#34;pharmingファーミング&#34;&gt;Pharming　ファーミング&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://csrc.nist.gov/glossary/term/pharming&#34;&gt;https://csrc.nist.gov/glossary/term/pharming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Function on Tech note of @xingelf</title>
+    <title>Function on Note about technology</title>
     <link>https://xingelf.github.io/tags/function/</link>
-    <description>Recent content in Function on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Function on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/function/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/dapps/solidity-function/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-function/</guid>
-      <description>Solidity Function 関数 基本的な関数の例は以下の通りです。 足し算 function add(uint a, uint b) public pure returns (uint){ return a + b; } メッセージ function add(uint a, uint b) public pure returns (uint){ return a + b; } Solidity Visibility Modifiers 関数可視性修飾子 private : 該当関数のコントラク</description>
+      <description>&lt;h1 id=&#34;solidity-function--関数&#34;&gt;Solidity Function  関数&lt;/h1&gt;&#xA;&lt;p&gt;基本的な関数の例は以下の通りです。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

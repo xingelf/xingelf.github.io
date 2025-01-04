@@ -1,369 +1,369 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech note of @xingelf</title>
+    <title>Note about technology</title>
     <link>https://xingelf.github.io/</link>
-    <description>Recent content on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 21 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <description>Recent content on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XML serialization</title>
+      <link>https://xingelf.github.io/sec/xml_serialization/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/xml_serialization/</guid>
+      <description>&lt;p&gt;XML serialization is the process of transforming data objects or object graphs into an XML document.  Think of it like taking a structured box of toys and laying each item out individually, labeled with XML tags, so it can be easily shipped and reconstructed later.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rootkits: The Hidden Threat</title>
+      <link>https://xingelf.github.io/sec/rootkit/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/rootkit/</guid>
+      <description>&lt;h2 id=&#34;rootkits-the-hidden-threat&#34;&gt;Rootkits: The Hidden Threat&lt;/h2&gt;&#xA;&lt;p&gt;Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is a Rubber Hose Attack?</title>
+      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
+      <description>&lt;p&gt;A &lt;strong&gt;Rubber Hose Attack&lt;/strong&gt; refers to a technique in cryptography and cybersecurity where &lt;strong&gt;physical or psychological coercion is used to extract information&lt;/strong&gt;. This term is often used metaphorically to contrast with theoretical or technical methods of breaking encryption.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bluetooth Attack Techniques</title>
+      <link>https://xingelf.github.io/sec/buluetooth-attack/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/buluetooth-attack/</guid>
+      <description>&lt;p&gt;Bluetooth, a wireless technology that allows devices to exchange data over short distances, is widely used in smartphones, laptops, headphones, and other devices. While it offers convenience, it is also susceptible to certain types of security threats. Two notable methods of attack exploiting Bluetooth vulnerabilities are &lt;strong&gt;Bluejacking&lt;/strong&gt; and &lt;strong&gt;Bluesnarfing&lt;/strong&gt;. Below is an overview of these techniques and their implications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Use hping/hping3: A Beginner&#39;s Guide</title>
+      <link>https://xingelf.github.io/sec/hping/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/hping/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;hping&lt;/strong&gt; or &lt;strong&gt;hping3&lt;/strong&gt; is a versatile network tool that can be used for testing, troubleshooting, and analyzing network connections. It is commonly used by network administrators and cybersecurity professionals. Below is a guide to help you understand and start using hping/hping3 effectively.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Understanding Servlet Mappings</title>
       <link>https://xingelf.github.io/sec/servletmappings/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/servletmappings/</guid>
-      <description>Servlet Mappings Made Simple: A Beginner&amp;rsquo;s Guide Servlet mappings are a fundamental concept in Java web development. They define how requests from a web browser are directed to specific servlets on a server. Think of servlet mappings as traffic signs on a highway—they guide incoming requests to the right destination for processing.&#xA;What is a Servlet? A servlet is a Java program that runs on a server and handles client requests. For example, it might process form data, interact with a database, or generate dynamic web pages.</description>
+      <description>&lt;h2 id=&#34;servlet-mappings-made-simple-a-beginners-guide&#34;&gt;Servlet Mappings Made Simple: A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;Servlet mappings are a fundamental concept in Java web development. They define how requests from a web browser are directed to specific servlets on a server. Think of servlet mappings as traffic signs on a highway—they guide incoming requests to the right destination for processing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Softmax Function</title>
+      <link>https://xingelf.github.io/mlai/softmax/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/softmax/</guid>
+      <description>&lt;h2 id=&#34;demystifying-the-softmax-function&#34;&gt;Demystifying the Softmax Function&lt;/h2&gt;&#xA;&lt;p&gt;The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems.  Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DNS Domain Name System</title>
+      <link>https://xingelf.github.io/sec/dns/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/dns/</guid>
+      <description>&lt;h2 id=&#34;dns-domain-name-system&#34;&gt;DNS (Domain Name System)&lt;/h2&gt;&#xA;&lt;p&gt;DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization&amp;rsquo;s network infrastructure.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tailgating vs. Piggybacking: Understanding the Difference</title>
+      <link>https://xingelf.github.io/sec/tailgate_piggybacking/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/tailgate_piggybacking/</guid>
+      <description>&lt;p&gt;In the realm of physical security, &amp;ldquo;tailgating&amp;rdquo; and &amp;ldquo;piggybacking&amp;rdquo; are two common methods used to gain unauthorized access to restricted areas. While both involve an unauthorized individual entering a secure area, there is a key distinction between the two.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTTP Request Smuggling (HRS)</title>
       <link>https://xingelf.github.io/sec/http_request_smuggling/</link>
       <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/http_request_smuggling/</guid>
-      <description>Understanding HTTP Request Smuggling: A Deep Dive into Web Security In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.</description>
+      <description>&lt;h2 id=&#34;understanding-http-request-smuggling-a-deep-dive-into-web-security&#34;&gt;Understanding HTTP Request Smuggling: A Deep Dive into Web Security&lt;/h2&gt;&#xA;&lt;p&gt;In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cross-Origin Resource Sharing (CORS)</title>
       <link>https://xingelf.github.io/sec/cors/</link>
       <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/cors/</guid>
-      <description>Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&#xA;What is CORS? CORS is a security feature implemented by web browsers to prevent malicious websites from accessing resources from another domain without permission.</description>
+      <description>&lt;h2 id=&#34;understanding-cross-origin-resource-sharing-cors-a-beginners-guide&#34;&gt;Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DIRB</title>
       <link>https://xingelf.github.io/sec/dirb/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/dirb/</guid>
-      <description>Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.</description>
+      <description>&lt;h3 id=&#34;exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing&#34;&gt;Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing&lt;/h3&gt;&#xA;&lt;p&gt;In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CSRF Cross Site Request Forgery</title>
       <link>https://xingelf.github.io/sec/csrf/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/csrf/</guid>
-      <description>Cross-Site Request Forgery (CSRF) What is CSRF?&#xA;Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.&#xA;How does CSRF work?&#xA;There are two main ways that CSRF attacks can be carried out:&#xA;Image tag attack: The attacker embeds an image tag on a malicious website that points to a URL on the victim&amp;rsquo;s web application.</description>
+      <description>&lt;h2 id=&#34;cross-site-request-forgery-csrf&#34;&gt;Cross-Site Request Forgery (CSRF)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is CSRF?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tex/LaTex with Markdown</title>
       <link>https://xingelf.github.io/tech/latex-md/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/latex-md/</guid>
-      <description>Writing Mathematical Equations in Markdown Tex Format Setting up partials We will use the functionality of partial templates.&#xA;https://gohugo.io/templates/partials/&#xA;Create a folder named partials under the layouts directory.&#xA;\layouts\partials&#xA;Place two files in this directory.&#xA;mathjax.html &amp;lt;script type=&amp;#34;text/javascript&amp;#34; async src=&amp;#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&amp;#34;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/x-mathjax-config&amp;#34;&amp;gt; MathJax.Hub.Config({ tex2jax: { inlineMath: [[&amp;#39;$&amp;#39;, &amp;#39;$&amp;#39;] ], displayMath: [ [&amp;#39;$$&amp;#39;,&amp;#39;$$&amp;#39;], [&amp;#34;\\[&amp;#34;,&amp;#34;\\]&amp;#34;] ] } }); &amp;lt;/script&amp;gt; footer.html &amp;lt;footer&amp;gt; {{ partial &amp;#34;mathjax.html&amp;#34; . }} &amp;lt;/footer&amp;gt; Example of Mathematical Equations Simply surround the tex notation with $.&#xA;Formula for solving quadratic equations $ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $</description>
+      <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;https://gohugo.io/templates/partials/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Create a folder named partials under the layouts directory.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CSRF Tokens</title>
       <link>https://xingelf.github.io/sec/csrf_token/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/csrf_token/</guid>
-      <description>CSRF Tokens: A Comprehensive Guide for Security Professionals Introduction&#xA;Cross-Site Request Forgery (CSRF) is a malicious attack that tricks a user&amp;rsquo;s browser into performing unintended actions on a trusted website where the user is logged in. This can lead to unauthorized data access, financial losses, and other serious consequences.&#xA;How CSRF Attacks Work:&#xA;Victim logs in: The victim logs into a trusted website (e.g., a bank) and their browser stores a session cookie. Attacker creates a malicious link or form: The attacker creates a link or form on a different website (e.</description>
+      <description>&lt;h2 id=&#34;csrf-tokens-a-comprehensive-guide-for-security-professionals&#34;&gt;CSRF Tokens: A Comprehensive Guide for Security Professionals&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-Site Request Forgery (CSRF) is a malicious attack that tricks a user&amp;rsquo;s browser into performing unintended actions on a trusted website where the user is logged in. This can lead to unauthorized data access, financial losses, and other serious consequences.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Information Theory</title>
       <link>https://xingelf.github.io/mlai/entropy/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/entropy/</guid>
-      <description>Purpose: To understand the basics of information theory. Information Quantity When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&#xA;$ I(A) = -\log P(A)$&#xA;The smaller the probability, the greater the information quantity. It is easy to remember that rare events have a greater impact (information).&#xA;The following characteristics apply to probability P(A).&#xA;It increases when the probability is small. In the case of multiple independent events, the information quantity is represented by their sum (probabilities are represented by products).</description>
+      <description>&lt;h1 id=&#34;purpose-to-understand-the-basics-of-information-theory&#34;&gt;Purpose: To understand the basics of information theory.&lt;/h1&gt;&#xA;&lt;h2 id=&#34;information-quantity&#34;&gt;Information Quantity&lt;/h2&gt;&#xA;&lt;p&gt;When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&lt;/p&gt;</description>
     </item>
     <item>
       <title>JavaScript&#39;s Promise, Async, Await in 3 minutes </title>
       <link>https://xingelf.github.io/tech/js-promise/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/js-promise/</guid>
-      <description>JavaScript&amp;rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.&#xA;Promise: A Placeholder for the Future A Promise represents the eventual outcome of an asynchronous operation. It exists in three states:&#xA;Pending: The operation is still underway. Resolved: The operation completed successfully, and a result is available. Rejected: The operation encountered an error.</description>
-    </item>
-    <item>
-      <title>Softmax Function</title>
-      <link>https://xingelf.github.io/mlai/softmax/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/softmax/</guid>
-      <description>Softmax Function The softmax function is a mathematical function that converts a vector of numbers into a probability distribution. It is defined by the following equation.&#xA;$ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$&#xA;$ i = 0,1,2,\dots n$&#xA;When all $y_i$ values are summed, the total is always 1, which allows the output to be interpreted as probabilities. This property makes softmax particularly useful in multi-class classification problems.&#xA;One important property of the softmax function is that it remains unchanged when a constant value is added to all elements of the input vector, as shown by the equation:</description>
+      <description>&lt;h2 id=&#34;javascripts-promise-async-and-await-mastering-asynchronous-programming&#34;&gt;JavaScript&amp;rsquo;s Promise, Async, and Await: Mastering Asynchronous Programming&lt;/h2&gt;&#xA;&lt;p&gt;JavaScript reigns supreme in web development, but handling asynchronous operations can introduce complexity. This is where Promise, Async, and Await come to the rescue. These powerful tools simplify and streamline asynchronous programming in JavaScript.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Threat Intelligence</title>
       <link>https://xingelf.github.io/sec/threat_intelligence/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/threat_intelligence/</guid>
-      <description>There are several categories of threat intelligence.&#xA;https://info-savvy.com/types-of-threat-intelligence/&#xA;Technical Threat Intelligence Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics.</description>
+      <description>&lt;p&gt;There are several categories of threat intelligence.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://info-savvy.com/types-of-threat-intelligence/&#34;&gt;https://info-savvy.com/types-of-threat-intelligence/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;technical-threat-intelligence&#34;&gt;Technical Threat Intelligence&lt;/h1&gt;&#xA;&lt;p&gt;Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics. It is crucial to detect and analyze IOCs at the right time. Tactical intelligence is used by SOC team members. The information obtained here leads to new rules being written into the organization&amp;rsquo;s current security products (IDS/IP, firewalls, endpoint security systems, etc.). Suspicious IPs may also be detected from spam emails. The information obtained is directly fed back into the organization&amp;rsquo;s products.&lt;/p&gt;</description>
     </item>
     <item>
       <title>iPhone Memo </title>
       <link>https://xingelf.github.io/ios/iphone/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/ios/iphone/</guid>
-      <description>Shortcuts Placing Location Settings ON/OFF on the Home Button Create a shortcut to open the URL and specify the following for the URL:&#xA;prefs:root=Privacy&amp;amp;path=LOCATION&#xA;Placing it on the home button makes toggling OFF/ON easier.&#xA;Kindle Auto-Read Aloud on iPhone Enabling AssistiveTouch Settings → Accessibility → Touch → AssistiveTouch → ON&#xA;Screen Reading Open the Kindle app and select screen reading from AssistiveTouch◎.&#xA;iPhone Reading Aloud Challenges Pauses on image pages - Japanese books often have numerous inserted images, unlike English books&amp;rsquo; translations, resulting in frequent pauses.</description>
+      <description>&lt;h1 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h1&gt;&#xA;&lt;h2 id=&#34;placing-location-settings-onoff-on-the-home-button&#34;&gt;Placing Location Settings ON/OFF on the Home Button&lt;/h2&gt;&#xA;&lt;p&gt;Create a shortcut to open the URL and specify the following for the URL:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quick Introdution of hardhat</title>
       <link>https://xingelf.github.io/dapps/hardhat/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/hardhat/</guid>
-      <description>Streamlining Solidity Development with Hardhat: Introduction and Usage Guide When developing smart contracts using Solidity, efficient development processes and reliable testing are crucial. Therefore, in this article, we&amp;rsquo;ll introduce and explore Hardhat, a handy tool for Solidity developers.&#xA;What is Hardhat? Hardhat is a development tool for building, testing, and deploying smart contracts on the Ethereum blockchain. Formerly known as Buidler, it was rebranded as Hardhat in 2020.&#xA;Here are some key features of Hardhat:&#xA;Customizable Task Runner: Hardhat provides a flexible task runner to execute various tasks required for Ethereum development.</description>
+      <description>&lt;h1 id=&#34;streamlining-solidity-development-with-hardhat-introduction-and-usage-guide&#34;&gt;Streamlining Solidity Development with Hardhat: Introduction and Usage Guide&lt;/h1&gt;&#xA;&lt;p&gt;When developing smart contracts using Solidity, efficient development processes and reliable testing are crucial. Therefore, in this article, we&amp;rsquo;ll introduce and explore Hardhat, a handy tool for Solidity developers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DoS/DDoS Attack</title>
       <link>https://xingelf.github.io/sec/dos/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/dos/</guid>
-      <description>Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:&#xA;Understanding DDoS Attacks A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.</description>
+      <description>&lt;p&gt;Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;understanding-ddos-attacks&#34;&gt;Understanding DDoS Attacks&lt;/h1&gt;&#xA;&lt;p&gt;A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Happy Hacking Keyboard for mac</title>
       <link>https://xingelf.github.io/tech/hhkb/</link>
       <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/hhkb/</guid>
-      <description>Happy Hacking Keyboard ⌨ I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&#xA;Configuration of DIP Switches on the Backside Mac Compatibility&#xA;SW1: OFF SW2: ON DEL key as Backspace&#xA;SW3: ON SW4 and SW5 should be set to OFF.&#xA;PowerSave SW6: ON/OFF It&amp;rsquo;s up to personal preference, but for efficiency, OFF is recommended. Combination with Mac App Magnet As the keyboard lacks arrow keys, I&amp;rsquo;ve configured the following shortcuts using the Command key for screen arrangement.</description>
+      <description>&lt;h1 id=&#34;happy-hacking-keyboard-&#34;&gt;Happy Hacking Keyboard ⌨&lt;/h1&gt;&#xA;&lt;p&gt;I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configuration-of-dip-switches-on-the-backside&#34;&gt;Configuration of DIP Switches on the Backside&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Mac Compatibility&lt;/p&gt;</description>
     </item>
     <item>
       <title>Errors in Python</title>
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/python-err/</guid>
-      <description>1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64 Error This error occurs when comparing timestamps in Yahoo Finance with different timezones.&#xA;Solution To fix this error, we need to localize the timestamps to UTC before comparing them.&#xA;start = np.datetime64(datetime.date.today() - datetime.timedelta(days=freq)) df.index = df.index.tz_localize(None) # Localize to UTC df = df[start &amp;lt; df.index] 2. Could not import the lzma module Error This error occurs when importing pandas 1.0 or later with an incomplete Python installation.&#xA;Solution To fix this error, we need to install the xz module using brew and reinstall pandas.</description>
-    </item>
-    <item>
-      <title>hping/hping3使い方</title>
-      <link>https://xingelf.github.io/sec/hping/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/hping/</guid>
-      <description>hping/hping3は、ネットワークホストに様々な種類のパケットを送信し、その応答を分析することができるコマンドラインユーティリティです。 ネットワークスキャ</description>
-    </item>
-    <item>
-      <title>Rootkit ルートキット</title>
-      <link>https://xingelf.github.io/sec/rootkit/</link>
-      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rootkit/</guid>
-      <description>Rootkitにはいくつか種類があります。 https://en.wikipedia.org/wiki/Rootkit カーネルレベル・ルートキット カーネルはオペレーティングシステムの中核であり、カーネルレベルルートキットは、デバイスド</description>
+      <description>&lt;h2 id=&#34;1-invalid-comparison-between-dtypedatetime64ns-americanew_york-and-datetime64&#34;&gt;1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64&lt;/h2&gt;&#xA;&lt;h3 id=&#34;error&#34;&gt;Error&lt;/h3&gt;&#xA;&lt;p&gt;This error occurs when comparing timestamps in Yahoo Finance with different timezones.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>
       <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>Converts percentage information given in String/Object type columns into numbers.&#xA;def str_to_rate(s): if pd.isnull(s) == False: return float(s.replace(&amp;#39;%&amp;#39;, &amp;#39;&amp;#39;)) else: return s Usage:&#xA;col = &amp;#34;ReplyRate&amp;#34; df[col] = df[col].apply(str_to_rate) </description>
+      <description>&lt;p&gt;Converts percentage information given in String/Object type columns into numbers.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str_to_rate&lt;/span&gt;(s):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;isnull(s) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; float(s&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;col &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ReplyRate&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df[col] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; df[col]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;apply(str_to_rate)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Solidity文法　関数</title>
       <link>https://xingelf.github.io/dapps/solidity-function/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-function/</guid>
-      <description>Solidity Function 関数 基本的な関数の例は以下の通りです。 足し算 function add(uint a, uint b) public pure returns (uint){ return a + b; } メッセージ function add(uint a, uint b) public pure returns (uint){ return a + b; } Solidity Visibility Modifiers 関数可視性修飾子 private : 該当関数のコントラク</description>
+      <description>&lt;h1 id=&#34;solidity-function--関数&#34;&gt;Solidity Function  関数&lt;/h1&gt;&#xA;&lt;p&gt;基本的な関数の例は以下の通りです。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</title>
       <link>https://xingelf.github.io/mlai/str_to_bool/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&#xA;def str_to_bool(s): if s == &amp;#39;t&amp;#39;: return True else: return False Usage&#xA;col = &amp;#34;Availability&amp;#34; df[col] = df[col].apply(str_to_bool) </description>
+      <description>&lt;p&gt;Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str_to_bool&lt;/span&gt;(s):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t&amp;#39;&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ubuntu on Azure Notes</title>
       <link>https://xingelf.github.io/tech/ubuntu/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ubuntu/</guid>
-      <description>Regular Maintenance sudo apt update sudo apt upgrade Error during Regular Maintenance: 11: Resource temporarily unavailable This is a solution for handling resource shortage detected during sudo upgrade.&#xA;E: Could not get lock /var/lib/dpkg/lock – open (11: Resource temporarily unavailable) E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it? Check if apt exists with the ps command. If it does, wait a bit and retry, or if possible, restarting may be quicker.&#xA;ps aux | grep -i apt Stopping Regular apt update There were symptoms of OOM (Out-of-Memory) resulting from apt running every day at 6 AM and 6 PM (memory is limited).</description>
+      <description>&lt;h1 id=&#34;regular-maintenance&#34;&gt;Regular Maintenance&lt;/h1&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update&#xA;sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;error-during-regular-maintenance-11-resource-temporarily-unavailable&#34;&gt;Error during Regular Maintenance: 11: Resource temporarily unavailable&lt;/h2&gt;&#xA;&lt;p&gt;This is a solution for handling resource shortage detected during &lt;code&gt;sudo upgrade&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solidity文法　mapping マッピング</title>
       <link>https://xingelf.github.io/dapps/solidity-mapping/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-mapping/</guid>
-      <description>mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。 典型的な利用法があり、ブロックチェーン上のウォレットアドレス</description>
+      <description>&lt;p&gt;mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。&#xA;典型的な利用法があり、ブロックチェーン上のウォレットアドレスにある&#xA;残高をマップするケースでほぼ必ず利用されます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Social Engineering ソーシャルエンジニアリング</title>
       <link>https://xingelf.github.io/sec/social_engineering/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/social_engineering/</guid>
-      <description>Social Engineeringとは ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、 特定の行動を取らせたりすることを目的としたすべての</description>
+      <description>&lt;h1 id=&#34;social-engineeringとは&#34;&gt;Social Engineeringとは&lt;/h1&gt;&#xA;&lt;p&gt;ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、&#xA;特定の行動を取らせたりすることを目的としたすべてのテクニックのことを指す。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solidity 最も簡単なコントラクトの作成</title>
       <link>https://xingelf.github.io/dapps/solidity-1stcontract/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-1stcontract/</guid>
-      <description>Solidity学習リソースでよく紹介されている最も簡単なコントラクトを REMIXを利用して作成します。 コントラクトの動作としては数字をセット/setしてそれを</description>
+      <description>&lt;p&gt;Solidity学習リソースでよく紹介されている最も簡単なコントラクトを&#xA;REMIXを利用して作成します。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solidity文法 modifier　使い方</title>
       <link>https://xingelf.github.io/dapps/solidity_modifier/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity_modifier/</guid>
-      <description>初見では少し理解できないmodifierについて、簡単に説明します。 modifierは関数修飾子でfunction文の後半に記載して、関数を実行する前に 定型処理</description>
+      <description>&lt;p&gt;初見では少し理解できないmodifierについて、簡単に説明します。&#xA;modifierは関数修飾子でfunction文の後半に記載して、関数を実行する前に&#xA;定型処理（前提条件の判定など）を行うことができます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solidity文法　SafeMath</title>
       <link>https://xingelf.github.io/dapps/solidity-safemath/</link>
       <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-safemath/</guid>
-      <description>Solidity SafeMath 四足演算ライブラリ assertによりオーバーフロー対策を行うことができます。 /** * @title SafeMath * @dev Math operations with safety checks that throw on error */ library SafeMath { /** * @dev Multiplies two numbers, throws on overflow. */ function mul(uint256 a, uint256 b) internal pure returns (uint256) { if</description>
+      <description>&lt;h1 id=&#34;solidity-safemath-四足演算ライブラリ&#34;&gt;Solidity SafeMath 四足演算ライブラリ&lt;/h1&gt;&#xA;&lt;p&gt;assertによりオーバーフロー対策を行うことができます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zero Knowledge Proofs ゼロ知識証明</title>
       <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
-      <description>ゼロ知識証明とは ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、 自分の持っている命題（通常、数学的な）が真であることを伝えるのに、</description>
+      <description>&lt;h1 id=&#34;ゼロ知識証明とは&#34;&gt;ゼロ知識証明とは&lt;/h1&gt;&#xA;&lt;p&gt;ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、&#xA;自分の持っている命題（通常、数学的な）が真であることを伝えるのに、&#xA;真であること以外の何の知識も伝えることなく証明できるようなやりとりの手法。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Solidity文法　型</title>
+      <title>Data Types in Solidity</title>
       <link>https://xingelf.github.io/dapps/solidity-type/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-type/</guid>
-      <description>データ型 Solidityは強く型付けが必要な言語です。 https://solidity-ja.readthedocs.io/ja/latest/types.html 整数 int b = -10; // 符号あり、正負の整数 uint a = 5; // unsinged int 符号なし、正の整数 ブール、ブーリアン bool bt = true; // 真 bool bf = false;</description>
-    </item>
-    <item>
-      <title>Rootkit　ルートキット</title>
-      <link>https://xingelf.github.io/sec/rootkits/</link>
-      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rootkits/</guid>
-      <description>Rootkitとは 侵入後のバックドアとして利用するツール・ソフトウェア群。ステルス化されており検出は困難。 Hypervisor Level Rootkit ハイパーバイザーレベルルートキット ハードウェアの</description>
-    </item>
-    <item>
-      <title>DNS Domain Name System</title>
-      <link>https://xingelf.github.io/sec/dns/</link>
-      <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/dns/</guid>
-      <description>DNS DNS is essential in terms of the foot printing of the target. DNS gives us a lot of information. DNS探索は初期調査(footprinting)の基本動作です。 whois DNS管理組織は下表の通り。RIPEが欧州＋中東・中央</description>
+      <description>&lt;h1 id=&#34;data-types-in-solidity&#34;&gt;Data Types in Solidity&lt;/h1&gt;&#xA;&lt;p&gt;Solidity is a statically-typed language, meaning that you need to specify the data type of a variable when you declare it. This allows the compiler to check for type errors and ensure that your code is safe and efficient.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computer Virus/ウイルス 分類</title>
       <link>https://xingelf.github.io/sec/computer_virus/</link>
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/computer_virus/</guid>
-      <description>ウイルス種類 ポリモーフィック型ウイルス いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。 スペースフィラー型・キャヴィティ型ウイルス さ</description>
+      <description>&lt;h1 id=&#34;ウイルス種類&#34;&gt;ウイルス種類&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ポリモーフィック型ウイルス&#34;&gt;ポリモーフィック型ウイルス&lt;/h2&gt;&#xA;&lt;p&gt;いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。&lt;/p&gt;</description>
     </item>
     <item>
       <title>CHNTPW　Windowsパスワード初期化・リセット</title>
       <link>https://xingelf.github.io/sec/chntpw/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/chntpw/</guid>
-      <description>Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。 administratorパスワードをロストした場合の復旧手段の</description>
-    </item>
-    <item>
-      <title>TailgatingとPiggybackingの違い</title>
-      <link>https://xingelf.github.io/sec/tailgate_piggybacking/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/tailgate_piggybacking/</guid>
-      <description>Tailgating 隠れて後ろからゲート通過 車で後ろから追走したり、後ろに付いてETCゲートなどを通過することから、 従業員がゲートを通過する際に後ろからひっそりと一緒に通過するこ</description>
+      <description>&lt;p&gt;Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。&#xA;administratorパスワードをロストした場合の復旧手段の１つとなります。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cyber Kill Chain サイバーキルチェーン</title>
       <link>https://xingelf.github.io/sec/cyberkillchain/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/cyberkillchain/</guid>
-      <description>サイバーキルチェーンとは https://en.wikipedia.org/wiki/Kill_chain#Cyber ロッキードマーティン社のキルチェーンのプロセスをサイバー攻撃に適用したもの。 サイバー・キルチェーンは7つのステップで構成される。 1.偵</description>
+      <description>&lt;h1 id=&#34;サイバーキルチェーンとは&#34;&gt;サイバーキルチェーンとは&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Kill_chain#Cyber&#34;&gt;https://en.wikipedia.org/wiki/Kill_chain#Cyber&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;ロッキードマーティン社のキルチェーンのプロセスをサイバー攻撃に適用したもの。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pharming and Phising</title>
       <link>https://xingelf.github.io/sec/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
-      <description>Pharming ファーミング https://csrc.nist.gov/glossary/term/pharming DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有</description>
+      <description>&lt;h2 id=&#34;pharmingファーミング&#34;&gt;Pharming　ファーミング&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://csrc.nist.gov/glossary/term/pharming&#34;&gt;https://csrc.nist.gov/glossary/term/pharming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。&lt;/p&gt;</description>
     </item>
     <item>
       <title>nmap cheat nmapチート</title>
       <link>https://xingelf.github.io/sec/nmap/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/nmap/</guid>
-      <description>nmapとは ポートスキャンツールです。ペネトレーション作業の基本ツールです。 -T5 insane 最速でスキャンを実行 https://nmap.org/man/ja/man-performance.html -T4 Aggresive スキャン処理の遅延は10msec以内 -F 簡易スキャン nm</description>
-    </item>
-    <item>
-      <title>Rubber Hose Attack ゴムホース攻撃</title>
-      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
-      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
-      <description>Rubber Hose Attack ゴムホース攻撃とは テクニカルな手法ではなく、物理的な手段などで人を脅迫してパスワードなどを入手する方法。 物理的な脅迫手段の１つとして、ゴムホースということ</description>
-    </item>
-    <item>
-      <title>Bluethoothを利用した攻撃</title>
-      <link>https://xingelf.github.io/sec/buluetooth-attack/</link>
-      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/buluetooth-attack/</guid>
-      <description>Bluejacking ブルージャッキング 周囲にあるスマホなどのBluetoothデバイスへメッセージを送信する。 Bluesnarfing ブルースナーフィイング https://en.wikipedia.org/wiki/Bluesnarfing ブルースナーフィングとは、Bluetoot</description>
+      <description>&lt;h1 id=&#34;nmapとは&#34;&gt;nmapとは&lt;/h1&gt;&#xA;&lt;p&gt;ポートスキャンツールです。ペネトレーション作業の基本ツールです。&lt;/p&gt;</description>
     </item>
     <item>
       <title>pandas Dataredader</title>
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>What is pandas Datareader It is a library to download data online.&#xA;Official Documentation&#xA;Here is a list of data sources. Some require an API key. fred and stooq can obtain data without an API key.&#xA;Remote Data Access&#xA;Fred Economic Data Data source provided by the St. Louis Fed.&#xA;Federal Reserve Economic Data&#xA;Time Series Graph of Fred NASDAQ Let&amp;rsquo;s create a time series graph of NASDAQ. Also, let&amp;rsquo;s display the 200-period moving average SMA200. This can be done in just about 10 lines.</description>
+      <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas-datareader.readthedocs.io/en/latest/index.html&#34;&gt;Official Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is a list of data sources.&#xA;Some require an API key.&#xA;fred and stooq can obtain data without an API key.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Model Evaluation in ML</title>
       <link>https://xingelf.github.io/mlai/evalmodel/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/evalmodel/</guid>
-      <description>Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&amp;gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data. Holdout Method: A method of dividing the data set into two parts, using one for training and the other for testing evaluation metrics. It is common to split the training</description>
+      <description>&lt;h1 id=&#34;model-evaluation&#34;&gt;Model Evaluation&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Definition of Data in Model Evaluation&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Data used for training machine learning models.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Data used for adjusting hyperparameters, etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Data used to estimate generalization performance -&amp;gt; Final evaluation of the model.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Holdout Method, k-Fold Cross-Validation&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>機械学習前処理</title>
       <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
-      <description>前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。 欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完</description>
+      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ショートカット - Shortcut</title>
       <link>https://xingelf.github.io/posts/_shortcut/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/posts/_shortcut/</guid>
-      <description>OSX/Macショートカットメモ OS全般 Spotlight Search Command + Space 画面ロック Control + Command + q 編集 コピー Command + c ペースト Command + v 書式なしペースト Command + Option + Shift + v orz もとに戻す/Undo Command + z も</description>
+      <description>&lt;h1 id=&#34;osxmacショートカットメモ&#34;&gt;OSX/Macショートカットメモ&lt;/h1&gt;&#xA;&lt;h2 id=&#34;os全般&#34;&gt;OS全般&lt;/h2&gt;&#xA;&lt;h3 id=&#34;spotlight-search&#34;&gt;Spotlight Search&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Space&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;画面ロック&#34;&gt;画面ロック&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Control + Command + q&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;編集&#34;&gt;編集&lt;/h2&gt;&#xA;&lt;h3 id=&#34;コピー&#34;&gt;コピー&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;ペースト&#34;&gt;ペースト&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;書式なしペースト&#34;&gt;書式なしペースト　&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Option + Shift + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;orz&lt;/p&gt;</description>
     </item>
     <item>
       <title>github 備忘・対処メモ</title>
       <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/github/</guid>
-      <description>.gitignoreが効かない キャッシュ削除による解決を試みます。 git rm -r --cached . git push がreject ローカルが正/originであることを確認して、強制的にpushし</description>
+      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-push-がreject&#34;&gt;git push がreject&lt;/h2&gt;&#xA;&lt;p&gt;ローカルが正/originであることを確認して、強制的にpushします。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Atom メモ</title>
       <link>https://xingelf.github.io/tech/_atom/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_atom/</guid>
-      <description>基本 タブや空白を表示 Preferences -&amp;gt; Editor Show Invisiblesをチェックします Atom パッケージ関連 atom-beautify ソースコードを整形します。 autocomplete-plus 自動補完機能です。 markdownファイルを編集す</description>
+      <description>&lt;h2 id=&#34;基本&#34;&gt;基本&lt;/h2&gt;&#xA;&lt;h3 id=&#34;タブや空白を表示&#34;&gt;タブや空白を表示&lt;/h3&gt;&#xA;&lt;p&gt;Preferences -&amp;gt; Editor&lt;/p&gt;&#xA;&lt;p&gt;Show Invisiblesをチェックします&lt;/p&gt;</description>
     </item>
     <item>
       <title>IUT and abc</title>
       <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/iut-abc/</guid>
-      <description>一般向けIUT・abc予想について。 IUT・abc予想 足し算と掛け算に関わる関係を明らかにする理論と言われます。 また、強いabc予想のもとでは、フェルマーの最終</description>
+      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;&#xA;&lt;h1 id=&#34;iutabc予想&#34;&gt;IUT・abc予想&lt;/h1&gt;&#xA;&lt;p&gt;足し算と掛け算に関わる関係を明らかにする理論と言われます。&#xA;また、強いabc予想のもとでは、フェルマーの最終定理が背理法により簡単に導出されます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
-      <description>ta-lib Ta-Libはテクニカル分析ライブラリです。 テクニカル教の信者にとってはインストール必須のツールになります。 https://ta-lib.org/ MacOS/OSX ta-libのインストール OSXにインストール</description>
+      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Freqtradeのインストール</title>
       <link>https://xingelf.github.io/tech/freqtrade/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/freqtrade/</guid>
-      <description>freqtradeのインストール https://github.com/freqtrade/freqtrade.git python venvのインストール sudo apt-get install python3-venv git clone にてパッケージを取得 git clone https://github.com/freqtrade/freqtrade.git cd freqtrade git checkout develop ./setup.sh --install ta-libのインストールで時間が掛かりますが、ひ</description>
+      <description>&lt;h1 id=&#34;freqtradeのインストール&#34;&gt;freqtradeのインストール&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/freqtrade/freqtrade.git&#34;&gt;https://github.com/freqtrade/freqtrade.git&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;python-venvのインストール&#34;&gt;python venvのインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt-get install python3-venv&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git-clone-にてパッケージを取得&#34;&gt;git clone にてパッケージを取得&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/freqtrade/freqtrade.git&#xA;cd freqtrade&#xA;git checkout develop&#xA;./setup.sh --install&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ta-libのインストールで時間が掛かりますが、ひたすら待ちます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>書籍 Kaggleで勝つデータ分析</title>
       <link>https://xingelf.github.io/tech/kaggle/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/kaggle/</guid>
-      <description>Kaggleで勝つデータ分析の技術 門脇 大輔 良い点：網羅的、リファレンス多数 注意点：精読が必要、中級者向け https://www.amazon.co.jp/dp/B07YTDBC3Z/ 書籍「Kaggleで勝つデータ分析」 概要 書籍「Kagg</description>
+      <description>&lt;h2 id=&#34;書籍-kaggleで勝つデータ分析---門脇-大輔&#34;&gt;書籍 Kaggleで勝つデータ分析   門脇 大輔&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;良い点：網羅的、リファレンス多数&lt;/li&gt;&#xA;&lt;li&gt;注意点：精読が必要、中級者向け&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/dp/B07YTDBC3Z/&#34;&gt;https://www.amazon.co.jp/dp/B07YTDBC3Z/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
       <link>https://xingelf.github.io/about/about/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/about/about/</guid>
-      <description>Geek and Security Researcher.&#xA;Disclaimer All articles on this website written based on the information available at the time the article was posted. The purpose of this site is to explain in simple terms what is of interest to you. For this reason, we have avoided jargon and omitted details as much as possible. While every effort has been made to ensure the accuracy of the content, no warranty is given as to its accuracy. In addition, the content of this site contains personal opinions.</description>
+      <description>&lt;p&gt;Security Researcher.&lt;/p&gt;&#xA;&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;&#xA;&lt;p&gt;All articles on this website&#xA;written based on the information available at the time the article was posted.&#xA;The purpose of this site is to explain in simple terms what is of interest to you.&#xA;For this reason, we have avoided jargon and omitted details as much as possible.&#xA;While every effort has been made to ensure the accuracy of the content, no warranty is given as to its accuracy.&#xA;In addition, the content of this site contains personal opinions.&#xA;For the above reasons, we assume no responsibility whatsoever for any damages resulting from the contents of this site.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://xingelf.github.io/sec/_idle_scan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/_idle_scan/</guid>
-      <description>アイドルスキャンは、TCPポートスキャンの手法の一つで、コンピュータになりすましたパケットを送信し、利用可能なサービスを調べるものである。これは、ネットワークト</description>
+      <description>&lt;p&gt;アイドルスキャンは、TCPポートスキャンの手法の一つで、コンピュータになりすましたパケットを送信し、利用可能なサービスを調べるものである。これは、ネットワークトラフィックが非常に遅いか存在しない（つまり、情報の送受信が行われていない）別のコンピュータになりすますことで実現する。これは、「ゾンビ」と呼ばれるアイドル状態のコンピュータである可能性があります。&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

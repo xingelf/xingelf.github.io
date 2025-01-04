@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ZKP on Tech note of @xingelf</title>
+    <title>ZKP on Note about technology</title>
     <link>https://xingelf.github.io/tags/zkp/</link>
-    <description>Recent content in ZKP on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in ZKP on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/zkp/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
-      <description>ゼロ知識証明とは ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、 自分の持っている命題（通常、数学的な）が真であることを伝えるのに、</description>
+      <description>&lt;h1 id=&#34;ゼロ知識証明とは&#34;&gt;ゼロ知識証明とは&lt;/h1&gt;&#xA;&lt;p&gt;ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、&#xA;自分の持っている命題（通常、数学的な）が真であることを伝えるのに、&#xA;真であること以外の何の知識も伝えることなく証明できるようなやりとりの手法。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JDLA e-engineer on Tech note of @xingelf</title>
-    <link>https://xingelf.github.io/tags/jdla-e-engineer/</link>
-    <description>Recent content in JDLA e-engineer on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/tags/jdla-e-engineer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Softmax Function</title>
-      <link>https://xingelf.github.io/mlai/softmax/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/softmax/</guid>
-      <description>Softmax Function The softmax function is a mathematical function that converts a vector of numbers into a probability distribution. It is defined by the following equation.&#xA;$ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}e^{x_i}}$&#xA;$ i = 0,1,2,\dots n$&#xA;When all $y_i$ values are summed, the total is always 1, which allows the output to be interpreted as probabilities. This property makes softmax particularly useful in multi-class classification problems.&#xA;One important property of the softmax function is that it remains unchanged when a constant value is added to all elements of the input vector, as shown by the equation:</description>
-    </item>
+    <title>JDLA E-Engineer on Note about technology</title>
+    <link>http://localhost:1313/tags/jdla-e-engineer/</link>
+    <description>Recent content in JDLA E-Engineer on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/jdla-e-engineer/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

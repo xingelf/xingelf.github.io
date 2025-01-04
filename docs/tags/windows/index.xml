@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Windows on Tech note of @xingelf</title>
+    <title>Windows on Note about technology</title>
     <link>https://xingelf.github.io/tags/windows/</link>
-    <description>Recent content in Windows on Tech note of @xingelf</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
+    <description>Recent content in Windows on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/sec/chntpw/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/chntpw/</guid>
-      <description>Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。 administratorパスワードをロストした場合の復旧手段の</description>
+      <description>&lt;p&gt;Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。&#xA;administratorパスワードをロストした場合の復旧手段の１つとなります。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

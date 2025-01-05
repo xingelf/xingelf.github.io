@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atom on Note about technology</title>
-    <link>https://xingelf.github.io/tags/atom/</link>
+    <link>http://localhost:1313/tags/atom/</link>
     <description>Recent content in Atom on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/tags/atom/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Atom メモ</title>
-      <link>https://xingelf.github.io/tech/_atom/</link>
-      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_atom/</guid>
-      <description>&lt;h2 id=&#34;基本&#34;&gt;基本&lt;/h2&gt;&#xA;&lt;h3 id=&#34;タブや空白を表示&#34;&gt;タブや空白を表示&lt;/h3&gt;&#xA;&lt;p&gt;Preferences -&amp;gt; Editor&lt;/p&gt;&#xA;&lt;p&gt;Show Invisiblesをチェックします&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/atom/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

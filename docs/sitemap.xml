@@ -17,13 +17,28 @@
     <loc>https://xingelf.github.io/sec/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/sec/dirb/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/http/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/kali-linux/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/tags/killchain/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/scanner/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/security/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/web/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/sec/cyberkillchain/</loc>
@@ -44,6 +59,27 @@
     <loc>https://xingelf.github.io/sec/rootkit/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/tags/hugo/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/markdown/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/math/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/tech/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/tex/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/latex-md/</loc>
+    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/sec/rubber_hose_attack/</loc>
     <lastmod>2024-12-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -59,9 +95,6 @@
     <loc>https://xingelf.github.io/tags/network/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/tech/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/tool/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -71,16 +104,10 @@
     <loc>https://xingelf.github.io/sec/servletmappings/</loc>
     <lastmod>2024-12-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/web/</loc>
-    <lastmod>2024-12-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/mlai/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/machine-learning/</loc>
-    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/math/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/ml/ai/</loc>
@@ -98,14 +125,17 @@
     <loc>https://xingelf.github.io/categories/network/</loc>
     <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/tags/bot/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/sec/mirai-bot/</loc>
+    <lastmod>2024-12-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/tags/physical-security/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/sec/tailgate_piggybacking/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/http/</loc>
-    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/sec/http_request_smuggling/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
@@ -116,35 +146,11 @@
     <loc>https://xingelf.github.io/sec/cors/</loc>
     <lastmod>2024-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/sec/dirb/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/kali-linux/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/scanner/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/csrf/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/sec/csrf/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/hugo/</loc>
-    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/markdown/</loc>
-    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tech/</loc>
-    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/tex/</loc>
-    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tech/latex-md/</loc>
-    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/sec/csrf_token/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
@@ -349,12 +355,6 @@
   </url><url>
     <loc>https://xingelf.github.io/tech/github/</loc>
     <lastmod>2021-06-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/atom/</loc>
-    <lastmod>2021-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tech/_atom/</loc>
-    <lastmod>2021-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/iut-abc/</loc>
     <lastmod>2021-02-20T00:00:00+00:00</lastmod>

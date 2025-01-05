@@ -51,6 +51,13 @@
       <description>&lt;h2 id=&#34;servlet-mappings-made-simple-a-beginners-guide&#34;&gt;Servlet Mappings Made Simple: A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;Servlet mappings are a fundamental concept in Java web development. They define how requests from a web browser are directed to specific servlets on a server. Think of servlet mappings as traffic signs on a highway—they guide incoming requests to the right destination for processing.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Mirai Bot 48101</title>
+      <link>https://xingelf.github.io/sec/mirai-bot/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/mirai-bot/</guid>
+      <description>&lt;h2 id=&#34;mirai-bot-a-deep-dive&#34;&gt;Mirai Bot: A Deep Dive&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Tailgating vs. Piggybacking: Understanding the Difference</title>
       <link>https://xingelf.github.io/sec/tailgate_piggybacking/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>

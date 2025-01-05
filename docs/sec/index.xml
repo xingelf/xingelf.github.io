@@ -9,6 +9,13 @@
     <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/sec/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>DIRB</title>
+      <link>https://xingelf.github.io/sec/dirb/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/dirb/</guid>
+      <description>&lt;h3 id=&#34;exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing&#34;&gt;Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing&lt;/h3&gt;&#xA;&lt;p&gt;In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What is the Cyber Kill Chain?</title>
       <link>https://xingelf.github.io/sec/cyberkillchain/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
@@ -65,6 +72,13 @@
       <description>&lt;h2 id=&#34;dns-domain-name-system&#34;&gt;DNS (Domain Name System)&lt;/h2&gt;&#xA;&lt;p&gt;DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization&amp;rsquo;s network infrastructure.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Mirai Bot 48101</title>
+      <link>https://xingelf.github.io/sec/mirai-bot/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/mirai-bot/</guid>
+      <description>&lt;h2 id=&#34;mirai-bot-a-deep-dive&#34;&gt;Mirai Bot: A Deep Dive&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Tailgating vs. Piggybacking: Understanding the Difference</title>
       <link>https://xingelf.github.io/sec/tailgate_piggybacking/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
@@ -84,13 +98,6 @@
       <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/cors/</guid>
       <description>&lt;h2 id=&#34;understanding-cross-origin-resource-sharing-cors-a-beginners-guide&#34;&gt;Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIRB</title>
-      <link>https://xingelf.github.io/sec/dirb/</link>
-      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/dirb/</guid>
-      <description>&lt;h3 id=&#34;exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing&#34;&gt;Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing&lt;/h3&gt;&#xA;&lt;p&gt;In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CSRF Cross Site Request Forgery</title>

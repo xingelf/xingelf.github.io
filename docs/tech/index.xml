@@ -6,12 +6,12 @@
     <description>Recent content in Tech on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tex/LaTex with Markdown</title>
       <link>https://xingelf.github.io/tech/latex-md/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/latex-md/</guid>
       <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;https://gohugo.io/templates/partials/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Create a folder named partials under the layouts directory.&lt;/p&gt;</description>
     </item>
@@ -63,13 +63,6 @@
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/github/</guid>
       <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-push-がreject&#34;&gt;git push がreject&lt;/h2&gt;&#xA;&lt;p&gt;ローカルが正/originであることを確認して、強制的にpushします。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Atom メモ</title>
-      <link>https://xingelf.github.io/tech/_atom/</link>
-      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_atom/</guid>
-      <description>&lt;h2 id=&#34;基本&#34;&gt;基本&lt;/h2&gt;&#xA;&lt;h3 id=&#34;タブや空白を表示&#34;&gt;タブや空白を表示&lt;/h3&gt;&#xA;&lt;p&gt;Preferences -&amp;gt; Editor&lt;/p&gt;&#xA;&lt;p&gt;Show Invisiblesをチェックします&lt;/p&gt;</description>
     </item>
     <item>
       <title>IUT and abc</title>

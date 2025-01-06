@@ -72,11 +72,18 @@
       <description>&lt;h2 id=&#34;dns-domain-name-system&#34;&gt;DNS (Domain Name System)&lt;/h2&gt;&#xA;&lt;p&gt;DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization&amp;rsquo;s network infrastructure.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>GRE Flood Attacks</title>
+      <link>https://xingelf.github.io/sec/gre_flood/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/gre_flood/</guid>
+      <description>&lt;p&gt;With the spread of the internet, the threat of cyberattacks is becoming increasingly serious. Among them, DDoS attacks are widely known as attacks targeting websites and online services, and their methods are becoming more sophisticated. In recent years, there has been an increasing trend of &amp;ldquo;GRE Flood attacks,&amp;rdquo; which are more difficult to detect and defend against than conventional DDoS attacks.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Mirai Bot 48101</title>
       <link>https://xingelf.github.io/sec/mirai-bot/</link>
       <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/mirai-bot/</guid>
-      <description>&lt;h2 id=&#34;mirai-bot-a-deep-dive&#34;&gt;Mirai Bot: A Deep Dive&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tailgating vs. Piggybacking: Understanding the Difference</title>
@@ -125,7 +132,7 @@
       <link>https://xingelf.github.io/sec/dos/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/dos/</guid>
-      <description>&lt;p&gt;Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;understanding-ddos-attacks&#34;&gt;Understanding DDoS Attacks&lt;/h1&gt;&#xA;&lt;p&gt;A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Social Engineering ソーシャルエンジニアリング</title>
@@ -135,32 +142,32 @@
       <description>&lt;h1 id=&#34;social-engineeringとは&#34;&gt;Social Engineeringとは&lt;/h1&gt;&#xA;&lt;p&gt;ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、&#xA;特定の行動を取らせたりすることを目的としたすべてのテクニックのことを指す。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Computer Virus/ウイルス 分類</title>
+      <title>Computer Virus 101</title>
       <link>https://xingelf.github.io/sec/computer_virus/</link>
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/computer_virus/</guid>
-      <description>&lt;h1 id=&#34;ウイルス種類&#34;&gt;ウイルス種類&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ポリモーフィック型ウイルス&#34;&gt;ポリモーフィック型ウイルス&lt;/h2&gt;&#xA;&lt;p&gt;いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;virus-types-evolving-threats-in-the-digital-landscape&#34;&gt;Virus Types: Evolving Threats in the Digital Landscape&lt;/h2&gt;&#xA;&lt;p&gt;Computer viruses have evolved significantly since their inception, becoming increasingly sophisticated in their methods of infection and evasion. Here&amp;rsquo;s a closer look at some prominent types:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>CHNTPW　Windowsパスワード初期化・リセット</title>
+      <title>Kali Linux and CHNTPW</title>
       <link>https://xingelf.github.io/sec/chntpw/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/chntpw/</guid>
-      <description>&lt;p&gt;Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。&#xA;administratorパスワードをロストした場合の復旧手段の１つとなります。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;kali-linux-and-chntpw-resetting-lost-windows-passwords&#34;&gt;Kali Linux and CHNTPW: Resetting Lost Windows Passwords&lt;/h2&gt;&#xA;&lt;p&gt;Losing your Windows administrator password can be a major headache, locking you out of your own system. But don&amp;rsquo;t panic! There&amp;rsquo;s a powerful solution using Kali Linux and a tool called CHNTPW. This method allows you to reset the password without needing to know the original one. Here&amp;rsquo;s a detailed breakdown of the process:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pharming and Phising</title>
       <link>https://xingelf.github.io/sec/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
-      <description>&lt;h2 id=&#34;pharmingファーミング&#34;&gt;Pharming　ファーミング&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://csrc.nist.gov/glossary/term/pharming&#34;&gt;https://csrc.nist.gov/glossary/term/pharming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;pharming-a-silent-threat-to-online-security&#34;&gt;Pharming: A Silent Threat to Online Security&lt;/h2&gt;&#xA;&lt;p&gt;While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: &lt;strong&gt;pharming&lt;/strong&gt;. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>nmap cheat nmapチート</title>
+      <title>nmap basics</title>
       <link>https://xingelf.github.io/sec/nmap/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/nmap/</guid>
-      <description>&lt;h1 id=&#34;nmapとは&#34;&gt;nmapとは&lt;/h1&gt;&#xA;&lt;p&gt;ポートスキャンツールです。ペネトレーション作業の基本ツールです。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Nmap is like a superpower for exploring computer networks! It&amp;rsquo;s a tool that lets you see which &amp;ldquo;doors&amp;rdquo; (ports) are open on a computer, like checking if the front door, back door, or garage is open. This is called &amp;ldquo;port scanning,&amp;rdquo; and it&amp;rsquo;s super useful for security professionals to find weaknesses.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

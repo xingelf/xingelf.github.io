@@ -20,12 +20,6 @@
     <loc>https://xingelf.github.io/sec/dirb/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/http/</loc>
-    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/kali-linux/</loc>
-    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/killchain/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
@@ -36,6 +30,9 @@
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/tool/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/web/</loc>
@@ -95,9 +92,6 @@
     <loc>https://xingelf.github.io/tags/network/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/tool/</loc>
-    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/java/</loc>
     <lastmod>2024-12-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -125,6 +119,12 @@
     <loc>https://xingelf.github.io/categories/network/</loc>
     <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/tags/ddos/</loc>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/sec/gre_flood/</loc>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/tags/bot/</loc>
     <lastmod>2024-12-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -136,6 +136,9 @@
   </url><url>
     <loc>https://xingelf.github.io/sec/tailgate_piggybacking/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/http/</loc>
+    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/sec/http_request_smuggling/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
@@ -199,12 +202,6 @@
   </url><url>
     <loc>https://xingelf.github.io/tags/solidity/</loc>
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/cyber-security/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/dos/</loc>
-    <lastmod>2024-03-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/sec/dos/</loc>
     <lastmod>2024-03-08T00:00:00+00:00</lastmod>
@@ -296,13 +293,16 @@
     <loc>https://xingelf.github.io/dapps/solidity-type/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/tags/computer-virus/</loc>
+    <lastmod>2022-08-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/sec/computer_virus/</loc>
     <lastmod>2022-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/virus/</loc>
-    <lastmod>2022-08-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/sec/chntpw/</loc>
+    <lastmod>2022-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/password/</loc>
     <lastmod>2022-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/windows/</loc>
@@ -314,9 +314,6 @@
     <loc>https://xingelf.github.io/sec/phaming-phising/</loc>
     <lastmod>2022-05-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/nmap/</loc>
-    <lastmod>2022-05-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/sec/nmap/</loc>
     <lastmod>2022-05-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -326,10 +323,10 @@
     <loc>https://xingelf.github.io/tech/pandasdatareader/</loc>
     <lastmod>2021-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/e%E8%B3%87%E6%A0%BC/</loc>
+    <loc>https://xingelf.github.io/categories/ai/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/mlai/evalmodel/</loc>
+    <loc>https://xingelf.github.io/mlai/eval_model/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/deep-learning/</loc>

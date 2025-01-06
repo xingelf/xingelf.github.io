@@ -3,33 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>nmap cheat nmapチート - Note about technology</title>
+	<title>nmap basics - Note about technology</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="https://xingelf.github.io/sec/nmap/">
   <meta property="og:site_name" content="Note about technology">
-  <meta property="og:title" content="nmap cheat nmapチート">
-  <meta property="og:description" content="nmapとは ポートスキャンツールです。ペネトレーション作業の基本ツールです。">
+  <meta property="og:title" content="nmap basics">
+  <meta property="og:description" content="Nmap is like a superpower for exploring computer networks! It’s a tool that lets you see which “doors” (ports) are open on a computer, like checking if the front door, back door, or garage is open. This is called “port scanning,” and it’s super useful for security professionals to find weaknesses.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="sec">
     <meta property="article:published_time" content="2022-05-01T00:00:00+00:00">
     <meta property="article:modified_time" content="2022-05-01T00:00:00+00:00">
-    <meta property="article:tag" content="CEH">
     <meta property="article:tag" content="Network">
-    <meta property="article:tag" content="Nmap">
+    <meta property="article:tag" content="Tool">
 
 		
-  <meta itemprop="name" content="nmap cheat nmapチート">
-  <meta itemprop="description" content="nmapとは ポートスキャンツールです。ペネトレーション作業の基本ツールです。">
+  <meta itemprop="name" content="nmap basics">
+  <meta itemprop="description" content="Nmap is like a superpower for exploring computer networks! It’s a tool that lets you see which “doors” (ports) are open on a computer, like checking if the front door, back door, or garage is open. This is called “port scanning,” and it’s super useful for security professionals to find weaknesses.">
   <meta itemprop="datePublished" content="2022-05-01T00:00:00+00:00">
   <meta itemprop="dateModified" content="2022-05-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="928">
-  <meta itemprop="keywords" content="CEH,Network,Nmap">
+  <meta itemprop="wordCount" content="306">
+  <meta itemprop="keywords" content="Network,Tool">
 		
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="nmap cheat nmapチート">
-  <meta name="twitter:description" content="nmapとは ポートスキャンツールです。ペネトレーション作業の基本ツールです。">
+  <meta name="twitter:title" content="nmap basics">
+  <meta name="twitter:description" content="Nmap is like a superpower for exploring computer networks! It’s a tool that lets you see which “doors” (ports) are open on a computer, like checking if the front door, back door, or garage is open. This is called “port scanning,” and it’s super useful for security professionals to find weaknesses.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -102,7 +101,7 @@
 		<li class="menu__item">
 			<a class="menu__link" href="/dapps">
 				
-				<span class="menu__text">Dapps🔗</span>
+				<span class="menu__text">Blockchain🔗</span>
 				
 			</a>
 		</li>
@@ -116,7 +115,7 @@
 		<li class="menu__item">
 			<a class="menu__link" href="/mlai">
 				
-				<span class="menu__text">ML/AI🤖</span>
+				<span class="menu__text">AI🤖</span>
 				
 			</a>
 		</li>
@@ -145,154 +144,45 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">nmap cheat nmapチート</h1>
+			<h1 class="post__title">nmap basics</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-05-01T00:00:00Z">2022-05-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
 	</span>
 </div></div>
 		</header>
-		
-<div class="post__toc toc">
-	<div class="toc__title">Page content</div>
-	<div class="toc__menu">
-		<nav id="TableOfContents">
-  <ul>
-    <li><a href="#christmass-scan">Christmass Scan</a></li>
-    <li><a href="#normal-scans">Normal Scans</a></li>
-    <li><a href="#-s-spoof-source-address-ソースip偽装">-S Spoof source address ソースIP偽装</a></li>
-    <li><a href="#-d-decoy-scan-デコイスキャンおとりスキャン">-D Decoy Scan デコイスキャン・おとりスキャン</a></li>
-    <li><a href="#-o-os-detection">-O OS Detection</a></li>
-    <li><a href="#input-and-output">Input and Output</a></li>
-    <li><a href="#maimon-scan-マイモンスキャン">Maimon scan マイモンスキャン</a></li>
-    <li><a href="#ping-sweep">Ping Sweep</a></li>
-    <li><a href="#nmap学習動画">nmap学習動画</a></li>
-  </ul>
-</nav>
-	</div>
-</div><div class="content post__content clearfix">
-			<h1 id="nmapとは">nmapとは</h1>
-<p>ポートスキャンツールです。ペネトレーション作業の基本ツールです。</p>
+		<div class="content post__content clearfix">
+			<p>Nmap is like a superpower for exploring computer networks! It&rsquo;s a tool that lets you see which &ldquo;doors&rdquo; (ports) are open on a computer, like checking if the front door, back door, or garage is open. This is called &ldquo;port scanning,&rdquo; and it&rsquo;s super useful for security professionals to find weaknesses.</p>
+<p>Here&rsquo;s a breakdown of some cool Nmap tricks:</p>
+<p><strong>Speeding things up:</strong></p>
 <ul>
-<li>
-<p>-T5 insane 最速でスキャンを実行</p>
-<p><a href="https://nmap.org/man/ja/man-performance.html">https://nmap.org/man/ja/man-performance.html</a></p>
-</li>
-<li>
-<p>-T4 Aggresive スキャン処理の遅延は10msec以内</p>
-</li>
-<li>
-<p>-F 簡易スキャン　nmap-servicesに記載されたポートのみをスキャン</p>
-<p><a href="https://nmap.org/book/nmap-services.html">https://nmap.org/book/nmap-services.html</a></p>
-</li>
-<li>
-<p>-r ポートをランダムにしない</p>
-</li>
+<li><code>-T5</code>: Makes Nmap scan super fast, like a cheetah! But be careful, it can be noisy and get noticed.</li>
+<li><code>-T4</code>: A bit slower, but still pretty quick. Like a racehorse!</li>
 </ul>
-<h2 id="christmass-scan">Christmass Scan</h2>
+<p><strong>Stealth mode:</strong></p>
 <ul>
-<li>
-<p>-sX Christmass Scan</p>
+<li><code>-F</code>:  Just checks the most common &ldquo;doors&rdquo; to save time. Like peeking through the windows instead of trying every door.</li>
+<li><code>-r</code>:  Scans &ldquo;doors&rdquo; in a random order, so it&rsquo;s harder to detect. Like a ninja!</li>
+<li><code>-sS</code>:  Sneaks in and out without leaving a trace. Like a ghost!</li>
+</ul>
+<p><strong>Special scans:</strong></p>
 <ul>
-<li>FIN/PHS/URGのフラグを設定</li>
-<li>Control Flag がOn/Off/On/Off/On/OffのためXmasと呼ばれる</li>
-<li><strong>RSTを返さない場合、openと判定する</strong></li>
-<li>windowsでは一律RSTを返すため、Windows判定に利用される</li>
+<li><code>-sX</code>:  The &ldquo;Christmas scan&rdquo; – sends special signals to see if a computer is a Windows machine. Like leaving a present and seeing if someone picks it up.</li>
 </ul>
-</li>
-</ul>
-<p><a href="https://nmap.org/man/ja/man-port-scanning-techniques.html">https://nmap.org/man/ja/man-port-scanning-techniques.html</a></p>
-
-     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ws0MeqfuA58?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-     </div>
-
-<h2 id="normal-scans">Normal Scans</h2>
+<p><strong>Faking your identity:</strong></p>
 <ul>
-<li>
-<p>sT connect Scan</p>
+<li><code>-S</code>:  Pretends to be someone else, so the computer doesn&rsquo;t know it&rsquo;s you. Like wearing a disguise!</li>
+<li><code>-D</code>:  Creates fake &ldquo;friends&rdquo; to confuse the computer. Like bringing a crowd to a party!</li>
+</ul>
+<p><strong>Other cool stuff:</strong></p>
 <ul>
-<li>Most visible and easily detected by IDS　IDSによって容易に検知される</li>
+<li><code>-O</code>:  Tries to figure out what kind of computer it is. Like a detective!</li>
+<li><code>-oX</code>:  Saves the results in a special format. Like writing a secret report!</li>
+<li><code>-sn -PE</code>:  Checks if computers are awake. Like knocking on the door!</li>
 </ul>
-</li>
-<li>
-<p>-sS Syn Scan or Stealth Scan</p>
-<ul>
-<li>SYNスキャン、ハーフスキャン</li>
-<li>接続を完了しないため、ログに残らないケースが多い</li>
-</ul>
-</li>
-</ul>
-<table>
-  <thead>
-      <tr>
-          <th>Option</th>
-          <th>Flags</th>
-          <th>Windows Open</th>
-          <th>Windows Closed</th>
-          <th>Linux Open</th>
-          <th>Linux Closed</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>-sS</td>
-          <td>Syn</td>
-          <td>Syn-Ack</td>
-          <td>Rst-Ack</td>
-          <td>Syn-Ack</td>
-          <td>Rst-Ack</td>
-      </tr>
-      <tr>
-          <td>-sT</td>
-          <td>Syn</td>
-          <td>Syn-Ack</td>
-          <td>Rst-Ack</td>
-          <td>Syn-Ack</td>
-          <td>Rst-Ack</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="-s-spoof-source-address-ソースip偽装">-S Spoof source address ソースIP偽装</h2>
-<p>ソースIPを偽装してスキャンを実行する。</p>
-<pre tabindex="0"><code>namp -S 192.168.10.1
-</code></pre><h2 id="-d-decoy-scan-デコイスキャンおとりスキャン">-D Decoy Scan デコイスキャン・おとりスキャン</h2>
-<p><a href="https://linux.die.net/man/1/nmap">https://linux.die.net/man/1/nmap</a></p>
-<p>おとりスキャンを実行する。引数に複数のおとり用IPアドレスを指定。</p>
-<pre tabindex="0"><code>namp -D decoy1[,decoy2]...
-</code></pre><p>リモートホストには、おとりとして指定したホストもターゲットネットワークをスキャンしているように見せる。
-そのため、IDSは固有のIPアドレスから5～10回のポートスキャンを報告するが、どのIPが実際にスキャンしていて、
-どれが無実のおとりであるかの判定を困難にする。</p>
-<h2 id="-o-os-detection">-O OS Detection</h2>
-<ul>
-<li>O OS判定</li>
-</ul>
-<h2 id="input-and-output">Input and Output</h2>
-<ul>
-<li>-oX XML形式でのファイル出力</li>
-</ul>
-<h2 id="maimon-scan-マイモンスキャン">Maimon scan マイモンスキャン</h2>
-<p>マイモンスキャンは、発見者であるウリエル・マイモンにちなんで名づけられた。
-ウリエル・マイモンは、Phrack Magazineの49号(1996年11月)でこの技法を説明した。</p>
-<p>このテクニックは、プローブがFIN/ACKであることを除けば、NULL、FIN、Xmasスキャンと全く同じである。</p>
-<p>RFC793（TCP）によれば、このようなプローブに対しては、ポートが開いていようと閉じていようと、RSTパケットを生成することになっている。
-しかし、ウリエルは、多くのBSD由来のシステムが、ポートが開いている場合は単にパケットをドロップしていることに気づいた。
-これによりBSD由来のシステムの特定が可能となる。</p>
-<p><a href="https://nmap.org/book/scan-methods-maimon-scan.html">https://nmap.org/book/scan-methods-maimon-scan.html</a></p>
-<h2 id="ping-sweep">Ping Sweep</h2>
-<p>アドレス指定範囲に対してpingを実行</p>
-<ul>
-<li>-sn ping指定</li>
-<li>-PE Echo Request</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>nmap -sn -PE x.x.x.x/yy
-</span></span></code></pre></div><hr>
-<h2 id="nmap学習動画">nmap学習動画</h2>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4t4kBkMsDbQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
+<p><strong>Maimon scan:</strong></p>
+<p>This is a special scan named after its creator, Uriel Maimon. It&rsquo;s like the Christmas scan but uses a different &ldquo;knock&rdquo; to identify certain types of computers.</p>
+<p>Nmap has tons of other options, but these are some of the most common and useful ones. It&rsquo;s a powerful tool, so remember to use it responsibly and ethically!</p>
 
 		</div>
 		<footer class="post__footer">
@@ -301,13 +191,10 @@
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/ceh/" rel="tag">CEH</a>
-		</li>
-		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/network/" rel="tag">Network</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/nmap/" rel="tag">nmap</a>
+			<a class="tags__link btn" href="/tags/tool/" rel="tag">tool</a>
 		</li>
 	</ul>
 </div>

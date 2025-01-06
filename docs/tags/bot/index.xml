@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/sec/mirai-bot/</link>
       <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/mirai-bot/</guid>
-      <description>&lt;h2 id=&#34;mirai-bot-a-deep-dive&#34;&gt;Mirai Bot: A Deep Dive&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -23,11 +23,11 @@
       <description>&lt;h2 id=&#34;dns-domain-name-system&#34;&gt;DNS (Domain Name System)&lt;/h2&gt;&#xA;&lt;p&gt;DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization&amp;rsquo;s network infrastructure.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>nmap cheat nmapチート</title>
+      <title>nmap basics</title>
       <link>https://xingelf.github.io/sec/nmap/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/nmap/</guid>
-      <description>&lt;h1 id=&#34;nmapとは&#34;&gt;nmapとは&lt;/h1&gt;&#xA;&lt;p&gt;ポートスキャンツールです。ペネトレーション作業の基本ツールです。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Nmap is like a superpower for exploring computer networks! It&amp;rsquo;s a tool that lets you see which &amp;ldquo;doors&amp;rdquo; (ports) are open on a computer, like checking if the front door, back door, or garage is open. This is called &amp;ldquo;port scanning,&amp;rdquo; and it&amp;rsquo;s super useful for security professionals to find weaknesses.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

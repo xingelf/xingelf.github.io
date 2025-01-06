@@ -9,30 +9,26 @@
 		<meta property="og:url" content="https://xingelf.github.io/sec/phaming-phising/">
   <meta property="og:site_name" content="Note about technology">
   <meta property="og:title" content="Pharming and Phising">
-  <meta property="og:description" content="Pharming　ファーミング https://csrc.nist.gov/glossary/term/pharming
-DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。">
+  <meta property="og:description" content="Pharming: A Silent Threat to Online Security While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: pharming. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="sec">
     <meta property="article:published_time" content="2022-05-26T00:00:00+00:00">
     <meta property="article:modified_time" content="2022-05-26T00:00:00+00:00">
-    <meta property="article:tag" content="CEH">
     <meta property="article:tag" content="DNS">
     <meta property="article:tag" content="Email">
 
 		
   <meta itemprop="name" content="Pharming and Phising">
-  <meta itemprop="description" content="Pharming　ファーミング https://csrc.nist.gov/glossary/term/pharming
-DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。">
+  <meta itemprop="description" content="Pharming: A Silent Threat to Online Security While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: pharming. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.">
   <meta itemprop="datePublished" content="2022-05-26T00:00:00+00:00">
   <meta itemprop="dateModified" content="2022-05-26T00:00:00+00:00">
-  <meta itemprop="wordCount" content="591">
-  <meta itemprop="keywords" content="CEH,DNS,Email">
+  <meta itemprop="wordCount" content="499">
+  <meta itemprop="keywords" content="DNS,Email">
 		
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Pharming and Phising">
-  <meta name="twitter:description" content="Pharming　ファーミング https://csrc.nist.gov/glossary/term/pharming
-DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。">
+  <meta name="twitter:description" content="Pharming: A Silent Threat to Online Security While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: pharming. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -105,7 +101,7 @@ DNS（Domain Name System）などのインフラサービスを攻撃者が改�
 		<li class="menu__item">
 			<a class="menu__link" href="/dapps">
 				
-				<span class="menu__text">Dapps🔗</span>
+				<span class="menu__text">Blockchain🔗</span>
 				
 			</a>
 		</li>
@@ -119,7 +115,7 @@ DNS（Domain Name System）などのインフラサービスを攻撃者が改�
 		<li class="menu__item">
 			<a class="menu__link" href="/mlai">
 				
-				<span class="menu__text">ML/AI🤖</span>
+				<span class="menu__text">AI🤖</span>
 				
 			</a>
 		</li>
@@ -161,33 +157,83 @@ DNS（Domain Name System）などのインフラサービスを攻撃者が改�
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#pharmingファーミング">Pharming　ファーミング</a></li>
-    <li><a href="#phishingフッシング">Phishing　フッシング</a></li>
+    <li><a href="#pharming-a-silent-threat-to-online-security">Pharming: A Silent Threat to Online Security</a>
+      <ul>
+        <li><a href="#how-pharming-works">How Pharming Works</a></li>
+        <li><a href="#pharming-vs-phishing">Pharming vs. Phishing</a></li>
+        <li><a href="#the-dangers-of-pharming">The Dangers of Pharming</a></li>
+        <li><a href="#protecting-yourself-from-pharming">Protecting Yourself from Pharming</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h2 id="pharmingファーミング">Pharming　ファーミング</h2>
-<p><a href="https://csrc.nist.gov/glossary/term/pharming">https://csrc.nist.gov/glossary/term/pharming</a></p>
-<p>DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。</p>
-<p>ファーミングには、いくつかの異なる形態がある。</p>
+			<h2 id="pharming-a-silent-threat-to-online-security">Pharming: A Silent Threat to Online Security</h2>
+<p>While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: <strong>pharming</strong>. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.</p>
+<h3 id="how-pharming-works">How Pharming Works</h3>
+<p>Pharming exploits vulnerabilities in the Domain Name System (DNS), which acts as the internet&rsquo;s address book, translating human-readable website names (like [無効な URL を削除しました]) into machine-readable IP addresses. By corrupting this system, attackers can misdirect users to fake websites designed to steal sensitive information.</p>
+<p>There are two primary methods of pharming:</p>
 <ol>
 <li>
-<p>電子メールで送信されたコードが、PC上のローカルホストファイルを変更するものです。ホスト・ファイルは、Uniform Resource Locator (URL)を、コンピューターがウェブサイトにアクセスするために使用するIPアドレスに変換します。ホスト・ファイルが侵害されたコンピューターは、ユーザーが正しいウェブ・アドレスを入力したり、影響を受けるブックマーク項目をクリックしたりしても、偽のサイトにアクセスしてしまう。</p>
+<p><strong>Hosts File Modification:</strong> Malware alters the local hosts file on a victim&rsquo;s computer. This file maps website names to IP addresses. When compromised, it redirects the user to a fraudulent site, regardless of the URL entered.</p>
 </li>
 <li>
-<p>DNSポイズニング。サーバーのDNSテーブルが変更され、正規のウェブサイトにアクセスしているつもりのユーザーが、不正なウェブサイトに誘導される。この手法では、個々のPCのホスト・ファイルを改ざんする必要はありません。代わりに、数百万人のインターネットユーザーのURLリクエストを処理するDNSサーバーに問題が発生する。そして、被害者は、不一致を目に見える形で示すことなく、偽サイトにアクセスしてしまう。</p>
+<p><strong>DNS Poisoning:</strong> Attackers compromise DNS servers, which handle URL requests for millions of users.  By altering DNS records, they redirect traffic to fake websites without any visible indication to the user.</p>
 </li>
 </ol>
-<h2 id="phishingフッシング">Phishing　フッシング</h2>
-<p><a href="https://en.wikipedia.org/wiki/Phishing">https://en.wikipedia.org/wiki/Phishing</a></p>
-<p>An attacker sends e-mail with a URL which has malicious link similar to the popular actual websites.</p>
-<p>メールアドレスに不正リンクなどをつけ、個別の利用者を不正アクセスへ誘導する手法</p>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PAtUSoIRJhA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
+<h3 id="pharming-vs-phishing">Pharming vs. Phishing</h3>
+<p>While both pharming and phishing aim to steal information, they differ significantly in their approach:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Pharming</th>
+          <th>Phishing</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Target</strong></td>
+          <td>DNS servers, Hosts file</td>
+          <td>Individual users</td>
+      </tr>
+      <tr>
+          <td><strong>Method</strong></td>
+          <td>Manipulates DNS or hosts file for automatic redirection</td>
+          <td>Uses deceptive emails and websites to trick users into clicking links</td>
+      </tr>
+      <tr>
+          <td><strong>User Awareness</strong></td>
+          <td>Users are unaware of redirection as they type the correct URL</td>
+          <td>Users are somewhat aware of the risk when clicking on suspicious links</td>
+      </tr>
+      <tr>
+          <td><strong>Scale</strong></td>
+          <td>Can be large-scale, affecting many users</td>
+          <td>Typically targets individuals</td>
+      </tr>
+  </tbody>
+</table>
+<p>Phishing relies on social engineering, tricking users into clicking malicious links or providing information through deceptive emails or websites. Pharming, on the other hand, requires no action from the user, making it a more stealthy and dangerous threat.</p>
+<h3 id="the-dangers-of-pharming">The Dangers of Pharming</h3>
+<p>Pharming attacks can have severe consequences:</p>
+<ul>
+<li><strong>Identity theft:</strong> Attackers can capture login credentials, credit card details, and other personal information.</li>
+<li><strong>Financial loss:</strong> Users can be tricked into making fraudulent transactions or revealing financial information.</li>
+<li><strong>Malware installation:</strong> Fake websites can automatically download malware onto a victim&rsquo;s computer, leading to further compromise.</li>
+</ul>
+<h3 id="protecting-yourself-from-pharming">Protecting Yourself from Pharming</h3>
+<p>Here are some crucial steps to mitigate the risk of pharming attacks:</p>
+<ul>
+<li><strong>Keep your software updated:</strong> Regularly update your operating system, browser, and antivirus software to patch vulnerabilities.</li>
+<li><strong>Use a reputable antivirus program:</strong> A good antivirus can detect and remove malware that modifies hosts files.</li>
+<li><strong>Be cautious of suspicious emails and websites:</strong> Avoid clicking links from unknown senders and double-check website URLs before entering sensitive information.</li>
+<li><strong>Look for HTTPS:</strong> Ensure websites use HTTPS encryption, indicated by a padlock icon in the address bar, before entering sensitive data.</li>
+<li><strong>Consider using a VPN:</strong> A VPN encrypts your internet traffic and can help prevent DNS poisoning.</li>
+<li><strong>Use DNS over HTTPS (DoH):</strong> DoH encrypts DNS requests, making it harder for attackers to intercept and manipulate them.</li>
+</ul>
+<p>By understanding the threat of pharming and taking appropriate precautions, users can significantly reduce their risk of falling victim to this dangerous online attack.</p>
 
 		</div>
 		<footer class="post__footer">
@@ -195,9 +241,6 @@ DNS（Domain Name System）などのインフラサービスを攻撃者が改�
 <div class="post__tags tags clearfix">
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/ceh/" rel="tag">CEH</a>
-		</li>
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/dns/" rel="tag">DNS</a>
 		</li>
@@ -215,13 +258,13 @@ DNS（Domain Name System）などのインフラサービスを攻撃者が改�
 	<div class="pager__item pager__item--prev">
 		<a class="pager__link" href="/sec/nmap/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">nmap cheat nmapチート</p>
+			<p class="pager__title">nmap basics</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="/sec/chntpw/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">CHNTPW　Windowsパスワード初期化・リセット</p>
+			<p class="pager__title">Kali Linux and CHNTPW</p>
 		</a>
 	</div>
 </nav>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>E資格 on Note about technology</title>
-    <link>https://xingelf.github.io/tags/e%E8%B3%87%E6%A0%BC/</link>
+    <link>http://localhost:1313/tags/e%E8%B3%87%E6%A0%BC/</link>
     <description>Recent content in E資格 on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/tags/e%E8%B3%87%E6%A0%BC/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/e%E8%B3%87%E6%A0%BC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Model Evaluation in ML</title>
-      <link>https://xingelf.github.io/mlai/evalmodel/</link>
+      <link>http://localhost:1313/mlai/evalmodel/</link>
       <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/evalmodel/</guid>
+      <guid>http://localhost:1313/mlai/evalmodel/</guid>
       <description>&lt;h1 id=&#34;model-evaluation&#34;&gt;Model Evaluation&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Definition of Data in Model Evaluation&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Data used for training machine learning models.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Data used for adjusting hyperparameters, etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Data used to estimate generalization performance -&amp;gt; Final evaluation of the model.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Holdout Method, k-Fold Cross-Validation&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

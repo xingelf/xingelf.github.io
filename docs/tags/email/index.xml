@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/sec/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
-      <description>&lt;h2 id=&#34;pharmingファーミング&#34;&gt;Pharming　ファーミング&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://csrc.nist.gov/glossary/term/pharming&#34;&gt;https://csrc.nist.gov/glossary/term/pharming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;pharming-a-silent-threat-to-online-security&#34;&gt;Pharming: A Silent Threat to Online Security&lt;/h2&gt;&#xA;&lt;p&gt;While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: &lt;strong&gt;pharming&lt;/strong&gt;. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

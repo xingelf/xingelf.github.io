@@ -22,40 +22,5 @@
       <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
       <description>&lt;p&gt;A &lt;strong&gt;Rubber Hose Attack&lt;/strong&gt; refers to a technique in cryptography and cybersecurity where &lt;strong&gt;physical or psychological coercion is used to extract information&lt;/strong&gt;. This term is often used metaphorically to contrast with theoretical or technical methods of breaking encryption.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>DoS/DDoS Attack</title>
-      <link>https://xingelf.github.io/sec/dos/</link>
-      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/dos/</guid>
-      <description>&lt;p&gt;Certainly! Below is the enhanced version of the article with additional details on each type of DDoS attack:&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;understanding-ddos-attacks&#34;&gt;Understanding DDoS Attacks&lt;/h1&gt;&#xA;&lt;p&gt;A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Computer Virus/ウイルス 分類</title>
-      <link>https://xingelf.github.io/sec/computer_virus/</link>
-      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/computer_virus/</guid>
-      <description>&lt;h1 id=&#34;ウイルス種類&#34;&gt;ウイルス種類&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ポリモーフィック型ウイルス&#34;&gt;ポリモーフィック型ウイルス&lt;/h2&gt;&#xA;&lt;p&gt;いわゆる変異型。感染ごとに異なる鍵で暗号化し、パターンマッチによる検知を回避。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CHNTPW　Windowsパスワード初期化・リセット</title>
-      <link>https://xingelf.github.io/sec/chntpw/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/chntpw/</guid>
-      <description>&lt;p&gt;Kail LinuxをUSBブートしCHNTPWツールにてwindowsのパスワードをリセットできます。&#xA;administratorパスワードをロストした場合の復旧手段の１つとなります。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pharming and Phising</title>
-      <link>https://xingelf.github.io/sec/phaming-phising/</link>
-      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
-      <description>&lt;h2 id=&#34;pharmingファーミング&#34;&gt;Pharming　ファーミング&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://csrc.nist.gov/glossary/term/pharming&#34;&gt;https://csrc.nist.gov/glossary/term/pharming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>nmap cheat nmapチート</title>
-      <link>https://xingelf.github.io/sec/nmap/</link>
-      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/nmap/</guid>
-      <description>&lt;h1 id=&#34;nmapとは&#34;&gt;nmapとは&lt;/h1&gt;&#xA;&lt;p&gt;ポートスキャンツールです。ペネトレーション作業の基本ツールです。&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

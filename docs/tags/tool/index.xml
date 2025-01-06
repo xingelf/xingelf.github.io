@@ -6,14 +6,28 @@
     <description>Recent content in Tool on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIRB</title>
+      <link>https://xingelf.github.io/sec/dirb/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/dirb/</guid>
+      <description>&lt;h3 id=&#34;exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing&#34;&gt;Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing&lt;/h3&gt;&#xA;&lt;p&gt;In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to Use hping/hping3: A Beginner&#39;s Guide</title>
       <link>https://xingelf.github.io/sec/hping/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/hping/</guid>
       <description>&lt;p&gt;&lt;strong&gt;hping&lt;/strong&gt; or &lt;strong&gt;hping3&lt;/strong&gt; is a versatile network tool that can be used for testing, troubleshooting, and analyzing network connections. It is commonly used by network administrators and cybersecurity professionals. Below is a guide to help you understand and start using hping/hping3 effectively.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>nmap basics</title>
+      <link>https://xingelf.github.io/sec/nmap/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/nmap/</guid>
+      <description>&lt;p&gt;Nmap is like a superpower for exploring computer networks! It&amp;rsquo;s a tool that lets you see which &amp;ldquo;doors&amp;rdquo; (ports) are open on a computer, like checking if the front door, back door, or garage is open. This is called &amp;ldquo;port scanning,&amp;rdquo; and it&amp;rsquo;s super useful for security professionals to find weaknesses.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

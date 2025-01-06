@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/mlai/entropy/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/entropy/</guid>
-      <description>&lt;h1 id=&#34;purpose-to-understand-the-basics-of-information-theory&#34;&gt;Purpose: To understand the basics of information theory.&lt;/h1&gt;&#xA;&lt;h2 id=&#34;information-quantity&#34;&gt;Information Quantity&lt;/h2&gt;&#xA;&lt;p&gt;When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Purpose: To understand the basics of information theory.&lt;/p&gt;&#xA;&lt;h2 id=&#34;information-quantity&#34;&gt;Information Quantity&lt;/h2&gt;&#xA;&lt;p&gt;When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&lt;/p&gt;</description>
     </item>
     <item>
       <title>書籍 Kaggleで勝つデータ分析</title>

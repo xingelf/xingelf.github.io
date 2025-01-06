@@ -23,13 +23,6 @@
       <description></description>
     </item>
     <item>
-      <title>HTTP</title>
-      <link>https://xingelf.github.io/tags/http/</link>
-      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/http/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>KillChain</title>
       <link>https://xingelf.github.io/tags/killchain/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
@@ -41,6 +34,13 @@
       <link>https://xingelf.github.io/tags/scanner/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/scanner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool</title>
+      <link>https://xingelf.github.io/tags/tool/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/tool/</guid>
       <description></description>
     </item>
     <item>
@@ -114,13 +114,6 @@
       <description></description>
     </item>
     <item>
-      <title>Tool</title>
-      <link>https://xingelf.github.io/tags/tool/</link>
-      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/tool/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Java</title>
       <link>https://xingelf.github.io/tags/java/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
@@ -142,6 +135,13 @@
       <description></description>
     </item>
     <item>
+      <title>DDoS</title>
+      <link>https://xingelf.github.io/tags/ddos/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/ddos/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Bot</title>
       <link>https://xingelf.github.io/tags/bot/</link>
       <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
@@ -153,6 +153,13 @@
       <link>https://xingelf.github.io/tags/physical-security/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/physical-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTP</title>
+      <link>https://xingelf.github.io/tags/http/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/http/</guid>
       <description></description>
     </item>
     <item>
@@ -209,13 +216,6 @@
       <link>https://xingelf.github.io/tags/solidity/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/solidity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DOS</title>
-      <link>https://xingelf.github.io/tags/dos/</link>
-      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/dos/</guid>
       <description></description>
     </item>
     <item>
@@ -303,10 +303,17 @@
       <description></description>
     </item>
     <item>
-      <title>Virus</title>
-      <link>https://xingelf.github.io/tags/virus/</link>
+      <title>Computer Virus</title>
+      <link>https://xingelf.github.io/tags/computer-virus/</link>
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/virus/</guid>
+      <guid>https://xingelf.github.io/tags/computer-virus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Password</title>
+      <link>https://xingelf.github.io/tags/password/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/password/</guid>
       <description></description>
     </item>
     <item>
@@ -324,24 +331,10 @@
       <description></description>
     </item>
     <item>
-      <title>Nmap</title>
-      <link>https://xingelf.github.io/tags/nmap/</link>
-      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/nmap/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Finance</title>
       <link>https://xingelf.github.io/tags/finance/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/finance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>E資格</title>
-      <link>https://xingelf.github.io/tags/e%E8%B3%87%E6%A0%BC/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/e%E8%B3%87%E6%A0%BC/</guid>
       <description></description>
     </item>
     <item>

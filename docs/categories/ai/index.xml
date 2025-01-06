@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Note about technology</title>
+    <link>https://xingelf.github.io/categories/ai/</link>
+    <description>Recent content in AI on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Model Evaluation in ML</title>
+      <link>https://xingelf.github.io/mlai/eval_model/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/eval_model/</guid>
+      <description>&lt;h1 id=&#34;model-evaluation&#34;&gt;Model Evaluation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;definition-of-data-in-model-evaluation&#34;&gt;&lt;strong&gt;Definition of Data in Model Evaluation&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Data used for training machine learning models.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Data used for adjusting hyperparameters, etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Data used to estimate generalization performance -&amp;gt; Final evaluation of the model.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;holdout-method-k-fold-cross-validation&#34;&gt;&lt;strong&gt;Holdout Method, k-Fold Cross-Validation&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Evaluation methods for models on given data.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

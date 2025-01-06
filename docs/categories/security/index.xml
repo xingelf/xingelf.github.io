@@ -9,6 +9,13 @@
     <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>DIRB</title>
+      <link>https://xingelf.github.io/sec/dirb/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/dirb/</guid>
+      <description>&lt;h3 id=&#34;exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing&#34;&gt;Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing&lt;/h3&gt;&#xA;&lt;p&gt;In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What is the Cyber Kill Chain?</title>
       <link>https://xingelf.github.io/sec/cyberkillchain/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
@@ -51,11 +58,18 @@
       <description>&lt;h2 id=&#34;servlet-mappings-made-simple-a-beginners-guide&#34;&gt;Servlet Mappings Made Simple: A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;Servlet mappings are a fundamental concept in Java web development. They define how requests from a web browser are directed to specific servlets on a server. Think of servlet mappings as traffic signs on a highway—they guide incoming requests to the right destination for processing.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>GRE Flood Attacks</title>
+      <link>https://xingelf.github.io/sec/gre_flood/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/gre_flood/</guid>
+      <description>&lt;p&gt;With the spread of the internet, the threat of cyberattacks is becoming increasingly serious. Among them, DDoS attacks are widely known as attacks targeting websites and online services, and their methods are becoming more sophisticated. In recent years, there has been an increasing trend of &amp;ldquo;GRE Flood attacks,&amp;rdquo; which are more difficult to detect and defend against than conventional DDoS attacks.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Mirai Bot 48101</title>
       <link>https://xingelf.github.io/sec/mirai-bot/</link>
       <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/mirai-bot/</guid>
-      <description>&lt;h2 id=&#34;mirai-bot-a-deep-dive&#34;&gt;Mirai Bot: A Deep Dive&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tailgating vs. Piggybacking: Understanding the Difference</title>
@@ -86,6 +100,13 @@
       <description>&lt;p&gt;There are several categories of threat intelligence.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://info-savvy.com/types-of-threat-intelligence/&#34;&gt;https://info-savvy.com/types-of-threat-intelligence/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;technical-threat-intelligence&#34;&gt;Technical Threat Intelligence&lt;/h1&gt;&#xA;&lt;p&gt;Technical cyber intelligence involves collecting information about the attacker&amp;rsquo;s resources, such as command &amp;amp; control channels and tools. For example, it focuses on technical clues that indicate cybersecurity threats to phishing emails and malicious URLs. The goal is to collect information on specific IOCs (IP addresses, phishing email headers, hash checksums). This type of threat intelligence is important because it allows for the analysis of attacks. However, the value of technical threat intelligence is short-lived because hackers often change tactics. It is crucial to detect and analyze IOCs at the right time. Tactical intelligence is used by SOC team members. The information obtained here leads to new rules being written into the organization&amp;rsquo;s current security products (IDS/IP, firewalls, endpoint security systems, etc.). Suspicious IPs may also be detected from spam emails. The information obtained is directly fed back into the organization&amp;rsquo;s products.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>DoS/DDoS Attack</title>
+      <link>https://xingelf.github.io/sec/dos/</link>
+      <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/dos/</guid>
+      <description>&lt;p&gt;A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Social Engineering ソーシャルエンジニアリング</title>
       <link>https://xingelf.github.io/sec/social_engineering/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
@@ -93,18 +114,32 @@
       <description>&lt;h1 id=&#34;social-engineeringとは&#34;&gt;Social Engineeringとは&lt;/h1&gt;&#xA;&lt;p&gt;ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、&#xA;特定の行動を取らせたりすることを目的としたすべてのテクニックのことを指す。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Computer Virus 101</title>
+      <link>https://xingelf.github.io/sec/computer_virus/</link>
+      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/computer_virus/</guid>
+      <description>&lt;h2 id=&#34;virus-types-evolving-threats-in-the-digital-landscape&#34;&gt;Virus Types: Evolving Threats in the Digital Landscape&lt;/h2&gt;&#xA;&lt;p&gt;Computer viruses have evolved significantly since their inception, becoming increasingly sophisticated in their methods of infection and evasion. Here&amp;rsquo;s a closer look at some prominent types:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kali Linux and CHNTPW</title>
+      <link>https://xingelf.github.io/sec/chntpw/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/chntpw/</guid>
+      <description>&lt;h2 id=&#34;kali-linux-and-chntpw-resetting-lost-windows-passwords&#34;&gt;Kali Linux and CHNTPW: Resetting Lost Windows Passwords&lt;/h2&gt;&#xA;&lt;p&gt;Losing your Windows administrator password can be a major headache, locking you out of your own system. But don&amp;rsquo;t panic! There&amp;rsquo;s a powerful solution using Kali Linux and a tool called CHNTPW. This method allows you to reset the password without needing to know the original one. Here&amp;rsquo;s a detailed breakdown of the process:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Pharming and Phising</title>
       <link>https://xingelf.github.io/sec/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
-      <description>&lt;h2 id=&#34;pharmingファーミング&#34;&gt;Pharming　ファーミング&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://csrc.nist.gov/glossary/term/pharming&#34;&gt;https://csrc.nist.gov/glossary/term/pharming&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;DNS（Domain Name System）などのインフラサービスを攻撃者が改ざんし、契約者を偽造した検証機/RPに誤誘導し、契約者に機密情報の漏洩や有害ソフトウェアのダウンロード、詐欺行為に加担させる攻撃。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;pharming-a-silent-threat-to-online-security&#34;&gt;Pharming: A Silent Threat to Online Security&lt;/h2&gt;&#xA;&lt;p&gt;While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: &lt;strong&gt;pharming&lt;/strong&gt;. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>nmap cheat nmapチート</title>
+      <title>nmap basics</title>
       <link>https://xingelf.github.io/sec/nmap/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/nmap/</guid>
-      <description>&lt;h1 id=&#34;nmapとは&#34;&gt;nmapとは&lt;/h1&gt;&#xA;&lt;p&gt;ポートスキャンツールです。ペネトレーション作業の基本ツールです。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Nmap is like a superpower for exploring computer networks! It&amp;rsquo;s a tool that lets you see which &amp;ldquo;doors&amp;rdquo; (ports) are open on a computer, like checking if the front door, back door, or garage is open. This is called &amp;ldquo;port scanning,&amp;rdquo; and it&amp;rsquo;s super useful for security professionals to find weaknesses.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

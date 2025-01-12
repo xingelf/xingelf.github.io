@@ -30,25 +30,11 @@
       <description>&lt;p&gt;XML serialization is the process of transforming data objects or object graphs into an XML document.  Think of it like taking a structured box of toys and laying each item out individually, labeled with XML tags, so it can be easily shipped and reconstructed later.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Rootkits: The Hidden Threat</title>
-      <link>https://xingelf.github.io/sec/rootkit/</link>
-      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rootkit/</guid>
-      <description>&lt;h2 id=&#34;rootkits-the-hidden-threat&#34;&gt;Rootkits: The Hidden Threat&lt;/h2&gt;&#xA;&lt;p&gt;Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Tex/LaTex with Markdown</title>
       <link>https://xingelf.github.io/tech/latex-md/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/latex-md/</guid>
       <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;https://gohugo.io/templates/partials/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Create a folder named partials under the layouts directory.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a Rubber Hose Attack?</title>
-      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
-      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
-      <description>&lt;p&gt;A &lt;strong&gt;Rubber Hose Attack&lt;/strong&gt; refers to a technique in cryptography and cybersecurity where &lt;strong&gt;physical or psychological coercion is used to extract information&lt;/strong&gt;. This term is often used metaphorically to contrast with theoretical or technical methods of breaking encryption.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bluetooth Attack Techniques</title>
@@ -105,6 +91,13 @@
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/sec/tailgate_piggybacking/</guid>
       <description>&lt;p&gt;In the realm of physical security, &amp;ldquo;tailgating&amp;rdquo; and &amp;ldquo;piggybacking&amp;rdquo; are two common methods used to gain unauthorized access to restricted areas. While both involve an unauthorized individual entering a secure area, there is a key distinction between the two.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rootkits: The Hidden Threat</title>
+      <link>https://xingelf.github.io/sec/rootkit/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/rootkit/</guid>
+      <description>&lt;h2 id=&#34;rootkits-the-hidden-threat&#34;&gt;Rootkits: The Hidden Threat&lt;/h2&gt;&#xA;&lt;p&gt;Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTTP Request Smuggling (HRS)</title>
@@ -184,6 +177,13 @@
       <description>&lt;h1 id=&#34;happy-hacking-keyboard-&#34;&gt;Happy Hacking Keyboard ⌨&lt;/h1&gt;&#xA;&lt;p&gt;I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configuration-of-dip-switches-on-the-backside&#34;&gt;Configuration of DIP Switches on the Backside&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Mac Compatibility&lt;/p&gt;</description>
     </item>
     <item>
+      <title>What is a Rubber Hose Attack?</title>
+      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
+      <pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
+      <description>&lt;p&gt;A &lt;strong&gt;Rubber Hose Attack&lt;/strong&gt; refers to a technique in cryptography and cybersecurity where &lt;strong&gt;physical or psychological coercion is used to extract information&lt;/strong&gt;. This term is often used metaphorically to contrast with theoretical or technical methods of breaking encryption.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Errors in Python</title>
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
@@ -254,11 +254,11 @@
       <description>&lt;h1 id=&#34;solidity-safemath-四足演算ライブラリ&#34;&gt;Solidity SafeMath 四足演算ライブラリ&lt;/h1&gt;&#xA;&lt;p&gt;assertによりオーバーフロー対策を行うことができます。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Zero Knowledge Proofs ゼロ知識証明</title>
+      <title>Zero Knowledge Proofs</title>
       <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
-      <description>&lt;h1 id=&#34;ゼロ知識証明とは&#34;&gt;ゼロ知識証明とは&lt;/h1&gt;&#xA;&lt;p&gt;ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、&#xA;自分の持っている命題（通常、数学的な）が真であることを伝えるのに、&#xA;真であること以外の何の知識も伝えることなく証明できるようなやりとりの手法。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s an article in English explaining Zero-Knowledge Proofs:&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-zero-knowledge-proofs&#34;&gt;Understanding Zero-Knowledge Proofs&lt;/h2&gt;&#xA;&lt;p&gt;Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data Types in Solidity</title>

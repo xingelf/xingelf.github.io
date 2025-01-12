@@ -157,7 +157,12 @@ col = &#34;ReplyRate&#34; df[col] = df[col].apply(str_to_rate)">
 	</span>
 </div></div>
 		</header>
-		<div class="content post__content clearfix">
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/code.jpeg" alt="Python a Function Convert Percentage in String/Object Type Columns to Numbers">
+		
+	</figure><div class="content post__content clearfix">
 			<p>Converts percentage information given in String/Object type columns into numbers.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">str_to_rate</span>(s):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> pd<span style="color:#f92672">.</span>isnull(s) <span style="color:#f92672">==</span> <span style="color:#66d9ef">False</span>:

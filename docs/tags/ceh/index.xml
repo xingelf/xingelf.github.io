@@ -2,25 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CEH on Note about technology</title>
-    <link>https://xingelf.github.io/tags/ceh/</link>
+    <link>http://localhost:1313/tags/ceh/</link>
     <description>Recent content in CEH on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/tags/ceh/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Rootkits: The Hidden Threat</title>
-      <link>https://xingelf.github.io/sec/rootkit/</link>
-      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rootkit/</guid>
-      <description>&lt;h2 id=&#34;rootkits-the-hidden-threat&#34;&gt;Rootkits: The Hidden Threat&lt;/h2&gt;&#xA;&lt;p&gt;Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a Rubber Hose Attack?</title>
-      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
-      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
-      <description>&lt;p&gt;A &lt;strong&gt;Rubber Hose Attack&lt;/strong&gt; refers to a technique in cryptography and cybersecurity where &lt;strong&gt;physical or psychological coercion is used to extract information&lt;/strong&gt;. This term is often used metaphorically to contrast with theoretical or technical methods of breaking encryption.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/tags/ceh/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

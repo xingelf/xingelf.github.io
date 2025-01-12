@@ -6,8 +6,15 @@
     <description>Recent content in Blockchain on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero Knowledge Proofs</title>
+      <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
+      <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s an article in English explaining Zero-Knowledge Proofs:&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-zero-knowledge-proofs&#34;&gt;Understanding Zero-Knowledge Proofs&lt;/h2&gt;&#xA;&lt;p&gt;Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Data Types in Solidity</title>
       <link>https://xingelf.github.io/dapps/solidity-type/</link>

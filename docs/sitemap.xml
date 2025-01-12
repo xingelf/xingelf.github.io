@@ -47,15 +47,6 @@
     <loc>https://xingelf.github.io/sec/xml_serialization/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/ceh/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/rootkit/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/sec/rootkit/</loc>
-    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/hugo/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -76,9 +67,6 @@
   </url><url>
     <loc>https://xingelf.github.io/tech/latex-md/</loc>
     <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/sec/rubber_hose_attack/</loc>
-    <lastmod>2024-12-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/bluetooth/</loc>
     <lastmod>2024-12-22T00:00:00+00:00</lastmod>
@@ -136,6 +124,12 @@
   </url><url>
     <loc>https://xingelf.github.io/sec/tailgate_piggybacking/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/rootkit/</loc>
+    <lastmod>2024-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/sec/rootkit/</loc>
+    <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/http/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
@@ -212,6 +206,12 @@
     <loc>https://xingelf.github.io/tags/keyboard/</loc>
     <lastmod>2024-03-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/tags/physical/</loc>
+    <lastmod>2023-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/sec/rubber_hose_attack/</loc>
+    <lastmod>2023-12-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/tech/python-err/</loc>
     <lastmod>2023-01-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -278,6 +278,9 @@
     <loc>https://xingelf.github.io/dapps/solidity-safemath/</loc>
     <lastmod>2022-09-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/categories/blockchain/</loc>
+    <lastmod>2022-09-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/dapps/zeroknowledge/</loc>
     <lastmod>2022-09-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -285,9 +288,6 @@
     <lastmod>2022-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/blockchain/</loc>
-    <lastmod>2022-09-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/blockchain/</loc>
     <lastmod>2022-09-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/dapps/solidity-type/</loc>

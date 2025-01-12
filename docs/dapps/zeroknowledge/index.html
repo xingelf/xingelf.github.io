@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Zero Knowledge Proofs ゼロ知識証明 - Note about technology</title>
+	<title>Zero Knowledge Proofs - Note about technology</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="https://xingelf.github.io/dapps/zeroknowledge/">
   <meta property="og:site_name" content="Note about technology">
-  <meta property="og:title" content="Zero Knowledge Proofs ゼロ知識証明">
-  <meta property="og:description" content="ゼロ知識証明とは ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、 自分の持っている命題（通常、数学的な）が真であることを伝えるのに、 真であること以外の何の知識も伝えることなく証明できるようなやりとりの手法。">
+  <meta property="og:title" content="Zero Knowledge Proofs">
+  <meta property="og:description" content="Here’s an article in English explaining Zero-Knowledge Proofs:
+Understanding Zero-Knowledge Proofs Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="dapps">
@@ -18,16 +19,18 @@
     <meta property="article:tag" content="ZKP">
 
 		
-  <meta itemprop="name" content="Zero Knowledge Proofs ゼロ知識証明">
-  <meta itemprop="description" content="ゼロ知識証明とは ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、 自分の持っている命題（通常、数学的な）が真であることを伝えるのに、 真であること以外の何の知識も伝えることなく証明できるようなやりとりの手法。">
+  <meta itemprop="name" content="Zero Knowledge Proofs">
+  <meta itemprop="description" content="Here’s an article in English explaining Zero-Knowledge Proofs:
+Understanding Zero-Knowledge Proofs Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:">
   <meta itemprop="datePublished" content="2022-09-10T00:00:00+00:00">
   <meta itemprop="dateModified" content="2022-09-10T00:00:00+00:00">
-  <meta itemprop="wordCount" content="310">
+  <meta itemprop="wordCount" content="432">
   <meta itemprop="keywords" content="ZKP">
 		
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Zero Knowledge Proofs ゼロ知識証明">
-  <meta name="twitter:description" content="ゼロ知識証明とは ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、 自分の持っている命題（通常、数学的な）が真であることを伝えるのに、 真であること以外の何の知識も伝えることなく証明できるようなやりとりの手法。">
+  <meta name="twitter:title" content="Zero Knowledge Proofs">
+  <meta name="twitter:description" content="Here’s an article in English explaining Zero-Knowledge Proofs:
+Understanding Zero-Knowledge Proofs Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -143,71 +146,60 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Zero Knowledge Proofs ゼロ知識証明</h1>
+			<h1 class="post__title">Zero Knowledge Proofs</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-09-10T00:00:00Z">2022-09-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/dao/" rel="category">DAO</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-09-10T00:00:00Z">2022-09-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/blockchain/" rel="category">Blockchain</a>
 	</span>
 </div></div>
 		</header>
 		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_9.jpg" alt="Zero Knowledge Proofs">
+		
+	</figure>
 <div class="post__toc toc">
 	<div class="toc__title">Page content</div>
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#zkproof">ZKPROOF</a></li>
-    <li><a href="#awesome-zero-knowledge-proofs">awesome-zero-knowledge-proofs</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#ゼロ知識証明って何5段階のレベルで説明--5-levels--wiredjp">「ゼロ知識証明」って何？5段階のレベルで説明 | 5 Levels | WIRED.jp</a></li>
-    <li><a href="#xls-labsゼロ知識証明-日本語解説">XLS Labs　ゼロ知識証明 日本語解説</a></li>
-    <li><a href="#xls-labsゼロ知識証明-英語解説">XLS Labs　ゼロ知識証明 英語解説</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#ゼロ知識証明入門-デロイト-トーマツ">ゼロ知識証明入門 デロイト トーマツ</a></li>
+    <li><a href="#understanding-zero-knowledge-proofs">Understanding Zero-Knowledge Proofs</a></li>
+    <li><a href="#privacy-protection-the-prover-can-convince-the-verifier-that-they-know-something-without-revealing-what-that-something-is-this-maintains-privacy">Privacy Protection: The prover can convince the verifier that they know something without revealing what that something is. This maintains privacy.</a></li>
+    <li><a href="#how-it-works">How It Works:</a></li>
+    <li><a href="#practical-applications">Practical Applications:</a></li>
+    <li><a href="#underlying-theory">Underlying Theory:</a></li>
+    <li><a href="#examples-in-practice">Examples in Practice:</a></li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h1 id="ゼロ知識証明とは">ゼロ知識証明とは</h1>
-<p>ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、
-自分の持っている命題（通常、数学的な）が真であることを伝えるのに、
-真であること以外の何の知識も伝えることなく証明できるようなやりとりの手法。</p>
-<p><a href="https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AD%E7%9F%A5%E8%AD%98%E8%A8%BC%E6%98%8E">https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AD%E7%9F%A5%E8%AD%98%E8%A8%BC%E6%98%8E</a></p>
-<h1 id="ゼロ知識証明-オンラインソース">ゼロ知識証明 オンラインソース</h1>
-<h2 id="zkproof">ZKPROOF</h2>
-<p><a href="https://zkproof.org/">https://zkproof.org/</a></p>
-<h2 id="awesome-zero-knowledge-proofs">awesome-zero-knowledge-proofs</h2>
-<p><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs">https://github.com/matter-labs/awesome-zero-knowledge-proofs</a></p>
-<h1 id="ゼロ知識証明を理解する動画">ゼロ知識証明を理解する動画</h1>
-<h2 id="ゼロ知識証明って何5段階のレベルで説明--5-levels--wiredjp">「ゼロ知識証明」って何？5段階のレベルで説明 | 5 Levels | WIRED.jp</h2>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eAp2HSjDPPk?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
-<p>日本語版は自動音声で少し聞き取りづらいですが、洞窟の証明がよく理解できます。
-RGPD-&gt;GDPR?</p>
-<h2 id="xls-labsゼロ知識証明-日本語解説">XLS Labs　ゼロ知識証明 日本語解説</h2>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/_JjbZOABc20?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
-<h2 id="xls-labsゼロ知識証明-英語解説">XLS Labs　ゼロ知識証明 英語解説</h2>
+			<p>Here&rsquo;s an article in English explaining Zero-Knowledge Proofs:</p>
+<h2 id="understanding-zero-knowledge-proofs">Understanding Zero-Knowledge Proofs</h2>
+<p>Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:</p>
+<h2 id="privacy-protection-the-prover-can-convince-the-verifier-that-they-know-something-without-revealing-what-that-something-is-this-maintains-privacy">Privacy Protection: The prover can convince the verifier that they know something without revealing what that something is. This maintains privacy.</h2>
+<p>Verifiability: The verifier can be certain that the prover knows the information, but they do not learn anything about the actual information itself.
+Completeness and Soundness: Valid proofs are always accepted, while invalid proofs are rejected, ensuring the integrity of the proof system.</p>
+<h2 id="how-it-works">How It Works:</h2>
+<p>Prover&rsquo;s Role: The prover wants to demonstrate knowledge of some secret information without revealing it.
+Verifier&rsquo;s Role: The verifier needs to be convinced that the prover possesses this knowledge but should not learn the secret itself.
+Interaction: The prover and verifier engage in a protocol where the prover demonstrates the ability to solve a problem or puzzle that can only be solved if the secret is known, without disclosing the secret.</p>
+<h2 id="practical-applications">Practical Applications:</h2>
+<p>Blockchain and Cryptocurrencies: ZKPs are used to enhance privacy in transactions. For instance, Zcash uses zero-knowledge proofs to allow for transactions that are confidential yet auditable.
+Authentication Systems: Users can prove they possess certain credentials or rights without exposing the credentials themselves, enhancing security and privacy in online identity verification.
+Secure Voting Systems: Voters can prove they are eligible to vote without revealing their identity or voting choices, ensuring both privacy and integrity of the voting process.</p>
+<h2 id="underlying-theory">Underlying Theory:</h2>
+<p>Zero-knowledge proofs are grounded in mathematical and cryptographic theory, particularly in the fields of computational complexity and cryptography. They rely on complex algorithms and mathematical problems that are hard to solve without specific knowledge but easy to verify once the solution is provided.</p>
+<h2 id="examples-in-practice">Examples in Practice:</h2>
+<p>ZKP in Blockchain: Imagine you want to prove you have enough funds for a transaction without revealing your balance. ZKPs allow you to do this.
+Password Authentication: Instead of transmitting passwords across networks, you could prove you know the password through a zero-knowledge protocol, thus reducing risks of interception.
+Digital Rights Management: Content creators can prove they have the rights to distribute content without revealing their identity or how they obtained those rights.</p>
+<p>Zero-knowledge proofs are a fascinating area of cryptography because they balance the need for privacy with the necessity of verification, offering solutions to some of the most challenging problems in data security and privacy today.</p>
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1TkCnhpbS7A?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
-<h1 id="ゼロ知識証明を理解する書籍">ゼロ知識証明を理解する書籍</h1>
-<h2 id="ゼロ知識証明入門-デロイト-トーマツ">ゼロ知識証明入門 デロイト トーマツ</h2>
-<p>薄い本ですが、読むのには時間がかかりました。
-本質的なポイントが解説されています。</p>
-<p><a href="https://www2.deloitte.com/jp/ja/pages/get-connected/pub/books/risk-advisory-csr/zero-knowledge-proof-introduction.html">https://www2.deloitte.com/jp/ja/pages/get-connected/pub/books/risk-advisory-csr/zero-knowledge-proof-introduction.html</a></p>
 
 		</div>
 		<footer class="post__footer">

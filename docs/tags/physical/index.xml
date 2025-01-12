@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Physical on Note about technology</title>
+    <link>https://xingelf.github.io/tags/physical/</link>
+    <description>Recent content in Physical on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/physical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is a Rubber Hose Attack?</title>
+      <link>https://xingelf.github.io/sec/rubber_hose_attack/</link>
+      <pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/sec/rubber_hose_attack/</guid>
+      <description>&lt;p&gt;A &lt;strong&gt;Rubber Hose Attack&lt;/strong&gt; refers to a technique in cryptography and cybersecurity where &lt;strong&gt;physical or psychological coercion is used to extract information&lt;/strong&gt;. This term is often used metaphorically to contrast with theoretical or technical methods of breaking encryption.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/zkp/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Zero Knowledge Proofs ゼロ知識証明</title>
+      <title>Zero Knowledge Proofs</title>
       <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
-      <description>&lt;h1 id=&#34;ゼロ知識証明とは&#34;&gt;ゼロ知識証明とは&lt;/h1&gt;&#xA;&lt;p&gt;ゼロ知識証明（zero-knowledge proof）とは、ある人が他の人に、&#xA;自分の持っている命題（通常、数学的な）が真であることを伝えるのに、&#xA;真であること以外の何の知識も伝えることなく証明できるようなやりとりの手法。&lt;/p&gt;</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s an article in English explaining Zero-Knowledge Proofs:&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-zero-knowledge-proofs&#34;&gt;Understanding Zero-Knowledge Proofs&lt;/h2&gt;&#xA;&lt;p&gt;Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

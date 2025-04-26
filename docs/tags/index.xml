@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithm</title>
+      <link>https://xingelf.github.io/tags/algorithm/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github</title>
+      <link>https://xingelf.github.io/tags/github/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/github/</guid>
+      <description></description>
+    </item>
     <item>
       <title>SQLi</title>
       <link>https://xingelf.github.io/tags/sqli/</link>
@@ -370,13 +384,6 @@
       <link>https://xingelf.github.io/tags/shortcut/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/shortcut/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Github</title>
-      <link>https://xingelf.github.io/tags/github/</link>
-      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/github/</guid>
       <description></description>
     </item>
     <item>

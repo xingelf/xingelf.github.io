@@ -6,8 +6,22 @@
     <description>Recent content on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Manage Dotfiles on GitHub</title>
+      <link>https://xingelf.github.io/tech/dotfiles/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/dotfiles/</guid>
+      <description>&lt;p&gt;Keeping your dotfiles under version control is a great way to maintain consistency across multiple machines and track changes to your configuration over time. Here&amp;rsquo;s a step-by-step guide to managing your dotfiles on GitHub.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Case for Automated Trading: Weighing the Advantages and Disadvantages</title>
+      <link>https://xingelf.github.io/tech/algo-trade/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/algo-trade/</guid>
+      <description>&lt;h2 id=&#34;the-case-for-automated-trading-weighing-the-advantages-and-disadvantages&#34;&gt;The Case for Automated Trading: Weighing the Advantages and Disadvantages&lt;/h2&gt;&#xA;&lt;p&gt;The allure of generating profit without constant manual intervention has made automated trading an increasingly popular approach in the financial markets. This article delves into the merits and drawbacks of employing automated trading systems.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Metadata-Driven Design Patterns: A Comprehensive Guide</title>
       <link>https://xingelf.github.io/sec/metadata_driven/</link>

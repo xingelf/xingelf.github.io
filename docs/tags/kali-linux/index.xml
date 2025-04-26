@@ -2,25 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kali Linux on Note about technology</title>
-    <link>http://localhost:1313/tags/kali-linux/</link>
+    <link>https://xingelf.github.io/tags/kali-linux/</link>
     <description>Recent content in Kali Linux on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/kali-linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xingelf.github.io/tags/kali-linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automate Kali Linux Updates with This Handy Shell Script</title>
-      <link>http://localhost:1313/tech/update_kali/</link>
+      <link>https://xingelf.github.io/tech/update_kali/</link>
       <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/update_kali/</guid>
+      <guid>https://xingelf.github.io/tech/update_kali/</guid>
       <description>&lt;p&gt;Keeping your Kali Linux system up-to-date is &lt;strong&gt;crucial for security, stability, and access to the latest tools&lt;/strong&gt;. Instead of manually running &lt;code&gt;apt update&lt;/code&gt; and &lt;code&gt;apt upgrade&lt;/code&gt; every time, why not &lt;strong&gt;automate the process with a shell script?&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Kali Linux Memo</title>
-      <link>http://localhost:1313/tech/_kali-linux/</link>
-      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_kali-linux/</guid>
-      <description>&lt;h1 id=&#34;update&#34;&gt;Update&lt;/h1&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update&#xA;sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;install&#34;&gt;Install&lt;/h1&gt;&#xA;&lt;h2 id=&#34;pkcrack&#34;&gt;pkcrack&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;tar xvzf pkcrack&#xA;cd test&#xA;sudo make&#xA;cd ../src/&#xA;pkcrack&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;fcrackzip-zipパスワード解析&#34;&gt;fcrackzip zipパスワード解析&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install fcrackzip&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;exiftool&#34;&gt;exiftool&lt;/h2&gt;&#xA;&lt;p&gt;sudo apt install exiftool&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

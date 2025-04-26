@@ -6,8 +6,15 @@
     <description>Recent content on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automate Kali Linux Updates with This Handy Shell Script</title>
+      <link>https://xingelf.github.io/tech/update_kali/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/update_kali/</guid>
+      <description>&lt;p&gt;Keeping your Kali Linux system up-to-date is &lt;strong&gt;crucial for security, stability, and access to the latest tools&lt;/strong&gt;. Instead of manually running &lt;code&gt;apt update&lt;/code&gt; and &lt;code&gt;apt upgrade&lt;/code&gt; every time, why not &lt;strong&gt;automate the process with a shell script?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to Manage Dotfiles on GitHub</title>
       <link>https://xingelf.github.io/tech/dotfiles/</link>

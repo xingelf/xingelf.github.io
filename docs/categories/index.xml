@@ -6,8 +6,15 @@
     <description>Recent content in Categories on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security</title>
+      <link>https://xingelf.github.io/categories/security/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Posts</title>
       <link>https://xingelf.github.io/categories/posts/</link>
@@ -34,13 +41,6 @@
       <link>https://xingelf.github.io/categories/metadata/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/categories/metadata/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://xingelf.github.io/categories/security/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/security/</guid>
       <description></description>
     </item>
     <item>

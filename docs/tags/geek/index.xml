@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geek on Note about technology</title>
+    <link>http://localhost:1313/tags/geek/</link>
+    <description>Recent content in Geek on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/geek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GeekとEthical Hackerについて</title>
+      <link>http://localhost:1313/tech/_geek-hack/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/_geek-hack/</guid>
+      <description>&lt;p&gt;全くの初学者がインターネットの情報ソースを利用して、&#xA;GeekやEthical Hackerになる手引をまとめました。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

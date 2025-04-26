@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/http/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTTP Request Smuggling (HRS)</title>
-      <link>https://xingelf.github.io/sec/http_request_smuggling/</link>
+      <link>https://xingelf.github.io/tech/http_request_smuggling/</link>
       <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/http_request_smuggling/</guid>
+      <guid>https://xingelf.github.io/tech/http_request_smuggling/</guid>
       <description>&lt;h2 id=&#34;understanding-http-request-smuggling-a-deep-dive-into-web-security&#34;&gt;Understanding HTTP Request Smuggling: A Deep Dive into Web Security&lt;/h2&gt;&#xA;&lt;p&gt;In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.&lt;/p&gt;</description>
     </item>
   </channel>

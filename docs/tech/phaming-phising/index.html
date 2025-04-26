@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pharming and Phising - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/phaming-phising/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="Pharming and Phising">
+  <meta property="og:description" content="Pharming: A Silent Threat to Online Security While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: pharming. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2022-05-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-05-26T00:00:00+00:00">
+    <meta property="article:tag" content="DNS">
+    <meta property="article:tag" content="Email">
+
+		
+  <meta itemprop="name" content="Pharming and Phising">
+  <meta itemprop="description" content="Pharming: A Silent Threat to Online Security While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: pharming. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.">
+  <meta itemprop="datePublished" content="2022-05-26T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2022-05-26T00:00:00+00:00">
+  <meta itemprop="wordCount" content="499">
+  <meta itemprop="keywords" content="DNS,Email">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pharming and Phising">
+  <meta name="twitter:description" content="Pharming: A Silent Threat to Online Security While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: pharming. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Pharming and Phising</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-05-26T00:00:00Z">2022-05-26</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_1.jpg" alt="Pharming and Phising">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#pharming-a-silent-threat-to-online-security">Pharming: A Silent Threat to Online Security</a>
+      <ul>
+        <li><a href="#how-pharming-works">How Pharming Works</a></li>
+        <li><a href="#pharming-vs-phishing">Pharming vs. Phishing</a></li>
+        <li><a href="#the-dangers-of-pharming">The Dangers of Pharming</a></li>
+        <li><a href="#protecting-yourself-from-pharming">Protecting Yourself from Pharming</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="pharming-a-silent-threat-to-online-security">Pharming: A Silent Threat to Online Security</h2>
+<p>While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: <strong>pharming</strong>. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.</p>
+<h3 id="how-pharming-works">How Pharming Works</h3>
+<p>Pharming exploits vulnerabilities in the Domain Name System (DNS), which acts as the internet&rsquo;s address book, translating human-readable website names (like [無効な URL を削除しました]) into machine-readable IP addresses. By corrupting this system, attackers can misdirect users to fake websites designed to steal sensitive information.</p>
+<p>There are two primary methods of pharming:</p>
+<ol>
+<li>
+<p><strong>Hosts File Modification:</strong> Malware alters the local hosts file on a victim&rsquo;s computer. This file maps website names to IP addresses. When compromised, it redirects the user to a fraudulent site, regardless of the URL entered.</p>
+</li>
+<li>
+<p><strong>DNS Poisoning:</strong> Attackers compromise DNS servers, which handle URL requests for millions of users.  By altering DNS records, they redirect traffic to fake websites without any visible indication to the user.</p>
+</li>
+</ol>
+<h3 id="pharming-vs-phishing">Pharming vs. Phishing</h3>
+<p>While both pharming and phishing aim to steal information, they differ significantly in their approach:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Pharming</th>
+          <th>Phishing</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Target</strong></td>
+          <td>DNS servers, Hosts file</td>
+          <td>Individual users</td>
+      </tr>
+      <tr>
+          <td><strong>Method</strong></td>
+          <td>Manipulates DNS or hosts file for automatic redirection</td>
+          <td>Uses deceptive emails and websites to trick users into clicking links</td>
+      </tr>
+      <tr>
+          <td><strong>User Awareness</strong></td>
+          <td>Users are unaware of redirection as they type the correct URL</td>
+          <td>Users are somewhat aware of the risk when clicking on suspicious links</td>
+      </tr>
+      <tr>
+          <td><strong>Scale</strong></td>
+          <td>Can be large-scale, affecting many users</td>
+          <td>Typically targets individuals</td>
+      </tr>
+  </tbody>
+</table>
+<p>Phishing relies on social engineering, tricking users into clicking malicious links or providing information through deceptive emails or websites. Pharming, on the other hand, requires no action from the user, making it a more stealthy and dangerous threat.</p>
+<h3 id="the-dangers-of-pharming">The Dangers of Pharming</h3>
+<p>Pharming attacks can have severe consequences:</p>
+<ul>
+<li><strong>Identity theft:</strong> Attackers can capture login credentials, credit card details, and other personal information.</li>
+<li><strong>Financial loss:</strong> Users can be tricked into making fraudulent transactions or revealing financial information.</li>
+<li><strong>Malware installation:</strong> Fake websites can automatically download malware onto a victim&rsquo;s computer, leading to further compromise.</li>
+</ul>
+<h3 id="protecting-yourself-from-pharming">Protecting Yourself from Pharming</h3>
+<p>Here are some crucial steps to mitigate the risk of pharming attacks:</p>
+<ul>
+<li><strong>Keep your software updated:</strong> Regularly update your operating system, browser, and antivirus software to patch vulnerabilities.</li>
+<li><strong>Use a reputable antivirus program:</strong> A good antivirus can detect and remove malware that modifies hosts files.</li>
+<li><strong>Be cautious of suspicious emails and websites:</strong> Avoid clicking links from unknown senders and double-check website URLs before entering sensitive information.</li>
+<li><strong>Look for HTTPS:</strong> Ensure websites use HTTPS encryption, indicated by a padlock icon in the address bar, before entering sensitive data.</li>
+<li><strong>Consider using a VPN:</strong> A VPN encrypts your internet traffic and can help prevent DNS poisoning.</li>
+<li><strong>Use DNS over HTTPS (DoH):</strong> DoH encrypts DNS requests, making it harder for attackers to intercept and manipulate them.</li>
+</ul>
+<p>By understanding the threat of pharming and taking appropriate precautions, users can significantly reduce their risk of falling victim to this dangerous online attack.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/dns/" rel="tag">DNS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/email/" rel="tag">email</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/nmap/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">nmap basics</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/chntpw/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Kali Linux and CHNTPW</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

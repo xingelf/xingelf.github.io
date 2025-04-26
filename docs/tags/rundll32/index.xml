@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rundll32 on Note about technology</title>
+    <link>http://localhost:1313/tags/rundll32/</link>
+    <description>Recent content in Rundll32 on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rundll32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>carbanak</title>
+      <link>http://localhost:1313/tech/_carbanak/</link>
+      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/_carbanak/</guid>
+      <description>&lt;h1 id=&#34;mitre-attck&#34;&gt;MITRE ATT&amp;amp;CK&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://attack.mitre.org/groups/G0008&#34;&gt;https://attack.mitre.org/groups/G0008&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;kaspersky&#34;&gt;Kaspersky&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf&#34;&gt;https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;rundll32&#34;&gt;rundll32&lt;/h2&gt;&#xA;&lt;p&gt;攻撃検知回避のためrundll32.exeを利用&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

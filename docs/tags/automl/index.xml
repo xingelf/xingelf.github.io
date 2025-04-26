@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AutoML on Note about technology</title>
+    <link>http://localhost:1313/tags/automl/</link>
+    <description>Recent content in AutoML on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/automl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pycaret</title>
+      <link>http://localhost:1313/tech/_pycaret/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/_pycaret/</guid>
+      <description>&lt;h1 id=&#34;pycaret&#34;&gt;pycaret&lt;/h1&gt;&#xA;&lt;h2 id=&#34;参考サイト&#34;&gt;参考サイト&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://qiita.com/s_fukuzawa/items/5dd40a008dac76595eea&#34;&gt;https://qiita.com/s_fukuzawa/items/5dd40a008dac76595eea&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;参考動画&#34;&gt;参考動画&lt;/h2&gt;&#xA;&lt;p&gt;4Rn4YMLUjGc&lt;/p&gt;&#xA;&lt;p&gt;XCu69Jq2APg&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

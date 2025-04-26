@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/shortcut/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ショートカット - Shortcut</title>
-      <link>https://xingelf.github.io/posts/_shortcut/</link>
+      <link>https://xingelf.github.io/tech/_shortcut/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/posts/_shortcut/</guid>
+      <guid>https://xingelf.github.io/tech/_shortcut/</guid>
       <description>&lt;h1 id=&#34;osxmacショートカットメモ&#34;&gt;OSX/Macショートカットメモ&lt;/h1&gt;&#xA;&lt;h2 id=&#34;os全般&#34;&gt;OS全般&lt;/h2&gt;&#xA;&lt;h3 id=&#34;spotlight-search&#34;&gt;Spotlight Search&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Space&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;画面ロック&#34;&gt;画面ロック&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Control + Command + q&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;編集&#34;&gt;編集&lt;/h2&gt;&#xA;&lt;h3 id=&#34;コピー&#34;&gt;コピー&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;ペースト&#34;&gt;ペースト&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;書式なしペースト&#34;&gt;書式なしペースト　&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Option + Shift + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;orz&lt;/p&gt;</description>
     </item>
   </channel>

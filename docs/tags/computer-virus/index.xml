@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/computer-virus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Computer Virus 101</title>
-      <link>https://xingelf.github.io/sec/computer_virus/</link>
+      <link>https://xingelf.github.io/tech/computer_virus/</link>
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/computer_virus/</guid>
+      <guid>https://xingelf.github.io/tech/computer_virus/</guid>
       <description>&lt;h2 id=&#34;virus-types-evolving-threats-in-the-digital-landscape&#34;&gt;Virus Types: Evolving Threats in the Digital Landscape&lt;/h2&gt;&#xA;&lt;p&gt;Computer viruses have evolved significantly since their inception, becoming increasingly sophisticated in their methods of infection and evasion. Here&amp;rsquo;s a closer look at some prominent types:&lt;/p&gt;</description>
     </item>
   </channel>

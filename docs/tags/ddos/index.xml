@@ -10,23 +10,23 @@
     <atom:link href="https://xingelf.github.io/tags/ddos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GRE Flood Attacks</title>
-      <link>https://xingelf.github.io/sec/gre_flood/</link>
+      <link>https://xingelf.github.io/tech/gre_flood/</link>
       <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/gre_flood/</guid>
+      <guid>https://xingelf.github.io/tech/gre_flood/</guid>
       <description>&lt;p&gt;With the spread of the internet, the threat of cyberattacks is becoming increasingly serious. Among them, DDoS attacks are widely known as attacks targeting websites and online services, and their methods are becoming more sophisticated. In recent years, there has been an increasing trend of &amp;ldquo;GRE Flood attacks,&amp;rdquo; which are more difficult to detect and defend against than conventional DDoS attacks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mirai Bot 48101</title>
-      <link>https://xingelf.github.io/sec/mirai-bot/</link>
+      <link>https://xingelf.github.io/tech/mirai-bot/</link>
       <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/mirai-bot/</guid>
+      <guid>https://xingelf.github.io/tech/mirai-bot/</guid>
       <description>&lt;p&gt;&lt;strong&gt;What is Mirai Bot?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mirai is a malware that turns networked devices running Linux into remotely controlled &amp;ldquo;bots&amp;rdquo; that can be used as part of a botnet. This network of bots is often used to conduct massive Distributed Denial of Service (DDoS) attacks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DoS/DDoS Attack</title>
-      <link>https://xingelf.github.io/sec/dos/</link>
+      <link>https://xingelf.github.io/tech/dos/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/dos/</guid>
+      <guid>https://xingelf.github.io/tech/dos/</guid>
       <description>&lt;p&gt;A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &amp;ldquo;bots&amp;rdquo; or &amp;ldquo;zombies,&amp;rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.&lt;/p&gt;</description>
     </item>
   </channel>

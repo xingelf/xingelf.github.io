@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>XML serialization - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/xml_serialization/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="XML serialization">
+  <meta property="og:description" content="XML serialization is the process of transforming data objects or object graphs into an XML document. Think of it like taking a structured box of toys and laying each item out individually, labeled with XML tags, so it can be easily shipped and reconstructed later.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-01-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-04T00:00:00+00:00">
+    <meta property="article:tag" content="XML">
+    <meta property="article:tag" content="Coding">
+
+		
+  <meta itemprop="name" content="XML serialization">
+  <meta itemprop="description" content="XML serialization is the process of transforming data objects or object graphs into an XML document. Think of it like taking a structured box of toys and laying each item out individually, labeled with XML tags, so it can be easily shipped and reconstructed later.">
+  <meta itemprop="datePublished" content="2025-01-04T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-01-04T00:00:00+00:00">
+  <meta itemprop="wordCount" content="394">
+  <meta itemprop="keywords" content="XML,Coding">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="XML serialization">
+  <meta name="twitter:description" content="XML serialization is the process of transforming data objects or object graphs into an XML document. Think of it like taking a structured box of toys and laying each item out individually, labeled with XML tags, so it can be easily shipped and reconstructed later.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">XML serialization</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-01-04T00:00:00Z">2025-01-04</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_1.jpg" alt="XML serialization">
+		
+	</figure><div class="content post__content clearfix">
+			<p>XML serialization is the process of transforming data objects or object graphs into an XML document.  Think of it like taking a structured box of toys and laying each item out individually, labeled with XML tags, so it can be easily shipped and reconstructed later.</p>
+<p><strong>Here&rsquo;s a simple breakdown:</strong></p>
+<ul>
+<li><strong>What it is:</strong>  Converting the state of an object (data in your program) into an XML format. This XML is basically text that follows specific rules, making it readable by both humans and machines.</li>
+<li><strong>Why it&rsquo;s useful:</strong>
+<ul>
+<li><strong>Sharing data:</strong> XML is a standard format, so you can easily share data between different systems, even if they&rsquo;re written in different programming languages.</li>
+<li><strong>Storing data:</strong> You can save the current state of your program&rsquo;s data to an XML file and load it back later.</li>
+<li><strong>Human-readable:</strong>  XML is easy to understand, which is great for debugging or when you need to inspect the data directly.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Analogy Time!</strong></p>
+<p>Imagine you have a toolbox with tools organized in compartments. To &ldquo;serialize&rdquo; this toolbox, you would take out each tool, label it (with XML tags), and list its properties (size, type, etc.). This list is now your XML document.</p>
+<p><strong>How it works in C#:</strong></p>
+<p>C# provides the <code>XmlSerializer</code> class to handle this process. Here&rsquo;s a basic example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Xml.Serialization;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">string</span> Name { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> Age { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Serialization</span>
+</span></span><span style="display:flex;"><span>Person person = <span style="color:#66d9ef">new</span> Person { Name = <span style="color:#e6db74">&#34;John Doe&#34;</span>, Age = <span style="color:#ae81ff">30</span> };
+</span></span><span style="display:flex;"><span>XmlSerializer serializer = <span style="color:#66d9ef">new</span> XmlSerializer(<span style="color:#66d9ef">typeof</span>(Person));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> (StreamWriter writer = <span style="color:#66d9ef">new</span> StreamWriter(<span style="color:#e6db74">&#34;person.xml&#34;</span>))
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  serializer.Serialize(writer, person);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Deserialization</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> (StreamReader reader = <span style="color:#66d9ef">new</span> StreamReader(<span style="color:#e6db74">&#34;person.xml&#34;</span>))
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  Person deserializedPerson = (Person)serializer.Deserialize(reader);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This code defines a <code>Person</code> class and then:</p>
+<ol>
+<li><strong>Serializes</strong> an instance of that class into an XML file named &ldquo;person.xml&rdquo;.</li>
+<li><strong>Deserializes</strong> the XML data from &ldquo;person.xml&rdquo; back into a <code>Person</code> object.</li>
+</ol>
+<p><strong>Key things to remember:</strong></p>
+<ul>
+<li><strong><code>[Serializable]</code> attribute:</strong>  You need to mark your classes with this attribute to make them serializable.</li>
+<li><strong>Public members:</strong> Only public fields and properties are included in the XML output.</li>
+<li><strong>Customization:</strong> You can use attributes like <code>XmlElement</code> and <code>XmlAttribute</code> to control how your data is represented in the XML.</li>
+</ul>
+<p><strong>Want to learn more?</strong></p>
+<p>Here are some keywords to help you find more information:</p>
+<ul>
+<li>XmlSerializer</li>
+<li>Serialization attributes</li>
+<li>XML schema</li>
+<li>Deserialization</li>
+<li>C# XML</li>
+</ul>
+<p>I hope this explanation helps! Let me know if you have any other questions.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/xml/" rel="tag">XML</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/coding/" rel="tag">Coding</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/latex-md/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Tex/LaTex with Markdown</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/cyberkillchain/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">What is the Cyber Kill Chain?</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

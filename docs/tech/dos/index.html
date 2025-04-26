@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DoS/DDoS Attack - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/dos/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="DoS/DDoS Attack">
+  <meta property="og:description" content="A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as “bots” or “zombies,” which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2024-03-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-08T00:00:00+00:00">
+    <meta property="article:tag" content="DDoS">
+
+		
+  <meta itemprop="name" content="DoS/DDoS Attack">
+  <meta itemprop="description" content="A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as “bots” or “zombies,” which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.">
+  <meta itemprop="datePublished" content="2024-03-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-03-08T00:00:00+00:00">
+  <meta itemprop="wordCount" content="586">
+  <meta itemprop="keywords" content="DDoS">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DoS/DDoS Attack">
+  <meta name="twitter:description" content="A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as “bots” or “zombies,” which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">DoS/DDoS Attack</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-03-08T00:00:00Z">2024-03-08</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_1.jpg" alt="DoS/DDoS Attack">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#types-of-ddos-attacks">Types of DDoS Attacks</a>
+      <ul>
+        <li><a href="#l4-flood">L4 Flood</a></li>
+        <li><a href="#l7-flood">L7 Flood</a></li>
+        <li><a href="#amplification">Amplification</a></li>
+      </ul>
+    </li>
+    <li><a href="#slow-http-dos-attack-variants">Slow HTTP DoS Attack Variants</a>
+      <ul>
+        <li><a href="#rudy-r-u-dead-yet">RUDY (R-U-Dead-Yet?)</a></li>
+        <li><a href="#loic-and-hoic-network-load-generation-tools">LOIC and HOIC Network Load Generation Tools</a></li>
+        <li><a href="#smurf-attack">Smurf Attack</a></li>
+        <li><a href="#fraggle-attack">Fraggle Attack</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>A Distributed Denial-of-Service (DDoS) attack is a malicious attempt to disrupt the normal operation of a targeted server, service, or network by overwhelming it with a flood of internet traffic. These attacks are executed by leveraging a multitude of compromised computer systems, often referred to as &ldquo;bots&rdquo; or &ldquo;zombies,&rdquo; which are under the control of the attacker. DDoS attacks can cause significant downtime, financial loss, and reputational damage to the targeted entity.</p>
+<h2 id="types-of-ddos-attacks">Types of DDoS Attacks</h2>
+<h3 id="l4-flood">L4 Flood</h3>
+<p>L4 (Layer 4) floods target the transport layer of the OSI model, aiming to exhaust server resources such as bandwidth and connection table entries. Common types of L4 floods include:</p>
+<ul>
+<li>
+<p><strong>SYN Flood</strong>: Exploits the TCP three-way handshake process by sending a large number of SYN requests to initiate connections without completing them, consuming server resources.</p>
+</li>
+<li>
+<p><strong>ACK Flood</strong>: Sends a flood of ACK packets to a target server, attempting to overwhelm its processing capacity by requiring the server to process acknowledgments for non-existent connections.</p>
+</li>
+<li>
+<p><strong>UDP Flood</strong>: Floods the target with a large volume of UDP (User Datagram Protocol) packets, often targeting services that rely on UDP, such as DNS and NTP, to exhaust server resources.</p>
+</li>
+</ul>
+<h3 id="l7-flood">L7 Flood</h3>
+<p>L7 (Layer 7) floods target the application layer, focusing on overwhelming the target with an excessive number of legitimate-looking requests that consume application resources. Common types of L7 floods include:</p>
+<ul>
+<li>
+<p><strong>HTTP GET/POST Flood</strong>: Sends a massive number of HTTP GET or POST requests to a web server, consuming its processing power and bandwidth, ultimately rendering the service unavailable to legitimate users.</p>
+</li>
+<li>
+<p><strong>Slow HTTP DoS Attack</strong>: Exploits vulnerabilities in web server implementations by sending HTTP requests at an exceptionally slow rate, keeping server resources occupied and preventing it from serving legitimate requests efficiently.</p>
+</li>
+</ul>
+<h3 id="amplification">Amplification</h3>
+<p>Amplification attacks exploit services that provide significantly larger responses to small requests, allowing attackers to amplify their attack traffic. Common amplification techniques include:</p>
+<ul>
+<li>
+<p><strong>DNS Amplification</strong>: Abuses open DNS servers by sending forged requests with the victim&rsquo;s IP address as the source, causing the servers to send large responses to the victim, overwhelming its network capacity.</p>
+</li>
+<li>
+<p><strong>NTP Amplification</strong>: Similar to DNS amplification, NTP servers are abused to send large responses to a victim by spoofing the victim&rsquo;s IP address in NTP requests.</p>
+</li>
+</ul>
+<h2 id="slow-http-dos-attack-variants">Slow HTTP DoS Attack Variants</h2>
+<h3 id="rudy-r-u-dead-yet">RUDY (R-U-Dead-Yet?)</h3>
+<p>RUDY is a type of Slow HTTP DoS attack that targets web servers supporting POST requests. By sending legitimate-looking, small-sized POST requests at a slow pace, the attacker aims to occupy server-side TCP connections, leading to resource exhaustion and service disruption.</p>
+<h3 id="loic-and-hoic-network-load-generation-tools">LOIC and HOIC Network Load Generation Tools</h3>
+<p>LOIC (Low Orbit Ion Cannon) and HOIC (High Orbit Ion Cannon) are open-source network stress testing tools that can be abused for DDoS attacks. These tools allow attackers to coordinate large-scale attacks by leveraging the combined bandwidth of multiple machines to overwhelm the target.</p>
+<h3 id="smurf-attack">Smurf Attack</h3>
+<p>A Smurf attack involves sending ICMP (Internet Control Message Protocol) packets to broadcast addresses, causing all hosts on the network to respond to the spoofed source address, flooding the victim&rsquo;s network with traffic. Defenses against Smurf attacks include configuring network devices to ignore ICMP requests sent to broadcast addresses.</p>
+<h3 id="fraggle-attack">Fraggle Attack</h3>
+<p>Similar to the Smurf attack, a Fraggle attack sends UDP packets to broadcast addresses, causing network devices to respond and amplify the traffic directed towards the victim. Preventative measures for Fraggle attacks include filtering incoming UDP traffic at network boundaries.</p>
+<hr>
+<p>By understanding the different types of DDoS attacks and implementing appropriate defensive measures, organizations can better protect themselves from the damaging effects of these malicious activities.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ddos/" rel="tag">DDoS</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/hhkb/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Happy Hacking Keyboard for mac</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/threat_intelligence/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Threat Intelligence</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

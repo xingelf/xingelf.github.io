@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart Contoract on Note about technology</title>
+    <link>http://localhost:1313/tags/smart-contoract/</link>
+    <description>Recent content in Smart Contoract on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/smart-contoract/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solidity 遺産相続コントラクト</title>
+      <link>http://localhost:1313/dapps/_solidity_will/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dapps/_solidity_will/</guid>
+      <description>&lt;p&gt;遺産相続を行うシンプルなスマートコントラクトの実装例です。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

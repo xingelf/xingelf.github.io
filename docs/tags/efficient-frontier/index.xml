@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Efficient Frontier on Note about technology</title>
+    <link>http://localhost:1313/tags/efficient-frontier/</link>
+    <description>Recent content in Efficient Frontier on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/efficient-frontier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ポートフォリオ最適化　PyPortfolioOpt</title>
+      <link>http://localhost:1313/tech/_pyportfolioopt/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/_pyportfolioopt/</guid>
+      <description>&lt;h1 id=&#34;pyportfoliooptのインストール&#34;&gt;PyPortfolioOptのインストール&lt;/h1&gt;&#xA;&lt;h1 id=&#34;ポートフォリオデータの入手&#34;&gt;ポートフォリオデータの入手&lt;/h1&gt;&#xA;&lt;p&gt;今回はQuandlからデータを入手します。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

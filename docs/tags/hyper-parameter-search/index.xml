@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyper-Parameter Search on Note about technology</title>
+    <link>http://localhost:1313/tags/hyper-parameter-search/</link>
+    <description>Recent content in Hyper-Parameter Search on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hyper-parameter-search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ハイパーパラメタ探索</title>
+      <link>http://localhost:1313/tech/_parameter/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/_parameter/</guid>
+      <description>&lt;h1 id=&#34;ハイパーパラメータ探索&#34;&gt;ハイパーパラメータ探索&lt;/h1&gt;&#xA;&lt;p&gt;主な手法としては以下の３つ。&#xA;ベイズ最適化は、実は直感的である一方、その理論が少し難しいです。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Automate Kali Linux Updates with This Handy Shell Script - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="http://localhost:1313/tech/update_kali/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="Automate Kali Linux Updates with This Handy Shell Script">
+  <meta property="og:description" content="Keeping your Kali Linux system up-to-date is crucial for security, stability, and access to the latest tools. Instead of manually running apt update and apt upgrade every time, why not automate the process with a shell script?">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-04-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-25T00:00:00+00:00">
+    <meta property="article:tag" content="Kali Linux">
+
+		
+  <meta itemprop="name" content="Automate Kali Linux Updates with This Handy Shell Script">
+  <meta itemprop="description" content="Keeping your Kali Linux system up-to-date is crucial for security, stability, and access to the latest tools. Instead of manually running apt update and apt upgrade every time, why not automate the process with a shell script?">
+  <meta itemprop="datePublished" content="2025-04-25T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-04-25T00:00:00+00:00">
+  <meta itemprop="wordCount" content="617">
+  <meta itemprop="keywords" content="Kali Linux">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Automate Kali Linux Updates with This Handy Shell Script">
+  <meta name="twitter:description" content="Keeping your Kali Linux system up-to-date is crucial for security, stability, and access to the latest tools. Instead of manually running apt update and apt upgrade every time, why not automate the process with a shell script?">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Automate Kali Linux Updates with This Handy Shell Script</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-04-25T00:00:00Z">2025-04-25</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_2.png" alt="Automate Kali Linux Updates with This Handy Shell Script">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-the-kali-linux-update-script"><strong>📜 The Kali Linux Update Script</strong></a></li>
+    <li><a href="#-how-to-use-the-script"><strong>🛠️ How to Use the Script</strong></a></li>
+    <li><a href="#-key-features-explained"><strong>🔍 Key Features Explained</strong></a>
+      <ul>
+        <li><a href="#1--system-information-check"><strong>1. 🖥️ System Information Check</strong></a></li>
+        <li><a href="#2--safe-package-backup"><strong>2. 📦 Safe Package Backup</strong></a></li>
+        <li><a href="#3--controlled-updates--upgrades"><strong>3. 🚀 Controlled Updates &amp; Upgrades</strong></a></li>
+        <li><a href="#4--automatic-cleanup"><strong>4. 🗑️ Automatic Cleanup</strong></a></li>
+        <li><a href="#5--reboot-check"><strong>5. ⚠️ Reboot Check</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#-why-use-this-script"><strong>💡 Why Use This Script?</strong></a></li>
+    <li><a href="#-final-thoughts"><strong>🎯 Final Thoughts</strong></a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Keeping your Kali Linux system up-to-date is <strong>crucial for security, stability, and access to the latest tools</strong>. Instead of manually running <code>apt update</code> and <code>apt upgrade</code> every time, why not <strong>automate the process with a shell script?</strong></p>
+<p>In this guide, I’ll walk you through a <strong>powerful yet simple shell script</strong> that:<br>
+✅ <strong>Checks system info</strong> (OS version, kernel, disk, and memory)<br>
+✅ <strong>Backs up installed packages</strong> before updating<br>
+✅ <strong>Updates and upgrades</strong> all packages safely<br>
+✅ <strong>Cleans up unnecessary files</strong><br>
+✅ <strong>Checks if a reboot is required</strong></p>
+<hr>
+<h2 id="-the-kali-linux-update-script"><strong>📜 The Kali Linux Update Script</strong></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kali Linux Update Script</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Displays system info and performs updates</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Color settings</span>
+</span></span><span style="display:flex;"><span>RED<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;\033[0;31m&#39;</span>
+</span></span><span style="display:flex;"><span>GREEN<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;\033[0;32m&#39;</span>
+</span></span><span style="display:flex;"><span>YELLOW<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;\033[1;33m&#39;</span>
+</span></span><span style="display:flex;"><span>NC<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;\033[0m&#39;</span> <span style="color:#75715e"># No Color</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Root check</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>id -u<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> -ne <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>RED<span style="color:#e6db74">}</span><span style="color:#e6db74">Error: This script must be run as root</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Display system info</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>YELLOW<span style="color:#e6db74">}</span><span style="color:#e6db74">=== 🖥️ System Information ===</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span><span style="color:#e6db74">Kali Linux Version:</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>cat /etc/os-release | grep PRETTY_NAME
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span><span style="color:#e6db74">Kernel Version:</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>uname -r
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span><span style="color:#e6db74">System Architecture:</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>uname -m
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span><span style="color:#e6db74">Disk Usage:</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>df -h /
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span><span style="color:#e6db74">Memory Usage:</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>free -h
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Backup installed packages</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>YELLOW<span style="color:#e6db74">}</span><span style="color:#e6db74">\n=== 📦 Backing up package list ===</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>backup_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/var/backups/</span><span style="color:#66d9ef">$(</span>date +%Y%m%d<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>mkdir -p <span style="color:#e6db74">&#34;</span>$backup_dir<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>dpkg --get-selections &gt; <span style="color:#e6db74">&#34;</span>$backup_dir<span style="color:#e6db74">/dpkg_selections_</span><span style="color:#66d9ef">$(</span>date +%Y%m%d-%H%M%S<span style="color:#66d9ef">)</span><span style="color:#e6db74">.list&#34;</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;Backup saved to: </span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span>$backup_dir<span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Update package lists</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>YELLOW<span style="color:#e6db74">}</span><span style="color:#e6db74">\n=== 🔄 Updating package lists ===</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>apt update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Show upgradable packages</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>YELLOW<span style="color:#e6db74">}</span><span style="color:#e6db74">\n=== ⬆️ Packages available for upgrade ===</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>apt list --upgradable
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ask before upgrading</span>
+</span></span><span style="display:flex;"><span>read -p <span style="color:#e6db74">&#34;Do you want to proceed with the upgrade? [y/N] &#34;</span> choice
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$choice<span style="color:#e6db74">&#34;</span> in
+</span></span><span style="display:flex;"><span>  y|Y <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>YELLOW<span style="color:#e6db74">}</span><span style="color:#e6db74">\n=== 🚀 Upgrading packages ===</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    apt full-upgrade -y
+</span></span><span style="display:flex;"><span>    echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>YELLOW<span style="color:#e6db74">}</span><span style="color:#e6db74">\n=== 🗑️ Cleaning up old packages ===</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    apt autoremove -y
+</span></span><span style="display:flex;"><span>    apt clean
+</span></span><span style="display:flex;"><span>    ;;
+</span></span><span style="display:flex;"><span>  * <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>RED<span style="color:#e6db74">}</span><span style="color:#e6db74">Upgrade cancelled</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    ;;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">esac</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Post-update status</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>YELLOW<span style="color:#e6db74">}</span><span style="color:#e6db74">\n=== ✅ Update completed ===</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span><span style="color:#e6db74">Final Kernel Version:</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>uname -r
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span><span style="color:#e6db74">Final Disk Usage:</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>df -h /
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>GREEN<span style="color:#e6db74">}</span><span style="color:#e6db74">Final Memory Usage:</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>free -h
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Reboot check</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -f /var/run/reboot-required <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>RED<span style="color:#e6db74">}</span><span style="color:#e6db74">\n⚠️ Warning: System reboot required!</span><span style="color:#e6db74">${</span>NC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  cat /var/run/reboot-required.pkgs
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>exit <span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><hr>
+<h2 id="-how-to-use-the-script"><strong>🛠️ How to Use the Script</strong></h2>
+<ol>
+<li>
+<p><strong>💾 Save the script</strong><br>
+Copy the code above and save it as <code>update_kali.sh</code>.</p>
+</li>
+<li>
+<p><strong>🔒 Make it executable</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod +x update_kali.sh
+</span></span></code></pre></div></li>
+<li>
+<p><strong>⚡ Run it as root</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ./update_kali.sh
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h2 id="-key-features-explained"><strong>🔍 Key Features Explained</strong></h2>
+<h3 id="1--system-information-check"><strong>1. 🖥️ System Information Check</strong></h3>
+<p>Before making any changes, the script displays:</p>
+<ul>
+<li><strong>📌 Kali Linux version</strong> (from <code>/etc/os-release</code>)</li>
+<li><strong>⚙️ Kernel version</strong> (<code>uname -r</code>)</li>
+<li><strong>💾 Disk &amp; memory usage</strong> (<code>df -h</code>, <code>free -h</code>)</li>
+</ul>
+<p>This helps you <strong>monitor system health</strong> before and after updates.</p>
+<h3 id="2--safe-package-backup"><strong>2. 📦 Safe Package Backup</strong></h3>
+<p>The script <strong>creates a backup</strong> of your installed packages in <code>/var/backups/</code>. If something breaks, you can restore packages using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dpkg --set-selections &lt; backup_file.list
+</span></span><span style="display:flex;"><span>apt-get dselect-upgrade
+</span></span></code></pre></div><h3 id="3--controlled-updates--upgrades"><strong>3. 🚀 Controlled Updates &amp; Upgrades</strong></h3>
+<ul>
+<li>First, it runs <code>apt update</code> to <strong>refresh package lists</strong>.</li>
+<li>Then, it <strong>shows upgradable packages</strong> before asking for confirmation.</li>
+<li>If approved, it runs <code>apt full-upgrade -y</code> (safer than <code>dist-upgrade</code>).</li>
+</ul>
+<h3 id="4--automatic-cleanup"><strong>4. 🗑️ Automatic Cleanup</strong></h3>
+<p>After upgrading, it <strong>removes old dependencies</strong> (<code>apt autoremove</code>) and <strong>clears the package cache</strong> (<code>apt clean</code>).</p>
+<h3 id="5--reboot-check"><strong>5. ⚠️ Reboot Check</strong></h3>
+<p>If a reboot is needed (common after kernel updates), the script <strong>warns you explicitly</strong>.</p>
+<hr>
+<h2 id="-why-use-this-script"><strong>💡 Why Use This Script?</strong></h2>
+<p>🔹 <strong>⏳ Saves time</strong> – No more typing multiple commands.<br>
+🔹 <strong>🛡️ Reduces risk</strong> – Backs up packages before making changes.<br>
+🔹 <strong>🔍 Transparent</strong> – Shows what’s being upgraded.<br>
+🔹 <strong>⚙️ Flexible</strong> – Asks for confirmation before upgrading.</p>
+<hr>
+<h2 id="-final-thoughts"><strong>🎯 Final Thoughts</strong></h2>
+<p>This script is perfect for <strong>security researchers</strong>, <strong>penetration testers</strong>, and <strong>Kali Linux enthusiasts</strong> who want to <strong>keep their systems secure without manual hassle</strong>.</p>
+<p><strong>Try it out and let me know in the comments if you’d like any improvements!</strong></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/kali-linux/" rel="tag">Kali Linux</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/cve-2025-42599/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Analysis of Active Mail Vulnerabilities and the IIJ Secure MX Service Breach CVE-2025-42599</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

@@ -10,44 +10,44 @@
     <atom:link href="https://xingelf.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DIRB</title>
-      <link>https://xingelf.github.io/sec/dirb/</link>
+      <link>https://xingelf.github.io/tech/dirb/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/dirb/</guid>
+      <guid>https://xingelf.github.io/tech/dirb/</guid>
       <description>&lt;h3 id=&#34;exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing&#34;&gt;Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing&lt;/h3&gt;&#xA;&lt;p&gt;In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding Servlet Mappings</title>
-      <link>https://xingelf.github.io/sec/servletmappings/</link>
+      <link>https://xingelf.github.io/tech/servletmappings/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/servletmappings/</guid>
+      <guid>https://xingelf.github.io/tech/servletmappings/</guid>
       <description>&lt;h2 id=&#34;servlet-mappings-made-simple-a-beginners-guide&#34;&gt;Servlet Mappings Made Simple: A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;Servlet mappings are a fundamental concept in Java web development. They define how requests from a web browser are directed to specific servlets on a server. Think of servlet mappings as traffic signs on a highway—they guide incoming requests to the right destination for processing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTTP Request Smuggling (HRS)</title>
-      <link>https://xingelf.github.io/sec/http_request_smuggling/</link>
+      <link>https://xingelf.github.io/tech/http_request_smuggling/</link>
       <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/http_request_smuggling/</guid>
+      <guid>https://xingelf.github.io/tech/http_request_smuggling/</guid>
       <description>&lt;h2 id=&#34;understanding-http-request-smuggling-a-deep-dive-into-web-security&#34;&gt;Understanding HTTP Request Smuggling: A Deep Dive into Web Security&lt;/h2&gt;&#xA;&lt;p&gt;In the dynamic world of web security, new threats and vulnerabilities continuously emerge, challenging the robustness of our digital infrastructures. Among these, HTTP request smuggling stands out as a complex yet intriguing exploit that targets the very foundations of how the web operates. This blog post aims to unravel the complexities of HTTP request smuggling, exploring its mechanisms, potential impacts, and effective countermeasures to safeguard against this sophisticated cyber threat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cross-Origin Resource Sharing (CORS)</title>
-      <link>https://xingelf.github.io/sec/cors/</link>
+      <link>https://xingelf.github.io/tech/cors/</link>
       <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/cors/</guid>
+      <guid>https://xingelf.github.io/tech/cors/</guid>
       <description>&lt;h2 id=&#34;understanding-cross-origin-resource-sharing-cors-a-beginners-guide&#34;&gt;Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CSRF Cross Site Request Forgery</title>
-      <link>https://xingelf.github.io/sec/csrf/</link>
+      <link>https://xingelf.github.io/tech/csrf/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/csrf/</guid>
+      <guid>https://xingelf.github.io/tech/csrf/</guid>
       <description>&lt;h2 id=&#34;cross-site-request-forgery-csrf&#34;&gt;Cross-Site Request Forgery (CSRF)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is CSRF?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CSRF Tokens</title>
-      <link>https://xingelf.github.io/sec/csrf_token/</link>
+      <link>https://xingelf.github.io/tech/csrf_token/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/csrf_token/</guid>
+      <guid>https://xingelf.github.io/tech/csrf_token/</guid>
       <description>&lt;h2 id=&#34;csrf-tokens-a-comprehensive-guide-for-security-professionals&#34;&gt;CSRF Tokens: A Comprehensive Guide for Security Professionals&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-Site Request Forgery (CSRF) is a malicious attack that tricks a user&amp;rsquo;s browser into performing unintended actions on a trusted website where the user is logged in. This can lead to unauthorized data access, financial losses, and other serious consequences.&lt;/p&gt;</description>
     </item>
   </channel>

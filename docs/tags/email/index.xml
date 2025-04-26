@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/email/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pharming and Phising</title>
-      <link>https://xingelf.github.io/sec/phaming-phising/</link>
+      <link>https://xingelf.github.io/tech/phaming-phising/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/phaming-phising/</guid>
+      <guid>https://xingelf.github.io/tech/phaming-phising/</guid>
       <description>&lt;h2 id=&#34;pharming-a-silent-threat-to-online-security&#34;&gt;Pharming: A Silent Threat to Online Security&lt;/h2&gt;&#xA;&lt;p&gt;While many are aware of phishing attacks, a lesser-known but equally dangerous threat lurks online: &lt;strong&gt;pharming&lt;/strong&gt;. This insidious tactic manipulates internet infrastructure to redirect users to fraudulent websites, even when they type the correct URL.&lt;/p&gt;</description>
     </item>
   </channel>

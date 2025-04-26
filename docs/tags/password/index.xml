@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/password/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kali Linux and CHNTPW</title>
-      <link>https://xingelf.github.io/sec/chntpw/</link>
+      <link>https://xingelf.github.io/tech/chntpw/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/chntpw/</guid>
+      <guid>https://xingelf.github.io/tech/chntpw/</guid>
       <description>&lt;h2 id=&#34;kali-linux-and-chntpw-resetting-lost-windows-passwords&#34;&gt;Kali Linux and CHNTPW: Resetting Lost Windows Passwords&lt;/h2&gt;&#xA;&lt;p&gt;Losing your Windows administrator password can be a major headache, locking you out of your own system. But don&amp;rsquo;t panic! There&amp;rsquo;s a powerful solution using Kali Linux and a tool called CHNTPW. This method allows you to reset the password without needing to know the original one. Here&amp;rsquo;s a detailed breakdown of the process:&lt;/p&gt;</description>
     </item>
   </channel>

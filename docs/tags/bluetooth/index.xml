@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/bluetooth/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bluetooth Attack Techniques</title>
-      <link>https://xingelf.github.io/sec/buluetooth-attack/</link>
+      <link>https://xingelf.github.io/tech/buluetooth-attack/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/buluetooth-attack/</guid>
+      <guid>https://xingelf.github.io/tech/buluetooth-attack/</guid>
       <description>&lt;p&gt;Bluetooth, a wireless technology that allows devices to exchange data over short distances, is widely used in smartphones, laptops, headphones, and other devices. While it offers convenience, it is also susceptible to certain types of security threats. Two notable methods of attack exploiting Bluetooth vulnerabilities are &lt;strong&gt;Bluejacking&lt;/strong&gt; and &lt;strong&gt;Bluesnarfing&lt;/strong&gt;. Below is an overview of these techniques and their implications.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -24,23 +24,23 @@
     </item>
     <item>
       <title>Bluetooth Attack Techniques</title>
-      <link>https://xingelf.github.io/sec/buluetooth-attack/</link>
+      <link>https://xingelf.github.io/tech/buluetooth-attack/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/buluetooth-attack/</guid>
+      <guid>https://xingelf.github.io/tech/buluetooth-attack/</guid>
       <description>&lt;p&gt;Bluetooth, a wireless technology that allows devices to exchange data over short distances, is widely used in smartphones, laptops, headphones, and other devices. While it offers convenience, it is also susceptible to certain types of security threats. Two notable methods of attack exploiting Bluetooth vulnerabilities are &lt;strong&gt;Bluejacking&lt;/strong&gt; and &lt;strong&gt;Bluesnarfing&lt;/strong&gt;. Below is an overview of these techniques and their implications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CSRF Cross Site Request Forgery</title>
-      <link>https://xingelf.github.io/sec/csrf/</link>
+      <link>https://xingelf.github.io/tech/csrf/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/csrf/</guid>
+      <guid>https://xingelf.github.io/tech/csrf/</guid>
       <description>&lt;h2 id=&#34;cross-site-request-forgery-csrf&#34;&gt;Cross-Site Request Forgery (CSRF)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What is CSRF?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-Site Request Forgery (CSRF) is a type of attack that forces a logged-in user to perform unwanted actions on a web application. The attacker tricks the user into submitting a malicious request to the web application, which the application then executes as if it were coming from the legitimate user.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CSRF Tokens</title>
-      <link>https://xingelf.github.io/sec/csrf_token/</link>
+      <link>https://xingelf.github.io/tech/csrf_token/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/csrf_token/</guid>
+      <guid>https://xingelf.github.io/tech/csrf_token/</guid>
       <description>&lt;h2 id=&#34;csrf-tokens-a-comprehensive-guide-for-security-professionals&#34;&gt;CSRF Tokens: A Comprehensive Guide for Security Professionals&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cross-Site Request Forgery (CSRF) is a malicious attack that tricks a user&amp;rsquo;s browser into performing unintended actions on a trusted website where the user is logged in. This can lead to unauthorized data access, financial losses, and other serious consequences.&lt;/p&gt;</description>
     </item>
     <item>
@@ -87,9 +87,9 @@
     </item>
     <item>
       <title>ショートカット - Shortcut</title>
-      <link>https://xingelf.github.io/posts/_shortcut/</link>
+      <link>https://xingelf.github.io/tech/_shortcut/</link>
       <pubDate>Sun, 20 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/posts/_shortcut/</guid>
+      <guid>https://xingelf.github.io/tech/_shortcut/</guid>
       <description>&lt;h1 id=&#34;osxmacショートカットメモ&#34;&gt;OSX/Macショートカットメモ&lt;/h1&gt;&#xA;&lt;h2 id=&#34;os全般&#34;&gt;OS全般&lt;/h2&gt;&#xA;&lt;h3 id=&#34;spotlight-search&#34;&gt;Spotlight Search&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Space&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;画面ロック&#34;&gt;画面ロック&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Control + Command + q&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;編集&#34;&gt;編集&lt;/h2&gt;&#xA;&lt;h3 id=&#34;コピー&#34;&gt;コピー&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;ペースト&#34;&gt;ペースト&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;書式なしペースト&#34;&gt;書式なしペースト　&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command + Option + Shift + v&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;orz&lt;/p&gt;</description>
     </item>
     <item>

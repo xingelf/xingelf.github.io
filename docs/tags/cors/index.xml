@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/cors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cross-Origin Resource Sharing (CORS)</title>
-      <link>https://xingelf.github.io/sec/cors/</link>
+      <link>https://xingelf.github.io/tech/cors/</link>
       <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/cors/</guid>
+      <guid>https://xingelf.github.io/tech/cors/</guid>
       <description>&lt;h2 id=&#34;understanding-cross-origin-resource-sharing-cors-a-beginners-guide&#34;&gt;Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&lt;/p&gt;</description>
     </item>
   </channel>

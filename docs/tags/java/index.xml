@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Servlet Mappings</title>
-      <link>https://xingelf.github.io/sec/servletmappings/</link>
+      <link>https://xingelf.github.io/tech/servletmappings/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/servletmappings/</guid>
+      <guid>https://xingelf.github.io/tech/servletmappings/</guid>
       <description>&lt;h2 id=&#34;servlet-mappings-made-simple-a-beginners-guide&#34;&gt;Servlet Mappings Made Simple: A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;Servlet mappings are a fundamental concept in Java web development. They define how requests from a web browser are directed to specific servlets on a server. Think of servlet mappings as traffic signs on a highway—they guide incoming requests to the right destination for processing.&lt;/p&gt;</description>
     </item>
   </channel>

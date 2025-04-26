@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple on Note about technology</title>
+    <link>http://localhost:1313/tags/apple/</link>
+    <description>Recent content in Apple on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MACメモ</title>
+      <link>http://localhost:1313/tech/_mac-memo/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/_mac-memo/</guid>
+      <description>&lt;p&gt;zip暗号化&lt;/p&gt;&#xA;&lt;p&gt;zipcloakだと以下のエラーで失敗&#xA;zipcloak warning: Local Entry CRC does not match CD:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UNION SQL and the Potential for SQL Injection</title>
-      <link>https://xingelf.github.io/sec/sqli_union/</link>
+      <link>https://xingelf.github.io/tech/sqli_union/</link>
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/sqli_union/</guid>
+      <guid>https://xingelf.github.io/tech/sqli_union/</guid>
       <description>&lt;p&gt;SQL is a powerful language for manipulating relational databases.  The &lt;code&gt;UNION&lt;/code&gt; operator provides a useful function for combining the results of multiple &lt;code&gt;SELECT&lt;/code&gt; statements into a single result set. However, if misused, &lt;code&gt;UNION&lt;/code&gt; can lead to a security risk called &lt;strong&gt;SQL injection&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

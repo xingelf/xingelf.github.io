@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/rootkit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rootkits: The Hidden Threat</title>
-      <link>https://xingelf.github.io/sec/rootkit/</link>
+      <link>https://xingelf.github.io/tech/rootkit/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/rootkit/</guid>
+      <guid>https://xingelf.github.io/tech/rootkit/</guid>
       <description>&lt;h2 id=&#34;rootkits-the-hidden-threat&#34;&gt;Rootkits: The Hidden Threat&lt;/h2&gt;&#xA;&lt;p&gt;Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.&lt;/p&gt;</description>
     </item>
   </channel>

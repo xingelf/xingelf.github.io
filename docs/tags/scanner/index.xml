@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/scanner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DIRB</title>
-      <link>https://xingelf.github.io/sec/dirb/</link>
+      <link>https://xingelf.github.io/tech/dirb/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/dirb/</guid>
+      <guid>https://xingelf.github.io/tech/dirb/</guid>
       <description>&lt;h3 id=&#34;exploring-the-dirb-command-on-kali-linux-a-comprehensive-guide-for-web-penetration-testing&#34;&gt;Exploring the DIRB Command on Kali Linux: A Comprehensive Guide for Web Penetration Testing&lt;/h3&gt;&#xA;&lt;p&gt;In the realm of web penetration testing, the ability to discover hidden or obscure resources on a web server is a critical skill. This is where the DIRB command comes into play, especially within the environment of Kali Linux, a preferred operating system among security professionals and ethical hackers. This blog post delves into the functionality of the DIRB command, illustrating its importance and providing practical guidance on how to effectively utilize this powerful tool.&lt;/p&gt;</description>
     </item>
   </channel>

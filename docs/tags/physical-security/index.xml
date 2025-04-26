@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/physical-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tailgating vs. Piggybacking: Understanding the Difference</title>
-      <link>https://xingelf.github.io/sec/tailgate_piggybacking/</link>
+      <link>https://xingelf.github.io/tech/tailgate_piggybacking/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/sec/tailgate_piggybacking/</guid>
+      <guid>https://xingelf.github.io/tech/tailgate_piggybacking/</guid>
       <description>&lt;p&gt;In the realm of physical security, &amp;ldquo;tailgating&amp;rdquo; and &amp;ldquo;piggybacking&amp;rdquo; are two common methods used to gain unauthorized access to restricted areas. While both involve an unauthorized individual entering a secure area, there is a key distinction between the two.&lt;/p&gt;</description>
     </item>
   </channel>

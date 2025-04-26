@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSINT on Note about technology</title>
+    <link>http://localhost:1313/tags/osint/</link>
+    <description>Recent content in OSINT on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/osint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reverse Image Search 逆画像検索</title>
+      <link>http://localhost:1313/tech/_reverse_image_search/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/_reverse_image_search/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Reverse_image_search&#34;&gt;https://en.wikipedia.org/wiki/Reverse_image_search&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Reverse Image Searchは画像から類似の画像を検索することができます。&#xA;逆画像検索と呼ばれます。&#xA;セキュリティ用途としては、OSINTの一つに分類されます。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ipfs on Note about technology</title>
+    <link>http://localhost:1313/tags/ipfs/</link>
+    <description>Recent content in Ipfs on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ipfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IPFS </title>
+      <link>http://localhost:1313/tech/_ipfs/</link>
+      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/_ipfs/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

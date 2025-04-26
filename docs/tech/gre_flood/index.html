@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GRE Flood Attacks - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/gre_flood/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="GRE Flood Attacks">
+  <meta property="og:description" content="With the spread of the internet, the threat of cyberattacks is becoming increasingly serious. Among them, DDoS attacks are widely known as attacks targeting websites and online services, and their methods are becoming more sophisticated. In recent years, there has been an increasing trend of “GRE Flood attacks,” which are more difficult to detect and defend against than conventional DDoS attacks.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2024-12-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-11T00:00:00+00:00">
+    <meta property="article:tag" content="DDoS">
+
+		
+  <meta itemprop="name" content="GRE Flood Attacks">
+  <meta itemprop="description" content="With the spread of the internet, the threat of cyberattacks is becoming increasingly serious. Among them, DDoS attacks are widely known as attacks targeting websites and online services, and their methods are becoming more sophisticated. In recent years, there has been an increasing trend of “GRE Flood attacks,” which are more difficult to detect and defend against than conventional DDoS attacks.">
+  <meta itemprop="datePublished" content="2024-12-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-11T00:00:00+00:00">
+  <meta itemprop="wordCount" content="459">
+  <meta itemprop="keywords" content="DDoS">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GRE Flood Attacks">
+  <meta name="twitter:description" content="With the spread of the internet, the threat of cyberattacks is becoming increasingly serious. Among them, DDoS attacks are widely known as attacks targeting websites and online services, and their methods are becoming more sophisticated. In recent years, there has been an increasing trend of “GRE Flood attacks,” which are more difficult to detect and defend against than conventional DDoS attacks.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">GRE Flood Attacks</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-12-11T00:00:00Z">2024-12-11</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_5.jpg" alt="GRE Flood Attacks">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-a-gre-flood-attack">What is a GRE Flood Attack?</a></li>
+    <li><a href="#how-gre-flood-attacks-work">How GRE Flood Attacks Work</a></li>
+    <li><a href="#dangers-of-gre-flood-attacks">Dangers of GRE Flood Attacks</a></li>
+    <li><a href="#countermeasures-against-gre-flood-attacks">Countermeasures Against GRE Flood Attacks</a></li>
+    <li><a href="#measures-companies-should-take">Measures Companies Should Take</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>With the spread of the internet, the threat of cyberattacks is becoming increasingly serious. Among them, DDoS attacks are widely known as attacks targeting websites and online services, and their methods are becoming more sophisticated. In recent years, there has been an increasing trend of &ldquo;GRE Flood attacks,&rdquo; which are more difficult to detect and defend against than conventional DDoS attacks.</p>
+<h1 id="the-growing-threat-of-gre-flood-attacks-understanding-the-mechanics-and-countermeasures">The Growing Threat of GRE Flood Attacks: Understanding the Mechanics and Countermeasures</h1>
+<h2 id="what-is-a-gre-flood-attack">What is a GRE Flood Attack?</h2>
+<p>A GRE Flood attack is a type of DDoS attack that exploits the GRE (Generic Routing Encapsulation) protocol. GRE is a technique used to tunnel data between different network protocols. Attackers use this GRE protocol to send a large number of GRE packets to the target server, flooding the network bandwidth and disrupting service.</p>
+<h2 id="how-gre-flood-attacks-work">How GRE Flood Attacks Work</h2>
+<ol>
+<li><strong>Botnet Construction:</strong> The attacker controls a large number of computers infected with malware to form a botnet.</li>
+<li><strong>Attack Launch:</strong> A massive number of GRE packets are sent from the botnet to the target server.</li>
+<li><strong>Network Saturation:</strong> The target server and network devices are overwhelmed with processing the massive amount of GRE packets, depleting resources.</li>
+<li><strong>Service Disruption:</strong> Legitimate user access is blocked, and the service becomes unavailable.</li>
+</ol>
+<h2 id="dangers-of-gre-flood-attacks">Dangers of GRE Flood Attacks</h2>
+<ul>
+<li><strong>Difficult to Detect:</strong> GRE packets are easily disguised as normal traffic, making it difficult to detect the attack.</li>
+<li><strong>Difficult to Defend Against:</strong> Due to the diverse and massive nature of the attack traffic, it is difficult to completely defend against.</li>
+<li><strong>Significant Damage:</strong> It can completely shut down the target service, seriously impacting business.</li>
+</ul>
+<h2 id="countermeasures-against-gre-flood-attacks">Countermeasures Against GRE Flood Attacks</h2>
+<p>To protect your system from GRE Flood attacks, it is necessary to take multi-layered defense measures.</p>
+<ol>
+<li><strong>Traffic Filtering:</strong> Configure access control lists (ACLs) on firewalls and routers to restrict the GRE protocol and block suspicious traffic.</li>
+<li><strong>Rate Limiting:</strong> Limit the transmission rate of GRE packets from specific IP addresses to mitigate the impact of attacks.</li>
+<li><strong>DDoS Protection Services:</strong> Utilize DDoS protection services offered by specialized security vendors to counter sophisticated attacks. These services detect and automatically block attack traffic, protecting the system.</li>
+<li><strong>Network Monitoring:</strong> Continuously monitor network traffic to establish a system that can detect abnormal traffic early on.</li>
+</ol>
+<h2 id="measures-companies-should-take">Measures Companies Should Take</h2>
+<ul>
+<li><strong>Strengthen Security Measures:</strong> Apply the latest security patches and implement/strengthen security measures such as firewalls and intrusion detection systems.</li>
+<li><strong>Employee Education:</strong> Conduct security awareness training for employees to raise awareness of phishing scams and malware infections.</li>
+<li><strong>Develop an Incident Response Plan:</strong> Clarify response procedures in case of an attack and establish a quick recovery system.</li>
+</ul>
+<p>GRE Flood attacks are a serious threat to businesses. However, by taking appropriate countermeasures, damage can be minimized. Refer to the measures introduced above and strengthen your security measures to protect your company&rsquo;s systems.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ddos/" rel="tag">DDoS</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/mirai-bot/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Mirai Bot 48101</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/dns/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">DNS Domain Name System</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

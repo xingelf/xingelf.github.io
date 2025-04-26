@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ERC20 on Note about technology</title>
+    <link>http://localhost:1313/tags/erc20/</link>
+    <description>Recent content in ERC20 on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/erc20/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solidity ERC20</title>
+      <link>http://localhost:1313/dapps/solidity-erc20/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dapps/solidity-erc20/</guid>
+      <description>&lt;h1 id=&#34;erc20&#34;&gt;ERC20&lt;/h1&gt;&#xA;&lt;p&gt;イーサリアムのブロックチェーンを利用するトークンに適用される仕様&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

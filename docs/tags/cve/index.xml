@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CVE on Note about technology</title>
+    <link>http://localhost:1313/tags/cve/</link>
+    <description>Recent content in CVE on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cve/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis of Active Mail Vulnerabilities and the IIJ Secure MX Service Breach CVE-2025-42599</title>
+      <link>http://localhost:1313/tech/cve-2025-42599/</link>
+      <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/cve-2025-42599/</guid>
+      <description>&lt;p&gt;This report provides a comprehensive analysis of a known critical security vulnerability associated with the Active Mail webmail software, developed by Qualitia CO., LTD. (formerly TransWARE Co.). It details the specific vulnerability CVE-2025-42599, including its technical characteristics, potential impacts, and mitigation strategies. A significant portion of the report focuses on this critical vulnerability and its direct link to a major data breach incident involving Internet Initiative Japan&amp;rsquo;s (IIJ) Secure MX Service in April 2025. The analysis examines the timeline of the IIJ breach, the specific data compromised, and the broader implications for organizations utilizing Active Mail or other third-party software components. The report concludes with actionable recommendations for mitigating associated risks.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

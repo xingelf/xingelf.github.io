@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JD-GUI: A Comprehensive Guide to Java Decompilation - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/jd-gui/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="JD-GUI: A Comprehensive Guide to Java Decompilation">
+  <meta property="og:description" content="For Java developers and security analysts, decompiling .class or .jar files to restore original source code is a critical skill. Among the tools available, JD-GUI stands out as a user-friendly and powerful solution. This article explores JD-GUI’s features, practical applications, and limitations.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-04-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-30T00:00:00+00:00">
+    <meta property="article:tag" content="Java">
+
+		
+  <meta itemprop="name" content="JD-GUI: A Comprehensive Guide to Java Decompilation">
+  <meta itemprop="description" content="For Java developers and security analysts, decompiling .class or .jar files to restore original source code is a critical skill. Among the tools available, JD-GUI stands out as a user-friendly and powerful solution. This article explores JD-GUI’s features, practical applications, and limitations.">
+  <meta itemprop="datePublished" content="2025-04-30T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-04-30T00:00:00+00:00">
+  <meta itemprop="wordCount" content="422">
+  <meta itemprop="keywords" content="Java">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JD-GUI: A Comprehensive Guide to Java Decompilation">
+  <meta name="twitter:description" content="For Java developers and security analysts, decompiling .class or .jar files to restore original source code is a critical skill. Among the tools available, JD-GUI stands out as a user-friendly and powerful solution. This article explores JD-GUI’s features, practical applications, and limitations.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">JD-GUI: A Comprehensive Guide to Java Decompilation</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-04-30T00:00:00Z">2025-04-30</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/security/" rel="category">Security</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_4.png" alt="JD-GUI: A Comprehensive Guide to Java Decompilation">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-what-is-jd-gui"><strong>1. What is JD-GUI?</strong></a></li>
+    <li><a href="#2-installation-and-setup"><strong>2. Installation and Setup</strong></a>
+      <ul>
+        <li><a href="#download"><strong>Download</strong></a></li>
+        <li><a href="#launching-jd-gui"><strong>Launching JD-GUI</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#3-basic-usage"><strong>3. Basic Usage</strong></a>
+      <ul>
+        <li><a href="#decompiling-a-jar-file"><strong>Decompiling a JAR File</strong></a></li>
+        <li><a href="#example-analyzing-tomcats-catalina-tribesjar"><strong>Example: Analyzing Tomcat’s catalina-tribes.jar</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#4-advanced-use-case-reverse-engineering-android-apps"><strong>4. Advanced Use Case: Reverse Engineering Android Apps</strong></a></li>
+    <li><a href="#5-limitations-and-ethical-considerations"><strong>5. Limitations and Ethical Considerations</strong></a></li>
+    <li><a href="#6-alternatives-to-jd-gui"><strong>6. Alternatives to JD-GUI</strong></a></li>
+    <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>For Java developers and security analysts, decompiling <code>.class</code> or <code>.jar</code> files to restore original source code is a critical skill. Among the tools available, <strong>JD-GUI</strong> stands out as a user-friendly and powerful solution. This article explores JD-GUI’s features, practical applications, and limitations.</p>
+<hr>
+<h2 id="1-what-is-jd-gui"><strong>1. What is JD-GUI?</strong></h2>
+<p>JD-GUI is an open-source graphical tool for decompiling Java bytecode (<code>.class</code> files) and <code>.jar</code> archives into readable source code. Key features include:</p>
+<ul>
+<li><strong>Cross-Platform Support</strong>: Works on Windows, macOS, and Linux.</li>
+<li><strong>Intuitive Interface</strong>: Drag-and-drop functionality for quick analysis.</li>
+<li><strong>High Accuracy</strong>: Restores variable names and package structures (except for obfuscated code).</li>
+<li><strong>Java Version Support</strong>: Compatible with Java 1.1–7 (<em>does not support Java 8+ features like lambda expressions</em>).</li>
+</ul>
+<p>Unlike older tools like Jad, JD-GUI prioritizes readability, making it ideal for understanding code logic rather than bytecode-level accuracy.</p>
+<hr>
+<h2 id="2-installation-and-setup"><strong>2. Installation and Setup</strong></h2>
+<h3 id="download"><strong>Download</strong></h3>
+<p>Get the latest version from the official GitHub repository:</p>
+<ul>
+<li><strong>URL</strong>: <a href="https://github.com/java-decompiler/jd-gui/releases">https://github.com/java-decompiler/jd-gui/releases</a></li>
+<li><strong>Example File</strong>: <code>jd-gui-1.6.6.jar</code></li>
+</ul>
+<h3 id="launching-jd-gui"><strong>Launching JD-GUI</strong></h3>
+<p>Run via the command line (requires Java installation):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -jar jd-gui-1.6.6.jar  
+</span></span></code></pre></div><p>On macOS or Windows, simply double-click the JAR file.</p>
+<hr>
+<h2 id="3-basic-usage"><strong>3. Basic Usage</strong></h2>
+<h3 id="decompiling-a-jar-file"><strong>Decompiling a JAR File</strong></h3>
+<ol>
+<li><strong>Open a File</strong>: Go to <code>File &gt; Open File</code> or drag a JAR into the window.</li>
+<li><strong>Navigate Classes</strong>: Browse packages and classes in the left panel.</li>
+<li><strong>Export Source Code</strong>: Use <code>File &gt; Save All Sources</code> to save decompiled code as a ZIP.</li>
+</ol>
+<h3 id="example-analyzing-tomcats-catalina-tribesjar"><strong>Example: Analyzing Tomcat’s catalina-tribes.jar</strong></h3>
+<p>After opening the JAR, you can inspect classes like <code>ReceiverBase</code> to see how methods such as <code>bind()</code> are implemented. Decompiled code retains variable names, simplifying logic analysis.</p>
+<hr>
+<h2 id="4-advanced-use-case-reverse-engineering-android-apps"><strong>4. Advanced Use Case: Reverse Engineering Android Apps</strong></h2>
+<p>JD-GUI can also analyze Android APKs with these steps:</p>
+<ol>
+<li><strong>Extract APK</strong>: Rename the APK to <code>.zip</code> and unzip it to access <code>classes.dex</code>.</li>
+<li><strong>Convert DEX to JAR</strong>: Use <code>dex2jar</code> to generate <code>classes-dex2jar.jar</code>.</li>
+<li><strong>Decompile with JD-GUI</strong>: Open the JAR to view the source code.</li>
+</ol>
+<hr>
+<h2 id="5-limitations-and-ethical-considerations"><strong>5. Limitations and Ethical Considerations</strong></h2>
+<ul>
+<li><strong>Obfuscated Code</strong>: Tools like ProGuard rename variables to <code>a</code>, <code>b</code>, etc., reducing readability.</li>
+<li><strong>Dependencies</strong>: Recompiling decompiled code may require original libraries.</li>
+<li><strong>Legality</strong>: Always obtain permission before reverse-engineering third-party code.</li>
+</ul>
+<hr>
+<h2 id="6-alternatives-to-jd-gui"><strong>6. Alternatives to JD-GUI</strong></h2>
+<ul>
+<li><strong>Jad</strong>: A CLI-based decompiler focused on bytecode accuracy.</li>
+<li><strong>Procyon</strong>: Supports modern Java features (e.g., lambda expressions).</li>
+<li><strong>JD-Eclipse</strong>: A plugin for Eclipse users.</li>
+</ul>
+<hr>
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>JD-GUI is a versatile tool for decompiling Java bytecode, offering simplicity and readability. However, its lack of support for newer Java versions and obfuscated code means pairing it with tools like Procyon may be necessary.</p>
+<p><strong>Use it responsibly</strong>—whether for debugging, learning, or security analysis, always respect software licenses and intellectual property.</p>
+<blockquote>
+<p><strong>References</strong>:</p>
+<ul>
+<li><a href="http://java-decompiler.github.io/">Java Decompiler Project</a></li>
+<li><a href="https://ibotpeaches.github.io/Apktool/">Android Decompilation Guide</a></li>
+<li><a href="https://github.com/mstrobel/procyon">Procyon Decompiler</a></li>
+</ul>
+</blockquote>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/java/" rel="tag">Java</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/update_kali/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Automate Kali Linux Updates with This Handy Shell Script</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

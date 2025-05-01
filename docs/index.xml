@@ -6,8 +6,15 @@
     <description>Recent content on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JD-GUI: A Comprehensive Guide to Java Decompilation</title>
+      <link>https://xingelf.github.io/tech/jd-gui/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/jd-gui/</guid>
+      <description>&lt;p&gt;For Java developers and security analysts, decompiling &lt;code&gt;.class&lt;/code&gt; or &lt;code&gt;.jar&lt;/code&gt; files to restore original source code is a critical skill. Among the tools available, &lt;strong&gt;JD-GUI&lt;/strong&gt; stands out as a user-friendly and powerful solution. This article explores JD-GUI’s features, practical applications, and limitations.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Automate Kali Linux Updates with This Handy Shell Script</title>
       <link>https://xingelf.github.io/tech/update_kali/</link>

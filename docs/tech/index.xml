@@ -58,6 +58,20 @@
       <description>&lt;p&gt;Keeping your Kali Linux system up-to-date is &lt;strong&gt;crucial for security, stability, and access to the latest tools&lt;/strong&gt;. Instead of manually running &lt;code&gt;apt update&lt;/code&gt; and &lt;code&gt;apt upgrade&lt;/code&gt; every time, why not &lt;strong&gt;automate the process with a shell script?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>XSS Hunting: Risks of document.write and Detection Strategies</title>
+      <link>https://xingelf.github.io/tech/xss_dom_huting/</link>
+      <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/xss_dom_huting/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;document.write&lt;/code&gt; method in JavaScript remains a critical vector for Cross-Site Scripting (XSS) vulnerabilities. While it dynamically injects HTML content, improper handling of user input can enable attackers to execute arbitrary scripts. This article explores practical techniques to identify and mitigate risks associated with &lt;code&gt;document.write&lt;/code&gt;, supported by real-world cases and defensive frameworks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Comprehensive Guide to Decision Trees: Theory, Applications, and Best Practices</title>
+      <link>https://xingelf.github.io/tech/decision_trees/</link>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/decision_trees/</guid>
+      <description>&lt;p&gt;Decision trees are a versatile, interpretable machine learning algorithm that mirrors human decision-making through hierarchical conditional splits. Widely used for classification and regression tasks, they excel in scenarios requiring transparency and explainability. This article delves into the mathematical foundations, implementation strategies, and advanced considerations for practitioners.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to Manage Dotfiles on GitHub</title>
       <link>https://xingelf.github.io/tech/dotfiles/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>

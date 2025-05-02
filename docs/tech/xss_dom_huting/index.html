@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>XSS Hunting: Risks of document.write and Detection Strategies - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/xss_dom_huting/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="XSS Hunting: Risks of document.write and Detection Strategies">
+  <meta property="og:description" content="The document.write method in JavaScript remains a critical vector for Cross-Site Scripting (XSS) vulnerabilities. While it dynamically injects HTML content, improper handling of user input can enable attackers to execute arbitrary scripts. This article explores practical techniques to identify and mitigate risks associated with document.write, supported by real-world cases and defensive frameworks.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-04-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-24T00:00:00+00:00">
+    <meta property="article:tag" content="XSS">
+    <meta property="article:tag" content="DOM">
+
+		
+  <meta itemprop="name" content="XSS Hunting: Risks of document.write and Detection Strategies">
+  <meta itemprop="description" content="The document.write method in JavaScript remains a critical vector for Cross-Site Scripting (XSS) vulnerabilities. While it dynamically injects HTML content, improper handling of user input can enable attackers to execute arbitrary scripts. This article explores practical techniques to identify and mitigate risks associated with document.write, supported by real-world cases and defensive frameworks.">
+  <meta itemprop="datePublished" content="2025-04-24T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-04-24T00:00:00+00:00">
+  <meta itemprop="wordCount" content="438">
+  <meta itemprop="keywords" content="XSS,DOM">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="XSS Hunting: Risks of document.write and Detection Strategies">
+  <meta name="twitter:description" content="The document.write method in JavaScript remains a critical vector for Cross-Site Scripting (XSS) vulnerabilities. While it dynamically injects HTML content, improper handling of user input can enable attackers to execute arbitrary scripts. This article explores practical techniques to identify and mitigate risks associated with document.write, supported by real-world cases and defensive frameworks.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">XSS Hunting: Risks of document.write and Detection Strategies</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-04-24T00:00:00Z">2025-04-24</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cyber-security/" rel="category">Cyber Security</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_10.png" alt="XSS Hunting: Risks of document.write and Detection Strategies">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-why-documentwrite-enables-xss">1. Why <code>document.write</code> Enables XSS</a>
+      <ul>
+        <li><a href="#core-risks">Core Risks</a></li>
+        <li><a href="#dom-based-xss-linkage">DOM-Based XSS Linkage</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-detection-strategies-for-documentwrite-exploits">2. Detection Strategies for <code>document.write</code> Exploits</a>
+      <ul>
+        <li><a href="#step-1-code-review-patterns">Step 1: Code Review Patterns</a></li>
+        <li><a href="#step-2-dynamic-testing-scenarios">Step 2: Dynamic Testing Scenarios</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-case-studies-real-world-exploits">3. Case Studies: Real-World Exploits</a>
+      <ul>
+        <li><a href="#case-1-pwn2own-vancouver-2022-microsoft-teams">Case 1: Pwn2Own Vancouver 2022 (Microsoft Teams)</a></li>
+        <li><a href="#case-2-hash-based-redirect-attack">Case 2: Hash-Based Redirect Attack</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-mitigation-best-practices">4. Mitigation Best Practices</a>
+      <ul>
+        <li><a href="#primary-defenses">Primary Defenses</a></li>
+        <li><a href="#secondary-measures">Secondary Measures</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-tools-for-enhanced-detection">5. Tools for Enhanced Detection</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>The <code>document.write</code> method in JavaScript remains a critical vector for Cross-Site Scripting (XSS) vulnerabilities. While it dynamically injects HTML content, improper handling of user input can enable attackers to execute arbitrary scripts. This article explores practical techniques to identify and mitigate risks associated with <code>document.write</code>, supported by real-world cases and defensive frameworks.</p>
+<h2 id="1-why-documentwrite-enables-xss">1. Why <code>document.write</code> Enables XSS</h2>
+<h3 id="core-risks">Core Risks</h3>
+<p><code>document.write</code> directly renders unvalidated strings into HTML, creating vulnerabilities when:</p>
+<ul>
+<li><strong>Untrusted input sources</strong> (URL parameters, form fields) are used without sanitization.</li>
+<li><strong>Inadequate escaping</strong> allows characters like <code>&lt;</code> or <code>&gt;</code> to bypass defenses.</li>
+<li><strong>Dynamic contexts</strong> (search results, error messages) amplify injection opportunities.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Attacker injects &#34;&lt;script&gt;alert(1)&lt;/script&gt;&#34; via ?q= parameter  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userInput</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>(<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">search</span>).<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;q&#39;</span>);  
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">userInput</span>);  <span style="color:#75715e">// Executes payload  
+</span></span></span></code></pre></div><h3 id="dom-based-xss-linkage">DOM-Based XSS Linkage</h3>
+<p><code>document.write</code> often interacts with DOM properties like <code>location.hash</code> or <code>location.search</code>, enabling client-side script execution without server interaction. For instance, manipulating <code>location.hash</code> can trigger payloads when parsed dynamically.</p>
+<hr>
+<h2 id="2-detection-strategies-for-documentwrite-exploits">2. Detection Strategies for <code>document.write</code> Exploits</h2>
+<h3 id="step-1-code-review-patterns">Step 1: Code Review Patterns</h3>
+<ul>
+<li><strong>Keyword Search</strong>: Scan codebases for <code>document.write</code>/<code>document.writeln</code> and trace arguments to external inputs (e.g., <code>location.search</code>, <code>Cookie</code>).</li>
+<li><strong>Dependency Analysis</strong>: Check combinations with risky methods like <code>innerHTML</code> or <code>eval</code> (e.g., <code>document.write(&quot;&lt;div&gt;&quot; + rawInput + &quot;&lt;/div&gt;&quot;)</code>).</li>
+</ul>
+<h3 id="step-2-dynamic-testing-scenarios">Step 2: Dynamic Testing Scenarios</h3>
+<ol>
+<li><strong>Basic Payload Injection</strong>: Test <code>&lt;script&gt;alert(1)&lt;/script&gt;</code> or <code>&lt;img src=x onerror=alert(1)&gt;</code>.</li>
+<li><strong>Encoding Bypass Checks</strong>: Use URL-encoded (<code>%3Cscript%3E</code>) or Unicode-escaped (<code>\u003c</code>) payloads.</li>
+<li><strong>DOM Breakpoint Tracing</strong>: Use browser debuggers to monitor <code>document.write</code> calls and data flow.</li>
+</ol>
+<hr>
+<h2 id="3-case-studies-real-world-exploits">3. Case Studies: Real-World Exploits</h2>
+<h3 id="case-1-pwn2own-vancouver-2022-microsoft-teams">Case 1: Pwn2Own Vancouver 2022 (Microsoft Teams)</h3>
+<p>A chain of Electron framework vulnerabilities allowed remote code execution via <code>document.write</code> in Microsoft Teams, earning a $150,000 bounty. The exploit combined unescaped input handling and DOM manipulation.</p>
+<h3 id="case-2-hash-based-redirect-attack">Case 2: Hash-Based Redirect Attack</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Attacker appends &#34;#&lt;script&gt;stealSession()&lt;/script&gt;&#34; to URL  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>document.<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">hash</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">1</span>));  
+</span></span></code></pre></div><p>This bypassed server-side checks, enabling session hijacking.</p>
+<hr>
+<h2 id="4-mitigation-best-practices">4. Mitigation Best Practices</h2>
+<h3 id="primary-defenses">Primary Defenses</h3>
+<ol>
+<li><strong>Context-Aware Escaping</strong>: Encode HTML-specific characters (e.g., <code>&lt;</code> → <code>&amp;lt;</code>). Use modern frameworks (React, Angular) for auto-escaping.</li>
+<li><strong>Secure Alternatives</strong>: Replace <code>document.write</code> with <code>textContent</code> or <code>document.createTextNode()</code>.</li>
+<li><strong>Content Security Policy (CSP)</strong>: Restrict inline scripts via <code>script-src 'self'</code> directives.</li>
+</ol>
+<h3 id="secondary-measures">Secondary Measures</h3>
+<ul>
+<li><strong>Input Whitelisting</strong>: Validate formats (e.g., alphanumeric-only for usernames).</li>
+<li><strong>WAF Integration</strong>: Block requests containing <code>document.write</code> patterns or suspicious payloads.</li>
+</ul>
+<hr>
+<h2 id="5-tools-for-enhanced-detection">5. Tools for Enhanced Detection</h2>
+<ul>
+<li><strong>OWASP ZAP</strong>: Automated scanning for insecure <code>document.write</code> usage.</li>
+<li><strong>ESLint Rules</strong>: Flag risky methods with <code>no-dangerous-write</code> plugins.</li>
+<li><strong>Browser DevTools</strong>: Monitor real-time <code>document.write</code> activity via Console or Debugger.</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>While <code>document.write</code> offers flexibility, its misuse remains a top XSS vector. Combine static code analysis, dynamic testing, and layered defenses (CSP, sanitization) to mitigate risks. For further insights, refer to standards like RFC 2828 on secure coding terminology and real-world bug bounty strategies from events like Pwn2Own.</p>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP XSS Prevention Cheat Sheet</a></li>
+<li><a href="https://www.w3.org/TR/CSP3/">Content Security Policy (CSP) Level 3</a></li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/xss/" rel="tag">XSS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/dom/" rel="tag">DOM</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/decision_trees/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">A Comprehensive Guide to Decision Trees: Theory, Applications, and Best Practices</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/update_kali/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Automate Kali Linux Updates with This Handy Shell Script</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

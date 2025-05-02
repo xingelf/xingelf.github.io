@@ -6,8 +6,15 @@
     <description>Recent content in Python on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Comprehensive Guide to Decision Trees: Theory, Applications, and Best Practices</title>
+      <link>https://xingelf.github.io/tech/decision_trees/</link>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/decision_trees/</guid>
+      <description>&lt;p&gt;Decision trees are a versatile, interpretable machine learning algorithm that mirrors human decision-making through hierarchical conditional splits. Widely used for classification and regression tasks, they excel in scenarios requiring transparency and explainability. This article delves into the mathematical foundations, implementation strategies, and advanced considerations for practitioners.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Errors in Python</title>
       <link>https://xingelf.github.io/tech/python-err/</link>

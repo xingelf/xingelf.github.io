@@ -15,5 +15,12 @@
       <guid>https://xingelf.github.io/tech/dom-based_xss/</guid>
       <description>&lt;p&gt;Web security is paramount for both users and website providers. Among the various web vulnerabilities, Cross-Site Scripting (XSS) is a prominent attack method targeting users.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>XSS Hunting: Risks of document.write and Detection Strategies</title>
+      <link>https://xingelf.github.io/tech/xss_dom_huting/</link>
+      <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/xss_dom_huting/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;document.write&lt;/code&gt; method in JavaScript remains a critical vector for Cross-Site Scripting (XSS) vulnerabilities. While it dynamically injects HTML content, improper handling of user input can enable attackers to execute arbitrary scripts. This article explores practical techniques to identify and mitigate risks associated with &lt;code&gt;document.write&lt;/code&gt;, supported by real-world cases and defensive frameworks.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -2,25 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Analysis on Note about technology</title>
-    <link>http://localhost:1313/tags/data-analysis/</link>
+    <link>https://xingelf.github.io/tags/data-analysis/</link>
     <description>Recent content in Data Analysis on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Mar 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Machine Learning with Python</title>
-      <link>http://localhost:1313/tech/_algorithm/</link>
-      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_algorithm/</guid>
-      <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;&#xA;&lt;p&gt;work&lt;/p&gt;&#xA;&lt;h2 id=&#34;決定木について&#34;&gt;決定木について&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/dansbecker/how-models-work&#34;&gt;https://www.kaggle.com/dansbecker/how-models-work&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Machine Learning with Python</title>
-      <link>http://localhost:1313/tech/_python-da/</link>
-      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_python-da/</guid>
-      <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;&#xA;&lt;h3 id=&#34;pythonで動画ファイル処理&#34;&gt;pythonで動画ファイル処理&lt;/h3&gt;&#xA;&lt;p&gt;pythonで動画ファイルのメタデータを取得して、ファイル名の更新などを行います。&#xA;opencvのインストール&lt;/p&gt;</description>
+      <title>A Comprehensive Guide to Decision Trees: Theory, Applications, and Best Practices</title>
+      <link>https://xingelf.github.io/tech/decision_trees/</link>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/decision_trees/</guid>
+      <description>&lt;p&gt;Decision trees are a versatile, interpretable machine learning algorithm that mirrors human decision-making through hierarchical conditional splits. Widely used for classification and regression tasks, they excel in scenarios requiring transparency and explainability. This article delves into the mathematical foundations, implementation strategies, and advanced considerations for practitioners.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

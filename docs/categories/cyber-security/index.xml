@@ -22,5 +22,12 @@
       <guid>https://xingelf.github.io/tech/smtp_openrelay/</guid>
       <description>&lt;p&gt;Email remains a cornerstone of modern communication, underpinned by the Simple Mail Transfer Protocol (SMTP). While seemingly straightforward, misconfigurations within SMTP servers, particularly leading to an &amp;ldquo;open relay&amp;rdquo; state, pose significant security risks. 🚨 This article provides a technical explanation of SMTP relaying, defines what constitutes an open relay, details its mechanisms and severe consequences, outlines detection methods, and presents essential mitigation strategies for technical professionals.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Active Directory Reconnaissance: In-Depth Analysis of Attacker Techniques</title>
+      <link>https://xingelf.github.io/tech/active_directory/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/active_directory/</guid>
+      <description>&lt;p&gt;Attackers leverage &lt;strong&gt;standard tools and legitimate privileges&lt;/strong&gt; to conduct reconnaissance in Active Directory (AD). If undetected, this phase enables lateral movement and privilege escalation. This article dissects &lt;strong&gt;advanced commands used in real-world attacks&lt;/strong&gt; and provides defensive countermeasures.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

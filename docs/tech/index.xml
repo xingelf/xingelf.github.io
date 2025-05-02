@@ -44,6 +44,13 @@
       <description>&lt;p&gt;SQL Injection (SQLi) remains one of the most pervasive and damaging web application vulnerabilities, accounting for &lt;strong&gt;33% of all web breaches&lt;/strong&gt; in 2023. This deep dive explores its mechanics, evolving attack vectors, and cutting-edge mitigation strategies for cybersecurity professionals.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Active Directory Reconnaissance: In-Depth Analysis of Attacker Techniques</title>
+      <link>https://xingelf.github.io/tech/active_directory/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/active_directory/</guid>
+      <description>&lt;p&gt;Attackers leverage &lt;strong&gt;standard tools and legitimate privileges&lt;/strong&gt; to conduct reconnaissance in Active Directory (AD). If undetected, this phase enables lateral movement and privilege escalation. This article dissects &lt;strong&gt;advanced commands used in real-world attacks&lt;/strong&gt; and provides defensive countermeasures.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Automate Kali Linux Updates with This Handy Shell Script</title>
       <link>https://xingelf.github.io/tech/update_kali/</link>
       <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>

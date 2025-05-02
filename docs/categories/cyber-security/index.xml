@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cyber Security on Note about technology</title>
-    <link>http://localhost:1313/categories/cyber-security/</link>
+    <link>https://xingelf.github.io/categories/cyber-security/</link>
     <description>Recent content in Cyber Security on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Reverse Image Search 逆画像検索</title>
-      <link>http://localhost:1313/tech/_reverse_image_search/</link>
-      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_reverse_image_search/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Reverse_image_search&#34;&gt;https://en.wikipedia.org/wiki/Reverse_image_search&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Reverse Image Searchは画像から類似の画像を検索することができます。&#xA;逆画像検索と呼ばれます。&#xA;セキュリティ用途としては、OSINTの一つに分類されます。&lt;/p&gt;</description>
+      <title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention</title>
+      <link>https://xingelf.github.io/tech/dom-based_xss/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/dom-based_xss/</guid>
+      <description>&lt;p&gt;Web security is paramount for both users and website providers. Among the various web vulnerabilities, Cross-Site Scripting (XSS) is a prominent attack method targeting users.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Active Directory</title>
-      <link>http://localhost:1313/tech/_active_directory/</link>
-      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_active_directory/</guid>
-      <description>&lt;p&gt;Identify devices on the interanet&#xA;How to identify active directory domain controllers on the intranet by using DNS lookup&#xA;Example for Domain Name abc.local&lt;/p&gt;</description>
+      <title>Understanding and Mitigating SMTP Open Relays: A Technical Deep Dive</title>
+      <link>https://xingelf.github.io/tech/smtp_openrelay/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/smtp_openrelay/</guid>
+      <description>&lt;p&gt;Email remains a cornerstone of modern communication, underpinned by the Simple Mail Transfer Protocol (SMTP). While seemingly straightforward, misconfigurations within SMTP servers, particularly leading to an &amp;ldquo;open relay&amp;rdquo; state, pose significant security risks. 🚨 This article provides a technical explanation of SMTP relaying, defines what constitutes an open relay, details its mechanisms and severe consequences, outlines detection methods, and presents essential mitigation strategies for technical professionals.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

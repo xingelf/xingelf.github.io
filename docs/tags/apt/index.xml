@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>APT on Note about technology</title>
-    <link>http://localhost:1313/tags/apt/</link>
+    <link>https://xingelf.github.io/tags/apt/</link>
     <description>Recent content in APT on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/apt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/apt/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>carbanak</title>
-      <link>http://localhost:1313/tech/_carbanak/</link>
-      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_carbanak/</guid>
-      <description>&lt;h1 id=&#34;mitre-attck&#34;&gt;MITRE ATT&amp;amp;CK&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://attack.mitre.org/groups/G0008&#34;&gt;https://attack.mitre.org/groups/G0008&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;kaspersky&#34;&gt;Kaspersky&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf&#34;&gt;https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08064518/Carbanak_APT_eng.pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;rundll32&#34;&gt;rundll32&lt;/h2&gt;&#xA;&lt;p&gt;攻撃検知回避のためrundll32.exeを利用&lt;/p&gt;</description>
+      <title>Carbanak and the Exploitation of Rundll32.exe: A Technical Analysis of Living-off-the-Land Tactics</title>
+      <link>https://xingelf.github.io/tech/carbanak/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/carbanak/</guid>
+      <description>&lt;p&gt;The Carbanak cybercrime group, notorious for targeting financial institutions, has long relied on the abuse of legitimate Windows system tools to evade detection. Among these, &lt;strong&gt;rundll32.exe&lt;/strong&gt;—a core Windows component for executing Dynamic Link Library (DLL) functions—has been weaponized to facilitate stealthy attacks. This article explores Carbanak’s exploitation of rundll32.exe, contextualizing it within broader malware campaigns, including MontysThree, Poison Ivy (PIVY), and recent Chinese state-linked threat actors, to dissect the technical nuances of Living-off-the-Land (LotL) strategies.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

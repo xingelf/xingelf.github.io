@@ -3,13 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/cyber-security/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/</loc>
-    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/java-script/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/dom-based_xss/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/xss/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/java/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
@@ -20,8 +35,29 @@
     <loc>https://xingelf.github.io/categories/security/</loc>
     <lastmod>2025-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/</loc>
-    <lastmod>2025-04-30T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/tags/smtp/</loc>
+    <lastmod>2025-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/smtp_openrelay/</loc>
+    <lastmod>2025-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/apt/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/carbanak/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/rundll32/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/tech/</loc>
+    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/sql-injection/</loc>
+    <lastmod>2025-04-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/sqli/</loc>
+    <lastmod>2025-04-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/update_kali/</loc>
     <lastmod>2025-04-25T00:00:00+00:00</lastmod>
@@ -41,9 +77,6 @@
     <loc>https://xingelf.github.io/categories/posts/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/tech/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tech/algo-trade/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -55,9 +88,6 @@
   </url><url>
     <loc>https://xingelf.github.io/tech/metadata_driven/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/sqli/</loc>
-    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/sqli_union/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>

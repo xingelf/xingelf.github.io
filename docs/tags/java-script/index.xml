@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java Script on Note about technology</title>
+    <link>https://xingelf.github.io/tags/java-script/</link>
+    <description>Recent content in Java Script on Note about technology</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/java-script/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention</title>
+      <link>https://xingelf.github.io/tech/dom-based_xss/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/dom-based_xss/</guid>
+      <description>&lt;p&gt;Web security is paramount for both users and website providers. Among the various web vulnerabilities, Cross-Site Scripting (XSS) is a prominent attack method targeting users.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

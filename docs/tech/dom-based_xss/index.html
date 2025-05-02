@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/dom-based_xss/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="Understanding DOM-based XSS: Mechanism, Examples, and Prevention">
+  <meta property="og:description" content="Web security is paramount for both users and website providers. Among the various web vulnerabilities, Cross-Site Scripting (XSS) is a prominent attack method targeting users.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-05-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-01T00:00:00+00:00">
+    <meta property="article:tag" content="XSS">
+    <meta property="article:tag" content="Java Script">
+
+		
+  <meta itemprop="name" content="Understanding DOM-based XSS: Mechanism, Examples, and Prevention">
+  <meta itemprop="description" content="Web security is paramount for both users and website providers. Among the various web vulnerabilities, Cross-Site Scripting (XSS) is a prominent attack method targeting users.">
+  <meta itemprop="datePublished" content="2025-05-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-05-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1474">
+  <meta itemprop="keywords" content="XSS,Java Script">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Understanding DOM-based XSS: Mechanism, Examples, and Prevention">
+  <meta name="twitter:description" content="Web security is paramount for both users and website providers. Among the various web vulnerabilities, Cross-Site Scripting (XSS) is a prominent attack method targeting users.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Understanding DOM-based XSS: Mechanism, Examples, and Prevention</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-05-01T00:00:00Z">2025-05-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cyber-security/" rel="category">Cyber Security</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/image_5.png" alt="Understanding DOM-based XSS: Mechanism, Examples, and Prevention">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-what-is-xss-cross-site-scripting">🤔 What is XSS (Cross-Site Scripting)?</a></li>
+        <li><a href="#-what-is-the-dom-document-object-model">🌳 What is the DOM (Document Object Model)?</a></li>
+        <li><a href="#-how-dom-based-xss-works">⚙️ How DOM-based XSS Works</a></li>
+        <li><a href="#-concrete-examples">💻 Concrete Examples</a></li>
+        <li><a href="#-why-is-dom-based-xss-difficult-to-detect">👻 Why is DOM-based XSS Difficult to Detect?</a></li>
+        <li><a href="#-impact-of-dom-based-xss">🚨 Impact of DOM-based XSS</a></li>
+        <li><a href="#-prevention-and-mitigation">✅ Prevention and Mitigation</a></li>
+        <li><a href="#-conclusion">✨ Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Web security is paramount for both users and website providers. Among the various web vulnerabilities, Cross-Site Scripting (XSS) is a prominent attack method targeting users.</p>
+<p>While there are several types of XSS, one that&rsquo;s slightly different is called &ldquo;DOM-based XSS.&rdquo; We will dive into what makes it unique from traditional XSS, how the attack works, and importantly, how to prevent it.</p>
+<h3 id="-what-is-xss-cross-site-scripting">🤔 What is XSS (Cross-Site Scripting)?</h3>
+<p>Before we talk about DOM-based XSS, let&rsquo;s quickly define XSS in general.</p>
+<p>XSS is a vulnerability that allows attackers to inject malicious scripts (usually JavaScript) into a web page viewed by other users. By exploiting XSS, attackers can steal user session information, display fake content, or perform various other unauthorized actions on behalf of the user.</p>
+<p>XSS is typically categorized into three main types:</p>
+<ol>
+<li><strong>Reflected XSS</strong>: The attacker&rsquo;s malicious script is included in the request sent to the server (e.g., in a URL parameter). The server then includes this script in the response <em>without proper sanitization</em>, and the user&rsquo;s browser executes it. The script is &ldquo;reflected&rdquo; off the server.</li>
+<li><strong>Stored XSS</strong>: The malicious script is permanently &ldquo;stored&rdquo; on the target server, often in a database (e.g., in comments, forum posts, user profiles). When other users view the affected page, the script is retrieved from the server and executed in their browsers.</li>
+<li><strong>DOM-based XSS</strong>: This is our focus today. Unlike the other two, DOM-based XSS <strong>does not necessarily involve the server-side</strong>. It occurs purely within the user&rsquo;s browser when a web page&rsquo;s client-side JavaScript handles data from an untrusted source in a way that manipulates the Document Object Model (DOM) to execute malicious code.</li>
+</ol>
+<h3 id="-what-is-the-dom-document-object-model">🌳 What is the DOM (Document Object Model)?</h3>
+<p>To understand DOM-based XSS, let&rsquo;s briefly explain the DOM.</p>
+<p>The DOM is a programming interface for web documents. When a web browser loads an HTML or XML page, it creates a tree-like structure representing the page&rsquo;s content and structure. This structure is the DOM. JavaScript and other scripting languages can use the DOM to access, modify, add, or delete elements and content on the page dynamically.</p>
+<p>In essence, the DOM allows client-side scripts to change what the user sees and interacts with on a webpage after it has been loaded.</p>
+<h3 id="-how-dom-based-xss-works">⚙️ How DOM-based XSS Works</h3>
+<p>DOM-based XSS exploits the way client-side JavaScript interacts with the DOM, particularly when handling data that comes from potentially untrusted sources. Specifically, if a script reads data from a source like the URL&rsquo;s hash fragment (the part after <code>#</code>) or query string (the part after <code>?</code>) and then uses this data to modify the DOM <em>without proper validation or sanitization</em>, a vulnerability can arise.</p>
+<p>The key point is that DOM-based XSS happens entirely <strong>within the user&rsquo;s browser</strong>, client-side.</p>
+<p>The typical attack flow is as follows:</p>
+<ol>
+<li>An attacker crafts a malicious URL that points to a vulnerable web page. This URL includes the malicious script as part of the URL itself (e.g., in the hash fragment or query string).</li>
+<li>The user is tricked into clicking this malicious URL and visits the vulnerable web page.</li>
+<li>Client-side JavaScript code on the web page reads the data (the attacker&rsquo;s script) from the URL.</li>
+<li>The script then uses this data to perform a DOM operation (e.g., writing it into an HTML element&rsquo;s <code>innerHTML</code>).</li>
+<li>As a result, the malicious script is executed by the user&rsquo;s browser.</li>
+</ol>
+<h3 id="-concrete-examples">💻 Concrete Examples</h3>
+<p>Let&rsquo;s look at a simple code example. Imagine a piece of JavaScript that takes a string from the URL and displays it somewhere on the page.</p>
+<p><strong>Example 1: Using the URL Fragment (<code>window.location.hash</code>)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">title</span>&gt;DOM-based XSS Sample (Hash)&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;message&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Get the URL hash fragment (remove the #)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">hash</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Use the retrieved string directly in innerHTML
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// THIS IS VULNERABLE!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;message&#39;</span>).<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Welcome, &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;!&#34;</span>;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>This code looks simple, but it&rsquo;s vulnerable. If a user visits the following URL:</p>
+<p><code>http://example.com/vulnerable_hash.html#&lt;script&gt;alert('XSS')&lt;/script&gt;</code></p>
+<p>The JavaScript will get <code>&lt;script&gt;alert('XSS')&lt;/script&gt;</code> from the hash fragment and set it directly as the <code>innerHTML</code> of the <code>message</code> div. The browser then interprets and executes this as code, displaying an &ldquo;XSS&rdquo; alert box.</p>
+<p><strong>Example 2: Using the URL Query String (<code>window.location.search</code>)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">title</span>&gt;DOM-based XSS Sample (Query)&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;greeting&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Get the URL query string and parse parameters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">params</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>(window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">search</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;name&#39;</span>); <span style="color:#75715e">// Get the value of the &#39;name&#39; parameter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// If the parameter exists, use its value directly in innerHTML
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// THIS IS VULNERABLE!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">name</span>) {
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;greeting&#39;</span>).<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;!&#34;</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>In this case, if a user visits the following URL:</p>
+<p><code>http://example.com/vulnerable_query.html?name=&lt;script&gt;alert('XSS')&lt;/script&gt;</code></p>
+<p>The JavaScript gets <code>&lt;script&gt;alert('XSS')&lt;/script&gt;</code> from the <code>name</code> query parameter and sets it directly as the <code>innerHTML</code> of the <code>greeting</code> div. Again, the browser executes the injected script.</p>
+<p>In both examples, the vulnerability arises from using untrusted input from the URL directly in a DOM manipulation context (<code>innerHTML</code>) without any validation or sanitization.</p>
+<p>Other common &ldquo;sinks&rdquo; (places where untrusted data can cause DOM-based XSS) include:</p>
+<ul>
+<li><code>document.write()</code></li>
+<li>Setting the <code>.src</code> or <code>.href</code> attributes with untrusted data</li>
+<li>Setting <code>window.location.href</code> or using <code>location.replace()</code> with untrusted data</li>
+</ul>
+<h3 id="-why-is-dom-based-xss-difficult-to-detect">👻 Why is DOM-based XSS Difficult to Detect?</h3>
+<p>Reflected and Stored XSS vulnerabilities often stem from server-side code issues and can sometimes be spotted in server logs or during code reviews.</p>
+<p>However, DOM-based XSS occurs <strong>client-side within the user&rsquo;s browser</strong>. This means the malicious script execution might not leave any trace in server-side logs. Because the vulnerability depends on how client-side JavaScript handles data and interacts with the DOM, finding and fixing these issues can sometimes be more challenging.</p>
+<h3 id="-impact-of-dom-based-xss">🚨 Impact of DOM-based XSS</h3>
+<p>The consequences of a successful DOM-based XSS attack are similar to other types of XSS and can be severe:</p>
+<ul>
+<li><strong>Session Hijacking</strong>: Stealing user cookies and impersonating the user to perform unauthorized actions.</li>
+<li><strong>Data Theft or Modification</strong>: Reading sensitive information displayed on the page or altering content.</li>
+<li><strong>Phishing/Redirection</strong>: Manipulating the page to look like a legitimate login form or redirecting the user to a malicious site.</li>
+<li><strong>Malware Downloads</strong>: Forcing the user&rsquo;s browser to download malicious files.</li>
+</ul>
+<h3 id="-prevention-and-mitigation">✅ Prevention and Mitigation</h3>
+<p>Preventing DOM-based XSS requires measures from both developers and users.</p>
+<h4 id="-for-developers">👨‍💻 For Developers</h4>
+<p>The most critical rule is to <strong>never use untrusted data directly in DOM manipulation functions that can execute code</strong>. Data retrieved from URL fragments, query strings, <code>document.referrer</code>, <code>window.name</code>, <code>localStorage</code>, etc., should always be considered untrusted input.</p>
+<ol>
+<li><strong>Input Validation and Sanitization</strong>: Before using any external input (like URL parameters or hash fragments) to modify the DOM, rigorously validate and sanitize it. This involves removing or neutralizing any characters that could be interpreted as code by the browser. Use context-aware sanitization and rely on established security libraries rather than attempting to build your own filtering logic.</li>
+<li><strong>Use Security Libraries</strong>: Libraries specifically designed to prevent XSS when inserting HTML fragments (like DOMPurify) are highly recommended. They provide robust sanitization capabilities.</li>
+<li><strong>Prefer <code>.textContent</code> over <code>innerHTML</code></strong>: If you are just displaying text and not HTML, use <code>.textContent</code> instead of <code>.innerHTML</code>. <code>.textContent</code> treats the input purely as text and does not parse it as HTML, effectively preventing script execution. If you <em>must</em> use <code>innerHTML</code> with user-provided input, absolutely ensure the input is strictly sanitized.</li>
+<li><strong>Implement Content Security Policy (CSP)</strong>: A well-configured CSP can significantly mitigate XSS attacks by restricting which scripts are allowed to execute and from where, and by disabling dangerous inline scripts or functions like <code>eval()</code>.</li>
+<li><strong>Follow Secure Coding Practices</strong>: Establish and enforce secure JavaScript coding guidelines within your development team.</li>
+<li><strong>Conduct Security Audits</strong>: Regularly perform security testing and code reviews to identify and fix potential DOM-based XSS vulnerabilities.</li>
+</ol>
+<h4 id="-for-users">👤 For Users</h4>
+<p>Users can also take steps to reduce their risk:</p>
+<ol>
+<li><strong>Be Cautious of Suspicious Links</strong>: Avoid clicking on links from unknown sources in emails, messages, or on suspicious websites. Pay close attention to the URL before clicking, especially if it contains unusual characters or code fragments like <code>&lt;script&gt;</code>.</li>
+<li><strong>Use Browser Extensions</strong>: Some browser security extensions can help detect and block XSS attempts.</li>
+<li><strong>Keep Browsers Updated</strong>: Always use the latest version of your web browser. Modern browsers include enhanced security features that can help protect against various web threats, including XSS.</li>
+</ol>
+<h3 id="-conclusion">✨ Conclusion</h3>
+<p>DOM-based XSS is a distinct type of cross-site scripting that operates client-side and can be difficult to detect purely from server logs. However, the core vulnerability lies in using untrusted input (such as data from URL fragments or query strings) to manipulate the DOM without proper validation and sanitization.</p>
+<p>Web developers must understand the risks associated with client-side JavaScript and DOM manipulation, and implement rigorous input handling, sanitization, and security policies like CSP.</p>
+<p>Equally important, users must practice safe Browse habits and be vigilant about the links they click.</p>
+<p>Protecting against DOM-based XSS requires a collective effort and increased security awareness from both those who build websites and those who use them.</p>
+<hr>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/xss/" rel="tag">XSS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/java-script/" rel="tag">Java Script</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/jd-gui/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">JD-GUI: A Comprehensive Guide to Java Decompilation</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

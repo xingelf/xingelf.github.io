@@ -6,14 +6,42 @@
     <description>Recent content in Cyber Security on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention</title>
+      <link>https://xingelf.github.io/tech/dom-based_xss/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/dom-based_xss/</guid>
+      <description>&lt;p&gt;Web security is paramount for both users and website providers. Among the various web vulnerabilities, Cross-Site Scripting (XSS) is a prominent attack method targeting users.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>JD-GUI: A Comprehensive Guide to Java Decompilation</title>
       <link>https://xingelf.github.io/tech/jd-gui/</link>
       <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/jd-gui/</guid>
       <description>&lt;p&gt;For Java developers and security analysts, decompiling &lt;code&gt;.class&lt;/code&gt; or &lt;code&gt;.jar&lt;/code&gt; files to restore original source code is a critical skill. Among the tools available, &lt;strong&gt;JD-GUI&lt;/strong&gt; stands out as a user-friendly and powerful solution. This article explores JD-GUI’s features, practical applications, and limitations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding and Mitigating SMTP Open Relays: A Technical Deep Dive</title>
+      <link>https://xingelf.github.io/tech/smtp_openrelay/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/smtp_openrelay/</guid>
+      <description>&lt;p&gt;Email remains a cornerstone of modern communication, underpinned by the Simple Mail Transfer Protocol (SMTP). While seemingly straightforward, misconfigurations within SMTP servers, particularly leading to an &amp;ldquo;open relay&amp;rdquo; state, pose significant security risks. 🚨 This article provides a technical explanation of SMTP relaying, defines what constitutes an open relay, details its mechanisms and severe consequences, outlines detection methods, and presents essential mitigation strategies for technical professionals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Carbanak and the Exploitation of Rundll32.exe: A Technical Analysis of Living-off-the-Land Tactics</title>
+      <link>https://xingelf.github.io/tech/carbanak/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/carbanak/</guid>
+      <description>&lt;p&gt;The Carbanak cybercrime group, notorious for targeting financial institutions, has long relied on the abuse of legitimate Windows system tools to evade detection. Among these, &lt;strong&gt;rundll32.exe&lt;/strong&gt;—a core Windows component for executing Dynamic Link Library (DLL) functions—has been weaponized to facilitate stealthy attacks. This article explores Carbanak’s exploitation of rundll32.exe, contextualizing it within broader malware campaigns, including MontysThree, Poison Ivy (PIVY), and recent Chinese state-linked threat actors, to dissect the technical nuances of Living-off-the-Land (LotL) strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQL Injection (SQLi) Unmasked: Advanced Exploits, Defense Tactics, and Industry Lessons</title>
+      <link>https://xingelf.github.io/tech/sql-injection/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/sql-injection/</guid>
+      <description>&lt;p&gt;SQL Injection (SQLi) remains one of the most pervasive and damaging web application vulnerabilities, accounting for &lt;strong&gt;33% of all web breaches&lt;/strong&gt; in 2023. This deep dive explores its mechanics, evolving attack vectors, and cutting-edge mitigation strategies for cybersecurity professionals.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automate Kali Linux Updates with This Handy Shell Script</title>

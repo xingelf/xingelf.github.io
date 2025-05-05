@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crptography on Note about technology</title>
-    <link>http://localhost:1313/tags/crptography/</link>
+    <link>https://xingelf.github.io/tags/crptography/</link>
     <description>Recent content in Crptography on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Aug 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/crptography/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/crptography/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Crptography 暗号</title>
-      <link>http://localhost:1313/tech/_cryotography/</link>
-      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_cryotography/</guid>
-      <description>&lt;h1 id=&#34;対称暗号&#34;&gt;対称暗号&lt;/h1&gt;&#xA;&lt;h1 id=&#34;非対称暗号&#34;&gt;非対称暗号&lt;/h1&gt;&#xA;&lt;h1 id=&#34;one-way-hash&#34;&gt;One-Way Hash&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Algorithm&lt;/th&gt;&#xA;          &lt;th&gt;Type&lt;/th&gt;&#xA;          &lt;th&gt;Spec&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;MD5&lt;/td&gt;&#xA;          &lt;td&gt;Block&lt;/td&gt;&#xA;          &lt;td&gt;128bit hash.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;SHA-1&lt;/td&gt;&#xA;          &lt;td&gt;Block&lt;/td&gt;&#xA;          &lt;td&gt;160bit outout&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;SHA-2&lt;/td&gt;&#xA;          &lt;td&gt;Stream&lt;/td&gt;&#xA;          &lt;td&gt;used in WEP&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;SHA-256&lt;/td&gt;&#xA;          &lt;td&gt;Stream&lt;/td&gt;&#xA;          &lt;td&gt;used in WPA2&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RIPEMD&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h1 id=&#34;password-hash&#34;&gt;Password Hash&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Algorithm&lt;/th&gt;&#xA;          &lt;th&gt;Type&lt;/th&gt;&#xA;          &lt;th&gt;Spec&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;LM hash&lt;/td&gt;&#xA;          &lt;td&gt;&amp;mdash;&lt;/td&gt;&#xA;          &lt;td&gt;max 14 chars UPPERCASE only&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NT hash&lt;/td&gt;&#xA;          &lt;td&gt;&amp;mdash;&lt;/td&gt;&#xA;          &lt;td&gt;max 127 charss mixed case&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h1 id=&#34;symmetric-algorithm&#34;&gt;Symmetric Algorithm&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Algorithm&lt;/th&gt;&#xA;          &lt;th&gt;Type&lt;/th&gt;&#xA;          &lt;th&gt;Spec&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;DES&lt;/td&gt;&#xA;          &lt;td&gt;Block&lt;/td&gt;&#xA;          &lt;td&gt;56bit key used in LM Hash password.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;3DES&lt;/td&gt;&#xA;          &lt;td&gt;Block&lt;/td&gt;&#xA;          &lt;td&gt;128bit key&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RC4&lt;/td&gt;&#xA;          &lt;td&gt;Stream&lt;/td&gt;&#xA;          &lt;td&gt;used in WEP&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;AES&lt;/td&gt;&#xA;          &lt;td&gt;Stream&lt;/td&gt;&#xA;          &lt;td&gt;used in WPA2&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+      <title>Understanding Core Cryptographic Technologies: A Deep Dive for Experts</title>
+      <link>https://xingelf.github.io/tech/cryotography/</link>
+      <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/cryotography/</guid>
+      <description>&lt;p&gt;Modern digital security relies on robust cryptographic systems. In this article, we break down &lt;strong&gt;symmetric encryption&lt;/strong&gt;, &lt;strong&gt;asymmetric encryption&lt;/strong&gt;, &lt;strong&gt;hash functions&lt;/strong&gt;, and critical algorithms—with a focus on technical specifications and real-world applications.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

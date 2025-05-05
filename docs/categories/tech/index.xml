@@ -23,6 +23,13 @@
       <description>&lt;p&gt;SQL Injection (SQLi) remains one of the most pervasive and damaging web application vulnerabilities, accounting for &lt;strong&gt;33% of all web breaches&lt;/strong&gt; in 2023. This deep dive explores its mechanics, evolving attack vectors, and cutting-edge mitigation strategies for cybersecurity professionals.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Understanding Core Cryptographic Technologies: A Deep Dive for Experts</title>
+      <link>https://xingelf.github.io/tech/cryotography/</link>
+      <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/cryotography/</guid>
+      <description>&lt;p&gt;Modern digital security relies on robust cryptographic systems. In this article, we break down &lt;strong&gt;symmetric encryption&lt;/strong&gt;, &lt;strong&gt;asymmetric encryption&lt;/strong&gt;, &lt;strong&gt;hash functions&lt;/strong&gt;, and critical algorithms—with a focus on technical specifications and real-world applications.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to Manage Dotfiles on GitHub</title>
       <link>https://xingelf.github.io/tech/dotfiles/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>

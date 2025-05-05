@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Understanding Core Cryptographic Technologies: A Deep Dive for Experts - Note about technology</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/cryotography/">
+  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:title" content="Understanding Core Cryptographic Technologies: A Deep Dive for Experts">
+  <meta property="og:description" content="Modern digital security relies on robust cryptographic systems. In this article, we break down symmetric encryption, asymmetric encryption, hash functions, and critical algorithms—with a focus on technical specifications and real-world applications.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-04-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-23T00:00:00+00:00">
+    <meta property="article:tag" content="Crptography">
+
+		
+  <meta itemprop="name" content="Understanding Core Cryptographic Technologies: A Deep Dive for Experts">
+  <meta itemprop="description" content="Modern digital security relies on robust cryptographic systems. In this article, we break down symmetric encryption, asymmetric encryption, hash functions, and critical algorithms—with a focus on technical specifications and real-world applications.">
+  <meta itemprop="datePublished" content="2025-04-23T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-04-23T00:00:00+00:00">
+  <meta itemprop="wordCount" content="282">
+  <meta itemprop="keywords" content="Crptography">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Understanding Core Cryptographic Technologies: A Deep Dive for Experts">
+  <meta name="twitter:description" content="Modern digital security relies on robust cryptographic systems. In this article, we break down symmetric encryption, asymmetric encryption, hash functions, and critical algorithms—with a focus on technical specifications and real-world applications.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Tech Note" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Tech Note</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech🧑‍💻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ios">
+				
+				<span class="menu__text">Apple🍎</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Understanding Core Cryptographic Technologies: A Deep Dive for Experts</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-04-23T00:00:00Z">2025-04-23</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/ds3.png" alt="Understanding Core Cryptographic Technologies: A Deep Dive for Experts">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-symmetric-encryption-secret-key-cryptography">🔑 Symmetric Encryption (Secret-Key Cryptography)</a>
+      <ul>
+        <li><a href="#-key-algorithms">🚀 Key Algorithms</a></li>
+      </ul>
+    </li>
+    <li><a href="#-asymmetric-encryption-public-key-cryptography">🌐 Asymmetric Encryption (Public-Key Cryptography)</a></li>
+    <li><a href="#-one-way-hash-functions">🔍 One-Way Hash Functions</a>
+      <ul>
+        <li><a href="#-primary-algorithms">🛡️ Primary Algorithms</a></li>
+      </ul>
+    </li>
+    <li><a href="#-password-hashing-security-vs-legacy-risks">🎯 Password Hashing: Security vs. Legacy Risks</a></li>
+    <li><a href="#-critical-vulnerabilities-to-mitigate">🚨 Critical Vulnerabilities to Mitigate</a></li>
+    <li><a href="#-future-proofing-cryptography">🔮 Future-Proofing Cryptography</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Modern digital security relies on robust cryptographic systems. In this article, we break down <strong>symmetric encryption</strong>, <strong>asymmetric encryption</strong>, <strong>hash functions</strong>, and critical algorithms—with a focus on technical specifications and real-world applications.</p>
+<h2 id="-symmetric-encryption-secret-key-cryptography">🔑 Symmetric Encryption (Secret-Key Cryptography)</h2>
+<p><strong>Single key for encryption/decryption</strong> 🗝️. Ideal for high-speed bulk data processing.</p>
+<h3 id="-key-algorithms">🚀 Key Algorithms</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Algorithm</th>
+          <th>Type</th>
+          <th>Specs &amp; Use Cases</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>DES</td>
+          <td>Block</td>
+          <td>56-bit key ⚠️ (Used in LM Hash)</td>
+      </tr>
+      <tr>
+          <td>3DES</td>
+          <td>Block</td>
+          <td>Triple-DES; 128-bit key</td>
+      </tr>
+      <tr>
+          <td>RC4</td>
+          <td>Stream</td>
+          <td>⚠️ Deprecated (WEP’s fatal flaw)</td>
+      </tr>
+      <tr>
+          <td>AES</td>
+          <td>Block</td>
+          <td>⭐ Gold standard (WPA2, NSA-approved)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-asymmetric-encryption-public-key-cryptography">🌐 Asymmetric Encryption (Public-Key Cryptography)</h2>
+<p><strong>Key pairs (public/private)</strong> 🔑🔒. Critical for PKI, TLS, and digital signatures.</p>
+<p><strong>Core Traits</strong>:</p>
+<ul>
+<li>Public Key: Shared openly (encryption/verification)</li>
+<li>Private Key: Securely stored (decryption/signing)</li>
+<li>Standards: RSA (factoring), ECC (elliptic curves)</li>
+</ul>
+<h2 id="-one-way-hash-functions">🔍 One-Way Hash Functions</h2>
+<p>Generates <strong>fixed-length digest</strong> 🧬. Used for integrity checks, digital fingerprints, and password storage.</p>
+<h3 id="-primary-algorithms">🛡️ Primary Algorithms</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Algorithm</th>
+          <th>Type</th>
+          <th>Risk Profile</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>MD5</td>
+          <td>Block</td>
+          <td>❌ Broken (collision attacks)</td>
+      </tr>
+      <tr>
+          <td>SHA-1</td>
+          <td>Block</td>
+          <td>❌ Deprecated in 2017</td>
+      </tr>
+      <tr>
+          <td>SHA-2</td>
+          <td>Block</td>
+          <td>✅ WPA2, TLS 1.2/1.3</td>
+      </tr>
+      <tr>
+          <td>SHA-256</td>
+          <td>Block</td>
+          <td>🔗 Bitcoin’s backbone</td>
+      </tr>
+      <tr>
+          <td>RIPEMD</td>
+          <td>-</td>
+          <td>EU alternative (160-320bit)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-password-hashing-security-vs-legacy-risks">🎯 Password Hashing: Security vs. Legacy Risks</h2>
+<p>Designed for credential protection, but <strong>weak algorithms persist</strong> ⚠️.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Algorithm</th>
+          <th>Limitations</th>
+          <th>Vulnerabilities</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>LM Hash</td>
+          <td>14-char max, uppercase only</td>
+          <td>💀 Easily brute-forced</td>
+      </tr>
+      <tr>
+          <td>NT Hash</td>
+          <td>127-char, case-sensitive</td>
+          <td>🕳️ Outdated (NTLMv2 preferred)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Modern Solutions</strong>:</p>
+<ul>
+<li>Use <strong>PBKDF2</strong> (iterations + salt) 🧂</li>
+<li>Adopt <strong>bcrypt</strong> or <strong>Argon2</strong> (GPU/ASIC-resistant) ⚡</li>
+</ul>
+<h2 id="-critical-vulnerabilities-to-mitigate">🚨 Critical Vulnerabilities to Mitigate</h2>
+<ul>
+<li><strong>MD5/SHA-1</strong>: Collision attacks (e.g., Flame malware) 💥</li>
+<li><strong>RC4</strong>: Biased keystream (exploited in WEP) 📡</li>
+<li><strong>DES</strong>: 56-bit key brute-forced in &lt;24h ⏳</li>
+</ul>
+<h2 id="-future-proofing-cryptography">🔮 Future-Proofing Cryptography</h2>
+<p>With quantum computing advancing, <strong>post-quantum algorithms</strong> (e.g., NIST’s CRYSTALS-Kyber) are pivotal. Always:</p>
+<ol>
+<li>🔄 Update deprecated protocols (e.g., TLS 1.3 over 1.0)</li>
+<li>📊 Benchmark algorithms (e.g., AES-256 vs. ChaCha20)</li>
+<li>🛠️ Audit implementations (side-channel resistance)</li>
+</ol>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/crptography/" rel="tag">Crptography</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/decision_trees/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">A Comprehensive Guide to Decision Trees: Theory, Applications, and Best Practices</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/xss_dom_huting/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">XSS Hunting: Risks of document.write and Detection Strategies</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

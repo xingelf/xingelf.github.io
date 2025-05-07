@@ -6,8 +6,15 @@
     <description>Recent content in Dapps on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/dapps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Solidity Modifiers: A Practical Guide</title>
+      <link>https://xingelf.github.io/dapps/solidity_modifier/</link>
+      <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity_modifier/</guid>
+      <description>&lt;p&gt;Modifiers in Solidity can be confusing for newcomers. This guide explains their purpose and usage in simple terms.&lt;br&gt;&#xA;Modifiers act as &lt;strong&gt;function decorators&lt;/strong&gt; that let you add reusable preconditions to functions. They are commonly used for checks like ownership validation before executing a function&amp;rsquo;s core logic.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Quick Introdution of hardhat</title>
       <link>https://xingelf.github.io/dapps/hardhat/</link>

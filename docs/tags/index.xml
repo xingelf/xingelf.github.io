@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://xingelf.github.io/tags/javascript/</link>
+      <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Java Script</title>
       <link>https://xingelf.github.io/tags/java-script/</link>
@@ -261,6 +268,13 @@
       <description></description>
     </item>
     <item>
+      <title>Solidity</title>
+      <link>https://xingelf.github.io/tags/solidity/</link>
+      <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/solidity/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>HTTP</title>
       <link>https://xingelf.github.io/tags/http/</link>
       <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
@@ -279,13 +293,6 @@
       <link>https://xingelf.github.io/tags/csrf/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/csrf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>https://xingelf.github.io/tags/javascript/</link>
-      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -314,13 +321,6 @@
       <link>https://xingelf.github.io/tags/iphone/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/iphone/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Solidity</title>
-      <link>https://xingelf.github.io/tags/solidity/</link>
-      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/solidity/</guid>
       <description></description>
     </item>
     <item>

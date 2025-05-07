@@ -30,13 +30,6 @@
       <description>&lt;p&gt;Solidity学習リソースでよく紹介されている最も簡単なコントラクトを&#xA;REMIXを利用して作成します。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Solidity文法 modifier　使い方</title>
-      <link>https://xingelf.github.io/dapps/solidity_modifier/</link>
-      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity_modifier/</guid>
-      <description>&lt;p&gt;初見では少し理解できないmodifierについて、簡単に説明します。&#xA;modifierは関数修飾子でfunction文の後半に記載して、関数を実行する前に&#xA;定型処理（前提条件の判定など）を行うことができます。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Solidity文法　SafeMath</title>
       <link>https://xingelf.github.io/dapps/solidity-safemath/</link>
       <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>

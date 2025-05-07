@@ -3,21 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/cyber-security/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/java-script/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/tags/javascript/</loc>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/prototype_pollution/</loc>
+    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/java-script/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/dom-based_xss/</loc>
@@ -233,6 +239,18 @@
     <loc>https://xingelf.github.io/tech/rootkit/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/categories/dapps/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/dapps/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/solidity/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/dapps/solidity_modifier/</loc>
+    <lastmod>2024-09-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/tags/http/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -260,9 +278,6 @@
     <loc>https://xingelf.github.io/categories/machine-learning/</loc>
     <lastmod>2024-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/javascript/</loc>
-    <lastmod>2024-03-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tech/js-promise/</loc>
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -274,12 +289,6 @@
   </url><url>
     <loc>https://xingelf.github.io/tech/threat_intelligence/</loc>
     <lastmod>2024-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/dapps/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/dapps/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/hardhat/</loc>
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
@@ -294,9 +303,6 @@
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/dapps/hardhat/</loc>
-    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/solidity/</loc>
     <lastmod>2024-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/dos/</loc>
@@ -360,9 +366,6 @@
     <lastmod>2022-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/dapps/solidity-1stcontract/</loc>
-    <lastmod>2022-09-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/dapps/solidity_modifier/</loc>
     <lastmod>2022-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/safemath/</loc>

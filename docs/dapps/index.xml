@@ -6,8 +6,15 @@
     <description>Recent content in Dapps - Decentralized applications on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/dapps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Solidity Modifiers: A Practical Guide</title>
+      <link>https://xingelf.github.io/dapps/solidity_modifier/</link>
+      <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity_modifier/</guid>
+      <description>&lt;p&gt;Modifiers in Solidity can be confusing for newcomers. This guide explains their purpose and usage in simple terms.&lt;br&gt;&#xA;Modifiers act as &lt;strong&gt;function decorators&lt;/strong&gt; that let you add reusable preconditions to functions. They are commonly used for checks like ownership validation before executing a function&amp;rsquo;s core logic.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Quick Introdution of hardhat</title>
       <link>https://xingelf.github.io/dapps/hardhat/</link>
@@ -35,13 +42,6 @@
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-1stcontract/</guid>
       <description>&lt;p&gt;Solidity学習リソースでよく紹介されている最も簡単なコントラクトを&#xA;REMIXを利用して作成します。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Solidity文法 modifier　使い方</title>
-      <link>https://xingelf.github.io/dapps/solidity_modifier/</link>
-      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity_modifier/</guid>
-      <description>&lt;p&gt;初見では少し理解できないmodifierについて、簡単に説明します。&#xA;modifierは関数修飾子でfunction文の後半に記載して、関数を実行する前に&#xA;定型処理（前提条件の判定など）を行うことができます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solidity文法　SafeMath</title>

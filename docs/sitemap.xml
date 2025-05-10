@@ -3,21 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/ai/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/ai/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/beginner-guide/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/devin/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/devin-beginner-guide/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/tech/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/cyber-security/</loc>
     <lastmod>2025-05-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tech/</loc>
-    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/javascript/</loc>
-    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/</loc>
     <lastmod>2025-05-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/prototype_pollution/</loc>
@@ -54,9 +72,6 @@
     <lastmod>2025-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/rundll32/</loc>
-    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/tech/</loc>
     <lastmod>2025-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/sql-injection/</loc>
@@ -421,9 +436,6 @@
   </url><url>
     <loc>https://xingelf.github.io/tech/pandasdatareader/</loc>
     <lastmod>2021-09-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/ai/</loc>
-    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/mlai/eval_model/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>

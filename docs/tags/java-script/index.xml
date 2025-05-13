@@ -6,8 +6,15 @@
     <description>Recent content in Java Script on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/java-script/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mastering EJS: The Ultimate Guide to JavaScript Templating Engine</title>
+      <link>https://xingelf.github.io/tech/ejs/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/ejs/</guid>
+      <description>&lt;p&gt;In frontend development or Node.js server-side rendering, &lt;strong&gt;templating engines&lt;/strong&gt; are powerful tools for dynamic HTML generation.&lt;br&gt;&#xA;Among them, &lt;strong&gt;EJS (Embedded JavaScript Templates)&lt;/strong&gt; stands out. Let’s explore its features, core syntax, and practical use cases!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention</title>
       <link>https://xingelf.github.io/tech/dom-based_xss/</link>

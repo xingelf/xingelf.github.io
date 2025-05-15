@@ -6,8 +6,15 @@
     <description>Recent content on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Ultimate Guide to Handlebars Template Engine: From Fundamentals to Expert Practices</title>
+      <link>https://xingelf.github.io/tech/handlebars/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/handlebars/</guid>
+      <description>&lt;p&gt;Handlebars is a &lt;strong&gt;logic-less templating engine&lt;/strong&gt; for JavaScript, designed to generate dynamic HTML/text content. Built as an extension of Mustache, it combines simplicity with powerful features like &lt;strong&gt;custom helpers&lt;/strong&gt; and &lt;strong&gt;precompilation&lt;/strong&gt;, making it suitable for both frontend (e.g., React, Vue) and backend (Node.js) workflows.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mastering EJS: The Ultimate Guide to JavaScript Templating Engine</title>
       <link>https://xingelf.github.io/tech/ejs/</link>
@@ -23,11 +30,25 @@
       <description>&lt;p&gt;Devin is an AI software engineer that can help you with coding tasks, debugging issues, and building features. Think of Devin as your coding assistant that understands programming languages and development workflows!&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Reverse Image Search: Technical Deep Dive and Advanced Applications</title>
+      <link>https://xingelf.github.io/tech/reverse_image_search/</link>
+      <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/reverse_image_search/</guid>
+      <description>&lt;p&gt;Reverse Image Search (RIS) is &lt;strong&gt;a retrieval technology that uses visual input (images) as queries to identify similar images, contextual information, or metadata&lt;/strong&gt;. Unlike text-based searches, RIS relies on analyzing low-level and high-level image features, enabling applications in copyright enforcement, counterfeit detection, academic research, and more.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Unmasking Prototype Pollution: A Deep Dive into the Mechanics and Mitigation Strategies</title>
       <link>https://xingelf.github.io/tech/prototype_pollution/</link>
       <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/prototype_pollution/</guid>
       <description>&lt;p&gt;In the evolving landscape of web application security, &lt;strong&gt;Prototype Pollution&lt;/strong&gt; has emerged as a sophisticated and potentially critical vulnerability, particularly within &lt;strong&gt;JavaScript&lt;/strong&gt; environments. Exploiting the inherent prototypal inheritance mechanism of JavaScript, this attack vector allows malicious actors to inject or overwrite properties in the prototypes of objects, leading to unexpected and often detrimental consequences for the application&amp;rsquo;s integrity and security.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xingelf.github.io/tech/_a/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_a/</guid>
+      <description></description>
     </item>
     <item>
       <title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention</title>
@@ -464,11 +485,11 @@
       <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Freqtradeのインストール</title>
+      <title>How to Install Freqtrade: Step-by-Step Guide</title>
       <link>https://xingelf.github.io/tech/freqtrade/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/freqtrade/</guid>
-      <description>&lt;h1 id=&#34;freqtradeのインストール&#34;&gt;freqtradeのインストール&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/freqtrade/freqtrade.git&#34;&gt;https://github.com/freqtrade/freqtrade.git&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;python-venvのインストール&#34;&gt;python venvのインストール&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt-get install python3-venv&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;git-clone-にてパッケージを取得&#34;&gt;git clone にてパッケージを取得&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://github.com/freqtrade/freqtrade.git&#xA;cd freqtrade&#xA;git checkout develop&#xA;./setup.sh --install&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ta-libのインストールで時間が掛かりますが、ひたすら待ちます。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;-prerequisite-python-virtual-environment&#34;&gt;📦 Prerequisite: Python Virtual Environment&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install python3-venv  &lt;span style=&#34;color:#75715e&#34;&gt;# Install Python virtual environment&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-installation-process&#34;&gt;🛠️ Installation Process&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clone the Repository&lt;/strong&gt; 📥&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/freqtrade/freqtrade.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&lt;strong&gt;Enter Directory &amp;amp; Switch Branch&lt;/strong&gt; 📂&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd freqtrade&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout develop  &lt;span style=&#34;color:#75715e&#34;&gt;# Switch to develop branch&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;&lt;strong&gt;Run Installation Script&lt;/strong&gt; ⚙️&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./setup.sh --install&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-important-notes&#34;&gt;⏳ Important Notes&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The TA-Lib installation might take &lt;strong&gt;20+ minutes&lt;/strong&gt; on low-spec systems (tested on Azure 1CPU/1GB RAM) ☁️⏱️&lt;/li&gt;&#xA;&lt;li&gt;Don&amp;rsquo;t interrupt the process - just let it run! ☕️&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-completion&#34;&gt;✅ Completion&lt;/h2&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll see success messages when fully installed! 🎉&lt;br&gt;&#xA;Check with &lt;code&gt;freqtrade --version&lt;/code&gt; to verify installation ✔️&lt;/p&gt;</description>
     </item>
     <item>
       <title>書籍 Kaggleで勝つデータ分析</title>

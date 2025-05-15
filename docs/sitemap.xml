@@ -3,24 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/coding/</loc>
-    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/categories/cyber-security/</loc>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/</loc>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/javascript/</loc>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/handlebars/</loc>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/coding/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/java-script/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/ejs/</loc>
-    <lastmod>2025-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/ai/</loc>
@@ -41,14 +50,17 @@
     <loc>https://xingelf.github.io/categories/tech/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/cyber-security/</loc>
-    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/tags/osint/</loc>
+    <lastmod>2025-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/javascript/</loc>
-    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/tech/reverse_image_search/</loc>
+    <lastmod>2025-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/prototype_pollution/</loc>
     <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/_a/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/dom-based_xss/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>

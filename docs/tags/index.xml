@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://xingelf.github.io/tags/javascript/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Java Script</title>
       <link>https://xingelf.github.io/tags/java-script/</link>
@@ -37,10 +44,10 @@
       <description></description>
     </item>
     <item>
-      <title>JavaScript</title>
-      <link>https://xingelf.github.io/tags/javascript/</link>
-      <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/javascript/</guid>
+      <title>OSINT</title>
+      <link>https://xingelf.github.io/tags/osint/</link>
+      <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/osint/</guid>
       <description></description>
     </item>
     <item>

@@ -6,14 +6,35 @@
     <description>Recent content in Cyber Security on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Ultimate Guide to Handlebars Template Engine: From Fundamentals to Expert Practices</title>
+      <link>https://xingelf.github.io/tech/handlebars/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/handlebars/</guid>
+      <description>&lt;p&gt;Handlebars is a &lt;strong&gt;logic-less templating engine&lt;/strong&gt; for JavaScript, designed to generate dynamic HTML/text content. Built as an extension of Mustache, it combines simplicity with powerful features like &lt;strong&gt;custom helpers&lt;/strong&gt; and &lt;strong&gt;precompilation&lt;/strong&gt;, making it suitable for both frontend (e.g., React, Vue) and backend (Node.js) workflows.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reverse Image Search: Technical Deep Dive and Advanced Applications</title>
+      <link>https://xingelf.github.io/tech/reverse_image_search/</link>
+      <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/reverse_image_search/</guid>
+      <description>&lt;p&gt;Reverse Image Search (RIS) is &lt;strong&gt;a retrieval technology that uses visual input (images) as queries to identify similar images, contextual information, or metadata&lt;/strong&gt;. Unlike text-based searches, RIS relies on analyzing low-level and high-level image features, enabling applications in copyright enforcement, counterfeit detection, academic research, and more.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Unmasking Prototype Pollution: A Deep Dive into the Mechanics and Mitigation Strategies</title>
       <link>https://xingelf.github.io/tech/prototype_pollution/</link>
       <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/prototype_pollution/</guid>
       <description>&lt;p&gt;In the evolving landscape of web application security, &lt;strong&gt;Prototype Pollution&lt;/strong&gt; has emerged as a sophisticated and potentially critical vulnerability, particularly within &lt;strong&gt;JavaScript&lt;/strong&gt; environments. Exploiting the inherent prototypal inheritance mechanism of JavaScript, this attack vector allows malicious actors to inject or overwrite properties in the prototypes of objects, leading to unexpected and often detrimental consequences for the application&amp;rsquo;s integrity and security.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xingelf.github.io/tech/_a/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_a/</guid>
+      <description></description>
     </item>
     <item>
       <title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention</title>

@@ -6,8 +6,15 @@
     <description>Recent content in Coding on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>webpack: The Core Tool for Modern Front-End Development</title>
+      <link>https://xingelf.github.io/tech/webpack/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/webpack/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re involved in front-end development, &lt;strong&gt;webpack&lt;/strong&gt; is a name you can&amp;rsquo;t ignore. While its configuration complexity often intimidates newcomers, understanding its core principles unlocks unparalleled control over your build process. This article dives into webpack’s architecture, advanced configurations, and industry best practices.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mastering EJS: The Ultimate Guide to JavaScript Templating Engine</title>
       <link>https://xingelf.github.io/tech/ejs/</link>

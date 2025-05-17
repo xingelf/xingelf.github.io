@@ -6,8 +6,15 @@
     <description>Recent content on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>webpack: The Core Tool for Modern Front-End Development</title>
+      <link>https://xingelf.github.io/tech/webpack/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/webpack/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re involved in front-end development, &lt;strong&gt;webpack&lt;/strong&gt; is a name you can&amp;rsquo;t ignore. While its configuration complexity often intimidates newcomers, understanding its core principles unlocks unparalleled control over your build process. This article dives into webpack’s architecture, advanced configurations, and industry best practices.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Ultimate Guide to Handlebars Template Engine: From Fundamentals to Expert Practices</title>
       <link>https://xingelf.github.io/tech/handlebars/</link>
@@ -128,18 +135,18 @@
       <description>&lt;p&gt;Keeping your dotfiles under version control is a great way to maintain consistency across multiple machines and track changes to your configuration over time. Here&amp;rsquo;s a step-by-step guide to managing your dotfiles on GitHub.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Metadata-Driven Design Patterns: A Comprehensive Guide</title>
+      <link>https://xingelf.github.io/tech/metadata_driven/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/metadata_driven/</guid>
+      <description>&lt;p&gt;In modern software development, &lt;strong&gt;metadata-driven design patterns&lt;/strong&gt; have emerged as a powerful approach to building flexible, maintainable, and scalable systems. By leveraging &lt;strong&gt;metadata&lt;/strong&gt;—data that describes other data—these patterns enable developers to externalize configurations, automate repetitive tasks, and dynamically adapt system behavior. This article explores the core concepts, use cases, benefits, and challenges of metadata-driven design.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>The Case for Automated Trading: Weighing the Advantages and Disadvantages</title>
       <link>https://xingelf.github.io/tech/algo-trade/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/algo-trade/</guid>
       <description>&lt;h2 id=&#34;the-case-for-automated-trading-weighing-the-advantages-and-disadvantages&#34;&gt;The Case for Automated Trading: Weighing the Advantages and Disadvantages&lt;/h2&gt;&#xA;&lt;p&gt;The allure of generating profit without constant manual intervention has made automated trading an increasingly popular approach in the financial markets. This article delves into the merits and drawbacks of employing automated trading systems.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Metadata-Driven Design Patterns: A Comprehensive Guide</title>
-      <link>https://xingelf.github.io/tech/metadata_driven/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/metadata_driven/</guid>
-      <description>&lt;p&gt;In modern software development, &lt;strong&gt;metadata-driven design patterns&lt;/strong&gt; have emerged as a powerful approach to building flexible, maintainable, and scalable systems. By leveraging &lt;strong&gt;metadata&lt;/strong&gt;—data that describes other data—these patterns enable developers to externalize configurations, automate repetitive tasks, and dynamically adapt system behavior. This article explores the core concepts, use cases, benefits, and challenges of metadata-driven design.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UNION SQL and the Potential for SQL Injection</title>
@@ -245,6 +252,13 @@
       <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity_modifier/</guid>
       <description>&lt;p&gt;Modifiers in Solidity can be confusing for newcomers. This guide explains their purpose and usage in simple terms.&lt;br&gt;&#xA;Modifiers act as &lt;strong&gt;function decorators&lt;/strong&gt; that let you add reusable preconditions to functions. They are commonly used for checks like ownership validation before executing a function&amp;rsquo;s core logic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Model Evaluation in ML</title>
+      <link>https://xingelf.github.io/mlai/eval_model/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/eval_model/</guid>
+      <description>&lt;h1 id=&#34;model-evaluation&#34;&gt;Model Evaluation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;core-data-concepts-in-model-evaluation&#34;&gt;&lt;strong&gt;Core Data Concepts in Model Evaluation&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Dataset used to train machine learning models (parameter optimization).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Dataset used for hyperparameter tuning and model selection during development.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation &lt;em&gt;after&lt;/em&gt; development completion.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;evaluation-methodologies&#34;&gt;&lt;strong&gt;Evaluation Methodologies&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;holdout-method&#34;&gt;&lt;strong&gt;Holdout Method&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Randomly splits the dataset into two mutually exclusive subsets:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Typical split:&lt;/strong&gt; 80% training / 20% testing (ratio varies by use case)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Strengths:&lt;/strong&gt; Computationally efficient, simple implementation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Limitations:&lt;/strong&gt; High variance in performance estimates with small datasets&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;k-fold-cross-validation&#34;&gt;&lt;strong&gt;k-Fold Cross-Validation&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Systematic evaluation protocol:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Partition dataset into &lt;em&gt;k&lt;/em&gt; equal-sized folds&lt;/li&gt;&#xA;&lt;li&gt;Iteratively use each fold as validation set while training on remaining &lt;em&gt;k-1&lt;/em&gt; folds&lt;/li&gt;&#xA;&lt;li&gt;Aggregate results (mean ± standard deviation) across all folds&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Key Advantages:&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduces variance in performance estimates&lt;/li&gt;&#xA;&lt;li&gt;Maximizes data utilization (critical for small datasets)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Common Variants:&lt;/strong&gt; Stratified k-fold (preserves class distribution)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;leave-one-out-cross-validation-loocv&#34;&gt;&lt;strong&gt;Leave-One-Out Cross-Validation (LOOCV)&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extreme case of k-fold where &lt;em&gt;k = n&lt;/em&gt; (number of samples)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Use Case:&lt;/strong&gt; Small-scale datasets with &amp;lt;100 samples&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tradeoff:&lt;/strong&gt; Computationally prohibitive for large &lt;em&gt;n&lt;/em&gt; (requires &lt;em&gt;n&lt;/em&gt; model fits)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>HTTP Request Smuggling (HRS)</title>
@@ -441,13 +455,6 @@
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
       <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas-datareader.readthedocs.io/en/latest/index.html&#34;&gt;Official Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is a list of data sources.&#xA;Some require an API key.&#xA;fred and stooq can obtain data without an API key.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Model Evaluation in ML</title>
-      <link>https://xingelf.github.io/mlai/eval_model/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/eval_model/</guid>
-      <description>&lt;h1 id=&#34;model-evaluation&#34;&gt;Model Evaluation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;definition-of-data-in-model-evaluation&#34;&gt;&lt;strong&gt;Definition of Data in Model Evaluation&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Data used for training machine learning models.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Data used for adjusting hyperparameters, etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Data used to estimate generalization performance -&amp;gt; Final evaluation of the model.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;holdout-method-k-fold-cross-validation&#34;&gt;&lt;strong&gt;Holdout Method, k-Fold Cross-Validation&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Evaluation methods for models on given data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>機械学習前処理</title>

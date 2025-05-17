@@ -9,25 +9,25 @@
 		<meta property="og:url" content="https://xingelf.github.io/mlai/eval_model/">
   <meta property="og:site_name" content="Note about technology">
   <meta property="og:title" content="Model Evaluation in ML">
-  <meta property="og:description" content="Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data.">
+  <meta property="og:description" content="Model Evaluation Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mlai">
-    <meta property="article:published_time" content="2021-08-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2021-08-01T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-08-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-01T00:00:00+00:00">
     <meta property="article:tag" content="Machine Learning">
 
 		
   <meta itemprop="name" content="Model Evaluation in ML">
-  <meta itemprop="description" content="Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data.">
-  <meta itemprop="datePublished" content="2021-08-01T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2021-08-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="150">
+  <meta itemprop="description" content="Model Evaluation Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
+  <meta itemprop="datePublished" content="2024-08-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-08-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="173">
   <meta itemprop="keywords" content="Machine Learning">
 		
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Model Evaluation in ML">
-  <meta name="twitter:description" content="Model Evaluation Definition of Data in Model Evaluation Training Set: Data used for training machine learning models. Validation Set: Data used for adjusting hyperparameters, etc. Test Set: Data used to estimate generalization performance -&gt; Final evaluation of the model. Holdout Method, k-Fold Cross-Validation Evaluation methods for models on given data.">
+  <meta name="twitter:description" content="Model Evaluation Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -61,11 +61,11 @@
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Tech Note" rel="home">
+		<a class="logo__link" href="/" title="Try Harder" rel="home">
 			<div class="logo__item logo__imagebox">
 					<img class="logo__img" src="/icons/favicon.ico">
 				</div><div class="logo__item logo__text">
-					<div class="logo__title">Tech Note</div>
+					<div class="logo__title">Try Harder</div>
 					<div class="logo__tagline">Control your own destiny or someone else will</div>
 				</div>
 		</a>
@@ -86,7 +86,7 @@
 		<li class="menu__item">
 			<a class="menu__link" href="/tech">
 				
-				<span class="menu__text">Tech🧑‍💻</span>
+				<span class="menu__text">Tech👻</span>
 				
 			</a>
 		</li>
@@ -101,13 +101,6 @@
 			<a class="menu__link" href="/mlai">
 				
 				<span class="menu__text">ML/AI🤖</span>
-				
-			</a>
-		</li>
-		<li class="menu__item">
-			<a class="menu__link" href="/ios">
-				
-				<span class="menu__text">Apple🍎</span>
 				
 			</a>
 		</li>
@@ -139,22 +132,27 @@
 			<h1 class="post__title">Model Evaluation in ML</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2021-08-01T00:00:00Z">2021-08-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ai/" rel="category">AI</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-08-01T00:00:00Z">2024-08-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
 	</span>
 </div></div>
 		</header>
 		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/img_6.png" alt="Model Evaluation in ML">
+		
+	</figure>
 <div class="post__toc toc">
 	<div class="toc__title">Page content</div>
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#definition-of-data-in-model-evaluation"><strong>Definition of Data in Model Evaluation</strong></a></li>
-    <li><a href="#holdout-method-k-fold-cross-validation"><strong>Holdout Method, k-Fold Cross-Validation</strong></a>
+    <li><a href="#core-data-concepts-in-model-evaluation"><strong>Core Data Concepts in Model Evaluation</strong></a></li>
+    <li><a href="#evaluation-methodologies"><strong>Evaluation Methodologies</strong></a>
       <ul>
-        <li><a href="#holdout-method"><strong>Holdout Method:</strong></a></li>
-        <li><a href="#k-fold-cross-validation"><strong>k-Fold Cross-Validation:</strong></a></li>
-        <li><a href="#leave-one-out-method"><strong>Leave-One-Out Method:</strong></a></li>
+        <li><a href="#holdout-method"><strong>Holdout Method</strong></a></li>
+        <li><a href="#k-fold-cross-validation"><strong>k-Fold Cross-Validation</strong></a></li>
+        <li><a href="#leave-one-out-cross-validation-loocv"><strong>Leave-One-Out Cross-Validation (LOOCV)</strong></a></li>
       </ul>
     </li>
   </ul>
@@ -162,23 +160,46 @@
 	</div>
 </div><div class="content post__content clearfix">
 			<h1 id="model-evaluation">Model Evaluation</h1>
-<h2 id="definition-of-data-in-model-evaluation"><strong>Definition of Data in Model Evaluation</strong></h2>
+<h2 id="core-data-concepts-in-model-evaluation"><strong>Core Data Concepts in Model Evaluation</strong></h2>
 <ul>
-<li><strong>Training Set:</strong> Data used for training machine learning models.</li>
-<li><strong>Validation Set:</strong> Data used for adjusting hyperparameters, etc.</li>
-<li><strong>Test Set:</strong> Data used to estimate generalization performance -&gt; Final evaluation of the model.</li>
+<li><strong>Training Set:</strong> Dataset used to train machine learning models (parameter optimization).</li>
+<li><strong>Validation Set:</strong> Dataset used for hyperparameter tuning and model selection during development.</li>
+<li><strong>Test Set:</strong> Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation <em>after</em> development completion.</li>
 </ul>
-<h2 id="holdout-method-k-fold-cross-validation"><strong>Holdout Method, k-Fold Cross-Validation</strong></h2>
-<p>Evaluation methods for models on given data.</p>
-<h3 id="holdout-method"><strong>Holdout Method:</strong></h3>
-<pre><code> A method of dividing the data set into two parts, using one for training and the other for testing evaluation metrics. It is common to split the training set into 80% and the test set into 20%, for example.
-</code></pre>
-<h3 id="k-fold-cross-validation"><strong>k-Fold Cross-Validation:</strong></h3>
-<pre><code> Dividing the data set into k subsets, using one subset for testing and the rest for training. Conduct k validations while exchanging the test set, and evaluate the metrics using averages, etc.
-</code></pre>
-<h3 id="leave-one-out-method"><strong>Leave-One-Out Method:</strong></h3>
-<pre><code> A method where k in k-fold cross-validation is set to match the number of data points. Testing is performed with all data points.
-</code></pre>
+<h2 id="evaluation-methodologies"><strong>Evaluation Methodologies</strong></h2>
+<h3 id="holdout-method"><strong>Holdout Method</strong></h3>
+<ul>
+<li>Randomly splits the dataset into two mutually exclusive subsets:
+<ul>
+<li><strong>Typical split:</strong> 80% training / 20% testing (ratio varies by use case)</li>
+</ul>
+</li>
+<li><strong>Strengths:</strong> Computationally efficient, simple implementation</li>
+<li><strong>Limitations:</strong> High variance in performance estimates with small datasets</li>
+</ul>
+<h3 id="k-fold-cross-validation"><strong>k-Fold Cross-Validation</strong></h3>
+<ul>
+<li>Systematic evaluation protocol:
+<ol>
+<li>Partition dataset into <em>k</em> equal-sized folds</li>
+<li>Iteratively use each fold as validation set while training on remaining <em>k-1</em> folds</li>
+<li>Aggregate results (mean ± standard deviation) across all folds</li>
+</ol>
+</li>
+<li><strong>Key Advantages:</strong>
+<ul>
+<li>Reduces variance in performance estimates</li>
+<li>Maximizes data utilization (critical for small datasets)</li>
+</ul>
+</li>
+<li><strong>Common Variants:</strong> Stratified k-fold (preserves class distribution)</li>
+</ul>
+<h3 id="leave-one-out-cross-validation-loocv"><strong>Leave-One-Out Cross-Validation (LOOCV)</strong></h3>
+<ul>
+<li>Extreme case of k-fold where <em>k = n</em> (number of samples)</li>
+<li><strong>Use Case:</strong> Small-scale datasets with &lt;100 samples</li>
+<li><strong>Tradeoff:</strong> Computationally prohibitive for large <em>n</em> (requires <em>n</em> model fits)</li>
+</ul>
 
 		</div>
 		<footer class="post__footer">
@@ -197,10 +218,16 @@
 
 
 <nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/mlai/entropy/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Information Theory</p>
+		</a>
+	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/mlai/str_to_bool/" rel="next">
+		<a class="pager__link" href="/mlai/softmax/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</p>
+			<p class="pager__title">Softmax Function</p>
 		</a>
 	</div>
 </nav>

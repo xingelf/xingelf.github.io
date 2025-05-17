@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Metadata on Note about technology</title>
-    <link>https://xingelf.github.io/categories/metadata/</link>
+    <link>http://localhost:1313/categories/metadata/</link>
     <description>Recent content in Metadata on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/categories/metadata/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Metadata-Driven Design Patterns: A Comprehensive Guide</title>
-      <link>https://xingelf.github.io/tech/metadata_driven/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/metadata_driven/</guid>
-      <description>&lt;p&gt;In modern software development, &lt;strong&gt;metadata-driven design patterns&lt;/strong&gt; have emerged as a powerful approach to building flexible, maintainable, and scalable systems. By leveraging &lt;strong&gt;metadata&lt;/strong&gt;—data that describes other data—these patterns enable developers to externalize configurations, automate repetitive tasks, and dynamically adapt system behavior. This article explores the core concepts, use cases, benefits, and challenges of metadata-driven design.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/categories/metadata/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

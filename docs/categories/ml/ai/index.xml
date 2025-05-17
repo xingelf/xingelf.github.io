@@ -6,14 +6,28 @@
     <description>Recent content in ML/AI on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/ml/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started with Devin AI: A Beginner&#39;s Guide 🚀</title>
+      <link>https://xingelf.github.io/tech/devin-beginner-guide/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/devin-beginner-guide/</guid>
+      <description>&lt;p&gt;Devin is an AI software engineer that can help you with coding tasks, debugging issues, and building features. Think of Devin as your coding assistant that understands programming languages and development workflows!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Softmax Function</title>
       <link>https://xingelf.github.io/mlai/softmax/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/softmax/</guid>
       <description>&lt;h2 id=&#34;demystifying-the-softmax-function&#34;&gt;Demystifying the Softmax Function&lt;/h2&gt;&#xA;&lt;p&gt;The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems.  Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Model Evaluation in ML</title>
+      <link>https://xingelf.github.io/mlai/eval_model/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/eval_model/</guid>
+      <description>&lt;h1 id=&#34;model-evaluation&#34;&gt;Model Evaluation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;core-data-concepts-in-model-evaluation&#34;&gt;&lt;strong&gt;Core Data Concepts in Model Evaluation&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Dataset used to train machine learning models (parameter optimization).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Dataset used for hyperparameter tuning and model selection during development.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation &lt;em&gt;after&lt;/em&gt; development completion.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;evaluation-methodologies&#34;&gt;&lt;strong&gt;Evaluation Methodologies&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;holdout-method&#34;&gt;&lt;strong&gt;Holdout Method&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Randomly splits the dataset into two mutually exclusive subsets:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Typical split:&lt;/strong&gt; 80% training / 20% testing (ratio varies by use case)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Strengths:&lt;/strong&gt; Computationally efficient, simple implementation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Limitations:&lt;/strong&gt; High variance in performance estimates with small datasets&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;k-fold-cross-validation&#34;&gt;&lt;strong&gt;k-Fold Cross-Validation&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Systematic evaluation protocol:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Partition dataset into &lt;em&gt;k&lt;/em&gt; equal-sized folds&lt;/li&gt;&#xA;&lt;li&gt;Iteratively use each fold as validation set while training on remaining &lt;em&gt;k-1&lt;/em&gt; folds&lt;/li&gt;&#xA;&lt;li&gt;Aggregate results (mean ± standard deviation) across all folds&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Key Advantages:&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduces variance in performance estimates&lt;/li&gt;&#xA;&lt;li&gt;Maximizes data utilization (critical for small datasets)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Common Variants:&lt;/strong&gt; Stratified k-fold (preserves class distribution)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;leave-one-out-cross-validation-loocv&#34;&gt;&lt;strong&gt;Leave-One-Out Cross-Validation (LOOCV)&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extreme case of k-fold where &lt;em&gt;k = n&lt;/em&gt; (number of samples)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Use Case:&lt;/strong&gt; Small-scale datasets with &amp;lt;100 samples&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tradeoff:&lt;/strong&gt; Computationally prohibitive for large &lt;em&gt;n&lt;/em&gt; (requires &lt;em&gt;n&lt;/em&gt; model fits)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>

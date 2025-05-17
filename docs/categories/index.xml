@@ -6,8 +6,15 @@
     <description>Recent content in Categories on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coding</title>
+      <link>https://xingelf.github.io/categories/coding/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/coding/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cyber Security</title>
       <link>https://xingelf.github.io/categories/cyber-security/</link>
@@ -16,17 +23,10 @@
       <description></description>
     </item>
     <item>
-      <title>Coding</title>
-      <link>https://xingelf.github.io/categories/coding/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/coding/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI</title>
-      <link>https://xingelf.github.io/categories/ai/</link>
+      <title>ML/AI</title>
+      <link>https://xingelf.github.io/categories/ml/ai/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/ai/</guid>
+      <guid>https://xingelf.github.io/categories/ml/ai/</guid>
       <description></description>
     </item>
     <item>
@@ -51,31 +51,17 @@
       <description></description>
     </item>
     <item>
-      <title>Posts</title>
-      <link>https://xingelf.github.io/categories/posts/</link>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/posts/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Design</title>
       <link>https://xingelf.github.io/categories/design/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/categories/design/</guid>
       <description></description>
     </item>
     <item>
-      <title>Metadata</title>
-      <link>https://xingelf.github.io/categories/metadata/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/metadata/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ML/AI</title>
-      <link>https://xingelf.github.io/categories/ml/ai/</link>
-      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/categories/ml/ai/</guid>
+      <title>Finance</title>
+      <link>https://xingelf.github.io/categories/finance/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/finance/</guid>
       <description></description>
     </item>
     <item>

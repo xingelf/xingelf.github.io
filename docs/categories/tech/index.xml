@@ -44,6 +44,20 @@
       <description>&lt;p&gt;Keeping your dotfiles under version control is a great way to maintain consistency across multiple machines and track changes to your configuration over time. Here&amp;rsquo;s a step-by-step guide to managing your dotfiles on GitHub.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Metadata-Driven Design Patterns: A Comprehensive Guide</title>
+      <link>https://xingelf.github.io/tech/metadata_driven/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/metadata_driven/</guid>
+      <description>&lt;p&gt;In modern software development, &lt;strong&gt;metadata-driven design patterns&lt;/strong&gt; have emerged as a powerful approach to building flexible, maintainable, and scalable systems. By leveraging &lt;strong&gt;metadata&lt;/strong&gt;—data that describes other data—these patterns enable developers to externalize configurations, automate repetitive tasks, and dynamically adapt system behavior. This article explores the core concepts, use cases, benefits, and challenges of metadata-driven design.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Case for Automated Trading: Weighing the Advantages and Disadvantages</title>
+      <link>https://xingelf.github.io/tech/algo-trade/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/algo-trade/</guid>
+      <description>&lt;h2 id=&#34;the-case-for-automated-trading-weighing-the-advantages-and-disadvantages&#34;&gt;The Case for Automated Trading: Weighing the Advantages and Disadvantages&lt;/h2&gt;&#xA;&lt;p&gt;The allure of generating profit without constant manual intervention has made automated trading an increasingly popular approach in the financial markets. This article delves into the merits and drawbacks of employing automated trading systems.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Tex/LaTex with Markdown</title>
       <link>https://xingelf.github.io/tech/latex-md/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>

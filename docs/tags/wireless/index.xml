@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wireless on Note about technology</title>
-    <link>http://localhost:1313/tags/wireless/</link>
+    <link>https://xingelf.github.io/tags/wireless/</link>
     <description>Recent content in Wireless on Note about technology</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/wireless/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/wireless/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wireless Attack</title>
-      <link>http://localhost:1313/tech/_wireless_attack/</link>
-      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_wireless_attack/</guid>
-      <description>&lt;h1 id=&#34;wireless-attack&#34;&gt;Wireless Attack&lt;/h1&gt;&#xA;&lt;h2 id=&#34;deauthentication-認証解除攻撃&#34;&gt;deauthentication 認証解除攻撃&lt;/h2&gt;&#xA;&lt;p&gt;認証解除攻撃は、Evil-Twin、リプレイ攻撃、クラッキング、DoS、その他の攻撃に使用されます。&lt;/p&gt;</description>
+      <link>https://xingelf.github.io/tech/_wireless_attack/</link>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_wireless_attack/</guid>
+      <description>&lt;p&gt;Wireless attacks are security threats that target wireless networks and devices. These attacks exploit vulnerabilities in wireless protocols, authentication mechanisms, and network configurations. Understanding these attack vectors is crucial for implementing proper security measures and protecting wireless networks from unauthorized access and data breaches.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

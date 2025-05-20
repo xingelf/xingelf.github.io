@@ -30,6 +30,13 @@
       <description>&lt;p&gt;In the evolving landscape of web application security, &lt;strong&gt;Prototype Pollution&lt;/strong&gt; has emerged as a sophisticated and potentially critical vulnerability, particularly within &lt;strong&gt;JavaScript&lt;/strong&gt; environments. Exploiting the inherent prototypal inheritance mechanism of JavaScript, this attack vector allows malicious actors to inject or overwrite properties in the prototypes of objects, leading to unexpected and often detrimental consequences for the application&amp;rsquo;s integrity and security.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Wireless Attack</title>
+      <link>https://xingelf.github.io/tech/_wireless_attack/</link>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_wireless_attack/</guid>
+      <description>&lt;p&gt;Wireless attacks are security threats that target wireless networks and devices. These attacks exploit vulnerabilities in wireless protocols, authentication mechanisms, and network configurations. Understanding these attack vectors is crucial for implementing proper security measures and protecting wireless networks from unauthorized access and data breaches.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title></title>
       <link>https://xingelf.github.io/tech/_a/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>

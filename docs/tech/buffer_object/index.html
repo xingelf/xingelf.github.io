@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation - Try Harder </title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/buffer_object/">
+  <meta property="og:site_name" content="Try Harder ">
+  <meta property="og:title" content="Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation">
+  <meta property="og:description" content="“Buffer Objects” 🔄 — A concept that every Node.js developer inevitably encounters.
+While its presence is felt in file operations, network communications, image processing, and more,
+many developers find themselves wondering: “How do I use it?” and “Why is it necessary?”">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-05-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-22T00:00:00+00:00">
+    <meta property="article:tag" content="JavaScript">
+
+		
+  <meta itemprop="name" content="Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation">
+  <meta itemprop="description" content="“Buffer Objects” 🔄 — A concept that every Node.js developer inevitably encounters.
+While its presence is felt in file operations, network communications, image processing, and more,
+many developers find themselves wondering: “How do I use it?” and “Why is it necessary?”">
+  <meta itemprop="datePublished" content="2025-05-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-05-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="826">
+  <meta itemprop="keywords" content="JavaScript">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation">
+  <meta name="twitter:description" content="“Buffer Objects” 🔄 — A concept that every Node.js developer inevitably encounters.
+While its presence is felt in file operations, network communications, image processing, and more,
+many developers find themselves wondering: “How do I use it?” and “Why is it necessary?”">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Try Harder" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Try Harder</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech👻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-05-22T00:00:00Z">2025-05-22</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/" rel="category">Tech</a>
+	</span>
+</div></div>
+		</header>
+		
+ 	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/img_6.png" alt="Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#understanding-buffer-diving-into-the-world-of-binary-data-">Understanding Buffer: Diving into the World of Binary Data 🎯</a>
+      <ul>
+        <li><a href="#binary-data-fundamentals">Binary Data Fundamentals</a></li>
+        <li><a href="#where-buffer-shines-">Where Buffer Shines ✨</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-buffer-operations-creation-conversion-editing-">Basic Buffer Operations: Creation, Conversion, Editing 🔧</a>
+      <ul>
+        <li><a href="#creating-buffers">Creating Buffers</a></li>
+        <li><a href="#string-interoperability">String Interoperability</a></li>
+        <li><a href="#direct-data-manipulation">Direct Data Manipulation</a></li>
+      </ul>
+    </li>
+    <li><a href="#practical-applications-major-use-cases-">Practical Applications: Major Use Cases 🚀</a>
+      <ul>
+        <li><a href="#image-processing">Image Processing</a></li>
+        <li><a href="#network-packet-analysis">Network Packet Analysis</a></li>
+        <li><a href="#custom-binary-protocol">Custom Binary Protocol</a></li>
+        <li><a href="#performance-critical-processing">Performance-Critical Processing</a></li>
+        <li><a href="#stream-integration">Stream Integration</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-pitfalls-and-best-practices-">Common Pitfalls and Best Practices ⚠️</a>
+      <ul>
+        <li><a href="#security-risks">Security Risks</a></li>
+        <li><a href="#character-encoding-issues">Character Encoding Issues</a></li>
+        <li><a href="#performance-tuning">Performance Tuning</a></li>
+      </ul>
+    </li>
+    <li><a href="#buffer-in-modern-nodejs-">Buffer in Modern Node.js 🔮</a>
+      <ul>
+        <li><a href="#buffer-api-evolution">Buffer API Evolution</a></li>
+        <li><a href="#browser-compatibility">Browser Compatibility</a></li>
+        <li><a href="#future-of-buffer-buffer-vs-uint8array">Future of Buffer: <code>Buffer</code> vs <code>Uint8Array</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion-path-to-buffer-mastery-">Conclusion: Path to Buffer Mastery 🎓</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p><strong>&ldquo;Buffer Objects&rdquo;</strong> 🔄 — A concept that every Node.js developer inevitably encounters.<br>
+While its presence is felt in file operations, network communications, image processing, and more,<br>
+many developers find themselves wondering: &ldquo;How do I use it?&rdquo; and &ldquo;Why is it necessary?&rdquo;</p>
+<p>In this article, we&rsquo;ll thoroughly explain <strong>everything from Buffer&rsquo;s fundamental role to practical applications</strong>,<br>
+accompanied by real-world code examples.</p>
+<h2 id="understanding-buffer-diving-into-the-world-of-binary-data-">Understanding Buffer: Diving into the World of Binary Data 🎯</h2>
+<h3 id="binary-data-fundamentals">Binary Data Fundamentals</h3>
+<ul>
+<li>
+<p><strong>&ldquo;Raw Sequence of 0s and 1s&rdquo;</strong></p>
+<ul>
+<li>Text: <code>&quot;Hello&quot;</code> → Data encoded in character codes (UTF-8, etc.)</li>
+<li>Binary: <code>&lt;Buffer 48 65 6c 6c 6f&gt;</code> → Raw byte sequence</li>
+</ul>
+</li>
+<li>
+<p><strong>Analogy:</strong></p>
+<ul>
+<li>Text: Recipe for cooking (human-readable format)</li>
+<li>Binary: Raw ingredients (directly processable by machines)</li>
+</ul>
+</li>
+</ul>
+<h3 id="where-buffer-shines-">Where Buffer Shines ✨</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Scenario</th>
+          <th>Examples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>File Operations</td>
+          <td>Reading/writing images &amp; videos</td>
+      </tr>
+      <tr>
+          <td>Network Communication</td>
+          <td>TCP/UDP packet processing</td>
+      </tr>
+      <tr>
+          <td>Encryption</td>
+          <td>Hash value calculations</td>
+      </tr>
+      <tr>
+          <td>Data Transformation</td>
+          <td>Character encoding changes</td>
+      </tr>
+      <tr>
+          <td>Stream Processing</td>
+          <td>Large data chunking</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="basic-buffer-operations-creation-conversion-editing-">Basic Buffer Operations: Creation, Conversion, Editing 🔧</h2>
+<h3 id="creating-buffers">Creating Buffers</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Zero-filled buffer (safe)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buf1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">alloc</span>(<span style="color:#ae81ff">5</span>); <span style="color:#75715e">// &lt;Buffer 00 00 00 00 00&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Data-specified creation (UTF-8 default)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buf2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">from</span>(<span style="color:#e6db74">&#34;Node.js&#34;</span>); <span style="color:#75715e">// &lt;Buffer 4e 6f 64 65 2e 6a 73&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Array-based creation (hexadecimal)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buf3</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">from</span>([<span style="color:#ae81ff">0x48</span>, <span style="color:#ae81ff">0x65</span>, <span style="color:#ae81ff">0x6c</span>]); <span style="color:#75715e">// &lt;Buffer 48 65 6c&gt;
+</span></span></span></code></pre></div><h3 id="string-interoperability">String Interoperability</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Buffer → String
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buf</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">from</span>(<span style="color:#e6db74">&#34;🔥Hot&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">toString</span>(<span style="color:#e6db74">&#39;utf-8&#39;</span>)); <span style="color:#75715e">// &#34;🔥Hot&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">toString</span>(<span style="color:#e6db74">&#39;hex&#39;</span>)); <span style="color:#75715e">// &#34;f09f94a5486f74&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// String → Buffer
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Coffee&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">bufFromStr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">from</span>(<span style="color:#a6e22e">str</span>, <span style="color:#e6db74">&#39;base64&#39;</span>); <span style="color:#75715e">// Encoding specification possible
+</span></span></span></code></pre></div><h3 id="direct-data-manipulation">Direct Data Manipulation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buf</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">alloc</span>(<span style="color:#ae81ff">4</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Writing (hexadecimal)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">buf</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x41</span>; <span style="color:#75715e">// ASCII code for &#39;A&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">writeInt32LE</span>(<span style="color:#ae81ff">123456</span>, <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// Write number in little-endian
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">buf</span>); <span style="color:#75715e">// &lt;Buffer 41 40 e2 01&gt;
+</span></span></span></code></pre></div><hr>
+<h2 id="practical-applications-major-use-cases-">Practical Applications: Major Use Cases 🚀</h2>
+<h3 id="image-processing">Image Processing</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// PNG signature verification
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pngBuffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFileSync</span>(<span style="color:#e6db74">&#39;image.png&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pngSignature</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pngBuffer</span>.<span style="color:#a6e22e">subarray</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">8</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">pngSignature</span>.<span style="color:#a6e22e">toString</span>(<span style="color:#e6db74">&#39;hex&#39;</span>)); 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Valid PNG: &#34;89504e470d0a1a0a&#34;
+</span></span></span></code></pre></div><h3 id="network-packet-analysis">Network Packet Analysis</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">net</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;net&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">server</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">net</span>.<span style="color:#a6e22e">createServer</span>(<span style="color:#a6e22e">socket</span> =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;data&#39;</span>, <span style="color:#a6e22e">chunk</span> =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Parse header (first 4 bytes)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">header</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">chunk</span>.<span style="color:#a6e22e">subarray</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">packetLength</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">header</span>.<span style="color:#a6e22e">readUInt32BE</span>();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Received data length: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">packetLength</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> bytes`</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>);
+</span></span></code></pre></div><h3 id="custom-binary-protocol">Custom Binary Protocol</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createLoginPacket</span>(<span style="color:#a6e22e">username</span>, <span style="color:#a6e22e">password</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buf</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">alloc</span>(<span style="color:#ae81ff">1024</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">offset</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Version number (1 byte)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">writeUInt8</span>(<span style="color:#ae81ff">0x01</span>, <span style="color:#a6e22e">offset</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">offset</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Username (length + data)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">writeUInt16BE</span>(<span style="color:#a6e22e">username</span>.<span style="color:#a6e22e">length</span>, <span style="color:#a6e22e">offset</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">offset</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">username</span>, <span style="color:#a6e22e">offset</span>, <span style="color:#e6db74">&#39;utf8&#39;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">offset</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">username</span>.<span style="color:#a6e22e">length</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">subarray</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">offset</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="performance-critical-processing">Performance-Critical Processing</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Generate 1 million random numbers (Array vs Buffer)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">normalArray</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Array(<span style="color:#ae81ff">1e6</span>).<span style="color:#a6e22e">fill</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">alloc</span>(<span style="color:#ae81ff">1e6</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span>); <span style="color:#75715e">// 4 bytes/number
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">time</span>(<span style="color:#e6db74">&#39;Array&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1e6</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">normalArray</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">timeEnd</span>(<span style="color:#e6db74">&#39;Array&#39;</span>); <span style="color:#75715e">// ~120ms
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">time</span>(<span style="color:#e6db74">&#39;Buffer&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1e6</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">buffer</span>.<span style="color:#a6e22e">writeFloatLE</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>, <span style="color:#a6e22e">i</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">timeEnd</span>(<span style="color:#e6db74">&#39;Buffer&#39;</span>); <span style="color:#75715e">// ~60ms
+</span></span></span></code></pre></div><h3 id="stream-integration">Stream Integration</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">pipeline</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;stream&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">zlib</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;zlib&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Large file compression
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">pipeline</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">createReadStream</span>(<span style="color:#e6db74">&#39;large.log&#39;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">zlib</span>.<span style="color:#a6e22e">createGzip</span>(),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">createWriteStream</span>(<span style="color:#e6db74">&#39;large.log.gz&#39;</span>),
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">err</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Compression failed:&#39;</span>, <span style="color:#a6e22e">err</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Compression complete&#39;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><hr>
+<h2 id="common-pitfalls-and-best-practices-">Common Pitfalls and Best Practices ⚠️</h2>
+<h3 id="security-risks">Security Risks</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// ❌ Dangerous example (memory leak)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sensitive</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">allocUnsafe</span>(<span style="color:#ae81ff">256</span>); <span style="color:#75715e">// May contain old data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ✅ Safe initialization
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">safeBuffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">alloc</span>(<span style="color:#ae81ff">256</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sensitive</span>.<span style="color:#a6e22e">fill</span>(<span style="color:#ae81ff">0</span>); <span style="color:#75715e">// Zero-fill after use
+</span></span></span></code></pre></div><h3 id="character-encoding-issues">Character Encoding Issues</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Using character encoding detection library
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> { <span style="color:#a6e22e">charset</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;charset-detector&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">japaneseBuffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">from</span>(<span style="color:#e6db74">&#39;日本語&#39;</span>, <span style="color:#e6db74">&#39;shift_jis&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">detected</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">charset</span>(<span style="color:#a6e22e">japaneseBuffer</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">detected</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">charset</span>); <span style="color:#75715e">// &#34;Shift_JIS&#34;
+</span></span></span></code></pre></div><h3 id="performance-tuning">Performance Tuning</h3>
+<ul>
+<li><strong>Buffer Pooling</strong> implementation:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">poolSize</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span>; <span style="color:#75715e">// 10KB pool
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pool</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">alloc</span>(<span style="color:#a6e22e">poolSize</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">poolOffset</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getBuffer</span>(<span style="color:#a6e22e">size</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">poolOffset</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">size</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">poolSize</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">poolOffset</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pool</span>.<span style="color:#a6e22e">fill</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buf</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pool</span>.<span style="color:#a6e22e">subarray</span>(<span style="color:#a6e22e">poolOffset</span>, <span style="color:#a6e22e">poolOffset</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">size</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">poolOffset</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">size</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">buf</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="buffer-in-modern-nodejs-">Buffer in Modern Node.js 🔮</h2>
+<h3 id="buffer-api-evolution">Buffer API Evolution</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Node.js Version</th>
+          <th>Changes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Pre-v6.x</td>
+          <td><code>new Buffer()</code> default</td>
+      </tr>
+      <tr>
+          <td>v8.x</td>
+          <td><code>Buffer.alloc()</code> recommended</td>
+      </tr>
+      <tr>
+          <td>v14.x</td>
+          <td><code>Buffer(num)</code> constructor deprecated</td>
+      </tr>
+      <tr>
+          <td>v16.x</td>
+          <td><code>Blob</code> object introduction</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="browser-compatibility">Browser Compatibility</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Node.js Buffer → Browser ArrayBuffer
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nodeBuffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">from</span>(<span style="color:#e6db74">&#39;hello&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">arrayBuffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">nodeBuffer</span>.<span style="color:#a6e22e">buffer</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Reverse conversion
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">backToBuffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">from</span>(<span style="color:#a6e22e">arrayBuffer</span>);
+</span></span></code></pre></div><h3 id="future-of-buffer-buffer-vs-uint8array">Future of Buffer: <code>Buffer</code> vs <code>Uint8Array</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Interoperable in modern APIs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buf</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">from</span>([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">uint8</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Uint8Array</span>(<span style="color:#a6e22e">buf</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">uint8</span> <span style="color:#66d9ef">instanceof</span> <span style="color:#a6e22e">Uint8Array</span>); <span style="color:#75715e">// true
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">isBuffer</span>(<span style="color:#a6e22e">uint8</span>)); <span style="color:#75715e">// false
+</span></span></span></code></pre></div><hr>
+<h2 id="conclusion-path-to-buffer-mastery-">Conclusion: Path to Buffer Mastery 🎓</h2>
+<p>The true value of Buffer lies in its ability to <strong>&ldquo;handle low-level data operations without abstraction&rdquo;</strong>.<br>
+Key learning strategies:</p>
+<ol>
+<li><strong>Hands-on Practice</strong> 🛠️: Experiment with binary data manipulation</li>
+<li><strong>Debugging Skills</strong> 🔍: Train to interpret <code>&lt;Buffer xx xx xx&gt;</code></li>
+<li><strong>Use Case Understanding</strong> 💡: Consider why Buffer is necessary</li>
+</ol>
+<p>In the Node.js ecosystem, understanding Buffer directly correlates with<br>
+<strong>&ldquo;the ability to discern the essence of data&rdquo;</strong>.<br>
+Use this article as a stepping stone to become a binary data manipulation expert!</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/javascript/" rel="tag">JavaScript</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/webpack/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">webpack: The Core Tool for Modern Front-End Development</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

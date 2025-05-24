@@ -3,13 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tech/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2025-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/javascript/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/buffer_object/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/tech/</loc>
+    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/coding/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
@@ -17,16 +29,10 @@
     <loc>https://xingelf.github.io/tags/java-script/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/</loc>
-    <lastmod>2025-05-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tech/webpack/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/cyber-security/</loc>
-    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/javascript/</loc>
     <lastmod>2025-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/handlebars/</loc>
@@ -48,9 +54,6 @@
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/ml/ai/</loc>
-    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/tech/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/osint/</loc>
@@ -146,10 +149,10 @@
     <loc>https://xingelf.github.io/tags/data-analysis/</loc>
     <lastmod>2025-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/python/</loc>
+    <loc>https://xingelf.github.io/categories/python/</loc>
     <lastmod>2025-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/python/</loc>
+    <loc>https://xingelf.github.io/tags/python/</loc>
     <lastmod>2025-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/algorithm/</loc>
@@ -158,10 +161,10 @@
     <loc>https://xingelf.github.io/categories/design/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/finance/</loc>
+    <loc>https://xingelf.github.io/categories/finance/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/finance/</loc>
+    <loc>https://xingelf.github.io/tags/finance/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/github/</loc>

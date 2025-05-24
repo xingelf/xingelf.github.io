@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Model Evaluation in ML - Note about technology</title>
+	<title>Model Evaluation in ML - Try Harder </title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="https://xingelf.github.io/mlai/eval_model/">
-  <meta property="og:site_name" content="Note about technology">
+  <meta property="og:site_name" content="Try Harder ">
   <meta property="og:title" content="Model Evaluation in ML">
   <meta property="og:description" content="Model Evaluation Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
   <meta property="og:locale" content="en">

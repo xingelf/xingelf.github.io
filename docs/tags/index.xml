@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Note about technology</title>
+    <title>Tags on Try Harder </title>
     <link>https://xingelf.github.io/tags/</link>
-    <description>Recent content in Tags on Note about technology</description>
+    <description>Recent content in Tags on Try Harder </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://xingelf.github.io/tags/javascript/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Java Script</title>
       <link>https://xingelf.github.io/tags/java-script/</link>
       <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/java-script/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JavaScript</title>
-      <link>https://xingelf.github.io/tags/javascript/</link>
-      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     <item>

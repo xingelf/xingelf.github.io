@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hardhat on Note about technology</title>
+    <title>Hardhat on Try Harder </title>
     <link>https://xingelf.github.io/tags/hardhat/</link>
-    <description>Recent content in Hardhat on Note about technology</description>
+    <description>Recent content in Hardhat on Try Harder </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/dapps/hardhat/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/hardhat/</guid>
-      <description>&lt;h1 id=&#34;streamlining-solidity-development-with-hardhat-introduction-and-usage-guide&#34;&gt;Streamlining Solidity Development with Hardhat: Introduction and Usage Guide&lt;/h1&gt;&#xA;&lt;p&gt;When developing smart contracts using Solidity, efficient development processes and reliable testing are crucial. Therefore, in this article, we&amp;rsquo;ll introduce and explore Hardhat, a handy tool for Solidity developers.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When developing smart contracts using Solidity, efficient development processes and reliable testing are crucial. Therefore, in this article, we&amp;rsquo;ll introduce and explore Hardhat, a handy tool for Solidity developers.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

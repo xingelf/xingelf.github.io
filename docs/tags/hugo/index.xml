@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Try Harder </title>
+    <title>Hugo on Try Harder</title>
     <link>https://xingelf.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on Try Harder </description>
+    <description>Recent content in Hugo on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
@@ -14,6 +14,13 @@
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/latex-md/</guid>
       <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;https://gohugo.io/templates/partials/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Create a folder named partials under the layouts directory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Cheat Sheet</title>
+      <link>https://xingelf.github.io/tech/hugo/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/hugo/</guid>
+      <description>&lt;p&gt;Hugo is a fast static site generator written in Go. Here are its key features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;⚡ Ultra-fast build speed&lt;/li&gt;&#xA;&lt;li&gt;📦 Simple installation and configuration&lt;/li&gt;&#xA;&lt;li&gt;🎨 Rich themes and customization options&lt;/li&gt;&#xA;&lt;li&gt;📝 Content management with Markdown&lt;/li&gt;&#xA;&lt;li&gt;🔄 Hot reload for improved development efficiency&lt;/li&gt;&#xA;&lt;li&gt;🌐 Multi-language support&lt;/li&gt;&#xA;&lt;li&gt;🛠️ Rich shortcodes and template functionality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo can be used for various purposes such as blogs, portfolios, and documentation sites.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

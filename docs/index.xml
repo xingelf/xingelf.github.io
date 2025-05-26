@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Try Harder </title>
+    <title>Try Harder</title>
     <link>https://xingelf.github.io/</link>
-    <description>Recent content on Try Harder </description>
+    <description>Recent content on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
@@ -273,6 +273,13 @@
       <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity_modifier/</guid>
       <description>&lt;p&gt;Modifiers in Solidity can be confusing for newcomers. This guide explains their purpose and usage in simple terms.&lt;br&gt;&#xA;Modifiers act as &lt;strong&gt;function decorators&lt;/strong&gt; that let you add reusable preconditions to functions. They are commonly used for checks like ownership validation before executing a function&amp;rsquo;s core logic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Cheat Sheet</title>
+      <link>https://xingelf.github.io/tech/hugo/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/hugo/</guid>
+      <description>&lt;p&gt;Hugo is a fast static site generator written in Go. Here are its key features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;⚡ Ultra-fast build speed&lt;/li&gt;&#xA;&lt;li&gt;📦 Simple installation and configuration&lt;/li&gt;&#xA;&lt;li&gt;🎨 Rich themes and customization options&lt;/li&gt;&#xA;&lt;li&gt;📝 Content management with Markdown&lt;/li&gt;&#xA;&lt;li&gt;🔄 Hot reload for improved development efficiency&lt;/li&gt;&#xA;&lt;li&gt;🌐 Multi-language support&lt;/li&gt;&#xA;&lt;li&gt;🛠️ Rich shortcodes and template functionality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo can be used for various purposes such as blogs, portfolios, and documentation sites.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Model Evaluation in ML</title>

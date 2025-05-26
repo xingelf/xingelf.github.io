@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cyber Security on Try Harder </title>
+    <title>Cyber Security on Try Harder</title>
     <link>https://xingelf.github.io/tech/</link>
-    <description>Recent content in Cyber Security on Try Harder </description>
+    <description>Recent content in Cyber Security on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
@@ -259,6 +259,13 @@
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/rootkit/</guid>
       <description>&lt;h2 id=&#34;rootkits-the-hidden-threat&#34;&gt;Rootkits: The Hidden Threat&lt;/h2&gt;&#xA;&lt;p&gt;Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Cheat Sheet</title>
+      <link>https://xingelf.github.io/tech/hugo/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/hugo/</guid>
+      <description>&lt;p&gt;Hugo is a fast static site generator written in Go. Here are its key features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;⚡ Ultra-fast build speed&lt;/li&gt;&#xA;&lt;li&gt;📦 Simple installation and configuration&lt;/li&gt;&#xA;&lt;li&gt;🎨 Rich themes and customization options&lt;/li&gt;&#xA;&lt;li&gt;📝 Content management with Markdown&lt;/li&gt;&#xA;&lt;li&gt;🔄 Hot reload for improved development efficiency&lt;/li&gt;&#xA;&lt;li&gt;🌐 Multi-language support&lt;/li&gt;&#xA;&lt;li&gt;🛠️ Rich shortcodes and template functionality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo can be used for various purposes such as blogs, portfolios, and documentation sites.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTTP Request Smuggling (HRS)</title>

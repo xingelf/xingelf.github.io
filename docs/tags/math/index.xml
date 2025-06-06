@@ -13,7 +13,7 @@
       <link>https://xingelf.github.io/tech/latex-md/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/latex-md/</guid>
-      <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;https://gohugo.io/templates/partials/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Create a folder named partials under the layouts directory.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Softmax Function</title>
@@ -21,6 +21,13 @@
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/softmax/</guid>
       <description>&lt;h2 id=&#34;demystifying-the-softmax-function&#34;&gt;Demystifying the Softmax Function&lt;/h2&gt;&#xA;&lt;p&gt;The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems.  Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding Odds Ratio and Risk Ratio</title>
+      <link>https://xingelf.github.io/tech/odds-risk/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/odds-risk/</guid>
+      <description>&lt;h1 id=&#34;-understanding-odds-ratio-and-risk-ratio&#34;&gt;📊 Understanding Odds Ratio and Risk Ratio&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-what-is-risk-ratio&#34;&gt;🎯 What is Risk Ratio?&lt;/h2&gt;&#xA;&lt;p&gt;Risk Ratio is a measure that represents the ratio of risks (incidence rates) between two groups. Let&amp;rsquo;s explain using hypothetical data:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Information Theory</title>
@@ -34,7 +41,7 @@
       <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/iut-abc/</guid>
-      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;&#xA;&lt;h1 id=&#34;iutabc予想&#34;&gt;IUT・abc予想&lt;/h1&gt;&#xA;&lt;p&gt;足し算と掛け算に関わる関係を明らかにする理論と言われます。&#xA;また、強いabc予想のもとでは、フェルマーの最終定理が背理法により簡単に導出されます。&lt;/p&gt;</description>
+      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

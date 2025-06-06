@@ -107,6 +107,13 @@
       <description>&lt;h2 id=&#34;understanding-cross-origin-resource-sharing-cors-a-beginners-guide&#34;&gt;Understanding Cross-Origin Resource Sharing (CORS): A Beginner&amp;rsquo;s Guide&lt;/h2&gt;&#xA;&lt;p&gt;In the world of web development, security is paramount. One crucial aspect of securing web applications is understanding how to manage Cross-Origin Resource Sharing, commonly known as CORS. This concept can be a bit daunting for beginners, so in this blog post, we&amp;rsquo;ll break down CORS in a way that&amp;rsquo;s easy to understand and implement.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Understanding Idle Scan: Mechanism and Characteristics</title>
+      <link>https://xingelf.github.io/tech/idle_scan/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/idle_scan/</guid>
+      <description>&lt;p&gt;Idle Scan is an advanced TCP port scanning technique. In this method, an attacker uses a &amp;ldquo;zombie&amp;rdquo; computer (a machine in an idle state) to perform port scanning on target systems.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Threat Intelligence</title>
       <link>https://xingelf.github.io/tech/threat_intelligence/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>

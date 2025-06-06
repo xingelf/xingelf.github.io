@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Source to Sink: Core Penetration Testing Approach - Try Harder</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/source_sink2/">
+  <meta property="og:site_name" content="Try Harder">
+  <meta property="og:title" content="Source to Sink: Core Penetration Testing Approach">
+  <meta property="og:description" content="🎯 1. Investigating Blind Spots in Authenticated Areas 🚩 Source: Parameters in authenticated functionality
+⚠️ Sink: Privileged operations">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-06-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-06T00:00:00+00:00">
+    <meta property="article:tag" content="Penetration">
+    <meta property="article:tag" content="Web">
+
+		
+  <meta itemprop="name" content="Source to Sink: Core Penetration Testing Approach">
+  <meta itemprop="description" content="🎯 1. Investigating Blind Spots in Authenticated Areas 🚩 Source: Parameters in authenticated functionality
+⚠️ Sink: Privileged operations">
+  <meta itemprop="datePublished" content="2025-06-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-06-06T00:00:00+00:00">
+  <meta itemprop="wordCount" content="326">
+  <meta itemprop="keywords" content="Penetration,Web">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Source to Sink: Core Penetration Testing Approach">
+  <meta name="twitter:description" content="🎯 1. Investigating Blind Spots in Authenticated Areas 🚩 Source: Parameters in authenticated functionality
+⚠️ Sink: Privileged operations">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Try Harder" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Try Harder</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech👻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Source to Sink: Core Penetration Testing Approach</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-06-06T00:00:00Z">2025-06-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cyber-security/" rel="category">Cyber Security</a>, <a class="meta__link" href="/categories/coding/" rel="category">Coding</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/img_9.png" alt="Source to Sink: Core Penetration Testing Approach">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-1-investigating-blind-spots-in-authenticated-areas">🎯 1. Investigating Blind Spots in Authenticated Areas</a></li>
+        <li><a href="#-2-input-sanitization-analysis">🧼 2. Input Sanitization Analysis</a></li>
+        <li><a href="#-3-dangerous-database-query-flows">💾 3. Dangerous Database Query Flows</a></li>
+        <li><a href="#-4-account-management-attack-vectors">🔑 4. Account Management Attack Vectors</a></li>
+        <li><a href="#-5-os-command-injection-chains">💻 5. OS Command Injection Chains</a></li>
+        <li><a href="#-6-language-specific-source-sink-pairs">⚙️ 6. Language-Specific Source-Sink Pairs</a></li>
+        <li><a href="#-source-sink-mapping-table">🗺️ Source-Sink Mapping Table</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h3 id="-1-investigating-blind-spots-in-authenticated-areas">🎯 1. Investigating Blind Spots in Authenticated Areas</h3>
+<p><strong>🚩 Source</strong>: Parameters in authenticated functionality<br>
+<strong>⚠️ Sink</strong>: Privileged operations</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>user_id <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>form[<span style="color:#e6db74">&#39;user_id&#39;</span>]  <span style="color:#75715e"># 🚩 Source</span>
+</span></span><span style="display:flex;"><span>db<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;DELETE FROM users WHERE id = </span><span style="color:#e6db74">{</span>user_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)  <span style="color:#75715e"># ⚠️ Sink</span>
+</span></span></code></pre></div><p><strong>🔗 Attack Flow</strong>:<br>
+<code>Source → Privilege bypass → Sink</code></p>
+<hr>
+<h3 id="-2-input-sanitization-analysis">🧼 2. Input Sanitization Analysis</h3>
+<p><strong>🚩 Source</strong>: User input fields<br>
+<strong>⚠️ Sink</strong>: Rendering functions</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userComment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">comment</span>;  <span style="color:#75715e">// 🚩 Source
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sanitized</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">userComment</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;&lt;script&gt;&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>);  <span style="color:#75715e">// 🛑 Vulnerable
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">`&lt;div&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">sanized</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/div&gt;`</span>);  <span style="color:#75715e">// ⚠️ Sink
+</span></span></span></code></pre></div><p><strong>🔗 Attack Vector</strong>:<br>
+<code>Source → Weak sanitization → Sink</code></p>
+<hr>
+<h3 id="-3-dangerous-database-query-flows">💾 3. Dangerous Database Query Flows</h3>
+<p><strong>🚩 Source</strong>: Search fields<br>
+<strong>⚠️ Sink</strong>: Query execution</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String userInput <span style="color:#f92672">=</span> request.<span style="color:#a6e22e">getParameter</span>(<span style="color:#e6db74">&#34;search&#34;</span>);  <span style="color:#75715e">// 🚩 Source</span>
+</span></span><span style="display:flex;"><span>stmt.<span style="color:#a6e22e">executeQuery</span>(<span style="color:#e6db74">&#34;SELECT * FROM products WHERE name = &#39;&#34;</span> <span style="color:#f92672">+</span> userInput <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>);  <span style="color:#75715e">// ⚠️ Sink</span>
+</span></span></code></pre></div><p><strong>🔗 Vulnerability Flow</strong>:<br>
+<code>Source → Concatenation → Sink</code></p>
+<hr>
+<h3 id="-4-account-management-attack-vectors">🔑 4. Account Management Attack Vectors</h3>
+<p><strong>🚩 Source</strong>: Reset tokens<br>
+<strong>⚠️ Sink</strong>: Auth change functions</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>email <span style="color:#f92672">=</span> params<span style="color:#f92672">[</span><span style="color:#e6db74">:email</span><span style="color:#f92672">]</span>  <span style="color:#75715e"># 🚩 Source</span>
+</span></span><span style="display:flex;"><span>reset_token <span style="color:#f92672">=</span> user<span style="color:#f92672">.</span>id<span style="color:#f92672">.</span>to_s <span style="color:#f92672">+</span> <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y%m%d&#34;</span>)  <span style="color:#e6db74">//</span> <span style="color:#960050;background-color:#1e0010">🎲</span> <span style="color:#66d9ef">Predictable</span>
+</span></span><span style="display:flex;"><span>user<span style="color:#f92672">.</span>update(<span style="color:#e6db74">password</span>: new_password)  <span style="color:#75715e"># ⚠️ Sink</span>
+</span></span></code></pre></div><p><strong>🔗 Attack Path</strong>:<br>
+<code>Source → Weak token → Sink</code></p>
+<hr>
+<h3 id="-5-os-command-injection-chains">💻 5. OS Command Injection Chains</h3>
+<p><strong>🚩 Source</strong>: Network parameters<br>
+<strong>⚠️ Sink</strong>: System calls</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$user_ip <span style="color:#f92672">=</span> $_GET[<span style="color:#e6db74">&#39;ip&#39;</span>];  <span style="color:#75715e">// 🚩 Source
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">system</span>(<span style="color:#e6db74">&#34;traceroute &#34;</span> <span style="color:#f92672">.</span> $user_ip);  <span style="color:#75715e">// ⚠️ Sink
+</span></span></span></code></pre></div><p><strong>🔗 Dangerous Flow</strong>:<br>
+<code>Source → Unvalidated → Sink</code></p>
+<hr>
+<h3 id="-6-language-specific-source-sink-pairs">⚙️ 6. Language-Specific Source-Sink Pairs</h3>
+<p><strong>Node.js Prototype Pollution</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>);  <span style="color:#75715e">// 🚩 Source
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Object.<span style="color:#a6e22e">assign</span>({}, <span style="color:#a6e22e">userData</span>);  <span style="color:#75715e">// 🧩 Vulnerable merge
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">isAdmin</span>) {  <span style="color:#75715e">// ⚠️ Sink
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">grantAdminAccess</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>🐍 Python Deserialization</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>imported_data <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>GET<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;data&#39;</span>)  <span style="color:#75715e"># 🚩 Source</span>
+</span></span><span style="display:flex;"><span>pickle<span style="color:#f92672">.</span>loads(base64<span style="color:#f92672">.</span>b64decode(imported_data))  <span style="color:#75715e"># ⚠️ Sink</span>
+</span></span></code></pre></div><hr>
+<h3 id="-source-sink-mapping-table">🗺️ Source-Sink Mapping Table</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Vulnerability Type</th>
+          <th>🚩 Source</th>
+          <th>⚠️ Sink</th>
+          <th>🔥 Attack Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>XSS</td>
+          <td>Form inputs</td>
+          <td>innerHTML</td>
+          <td><code>&lt;img src=x onerror=alert()&gt;</code></td>
+      </tr>
+      <tr>
+          <td>SQL Injection</td>
+          <td>API parameters</td>
+          <td>execute()</td>
+          <td><code>' OR 1=1--</code></td>
+      </tr>
+      <tr>
+          <td>Command Injection</td>
+          <td>System params</td>
+          <td>system()</td>
+          <td><code>; cat /etc/passwd</code></td>
+      </tr>
+      <tr>
+          <td>Path Traversal</td>
+          <td>Filename params</td>
+          <td>fs.readFile()</td>
+          <td><code>../../etc/passwd</code></td>
+      </tr>
+      <tr>
+          <td>Prototype Pollution</td>
+          <td>JSON input</td>
+          <td>Privilege checks</td>
+          <td><code>{&quot;__proto__&quot;:{...}}</code></td>
+      </tr>
+      <tr>
+          <td>Deserialization</td>
+          <td>Serialized data</td>
+          <td>pickle.loads()</td>
+          <td>Malicious payloads</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>🔎 <strong>Penetration Testing Strategy</strong>:</p>
+<ol>
+<li>Map all <strong>🚩 Sources</strong></li>
+<li>Identify critical <strong>⚠️ Sinks</strong></li>
+<li>Trace <strong>🔗 data flows</strong></li>
+<li>Verify <strong>🛡️ sanitization</strong> at each hop</li>
+</ol></blockquote>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/penetration/" rel="tag">penetration</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/web/" rel="tag">web</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/buffer_object/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script></body>
+</html>

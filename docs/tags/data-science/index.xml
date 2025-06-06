@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science on Note about technology</title>
+    <title>Data Science on Try Harder</title>
     <link>http://localhost:1313/tags/data-science/</link>
-    <description>Recent content in Data Science on Note about technology</description>
+    <description>Recent content in Data Science on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/mlai/_objectdetection/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mlai/_objectdetection/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;物体検出---object-detection&#34;&gt;物体検出 - Object Detection&lt;/h1&gt;&#xA;&lt;p&gt;物体認識凄さがわかるTEDトーク&lt;/p&gt;&#xA;&#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Cgxsv1riJhI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;r-cnn-regional-cnn&#34;&gt;R-CNN (Regional CNN)&lt;/h2&gt;&#xA;&lt;p&gt;一連の流れは以下の通りです。&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;物体検出---object-detection&#34;&gt;物体検出 - Object Detection&lt;/h1&gt;&#xA;&lt;p&gt;物体認識凄さがわかるTEDトーク&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Cgxsv1riJhI?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;r-cnn-regional-cnn&#34;&gt;R-CNN (Regional CNN)&lt;/h2&gt;&#xA;&lt;p&gt;一連の流れは以下の通りです。&lt;/p&gt;</description>
     </item>
     <item>
       <title>im2colの理解</title>
@@ -27,7 +27,7 @@
       <link>http://localhost:1313/mlai/_gan/</link>
       <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mlai/_gan/</guid>
-      <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;pix2pix&#34;&gt;pix2pix&lt;/h2&gt;&#xA;&#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/9SGs4Nm0VR4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
+      <description>&lt;h1&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;pix2pix&#34;&gt;pix2pix&lt;/h2&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/9SGs4Nm0VR4?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

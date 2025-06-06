@@ -6,8 +6,15 @@
     <description>Recent content in Coding on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Source to Sink: Core Penetration Testing Approach</title>
+      <link>https://xingelf.github.io/tech/source_sink2/</link>
+      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/source_sink2/</guid>
+      <description>&lt;h3 id=&#34;-1-investigating-blind-spots-in-authenticated-areas&#34;&gt;🎯 1. Investigating Blind Spots in Authenticated Areas&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;🚩 Source&lt;/strong&gt;: Parameters in authenticated functionality&lt;br&gt;&#xA;&lt;strong&gt;⚠️ Sink&lt;/strong&gt;: Privileged operations&lt;/p&gt;</description>
+    </item>
     <item>
       <title>webpack: The Core Tool for Modern Front-End Development</title>
       <link>https://xingelf.github.io/tech/webpack/</link>
@@ -21,6 +28,13 @@
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ejs/</guid>
       <description>&lt;p&gt;In frontend development or Node.js server-side rendering, &lt;strong&gt;templating engines&lt;/strong&gt; are powerful tools for dynamic HTML generation.&lt;br&gt;&#xA;Among them, &lt;strong&gt;EJS (Embedded JavaScript Templates)&lt;/strong&gt; stands out. Let’s explore its features, core syntax, and practical use cases!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xingelf.github.io/tech/_a-copy/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_a-copy/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>

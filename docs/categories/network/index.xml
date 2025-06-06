@@ -15,5 +15,12 @@
       <guid>https://xingelf.github.io/tech/dns/</guid>
       <description>&lt;h2 id=&#34;dns-domain-name-system&#34;&gt;DNS (Domain Name System)&lt;/h2&gt;&#xA;&lt;p&gt;DNS plays a crucial role in the initial reconnaissance (footprinting) phase of a security assessment. It provides valuable information about a target organization&amp;rsquo;s network infrastructure.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Understanding Idle Scan: Mechanism and Characteristics</title>
+      <link>https://xingelf.github.io/tech/idle_scan/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/idle_scan/</guid>
+      <description>&lt;p&gt;Idle Scan is an advanced TCP port scanning technique. In this method, an attacker uses a &amp;ldquo;zombie&amp;rdquo; computer (a machine in an idle state) to perform port scanning on target systems.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

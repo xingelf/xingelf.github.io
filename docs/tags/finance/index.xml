@@ -20,7 +20,7 @@
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas-datareader.readthedocs.io/en/latest/index.html&#34;&gt;Official Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is a list of data sources.&#xA;Some require an API key.&#xA;fred and stooq can obtain data without an API key.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>

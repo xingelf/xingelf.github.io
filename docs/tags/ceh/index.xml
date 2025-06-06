@@ -1,62 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CEH on Note about technology</title>
+    <title>CEH on Try Harder</title>
     <link>http://localhost:1313/tags/ceh/</link>
-    <description>Recent content in CEH on Note about technology</description>
+    <description>Recent content in CEH on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ceh/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wireless Attack</title>
-      <link>http://localhost:1313/tech/_wireless_attack/</link>
-      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_wireless_attack/</guid>
-      <description>&lt;h1 id=&#34;wireless-attack&#34;&gt;Wireless Attack&lt;/h1&gt;&#xA;&lt;h2 id=&#34;deauthentication-認証解除攻撃&#34;&gt;deauthentication 認証解除攻撃&lt;/h2&gt;&#xA;&lt;p&gt;認証解除攻撃は、Evil-Twin、リプレイ攻撃、クラッキング、DoS、その他の攻撃に使用されます。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Reverse Image Search 逆画像検索</title>
-      <link>http://localhost:1313/tech/_reverse_image_search/</link>
-      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_reverse_image_search/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Reverse_image_search&#34;&gt;https://en.wikipedia.org/wiki/Reverse_image_search&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Reverse Image Searchは画像から類似の画像を検索することができます。&#xA;逆画像検索と呼ばれます。&#xA;セキュリティ用途としては、OSINTの一つに分類されます。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SQLi/SQL Injectionとは</title>
-      <link>http://localhost:1313/tech/_sql-injection/</link>
-      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_sql-injection/</guid>
-      <description>&lt;p&gt;SQLインジェクションとは、攻撃者がWebサイトを経由して、内部的に実行されるSQL文に悪意のあるコードを挿入し、&#xA;データベースを操作して機密情報への不正アクセスを試みるサイバー攻撃の一種です。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>mac flood攻撃</title>
-      <link>http://localhost:1313/tech/_macflood/</link>
-      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_macflood/</guid>
-      <description>&lt;p&gt;MAC Flood&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;MAC tables becomes full on the switch by the flood&lt;/li&gt;&#xA;&lt;li&gt;the switch needs to send all packets to all IFs as MAC tables are full.&lt;/li&gt;&#xA;&lt;li&gt;it means the switch is just a hub&lt;/li&gt;&#xA;&lt;li&gt;finally attacker can sniff all of the packets on the switch&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Crptography 暗号</title>
-      <link>http://localhost:1313/tech/_cryotography/</link>
-      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_cryotography/</guid>
-      <description>&lt;h1 id=&#34;対称暗号&#34;&gt;対称暗号&lt;/h1&gt;&#xA;&lt;h1 id=&#34;非対称暗号&#34;&gt;非対称暗号&lt;/h1&gt;&#xA;&lt;h1 id=&#34;one-way-hash&#34;&gt;One-Way Hash&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Algorithm&lt;/th&gt;&#xA;          &lt;th&gt;Type&lt;/th&gt;&#xA;          &lt;th&gt;Spec&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;MD5&lt;/td&gt;&#xA;          &lt;td&gt;Block&lt;/td&gt;&#xA;          &lt;td&gt;128bit hash.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;SHA-1&lt;/td&gt;&#xA;          &lt;td&gt;Block&lt;/td&gt;&#xA;          &lt;td&gt;160bit outout&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;SHA-2&lt;/td&gt;&#xA;          &lt;td&gt;Stream&lt;/td&gt;&#xA;          &lt;td&gt;used in WEP&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;SHA-256&lt;/td&gt;&#xA;          &lt;td&gt;Stream&lt;/td&gt;&#xA;          &lt;td&gt;used in WPA2&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RIPEMD&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h1 id=&#34;password-hash&#34;&gt;Password Hash&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Algorithm&lt;/th&gt;&#xA;          &lt;th&gt;Type&lt;/th&gt;&#xA;          &lt;th&gt;Spec&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;LM hash&lt;/td&gt;&#xA;          &lt;td&gt;&amp;mdash;&lt;/td&gt;&#xA;          &lt;td&gt;max 14 chars UPPERCASE only&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NT hash&lt;/td&gt;&#xA;          &lt;td&gt;&amp;mdash;&lt;/td&gt;&#xA;          &lt;td&gt;max 127 charss mixed case&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h1 id=&#34;symmetric-algorithm&#34;&gt;Symmetric Algorithm&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Algorithm&lt;/th&gt;&#xA;          &lt;th&gt;Type&lt;/th&gt;&#xA;          &lt;th&gt;Spec&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;DES&lt;/td&gt;&#xA;          &lt;td&gt;Block&lt;/td&gt;&#xA;          &lt;td&gt;56bit key used in LM Hash password.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;3DES&lt;/td&gt;&#xA;          &lt;td&gt;Block&lt;/td&gt;&#xA;          &lt;td&gt;128bit key&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RC4&lt;/td&gt;&#xA;          &lt;td&gt;Stream&lt;/td&gt;&#xA;          &lt;td&gt;used in WEP&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;AES&lt;/td&gt;&#xA;          &lt;td&gt;Stream&lt;/td&gt;&#xA;          &lt;td&gt;used in WPA2&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
-    </item>
-    <item>
-      <title>Security Tools セキュリティツール</title>
-      <link>http://localhost:1313/tech/_security-tools/</link>
-      <pubDate>Sat, 30 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_security-tools/</guid>
-      <description>&lt;h1 id=&#34;web診断系&#34;&gt;Web診断系&lt;/h1&gt;&#xA;&lt;h2 id=&#34;burp-suite&#34;&gt;Burp Suite&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://portswigger.net/burp&#34;&gt;https://portswigger.net/burp&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=G3hpAeoZ4ek&#34;&gt;https://www.youtube.com/watch?v=G3hpAeoZ4ek&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Webアプリケーションのセキュリティテストを実行するための統合プラットフォーム。&#xA;Javaで書かれており、PortSwigger Web Security社によって開発。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Active Directory</title>
-      <link>http://localhost:1313/tech/_active_directory/</link>
-      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/_active_directory/</guid>
-      <description>&lt;p&gt;Identify devices on the interanet&#xA;How to identify active directory domain controllers on the intranet by using DNS lookup&#xA;Example for Domain Name abc.local&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Kali Linux Memo</title>
       <link>http://localhost:1313/tech/_kali-linux/</link>

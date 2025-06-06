@@ -6,8 +6,15 @@
     <description>Recent content on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Source to Sink: Core Penetration Testing Approach</title>
+      <link>https://xingelf.github.io/tech/source_sink2/</link>
+      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/source_sink2/</guid>
+      <description>&lt;h3 id=&#34;-1-investigating-blind-spots-in-authenticated-areas&#34;&gt;🎯 1. Investigating Blind Spots in Authenticated Areas&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;🚩 Source&lt;/strong&gt;: Parameters in authenticated functionality&lt;br&gt;&#xA;&lt;strong&gt;⚠️ Sink&lt;/strong&gt;: Privileged operations&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation</title>
       <link>https://xingelf.github.io/tech/buffer_object/</link>
@@ -63,6 +70,13 @@
       <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/wireless_attack/</guid>
       <description>&lt;p&gt;Wireless attacks are security threats that target wireless networks and devices. These attacks exploit vulnerabilities in wireless protocols, authentication mechanisms, and network configurations. Understanding these attack vectors is crucial for implementing proper security measures and protecting wireless networks from unauthorized access and data breaches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xingelf.github.io/tech/_a-copy/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_a-copy/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
@@ -167,7 +181,7 @@
       <link>https://xingelf.github.io/tech/vim_notes/</link>
       <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/vim_notes/</guid>
-      <description>&lt;p&gt;📝 Vim Editor Cheat Sheet&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.vim.org/&#34;&gt;https://www.vim.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-specialized-vim-learning-site-vimate&#34;&gt;🎓 Specialized Vim Learning Site: vimate&lt;/h2&gt;&#xA;&lt;p&gt;Master the basics through this dedicated platform:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://vimate.jp/&#34;&gt;https://vimate.jp/&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;📝 Vim Editor Cheat Sheet&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.vim.org/&#34;&gt;https://www.vim.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-specialized-vim-learning-site-vimate&#34;&gt;🎓 Specialized Vim Learning Site: vimate&lt;/h2&gt;&#xA;&lt;p&gt;Master the basics through this dedicated platform:&lt;/p&gt;</description>
     </item>
     <item>
       <title>UNION SQL and the Potential for SQL Injection</title>
@@ -202,7 +216,7 @@
       <link>https://xingelf.github.io/tech/latex-md/</link>
       <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/latex-md/</guid>
-      <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/templates/partials/&#34;&gt;https://gohugo.io/templates/partials/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Create a folder named partials under the layouts directory.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;writing-mathematical-equations-in-markdown-tex-format&#34;&gt;Writing Mathematical Equations in Markdown Tex Format&lt;/h1&gt;&#xA;&lt;h2 id=&#34;setting-up-partials&#34;&gt;Setting up partials&lt;/h2&gt;&#xA;&lt;p&gt;We will use the functionality of partial templates.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bluetooth Attack Techniques</title>
@@ -275,11 +289,18 @@
       <description>&lt;p&gt;Modifiers in Solidity can be confusing for newcomers. This guide explains their purpose and usage in simple terms.&lt;br&gt;&#xA;Modifiers act as &lt;strong&gt;function decorators&lt;/strong&gt; that let you add reusable preconditions to functions. They are commonly used for checks like ownership validation before executing a function&amp;rsquo;s core logic.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Understanding Odds Ratio and Risk Ratio</title>
+      <link>https://xingelf.github.io/tech/odds-risk/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/odds-risk/</guid>
+      <description>&lt;h1 id=&#34;-understanding-odds-ratio-and-risk-ratio&#34;&gt;📊 Understanding Odds Ratio and Risk Ratio&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-what-is-risk-ratio&#34;&gt;🎯 What is Risk Ratio?&lt;/h2&gt;&#xA;&lt;p&gt;Risk Ratio is a measure that represents the ratio of risks (incidence rates) between two groups. Let&amp;rsquo;s explain using hypothetical data:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Hugo Cheat Sheet</title>
       <link>https://xingelf.github.io/tech/hugo/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/hugo/</guid>
-      <description>&lt;p&gt;Hugo is a fast static site generator written in Go. Here are its key features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;⚡ Ultra-fast build speed&lt;/li&gt;&#xA;&lt;li&gt;📦 Simple installation and configuration&lt;/li&gt;&#xA;&lt;li&gt;🎨 Rich themes and customization options&lt;/li&gt;&#xA;&lt;li&gt;📝 Content management with Markdown&lt;/li&gt;&#xA;&lt;li&gt;🔄 Hot reload for improved development efficiency&lt;/li&gt;&#xA;&lt;li&gt;🌐 Multi-language support&lt;/li&gt;&#xA;&lt;li&gt;🛠️ Rich shortcodes and template functionality&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo can be used for various purposes such as blogs, portfolios, and documentation sites.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugo is a fast static site generator written in Go. Here are its key features:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Model Evaluation in ML</title>
@@ -324,6 +345,13 @@
       <description>&lt;p&gt;Purpose: To understand the basics of information theory.&lt;/p&gt;&#xA;&lt;h2 id=&#34;information-quantity&#34;&gt;Information Quantity&lt;/h2&gt;&#xA;&lt;p&gt;When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Understanding Idle Scan: Mechanism and Characteristics</title>
+      <link>https://xingelf.github.io/tech/idle_scan/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/idle_scan/</guid>
+      <description>&lt;p&gt;Idle Scan is an advanced TCP port scanning technique. In this method, an attacker uses a &amp;ldquo;zombie&amp;rdquo; computer (a machine in an idle state) to perform port scanning on target systems.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>JavaScript&#39;s Promise, Async, Await in 3 minutes </title>
       <link>https://xingelf.github.io/tech/js-promise/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
@@ -363,7 +391,7 @@
       <link>https://xingelf.github.io/tech/hhkb/</link>
       <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/hhkb/</guid>
-      <description>&lt;h1 id=&#34;happy-hacking-keyboard-&#34;&gt;Happy Hacking Keyboard ⌨&lt;/h1&gt;&#xA;&lt;p&gt;I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configuration-of-dip-switches-on-the-backside&#34;&gt;Configuration of DIP Switches on the Backside&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Mac Compatibility&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;happy-hacking-keyboard-&#34;&gt;Happy Hacking Keyboard ⌨&lt;/h1&gt;&#xA;&lt;p&gt;I use the HKKB Type-S on Mac/OSX and have noted some recommended key configurations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What is a Rubber Hose Attack?</title>
@@ -384,7 +412,7 @@
       <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>&lt;p&gt;Converts percentage information given in String/Object type columns into numbers.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str_to_rate&lt;/span&gt;(s):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;isnull(s) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; float(s&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;col &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ReplyRate&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df[col] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; df[col]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;apply(str_to_rate)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;Converts percentage information given in String/Object type columns into numbers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solidity文法　関数</title>
@@ -398,7 +426,7 @@
       <link>https://xingelf.github.io/mlai/str_to_bool/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>&lt;p&gt;Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str_to_bool&lt;/span&gt;(s):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; s &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t&amp;#39;&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage&lt;/p&gt;</description>
+      <description>&lt;p&gt;Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ubuntu on Azure Notes</title>
@@ -482,7 +510,7 @@
       <link>https://xingelf.github.io/tech/pandasdatareader/</link>
       <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/pandasdatareader/</guid>
-      <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pandas-datareader.readthedocs.io/en/latest/index.html&#34;&gt;Official Documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is a list of data sources.&#xA;Some require an API key.&#xA;fred and stooq can obtain data without an API key.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;what-is-pandas-datareader&#34;&gt;What is pandas Datareader&lt;/h1&gt;&#xA;&lt;p&gt;It is a library to download data online.&lt;/p&gt;</description>
     </item>
     <item>
       <title>機械学習前処理</title>
@@ -503,14 +531,14 @@
       <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/github/</guid>
-      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-push-がreject&#34;&gt;git push がreject&lt;/h2&gt;&#xA;&lt;p&gt;ローカルが正/originであることを確認して、強制的にpushします。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>IUT and abc</title>
       <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/iut-abc/</guid>
-      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;&#xA;&lt;h1 id=&#34;iutabc予想&#34;&gt;IUT・abc予想&lt;/h1&gt;&#xA;&lt;p&gt;足し算と掛け算に関わる関係を明らかにする理論と言われます。&#xA;また、強いabc予想のもとでは、フェルマーの最終定理が背理法により簡単に導出されます。&lt;/p&gt;</description>
+      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>
@@ -539,13 +567,6 @@
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/about/about/</guid>
       <description>&lt;p&gt;Security Researcher.&lt;/p&gt;&#xA;&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;&#xA;&lt;p&gt;All articles on this website&#xA;written based on the information available at the time the article was posted.&#xA;The purpose of this site is to explain in simple terms what is of interest to you.&#xA;For this reason, we have avoided jargon and omitted details as much as possible.&#xA;While every effort has been made to ensure the accuracy of the content, no warranty is given as to its accuracy.&#xA;In addition, the content of this site contains personal opinions.&#xA;For the above reasons, we assume no responsibility whatsoever for any damages resulting from the contents of this site.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://xingelf.github.io/tech/_idle_scan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_idle_scan/</guid>
-      <description>&lt;p&gt;アイドルスキャンは、TCPポートスキャンの手法の一つで、コンピュータになりすましたパケットを送信し、利用可能なサービスを調べるものである。これは、ネットワークトラフィックが非常に遅いか存在しない（つまり、情報の送受信が行われていない）別のコンピュータになりすますことで実現する。これは、「ゾンビ」と呼ばれるアイドル状態のコンピュータである可能性があります。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

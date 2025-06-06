@@ -16,6 +16,13 @@
       <description>&lt;h2 id=&#34;demystifying-the-softmax-function&#34;&gt;Demystifying the Softmax Function&lt;/h2&gt;&#xA;&lt;p&gt;The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems.  Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Understanding Odds Ratio and Risk Ratio</title>
+      <link>https://xingelf.github.io/tech/odds-risk/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/odds-risk/</guid>
+      <description>&lt;h1 id=&#34;-understanding-odds-ratio-and-risk-ratio&#34;&gt;📊 Understanding Odds Ratio and Risk Ratio&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-what-is-risk-ratio&#34;&gt;🎯 What is Risk Ratio?&lt;/h2&gt;&#xA;&lt;p&gt;Risk Ratio is a measure that represents the ratio of risks (incidence rates) between two groups. Let&amp;rsquo;s explain using hypothetical data:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Model Evaluation in ML</title>
       <link>https://xingelf.github.io/mlai/eval_model/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>

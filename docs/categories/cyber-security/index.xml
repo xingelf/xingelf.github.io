@@ -6,8 +6,15 @@
     <description>Recent content in Cyber Security on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Source to Sink: Core Penetration Testing Approach</title>
+      <link>https://xingelf.github.io/tech/source_sink2/</link>
+      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/source_sink2/</guid>
+      <description>&lt;h3 id=&#34;-1-investigating-blind-spots-in-authenticated-areas&#34;&gt;🎯 1. Investigating Blind Spots in Authenticated Areas&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;🚩 Source&lt;/strong&gt;: Parameters in authenticated functionality&lt;br&gt;&#xA;&lt;strong&gt;⚠️ Sink&lt;/strong&gt;: Privileged operations&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Ultimate Guide to Handlebars Template Engine: From Fundamentals to Expert Practices</title>
       <link>https://xingelf.github.io/tech/handlebars/</link>
@@ -35,6 +42,13 @@
       <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/wireless_attack/</guid>
       <description>&lt;p&gt;Wireless attacks are security threats that target wireless networks and devices. These attacks exploit vulnerabilities in wireless protocols, authentication mechanisms, and network configurations. Understanding these attack vectors is crucial for implementing proper security measures and protecting wireless networks from unauthorized access and data breaches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xingelf.github.io/tech/_a-copy/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_a-copy/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>

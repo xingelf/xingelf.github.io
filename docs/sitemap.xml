@@ -50,6 +50,9 @@
     <loc>https://xingelf.github.io/tech/ejs/</loc>
     <lastmod>2025-05-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://xingelf.github.io/mlai/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://xingelf.github.io/tags/ai/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -59,7 +62,7 @@
     <loc>https://xingelf.github.io/tags/devin/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tech/devin-beginner-guide/</loc>
+    <loc>https://xingelf.github.io/mlai/devin-beginner-guide/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/ml/ai/</loc>
@@ -254,7 +257,7 @@
     <loc>https://xingelf.github.io/tech/servletmappings/</loc>
     <lastmod>2024-12-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/mlai/</loc>
+    <loc>https://xingelf.github.io/categories/machine-learning/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/machine-learning/</loc>
@@ -344,9 +347,6 @@
     <loc>https://xingelf.github.io/mlai/entropy/</loc>
     <lastmod>2024-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/machine-learning/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/network-security/</loc>
     <lastmod>2024-03-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -412,9 +412,6 @@
   </url><url>
     <loc>https://xingelf.github.io/mlai/str_to_rate/</loc>
     <lastmod>2022-10-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/dao/</loc>
-    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/function/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>

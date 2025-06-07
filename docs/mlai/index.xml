@@ -6,14 +6,21 @@
     <description>Recent content on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/mlai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Softmax Function</title>
+      <title>Getting Started with Devin AI: A Beginner&#39;s Guide 🚀</title>
+      <link>https://xingelf.github.io/mlai/devin-beginner-guide/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/devin-beginner-guide/</guid>
+      <description>&lt;p&gt;Devin is an AI software engineer that can help you with coding tasks, debugging issues, and building features. Think of Devin as your coding assistant that understands programming languages and development workflows!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Softmax Function 🔢</title>
       <link>https://xingelf.github.io/mlai/softmax/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/softmax/</guid>
-      <description>&lt;h2 id=&#34;demystifying-the-softmax-function&#34;&gt;Demystifying the Softmax Function&lt;/h2&gt;&#xA;&lt;p&gt;The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems.  Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;overview-&#34;&gt;Overview 📝&lt;/h2&gt;&#xA;&lt;p&gt;This article explores the Softmax function, a crucial component in machine learning. The Softmax function transforms arbitrary real-valued vectors into probability distributions, making it essential for multi-class classification problems. We&amp;rsquo;ll dive into its fundamental mechanisms, mathematical definition, key properties, and practical applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Model Evaluation in ML</title>

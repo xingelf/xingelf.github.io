@@ -16,8 +16,8 @@
 		
   <meta itemprop="name" content="Machine Learning">
   <meta itemprop="description" content="blog about Technology">
-  <meta itemprop="datePublished" content="2024-03-20T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-03-20T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2024-12-16T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-16T00:00:00+00:00">
 		
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Machine Learning">
@@ -127,8 +127,93 @@
 	</header><article class="list__item post">
 	
 	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/mlai/softmax/">
+		<img class="thumbnail__image" src="/images/img_13.png" alt="Softmax Function 🔢">
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/mlai/softmax/" rel="bookmark">
+			Softmax Function 🔢
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-12-16T00:00:00Z">2024-12-16</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/machine-learning/" rel="category">Machine Learning</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<h2 id="overview-">Overview 📝</h2>
+<p>This article explores the Softmax function, a crucial component in machine learning. The Softmax function transforms arbitrary real-valued vectors into probability distributions, making it essential for multi-class classification problems. We&rsquo;ll dive into its fundamental mechanisms, mathematical definition, key properties, and practical applications.</p>
+	</div>
+</article><article class="list__item post">
+	
+	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/mlai/eval_model/">
+		<img class="thumbnail__image" src="/images/img_6.png" alt="Model Evaluation in ML">
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/mlai/eval_model/" rel="bookmark">
+			Model Evaluation in ML
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-08-01T00:00:00Z">2024-08-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/machine-learning/" rel="category">Machine Learning</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<h1 id="model-evaluation">Model Evaluation</h1>
+<h2 id="core-data-concepts-in-model-evaluation"><strong>Core Data Concepts in Model Evaluation</strong></h2>
+<ul>
+<li><strong>Training Set:</strong> Dataset used to train machine learning models (parameter optimization).</li>
+<li><strong>Validation Set:</strong> Dataset used for hyperparameter tuning and model selection during development.</li>
+<li><strong>Test Set:</strong> Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation <em>after</em> development completion.</li>
+</ul>
+<h2 id="evaluation-methodologies"><strong>Evaluation Methodologies</strong></h2>
+<h3 id="holdout-method"><strong>Holdout Method</strong></h3>
+<ul>
+<li>Randomly splits the dataset into two mutually exclusive subsets:
+<ul>
+<li><strong>Typical split:</strong> 80% training / 20% testing (ratio varies by use case)</li>
+</ul>
+</li>
+<li><strong>Strengths:</strong> Computationally efficient, simple implementation</li>
+<li><strong>Limitations:</strong> High variance in performance estimates with small datasets</li>
+</ul>
+<h3 id="k-fold-cross-validation"><strong>k-Fold Cross-Validation</strong></h3>
+<ul>
+<li>Systematic evaluation protocol:
+<ol>
+<li>Partition dataset into <em>k</em> equal-sized folds</li>
+<li>Iteratively use each fold as validation set while training on remaining <em>k-1</em> folds</li>
+<li>Aggregate results (mean ± standard deviation) across all folds</li>
+</ol>
+</li>
+<li><strong>Key Advantages:</strong>
+<ul>
+<li>Reduces variance in performance estimates</li>
+<li>Maximizes data utilization (critical for small datasets)</li>
+</ul>
+</li>
+<li><strong>Common Variants:</strong> Stratified k-fold (preserves class distribution)</li>
+</ul>
+<h3 id="leave-one-out-cross-validation-loocv"><strong>Leave-One-Out Cross-Validation (LOOCV)</strong></h3>
+<ul>
+<li>Extreme case of k-fold where <em>k = n</em> (number of samples)</li>
+<li><strong>Use Case:</strong> Small-scale datasets with &lt;100 samples</li>
+<li><strong>Tradeoff:</strong> Computationally prohibitive for large <em>n</em> (requires <em>n</em> model fits)</li>
+</ul>
+	</div>
+</article><article class="list__item post">
+	
+	<figure class="list__thumbnail thumbnail">
 		<a class="thumbnail__link" href="/mlai/entropy/">
-		<img class="thumbnail__image" src="/images/img_26.jpg" alt="Information Theory">
+		<img class="thumbnail__image" src="/images/img_12.png" alt="Information Theory">
 		</a>
 	</figure>
 	<header class="list__header">
@@ -150,29 +235,55 @@
 	</div>
 </article><article class="list__item post">
 	
+	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/mlai/str_to_rate/">
+		<img class="thumbnail__image" src="/images/img_3.jpeg" alt="Python a Function Convert Percentage in String/Object Type Columns to Numbers">
+		</a>
+	</figure>
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/tech/kaggle/" rel="bookmark">
-			書籍 Kaggleで勝つデータ分析
+			<a href="/mlai/str_to_rate/" rel="bookmark">
+			Python a Function Convert Percentage in String/Object Type Columns to Numbers
 			</a>
 		</h2>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2020-01-03T00:00:00Z">2020-01-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/machine-learning/" rel="category">Machine Learning</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-10-29T00:00:00Z">2022-10-29</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/machine-learning/" rel="category">Machine Learning</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		<h2 id="書籍-kaggleで勝つデータ分析---門脇-大輔">書籍 Kaggleで勝つデータ分析   門脇 大輔</h2>
-<ul>
-<li>良い点：網羅的、リファレンス多数</li>
-<li>注意点：精読が必要、中級者向け</li>
-</ul>
-<p><a href="https://www.amazon.co.jp/dp/B07YTDBC3Z/">https://www.amazon.co.jp/dp/B07YTDBC3Z/</a></p>
+		<p>Converts percentage information given in String/Object type columns into numbers.</p>
+	</div>
+</article><article class="list__item post">
+	
+	<figure class="list__thumbnail thumbnail">
+		<a class="thumbnail__link" href="/mlai/str_to_bool/">
+		<img class="thumbnail__image" src="/images/img_3.jpeg" alt="Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns">
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/mlai/str_to_bool/" rel="bookmark">
+			Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-10-01T00:00:00Z">2022-10-01</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/machine-learning/" rel="category">Machine Learning</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Converts boolean characters to boolean type if provided as &rsquo;t&rsquo; or &lsquo;f&rsquo; in String/Object type columns.</p>
 	</div>
 </article>
 </main>
 
+<div class="pagination">
+	<span class="pagination__item pagination__item--current">1/2</span>
+	<a class="pagination__item pagination__item--next btn" href="/categories/machine-learning/page/2/">»</a>
+</div>
 
 			</div>
 			
@@ -312,12 +423,8 @@
 				<span class="widget__counter widget__counter--bubble">11</span>
 				</li>
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/dao/">DAO</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">4</span>
-				</li>
-			<li class="widget__item">
 				<a class="widget__link" href="/categories/dapps/">Dapps</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">2</span>
+				<span class="widget__counter widget__counter--bubble">6</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/design/">Design</a>&nbsp;
@@ -329,11 +436,11 @@
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/machine-learning/">Machine Learning</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">2</span>
+				<span class="widget__counter widget__counter--bubble">6</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/ml/ai/">ML/AI</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">5</span>
+				<span class="widget__counter widget__counter--bubble">1</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/network/">Network</a>&nbsp;

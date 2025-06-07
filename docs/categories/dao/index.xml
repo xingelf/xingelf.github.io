@@ -2,39 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DAO on Try Harder</title>
-    <link>https://xingelf.github.io/categories/dao/</link>
+    <link>http://localhost:1313/categories/dao/</link>
     <description>Recent content in DAO on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/categories/dao/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Solidity文法　関数</title>
-      <link>https://xingelf.github.io/dapps/solidity-function/</link>
-      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity-function/</guid>
-      <description>&lt;h1 id=&#34;solidity-function--関数&#34;&gt;Solidity Function  関数&lt;/h1&gt;&#xA;&lt;p&gt;基本的な関数の例は以下の通りです。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Solidity文法　mapping マッピング</title>
-      <link>https://xingelf.github.io/dapps/solidity-mapping/</link>
-      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity-mapping/</guid>
-      <description>&lt;p&gt;mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。&#xA;典型的な利用法があり、ブロックチェーン上のウォレットアドレスにある&#xA;残高をマップするケースでほぼ必ず利用されます。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Solidity 最も簡単なコントラクトの作成</title>
-      <link>https://xingelf.github.io/dapps/solidity-1stcontract/</link>
-      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity-1stcontract/</guid>
-      <description>&lt;p&gt;Solidity学習リソースでよく紹介されている最も簡単なコントラクトを&#xA;REMIXを利用して作成します。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Solidity文法　SafeMath</title>
-      <link>https://xingelf.github.io/dapps/solidity-safemath/</link>
-      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity-safemath/</guid>
-      <description>&lt;h1 id=&#34;solidity-safemath-四足演算ライブラリ&#34;&gt;Solidity SafeMath 四足演算ライブラリ&lt;/h1&gt;&#xA;&lt;p&gt;assertによりオーバーフロー対策を行うことができます。&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:1313/categories/dao/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

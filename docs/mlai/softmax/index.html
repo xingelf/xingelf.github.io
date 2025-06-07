@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Softmax Function - Try Harder</title>
+	<title>Softmax Function 🔢 - Try Harder</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="https://xingelf.github.io/mlai/softmax/">
   <meta property="og:site_name" content="Try Harder">
-  <meta property="og:title" content="Softmax Function">
-  <meta property="og:description" content="Demystifying the Softmax Function The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems. Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.">
+  <meta property="og:title" content="Softmax Function 🔢">
+  <meta property="og:description" content="Overview 📝 This article explores the Softmax function, a crucial component in machine learning. The Softmax function transforms arbitrary real-valued vectors into probability distributions, making it essential for multi-class classification problems. We’ll dive into its fundamental mechanisms, mathematical definition, key properties, and practical applications.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mlai">
@@ -19,16 +19,16 @@
     <meta property="article:tag" content="Math">
 
 		
-  <meta itemprop="name" content="Softmax Function">
-  <meta itemprop="description" content="Demystifying the Softmax Function The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems. Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.">
+  <meta itemprop="name" content="Softmax Function 🔢">
+  <meta itemprop="description" content="Overview 📝 This article explores the Softmax function, a crucial component in machine learning. The Softmax function transforms arbitrary real-valued vectors into probability distributions, making it essential for multi-class classification problems. We’ll dive into its fundamental mechanisms, mathematical definition, key properties, and practical applications.">
   <meta itemprop="datePublished" content="2024-12-16T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-12-16T00:00:00+00:00">
-  <meta itemprop="wordCount" content="284">
+  <meta itemprop="wordCount" content="333">
   <meta itemprop="keywords" content="Machine Learning,Math">
 		
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Softmax Function">
-  <meta name="twitter:description" content="Demystifying the Softmax Function The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems. Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.">
+  <meta name="twitter:title" content="Softmax Function 🔢">
+  <meta name="twitter:description" content="Overview 📝 This article explores the Softmax function, a crucial component in machine learning. The Softmax function transforms arbitrary real-valued vectors into probability distributions, making it essential for multi-class classification problems. We’ll dive into its fundamental mechanisms, mathematical definition, key properties, and practical applications.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,17 +130,17 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Softmax Function</h1>
+			<h1 class="post__title">Softmax Function 🔢</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-12-16T00:00:00Z">2024-12-16</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/ml/ai/" rel="category">ML/AI</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-12-16T00:00:00Z">2024-12-16</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/machine-learning/" rel="category">Machine Learning</a>
 	</span>
 </div></div>
 		</header>
 		
 	<figure class="post__thumbnail thumbnail">
 		
-		<img class="thumbnail__image" src="/images/math.webp" alt="Softmax Function">
+		<img class="thumbnail__image" src="/images/img_13.png" alt="Softmax Function 🔢">
 		
 	</figure>
 <div class="post__toc toc">
@@ -148,14 +148,17 @@
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#demystifying-the-softmax-function">Demystifying the Softmax Function</a></li>
+    <li><a href="#overview-">Overview 📝</a></li>
+    <li><a href="#demystifying-the-softmax-function-">Demystifying the Softmax Function 🧮</a></li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h2 id="demystifying-the-softmax-function">Demystifying the Softmax Function</h2>
+			<h2 id="overview-">Overview 📝</h2>
+<p>This article explores the Softmax function, a crucial component in machine learning. The Softmax function transforms arbitrary real-valued vectors into probability distributions, making it essential for multi-class classification problems. We&rsquo;ll dive into its fundamental mechanisms, mathematical definition, key properties, and practical applications.</p>
+<h2 id="demystifying-the-softmax-function-">Demystifying the Softmax Function 🧮</h2>
 <p>The softmax function is a crucial tool in machine learning, particularly for multi-class classification problems.  Essentially, it takes a vector of arbitrary real numbers (positive, negative, zero, etc.) and transforms it into a probability distribution. This means the output is a vector of values between 0 and 1 that add up to 1, representing the probability of each class.</p>
-<p><strong>How does it work?</strong></p>
+<p><strong>How does it work? 🤔</strong></p>
 <p>The softmax function applies the exponential function to each element of the input vector and then normalizes these values by dividing by their sum. This process ensures that the output values are all positive and sum to 1.</p>
 <p>Here&rsquo;s the mathematical definition:</p>
 <p>$ y_i = {softmax}(x_i) = \frac{e^{x_i}}{\sum_{k=1}^{n}e^{x_k}}$</p>
@@ -165,17 +168,17 @@
 <li>$y_i$ represents the i-th element of the output vector (the probability of the i-th class).</li>
 <li>$n$ is the total number of classes.</li>
 </ul>
-<p><strong>Key Property: Invariance to Constant Addition</strong></p>
+<p><strong>Key Property: Invariance to Constant Addition 🔄</strong></p>
 <p>A fascinating property of the softmax function is its invariance to the addition of a constant value to all elements of the input vector.  Mathematically:</p>
 <p>$ Softmax(x) = Softmax(x+c) $</p>
 <p>This means shifting the input values by a constant doesn&rsquo;t change the resulting probability distribution.</p>
-<p><strong>Why is Softmax Important?</strong></p>
+<p><strong>Why is Softmax Important? 💡</strong></p>
 <ul>
 <li><strong>Probability Distribution:</strong>  Softmax outputs a probability distribution, making it ideal for interpreting the likelihood of different classes.</li>
 <li><strong>Multi-Class Classification:</strong> It excels in scenarios where an input can belong to one of several classes, such as image recognition (identifying objects), natural language processing (classifying text sentiment), and more.</li>
 <li><strong>Neural Networks:</strong> Softmax is often used as the activation function in the final layer of neural networks for classification tasks.</li>
 </ul>
-<p><strong>Want to dive deeper?</strong></p>
+<p><strong>Want to dive deeper? 🌊</strong></p>
 <p>For further understanding, you can refer to the following reference videos:</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ytbYRIN0N4g?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
@@ -206,6 +209,12 @@
 		<a class="pager__link" href="/mlai/eval_model/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
 			<p class="pager__title">Model Evaluation in ML</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/mlai/devin-beginner-guide/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Getting Started with Devin AI: A Beginner&#39;s Guide 🚀</p>
 		</a>
 	</div>
 </nav>

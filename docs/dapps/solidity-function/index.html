@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Solidity文法　関数 - Try Harder</title>
+	<title>Solidity Functions 🛠️ - Try Harder</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:url" content="https://xingelf.github.io/dapps/solidity-function/">
   <meta property="og:site_name" content="Try Harder">
-  <meta property="og:title" content="Solidity文法　関数">
-  <meta property="og:description" content="Solidity Function 関数 基本的な関数の例は以下の通りです。">
+  <meta property="og:title" content="Solidity Functions 🛠️">
+  <meta property="og:description" content="Solidity functions are the building blocks of smart contracts, allowing you to define the behavior and logic of your decentralized applications. They can be called internally or externally, and their visibility and state permissions can be controlled through modifiers. Understanding how to properly implement functions is crucial for creating efficient and secure smart contracts.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="dapps">
@@ -19,16 +19,16 @@
     <meta property="article:tag" content="Function">
 
 		
-  <meta itemprop="name" content="Solidity文法　関数">
-  <meta itemprop="description" content="Solidity Function 関数 基本的な関数の例は以下の通りです。">
+  <meta itemprop="name" content="Solidity Functions 🛠️">
+  <meta itemprop="description" content="Solidity functions are the building blocks of smart contracts, allowing you to define the behavior and logic of your decentralized applications. They can be called internally or externally, and their visibility and state permissions can be controlled through modifiers. Understanding how to properly implement functions is crucial for creating efficient and secure smart contracts.">
   <meta itemprop="datePublished" content="2022-10-15T00:00:00+00:00">
   <meta itemprop="dateModified" content="2022-10-15T00:00:00+00:00">
-  <meta itemprop="wordCount" content="283">
+  <meta itemprop="wordCount" content="180">
   <meta itemprop="keywords" content="Solidity,Function">
 		
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Solidity文法　関数">
-  <meta name="twitter:description" content="Solidity Function 関数 基本的な関数の例は以下の通りです。">
+  <meta name="twitter:title" content="Solidity Functions 🛠️">
+  <meta name="twitter:description" content="Solidity functions are the building blocks of smart contracts, allowing you to define the behavior and logic of your decentralized applications. They can be called internally or externally, and their visibility and state permissions can be controlled through modifiers. Understanding how to properly implement functions is crucial for creating efficient and secure smart contracts.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -130,7 +130,7 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Solidity文法　関数</h1>
+			<h1 class="post__title">Solidity Functions 🛠️</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-10-15T00:00:00Z">2022-10-15</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/dapps/" rel="category">Dapps</a>
@@ -140,7 +140,7 @@
 		
 	<figure class="post__thumbnail thumbnail">
 		
-		<img class="thumbnail__image" src="/images/img_2.jpeg" alt="Solidity文法　関数">
+		<img class="thumbnail__image" src="/images/img_4.png" alt="Solidity Functions 🛠️">
 		
 	</figure>
 <div class="post__toc toc">
@@ -148,34 +148,36 @@
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#足し算">足し算</a></li>
-    <li><a href="#メッセージ">メッセージ</a></li>
+    <li><a href="#addition-">Addition ➕</a></li>
+    <li><a href="#message-">Message 📝</a></li>
+    <li><a href="#solidity-visibility-modifiers-">Solidity Visibility Modifiers 👁️</a></li>
+    <li><a href="#state-permission-modifiers-">State Permission Modifiers ⚡</a></li>
   </ul>
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h1 id="solidity-function--関数">Solidity Function  関数</h1>
-<p>基本的な関数の例は以下の通りです。</p>
-<h2 id="足し算">足し算</h2>
+			<p>Solidity functions are the building blocks of smart contracts, allowing you to define the behavior and logic of your decentralized applications. They can be called internally or externally, and their visibility and state permissions can be controlled through modifiers. Understanding how to properly implement functions is crucial for creating efficient and secure smart contracts.</p>
+<p>Here are some basic function examples:</p>
+<h2 id="addition-">Addition ➕</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">add</span>(<span style="color:#66d9ef">uint</span> a, <span style="color:#66d9ef">uint</span> b) <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">pure</span> <span style="color:#66d9ef">returns</span> (<span style="color:#66d9ef">uint</span>){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="メッセージ">メッセージ</h2>
+</span></span></code></pre></div><h2 id="message-">Message 📝</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">add</span>(<span style="color:#66d9ef">uint</span> a, <span style="color:#66d9ef">uint</span> b) <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">pure</span> <span style="color:#66d9ef">returns</span> (<span style="color:#66d9ef">uint</span>){
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h1 id="solidity-visibility-modifiers-関数可視性修飾子">Solidity Visibility Modifiers 関数可視性修飾子　</h1>
+</span></span></code></pre></div><h2 id="solidity-visibility-modifiers-">Solidity Visibility Modifiers 👁️</h2>
 <ul>
-<li>private : 該当関数のコントラクトだけが利用可能</li>
-<li>internal : 該当のコントラクトと継承するコントラクトが利用可能</li>
-<li>external : トランザクション、または、外部コントラクトによってのみ利用される関数</li>
-<li>public : 内部・外部どこからも呼び出しが可能（制約なし）</li>
+<li>private 🔒 : Only accessible within the current contract</li>
+<li>internal 🔐 : Accessible within the current contract and inherited contracts</li>
+<li>external 🌐 : Only callable from outside the contract (via transactions or other contracts)</li>
+<li>public 🔓 : Accessible from anywhere (no restrictions)</li>
 </ul>
-<h1 id="ステートパーミッション修飾子pure-view">ステートパーミッション修飾子　pure view</h1>
-<p>関数にpure/viewのどちらかを付けない場合はガス代が発生すると意識します。</p>
+<h2 id="state-permission-modifiers-">State Permission Modifiers ⚡</h2>
+<p>If you don&rsquo;t specify pure/view, the function will consume gas. Keep this in mind!</p>
 <ul>
-<li>pure : 変数の参照のみ。ガス代不要</li>
-<li>view : 演算などを行い結果を返す。ブロックチェーンに変更を行わず、ガス代不要</li>
+<li>pure 🧮 : Only references variables. No gas cost</li>
+<li>view 📊 : Performs calculations and returns results. No blockchain state changes, no gas cost</li>
 </ul>
 
 		</div>

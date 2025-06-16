@@ -6,8 +6,15 @@
     <description>Recent content in Cyber Security on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ObjectDataProvider: Your Data Waiter in WPF Applications</title>
+      <link>https://xingelf.github.io/tech/_a-copy/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/_a-copy/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ObjectDataProvider&lt;/strong&gt; is a powerful data intermediary in WPF that declaratively connects business logic to UI elements. Think of it as a restaurant system:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mastering .NET Reverse Engineering with dnSpy</title>
       <link>https://xingelf.github.io/tech/dnspy/</link>

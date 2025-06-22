@@ -6,6 +6,35 @@
     <description>Recent content in DAO on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/dao/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>geth　使い方</title>
+      <link>http://localhost:1313/dapps/geth/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dapps/geth/</guid>
+      <description>&lt;h1 id=&#34;gethとは&#34;&gt;Gethとは&lt;/h1&gt;&#xA;&lt;p&gt;Ethereumクライアントです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solidity Dapp University</title>
+      <link>http://localhost:1313/dapps/dappuniv/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dapps/dappuniv/</guid>
+      <description>&lt;h1 id=&#34;dapp-universityとは&#34;&gt;Dapp Universityとは&lt;/h1&gt;&#xA;&lt;p&gt;Gregory @DappUniversity さんのYou TubeチャンネルでDapp学習動画がたくさんアップロードされています。&#xA;全て英語になりますが、英語が理解できれば、Solidity初学者レベルでもわかりやすいです。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solidity 遺産相続コントラクト</title>
+      <link>http://localhost:1313/dapps/_solidity_will/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dapps/_solidity_will/</guid>
+      <description>&lt;p&gt;遺産相続を行うシンプルなスマートコントラクトの実装例です。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Web3 解説</title>
+      <link>http://localhost:1313/dapps/_web3/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dapps/_web3/</guid>
+      <description>&lt;p&gt;web3&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

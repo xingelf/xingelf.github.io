@@ -13,7 +13,7 @@
       <link>http://localhost:1313/dapps/geth/</link>
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/dapps/geth/</guid>
-      <description>&lt;h1 id=&#34;gethとは&#34;&gt;Gethとは&lt;/h1&gt;&#xA;&lt;p&gt;Ethereumクライアントです。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://geth.ethereum.org/&#34;&gt;https://geth.ethereum.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;gethのインストール&#34;&gt;Gethのインストール&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://geth.ethereum.org/docs/install-and-build/installing-geth&#34;&gt;https://geth.ethereum.org/docs/install-and-build/installing-geth&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;gethとは&#34;&gt;Gethとは&lt;/h1&gt;&#xA;&lt;p&gt;Ethereumクライアントです。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

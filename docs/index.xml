@@ -6,14 +6,14 @@
     <description>Recent content on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ObjectDataProvider: Your Data Waiter in WPF Applications</title>
-      <link>https://xingelf.github.io/tech/_a-copy/</link>
-      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_a-copy/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;ObjectDataProvider&lt;/strong&gt; is a powerful data intermediary in WPF that declaratively connects business logic to UI elements. Think of it as a restaurant system:&lt;/p&gt;</description>
+      <title>Understanding Preflight OPTIONS Requests: The CORS Gatekeeper</title>
+      <link>https://xingelf.github.io/tech/preflight_options/</link>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/preflight_options/</guid>
+      <description>&lt;p&gt;When building web apps, you&amp;rsquo;ve likely encountered mysterious &lt;code&gt;OPTIONS&lt;/code&gt; requests in your network logs. These aren&amp;rsquo;t errors—they&amp;rsquo;re your browser&amp;rsquo;s &lt;strong&gt;security guardians&lt;/strong&gt;! Let&amp;rsquo;s demystify this crucial CORS mechanism.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mastering .NET Reverse Engineering with dnSpy</title>
@@ -289,6 +289,13 @@
       <description>&lt;h2 id=&#34;rootkits-the-hidden-threat&#34;&gt;Rootkits: The Hidden Threat&lt;/h2&gt;&#xA;&lt;p&gt;Rootkits are a set of tools and software used to maintain hidden access to a computer system after it has been compromised. They are designed to be stealthy and difficult to detect, making them a significant security threat.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>A Small Python Function to Convert &#39;t&#39;/&#39;f&#39; Strings to Boolean Type</title>
+      <link>https://xingelf.github.io/mlai/str_to_bool/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;In data analysis and machine learning, it is common to encounter datasets where boolean values are represented as strings like &lt;code&gt;&#39;t&#39;&lt;/code&gt; (true) or &lt;code&gt;&#39;f&#39;&lt;/code&gt; (false). Converting these to Python&amp;rsquo;s &lt;code&gt;True&lt;/code&gt; and &lt;code&gt;False&lt;/code&gt; types makes subsequent processing and analysis much smoother. This article explains a simple function for this conversion and how to use it effectively.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Understanding Solidity Modifiers: A Practical Guide</title>
       <link>https://xingelf.github.io/dapps/solidity_modifier/</link>
       <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
@@ -314,7 +321,7 @@
       <link>https://xingelf.github.io/mlai/eval_model/</link>
       <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/eval_model/</guid>
-      <description>&lt;h1 id=&#34;model-evaluation&#34;&gt;Model Evaluation&lt;/h1&gt;&#xA;&lt;h2 id=&#34;core-data-concepts-in-model-evaluation&#34;&gt;&lt;strong&gt;Core Data Concepts in Model Evaluation&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Dataset used to train machine learning models (parameter optimization).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Dataset used for hyperparameter tuning and model selection during development.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation &lt;em&gt;after&lt;/em&gt; development completion.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;evaluation-methodologies&#34;&gt;&lt;strong&gt;Evaluation Methodologies&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;holdout-method&#34;&gt;&lt;strong&gt;Holdout Method&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Randomly splits the dataset into two mutually exclusive subsets:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Typical split:&lt;/strong&gt; 80% training / 20% testing (ratio varies by use case)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Strengths:&lt;/strong&gt; Computationally efficient, simple implementation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Limitations:&lt;/strong&gt; High variance in performance estimates with small datasets&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;k-fold-cross-validation&#34;&gt;&lt;strong&gt;k-Fold Cross-Validation&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Systematic evaluation protocol:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Partition dataset into &lt;em&gt;k&lt;/em&gt; equal-sized folds&lt;/li&gt;&#xA;&lt;li&gt;Iteratively use each fold as validation set while training on remaining &lt;em&gt;k-1&lt;/em&gt; folds&lt;/li&gt;&#xA;&lt;li&gt;Aggregate results (mean ± standard deviation) across all folds&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Key Advantages:&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduces variance in performance estimates&lt;/li&gt;&#xA;&lt;li&gt;Maximizes data utilization (critical for small datasets)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Common Variants:&lt;/strong&gt; Stratified k-fold (preserves class distribution)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;leave-one-out-cross-validation-loocv&#34;&gt;&lt;strong&gt;Leave-One-Out Cross-Validation (LOOCV)&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extreme case of k-fold where &lt;em&gt;k = n&lt;/em&gt; (number of samples)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Use Case:&lt;/strong&gt; Small-scale datasets with &amp;lt;100 samples&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tradeoff:&lt;/strong&gt; Computationally prohibitive for large &lt;em&gt;n&lt;/em&gt; (requires &lt;em&gt;n&lt;/em&gt; model fits)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;core-data-concepts-in-model-evaluation&#34;&gt;&lt;strong&gt;Core Data Concepts in Model Evaluation&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Dataset used to train machine learning models (parameter optimization).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Dataset used for hyperparameter tuning and model selection during development.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation &lt;em&gt;after&lt;/em&gt; development completion.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;evaluation-methodologies&#34;&gt;&lt;strong&gt;Evaluation Methodologies&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;holdout-method&#34;&gt;&lt;strong&gt;Holdout Method&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Randomly splits the dataset into two mutually exclusive subsets:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Typical split:&lt;/strong&gt; 80% training / 20% testing (ratio varies by use case)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Strengths:&lt;/strong&gt; Computationally efficient, simple implementation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Limitations:&lt;/strong&gt; High variance in performance estimates with small datasets&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;k-fold-cross-validation&#34;&gt;&lt;strong&gt;k-Fold Cross-Validation&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Systematic evaluation protocol:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Partition dataset into &lt;em&gt;k&lt;/em&gt; equal-sized folds&lt;/li&gt;&#xA;&lt;li&gt;Iteratively use each fold as validation set while training on remaining &lt;em&gt;k-1&lt;/em&gt; folds&lt;/li&gt;&#xA;&lt;li&gt;Aggregate results (mean ± standard deviation) across all folds&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Key Advantages:&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduces variance in performance estimates&lt;/li&gt;&#xA;&lt;li&gt;Maximizes data utilization (critical for small datasets)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Common Variants:&lt;/strong&gt; Stratified k-fold (preserves class distribution)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;leave-one-out-cross-validation-loocv&#34;&gt;&lt;strong&gt;Leave-One-Out Cross-Validation (LOOCV)&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extreme case of k-fold where &lt;em&gt;k = n&lt;/em&gt; (number of samples)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Use Case:&lt;/strong&gt; Small-scale datasets with &amp;lt;100 samples&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tradeoff:&lt;/strong&gt; Computationally prohibitive for large &lt;em&gt;n&lt;/em&gt; (requires &lt;em&gt;n&lt;/em&gt; model fits)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>HTTP Request Smuggling (HRS)</title>
@@ -415,11 +422,11 @@
       <description>&lt;h2 id=&#34;1-invalid-comparison-between-dtypedatetime64ns-americanew_york-and-datetime64&#34;&gt;1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64&lt;/h2&gt;&#xA;&lt;h3 id=&#34;error&#34;&gt;Error&lt;/h3&gt;&#xA;&lt;p&gt;This error occurs when comparing timestamps in Yahoo Finance with different timezones.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>
+      <title>Python Function: Convert Percentage Strings to Numbers</title>
       <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>&lt;p&gt;Converts percentage information given in String/Object type columns into numbers.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Easily convert percentage values stored as strings (e.g., &amp;ldquo;85%&amp;rdquo;) into numeric values for analysis in Python! 🚀&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solidity Functions 🛠️</title>
@@ -427,13 +434,6 @@
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-function/</guid>
       <description>&lt;p&gt;Solidity functions are the building blocks of smart contracts, allowing you to define the behavior and logic of your decentralized applications. They can be called internally or externally, and their visibility and state permissions can be controlled through modifiers. Understanding how to properly implement functions is crucial for creating efficient and secure smart contracts.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</title>
-      <link>https://xingelf.github.io/mlai/str_to_bool/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>&lt;p&gt;Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ubuntu on Azure Notes</title>
@@ -573,7 +573,7 @@
       <link>https://xingelf.github.io/about/about/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/about/about/</guid>
-      <description>&lt;p&gt;Security Researcher.&lt;/p&gt;&#xA;&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;&#xA;&lt;p&gt;All articles on this website&#xA;written based on the information available at the time the article was posted.&#xA;The purpose of this site is to explain in simple terms what is of interest to you.&#xA;For this reason, we have avoided jargon and omitted details as much as possible.&#xA;While every effort has been made to ensure the accuracy of the content, no warranty is given as to its accuracy.&#xA;In addition, the content of this site contains personal opinions.&#xA;For the above reasons, we assume no responsibility whatsoever for any damages resulting from the contents of this site.&lt;/p&gt;</description>
+      <description>&lt;p&gt;@xingelf is a security researcher.&lt;/p&gt;&#xA;&lt;h2 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h2&gt;&#xA;&lt;p&gt;All articles on this website&#xA;written based on the information available at the time the article was posted.&#xA;The purpose of this site is to explain in simple terms what is of interest to you.&#xA;For this reason, we have avoided jargon and omitted details as much as possible.&#xA;While every effort has been made to ensure the accuracy of the content, no warranty is given as to its accuracy.&#xA;In addition, the content of this site contains personal opinions.&#xA;For the above reasons, we assume no responsibility whatsoever for any damages resulting from the contents of this site.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

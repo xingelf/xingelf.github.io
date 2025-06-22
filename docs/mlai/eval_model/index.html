@@ -9,7 +9,7 @@
 		<meta property="og:url" content="https://xingelf.github.io/mlai/eval_model/">
   <meta property="og:site_name" content="Try Harder">
   <meta property="og:title" content="Model Evaluation in ML">
-  <meta property="og:description" content="Model Evaluation Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
+  <meta property="og:description" content="Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mlai">
@@ -19,15 +19,15 @@
 
 		
   <meta itemprop="name" content="Model Evaluation in ML">
-  <meta itemprop="description" content="Model Evaluation Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
+  <meta itemprop="description" content="Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
   <meta itemprop="datePublished" content="2024-08-01T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-08-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="173">
+  <meta itemprop="wordCount" content="171">
   <meta itemprop="keywords" content="Machine Learning">
 		
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Model Evaluation in ML">
-  <meta name="twitter:description" content="Model Evaluation Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
+  <meta name="twitter:description" content="Core Data Concepts in Model Evaluation Training Set: Dataset used to train machine learning models (parameter optimization). Validation Set: Dataset used for hyperparameter tuning and model selection during development. Test Set: Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation after development completion. Evaluation Methodologies Holdout Method Randomly splits the dataset into two mutually exclusive subsets: Typical split: 80% training / 20% testing (ratio varies by use case) Strengths: Computationally efficient, simple implementation Limitations: High variance in performance estimates with small datasets k-Fold Cross-Validation Systematic evaluation protocol: Partition dataset into k equal-sized folds Iteratively use each fold as validation set while training on remaining k-1 folds Aggregate results (mean ± standard deviation) across all folds Key Advantages: Reduces variance in performance estimates Maximizes data utilization (critical for small datasets) Common Variants: Stratified k-fold (preserves class distribution) Leave-One-Out Cross-Validation (LOOCV) Extreme case of k-fold where k = n (number of samples) Use Case: Small-scale datasets with &lt;100 samples Tradeoff: Computationally prohibitive for large n (requires n model fits)">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -159,8 +159,7 @@
 </nav>
 	</div>
 </div><div class="content post__content clearfix">
-			<h1 id="model-evaluation">Model Evaluation</h1>
-<h2 id="core-data-concepts-in-model-evaluation"><strong>Core Data Concepts in Model Evaluation</strong></h2>
+			<h2 id="core-data-concepts-in-model-evaluation"><strong>Core Data Concepts in Model Evaluation</strong></h2>
 <ul>
 <li><strong>Training Set:</strong> Dataset used to train machine learning models (parameter optimization).</li>
 <li><strong>Validation Set:</strong> Dataset used for hyperparameter tuning and model selection during development.</li>
@@ -225,9 +224,9 @@
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/mlai/softmax/" rel="next">
+		<a class="pager__link" href="/mlai/str_to_bool/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Softmax Function 🔢</p>
+			<p class="pager__title">A Small Python Function to Convert &#39;t&#39;/&#39;f&#39; Strings to Boolean Type</p>
 		</a>
 	</div>
 </nav>
@@ -247,8 +246,7 @@
 </footer>
 	</div>
 <script async defer src="/js/menu.js"></script>
-<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <script type="text/x-mathjax-config">
  MathJax.Hub.Config({
  tex2jax: {
@@ -256,5 +254,12 @@
  displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
  }
  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.1.0/mermaid.min.js"></script>
+<script>
+    window.onload = function () {
+        mermaid.init(undefined, ".language-mermaid");
+    };
 </script></body>
 </html>

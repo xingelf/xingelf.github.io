@@ -16,6 +16,13 @@
       <description>&lt;p&gt;Decision trees are a versatile, interpretable machine learning algorithm that mirrors human decision-making through hierarchical conditional splits. Widely used for classification and regression tasks, they excel in scenarios requiring transparency and explainability. This article delves into the mathematical foundations, implementation strategies, and advanced considerations for practitioners.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>A Small Python Function to Convert &#39;t&#39;/&#39;f&#39; Strings to Boolean Type</title>
+      <link>https://xingelf.github.io/mlai/str_to_bool/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;In data analysis and machine learning, it is common to encounter datasets where boolean values are represented as strings like &lt;code&gt;&#39;t&#39;&lt;/code&gt; (true) or &lt;code&gt;&#39;f&#39;&lt;/code&gt; (false). Converting these to Python&amp;rsquo;s &lt;code&gt;True&lt;/code&gt; and &lt;code&gt;False&lt;/code&gt; types makes subsequent processing and analysis much smoother. This article explains a simple function for this conversion and how to use it effectively.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Errors in Python</title>
       <link>https://xingelf.github.io/tech/python-err/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
@@ -23,18 +30,11 @@
       <description>&lt;h2 id=&#34;1-invalid-comparison-between-dtypedatetime64ns-americanew_york-and-datetime64&#34;&gt;1. Invalid comparison between dtype=datetime64[ns, America/New_York] and datetime64&lt;/h2&gt;&#xA;&lt;h3 id=&#34;error&#34;&gt;Error&lt;/h3&gt;&#xA;&lt;p&gt;This error occurs when comparing timestamps in Yahoo Finance with different timezones.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>
+      <title>Python Function: Convert Percentage Strings to Numbers</title>
       <link>https://xingelf.github.io/mlai/str_to_rate/</link>
       <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>&lt;p&gt;Converts percentage information given in String/Object type columns into numbers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</title>
-      <link>https://xingelf.github.io/mlai/str_to_bool/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>&lt;p&gt;Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Easily convert percentage values stored as strings (e.g., &amp;ldquo;85%&amp;rdquo;) into numeric values for analysis in Python! 🚀&lt;/p&gt;</description>
     </item>
     <item>
       <title>pandas Dataredader</title>

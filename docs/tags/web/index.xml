@@ -6,8 +6,15 @@
     <description>Recent content in Web on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Preflight OPTIONS Requests: The CORS Gatekeeper</title>
+      <link>https://xingelf.github.io/tech/preflight_options/</link>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/preflight_options/</guid>
+      <description>&lt;p&gt;When building web apps, you&amp;rsquo;ve likely encountered mysterious &lt;code&gt;OPTIONS&lt;/code&gt; requests in your network logs. These aren&amp;rsquo;t errors—they&amp;rsquo;re your browser&amp;rsquo;s &lt;strong&gt;security guardians&lt;/strong&gt;! Let&amp;rsquo;s demystify this crucial CORS mechanism.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Source to Sink: Core Penetration Testing Approach</title>
       <link>https://xingelf.github.io/tech/source_sink2/</link>

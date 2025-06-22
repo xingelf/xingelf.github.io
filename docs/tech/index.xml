@@ -6,14 +6,14 @@
     <description>Recent content in Cyber Security on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ObjectDataProvider: Your Data Waiter in WPF Applications</title>
-      <link>https://xingelf.github.io/tech/_a-copy/</link>
-      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_a-copy/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;ObjectDataProvider&lt;/strong&gt; is a powerful data intermediary in WPF that declaratively connects business logic to UI elements. Think of it as a restaurant system:&lt;/p&gt;</description>
+      <title>Understanding Preflight OPTIONS Requests: The CORS Gatekeeper</title>
+      <link>https://xingelf.github.io/tech/preflight_options/</link>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/preflight_options/</guid>
+      <description>&lt;p&gt;When building web apps, you&amp;rsquo;ve likely encountered mysterious &lt;code&gt;OPTIONS&lt;/code&gt; requests in your network logs. These aren&amp;rsquo;t errors—they&amp;rsquo;re your browser&amp;rsquo;s &lt;strong&gt;security guardians&lt;/strong&gt;! Let&amp;rsquo;s demystify this crucial CORS mechanism.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mastering .NET Reverse Engineering with dnSpy</title>

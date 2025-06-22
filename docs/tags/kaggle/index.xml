@@ -6,22 +6,8 @@
     <description>Recent content in Kaggle on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/kaggle/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Python a Function Convert Percentage in String/Object Type Columns to Numbers</title>
-      <link>https://xingelf.github.io/mlai/str_to_rate/</link>
-      <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/str_to_rate/</guid>
-      <description>&lt;p&gt;Converts percentage information given in String/Object type columns into numbers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Python a small Function Convert Boolean Characters to Boolean Type in String/Object Columns</title>
-      <link>https://xingelf.github.io/mlai/str_to_bool/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/str_to_bool/</guid>
-      <description>&lt;p&gt;Converts boolean characters to boolean type if provided as &amp;rsquo;t&amp;rsquo; or &amp;lsquo;f&amp;rsquo; in String/Object type columns.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>書籍 Kaggleで勝つデータ分析</title>
       <link>https://xingelf.github.io/tech/kaggle/</link>

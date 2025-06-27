@@ -16,6 +16,13 @@
       <description>&lt;p&gt;When building web apps, you&amp;rsquo;ve likely encountered mysterious &lt;code&gt;OPTIONS&lt;/code&gt; requests in your network logs. These aren&amp;rsquo;t errors—they&amp;rsquo;re your browser&amp;rsquo;s &lt;strong&gt;security guardians&lt;/strong&gt;! Let&amp;rsquo;s demystify this crucial CORS mechanism.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>ObjectDataProvider: Your Data Waiter in WPF Applications</title>
+      <link>https://xingelf.github.io/tech/object_data_provider/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/object_data_provider/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ObjectDataProvider&lt;/strong&gt; is a powerful data intermediary in WPF that declaratively connects business logic to UI elements. Think of it as a restaurant system:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Mastering .NET Reverse Engineering with dnSpy</title>
       <link>https://xingelf.github.io/tech/dnspy/</link>
       <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
@@ -56,13 +63,6 @@
       <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/wireless_attack/</guid>
       <description>&lt;p&gt;Wireless attacks are security threats that target wireless networks and devices. These attacks exploit vulnerabilities in wireless protocols, authentication mechanisms, and network configurations. Understanding these attack vectors is crucial for implementing proper security measures and protecting wireless networks from unauthorized access and data breaches.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://xingelf.github.io/tech/_a/</link>
-      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_a/</guid>
-      <description></description>
     </item>
     <item>
       <title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention</title>

@@ -16,6 +16,13 @@
       <description>&lt;p&gt;When building web apps, you&amp;rsquo;ve likely encountered mysterious &lt;code&gt;OPTIONS&lt;/code&gt; requests in your network logs. These aren&amp;rsquo;t errors—they&amp;rsquo;re your browser&amp;rsquo;s &lt;strong&gt;security guardians&lt;/strong&gt;! Let&amp;rsquo;s demystify this crucial CORS mechanism.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>ObjectDataProvider: Your Data Waiter in WPF Applications</title>
+      <link>https://xingelf.github.io/tech/object_data_provider/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/object_data_provider/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ObjectDataProvider&lt;/strong&gt; is a powerful data intermediary in WPF that declaratively connects business logic to UI elements. Think of it as a restaurant system:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Mastering .NET Reverse Engineering with dnSpy</title>
       <link>https://xingelf.github.io/tech/dnspy/</link>
       <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
@@ -84,13 +91,6 @@
       <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/wireless_attack/</guid>
       <description>&lt;p&gt;Wireless attacks are security threats that target wireless networks and devices. These attacks exploit vulnerabilities in wireless protocols, authentication mechanisms, and network configurations. Understanding these attack vectors is crucial for implementing proper security measures and protecting wireless networks from unauthorized access and data breaches.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://xingelf.github.io/tech/_a/</link>
-      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_a/</guid>
-      <description></description>
     </item>
     <item>
       <title>Understanding DOM-based XSS: Mechanism, Examples, and Prevention</title>
@@ -296,6 +296,13 @@
       <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;In data analysis and machine learning, it is common to encounter datasets where boolean values are represented as strings like &lt;code&gt;&#39;t&#39;&lt;/code&gt; (true) or &lt;code&gt;&#39;f&#39;&lt;/code&gt; (false). Converting these to Python&amp;rsquo;s &lt;code&gt;True&lt;/code&gt; and &lt;code&gt;False&lt;/code&gt; types makes subsequent processing and analysis much smoother. This article explains a simple function for this conversion and how to use it effectively.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Solidity Syntax: Mapping</title>
+      <link>https://xingelf.github.io/dapps/solidity-mapping/</link>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-mapping/</guid>
+      <description>&lt;h2 id=&#34;what-is-a-mapping-in-solidity&#34;&gt;What is a Mapping in Solidity?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;code&gt;mapping&lt;/code&gt; in Solidity is a key-value data structure, similar to a hash table or dictionary in other programming languages. It is commonly used to associate wallet addresses with balances on the blockchain.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Understanding Solidity Modifiers: A Practical Guide</title>
       <link>https://xingelf.github.io/dapps/solidity_modifier/</link>
       <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
@@ -381,9 +388,9 @@
     </item>
     <item>
       <title>iPhone Memo </title>
-      <link>https://xingelf.github.io/ios/iphone/</link>
+      <link>https://xingelf.github.io/tech/iphone/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/ios/iphone/</guid>
+      <guid>https://xingelf.github.io/tech/iphone/</guid>
       <description>&lt;h1 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h1&gt;&#xA;&lt;h2 id=&#34;placing-location-settings-onoff-on-the-home-button&#34;&gt;Placing Location Settings ON/OFF on the Home Button&lt;/h2&gt;&#xA;&lt;p&gt;Create a shortcut to open the URL and specify the following for the URL:&lt;/p&gt;</description>
     </item>
     <item>
@@ -441,13 +448,6 @@
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ubuntu/</guid>
       <description>&lt;h1 id=&#34;regular-maintenance&#34;&gt;Regular Maintenance&lt;/h1&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update&#xA;sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;error-during-regular-maintenance-11-resource-temporarily-unavailable&#34;&gt;Error during Regular Maintenance: 11: Resource temporarily unavailable&lt;/h2&gt;&#xA;&lt;p&gt;This is a solution for handling resource shortage detected during &lt;code&gt;sudo upgrade&lt;/code&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Solidity文法　mapping マッピング</title>
-      <link>https://xingelf.github.io/dapps/solidity-mapping/</link>
-      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity-mapping/</guid>
-      <description>&lt;p&gt;mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。&#xA;典型的な利用法があり、ブロックチェーン上のウォレットアドレスにある&#xA;残高をマップするケースでほぼ必ず利用されます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Social Engineering ソーシャルエンジニアリング</title>

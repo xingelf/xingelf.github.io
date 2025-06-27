@@ -16,6 +16,13 @@
       <description>&lt;p&gt;When building web apps, you&amp;rsquo;ve likely encountered mysterious &lt;code&gt;OPTIONS&lt;/code&gt; requests in your network logs. These aren&amp;rsquo;t errors—they&amp;rsquo;re your browser&amp;rsquo;s &lt;strong&gt;security guardians&lt;/strong&gt;! Let&amp;rsquo;s demystify this crucial CORS mechanism.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>ObjectDataProvider: Your Data Waiter in WPF Applications</title>
+      <link>https://xingelf.github.io/tech/object_data_provider/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/object_data_provider/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ObjectDataProvider&lt;/strong&gt; is a powerful data intermediary in WPF that declaratively connects business logic to UI elements. Think of it as a restaurant system:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Mastering .NET Reverse Engineering with dnSpy</title>
       <link>https://xingelf.github.io/tech/dnspy/</link>
       <pubDate>Fri, 13 Jun 2025 00:00:00 +0000</pubDate>
@@ -42,13 +49,6 @@
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ejs/</guid>
       <description>&lt;p&gt;In frontend development or Node.js server-side rendering, &lt;strong&gt;templating engines&lt;/strong&gt; are powerful tools for dynamic HTML generation.&lt;br&gt;&#xA;Among them, &lt;strong&gt;EJS (Embedded JavaScript Templates)&lt;/strong&gt; stands out. Let’s explore its features, core syntax, and practical use cases!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://xingelf.github.io/tech/_a/</link>
-      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/_a/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

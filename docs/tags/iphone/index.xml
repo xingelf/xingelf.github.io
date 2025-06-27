@@ -10,9 +10,9 @@
     <atom:link href="https://xingelf.github.io/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iPhone Memo </title>
-      <link>https://xingelf.github.io/ios/iphone/</link>
+      <link>https://xingelf.github.io/tech/iphone/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/ios/iphone/</guid>
+      <guid>https://xingelf.github.io/tech/iphone/</guid>
       <description>&lt;h1 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h1&gt;&#xA;&lt;h2 id=&#34;placing-location-settings-onoff-on-the-home-button&#34;&gt;Placing Location Settings ON/OFF on the Home Button&lt;/h2&gt;&#xA;&lt;p&gt;Create a shortcut to open the URL and specify the following for the URL:&lt;/p&gt;</description>
     </item>
   </channel>

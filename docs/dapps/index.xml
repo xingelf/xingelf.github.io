@@ -6,8 +6,15 @@
     <description>Recent content in Dapps - Decentralized applications on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/dapps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solidity Syntax: Mapping</title>
+      <link>https://xingelf.github.io/dapps/solidity-mapping/</link>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-mapping/</guid>
+      <description>&lt;h2 id=&#34;what-is-a-mapping-in-solidity&#34;&gt;What is a Mapping in Solidity?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;code&gt;mapping&lt;/code&gt; in Solidity is a key-value data structure, similar to a hash table or dictionary in other programming languages. It is commonly used to associate wallet addresses with balances on the blockchain.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Understanding Solidity Modifiers: A Practical Guide</title>
       <link>https://xingelf.github.io/dapps/solidity_modifier/</link>
@@ -28,13 +35,6 @@
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-function/</guid>
       <description>&lt;p&gt;Solidity functions are the building blocks of smart contracts, allowing you to define the behavior and logic of your decentralized applications. They can be called internally or externally, and their visibility and state permissions can be controlled through modifiers. Understanding how to properly implement functions is crucial for creating efficient and secure smart contracts.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Solidity文法　mapping マッピング</title>
-      <link>https://xingelf.github.io/dapps/solidity-mapping/</link>
-      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity-mapping/</guid>
-      <description>&lt;p&gt;mappingはkey, valueの対応を定義するもので、ハッシュテーブル、辞書型のようなものです。&#xA;典型的な利用法があり、ブロックチェーン上のウォレットアドレスにある&#xA;残高をマップするケースでほぼ必ず利用されます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solidity 最も簡単なコントラクトの作成</title>

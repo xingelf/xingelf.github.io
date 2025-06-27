@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Understanding SQL Collation: The Secret Sauce Behind String Sorting &amp; Comparison - Try Harder</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:url" content="https://xingelf.github.io/tech/sql_collation/">
+  <meta property="og:site_name" content="Try Harder">
+  <meta property="og:title" content="Understanding SQL Collation: The Secret Sauce Behind String Sorting & Comparison">
+  <meta property="og:description" content="Collation is SQL’s rulebook for text data handling! It defines:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-06-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-21T00:00:00+00:00">
+
+		
+  <meta itemprop="name" content="Understanding SQL Collation: The Secret Sauce Behind String Sorting & Comparison">
+  <meta itemprop="description" content="Collation is SQL’s rulebook for text data handling! It defines:">
+  <meta itemprop="datePublished" content="2025-06-21T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-06-21T00:00:00+00:00">
+  <meta itemprop="wordCount" content="377">
+  <meta itemprop="keywords" content="Cyber Security,Coding">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Understanding SQL Collation: The Secret Sauce Behind String Sorting & Comparison">
+  <meta name="twitter:description" content="Collation is SQL’s rulebook for text data handling! It defines:">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Try Harder" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Try Harder</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech👻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Understanding SQL Collation: The Secret Sauce Behind String Sorting &amp; Comparison</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-06-21T00:00:00Z">2025-06-21</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cyber-security/" rel="category">Cyber Security</a>, <a class="meta__link" href="/categories/coding/" rel="category">Coding</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/img_20.png" alt="Understanding SQL Collation: The Secret Sauce Behind String Sorting &amp; Comparison">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-anatomy-of-a-collation-name">⚙️ <strong>Anatomy of a Collation Name</strong></a></li>
+        <li><a href="#-where-collation-matters">🔧 <strong>Where Collation Matters</strong></a></li>
+        <li><a href="#-classic-collation-conflicts">💥 <strong>Classic Collation Conflicts</strong></a></li>
+        <li><a href="#-best-practices">🏆 <strong>Best Practices</strong></a></li>
+        <li><a href="#-how-to-inspect-collations">🔍 <strong>How to Inspect Collations</strong></a></li>
+        <li><a href="#-pro-tip-collation-in-action">💡 <strong>Pro Tip: Collation in Action</strong></a></li>
+        <li><a href="#-key-takeaway">🚀 <strong>Key Takeaway</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Collation is SQL&rsquo;s rulebook for <strong>text data handling</strong>! It defines:</p>
+<ul>
+<li>🔤 <strong>Case sensitivity</strong>: Is <code>'Apple' = 'apple'</code>?</li>
+<li><code>´</code> <strong>Accent sensitivity</strong>: Is <code>'café' = 'cafe'</code>?</li>
+<li>🗂️ <strong>Sorting order</strong>: Should <code>'Ö'</code> come after <code>'Z'</code> (German) or at the end (Swedish)?</li>
+<li>🌐 <strong>Character encoding</strong>: UTF-8? Latin-1? (e.g., <code>utf8mb4_unicode_ci</code>).</li>
+</ul>
+<p><strong>Real-world analogy</strong>:</p>
+<blockquote>
+<p>Collation is like a <strong>language-specific dictionary</strong> 📖 that tells the database how to &ldquo;pronounce&rdquo; and &ldquo;alphabetize&rdquo; characters!</p></blockquote>
+<hr>
+<h3 id="-anatomy-of-a-collation-name">⚙️ <strong>Anatomy of a Collation Name</strong></h3>
+<p>Decode the secret code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>utf8mb4_spanish_ci  
+</span></span></code></pre></div><ul>
+<li>🅰️ <code>utf8mb4</code>: Character set (supports emojis! 💥)</li>
+<li>🇪🇸 <code>spanish</code>: Language rules for sorting</li>
+<li>🔤 <code>_ci</code>: <strong>Case Insensitive</strong> (case-insensitive comparisons)</li>
+</ul>
+<p>Common suffixes:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Suffix</th>
+          <th>Meaning</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>_ci</code></td>
+          <td>Case Insensitive</td>
+          <td><code>'A' = 'a' → TRUE</code></td>
+      </tr>
+      <tr>
+          <td><code>_cs</code></td>
+          <td>Case Sensitive</td>
+          <td><code>'A' = 'a' → FALSE</code></td>
+      </tr>
+      <tr>
+          <td><code>_bin</code></td>
+          <td>Binary match</td>
+          <td>Byte-by-byte compare</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-where-collation-matters">🔧 <strong>Where Collation Matters</strong></h3>
+<ol>
+<li><strong>Queries</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> users <span style="color:#66d9ef">WHERE</span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;JOHN&#39;</span>; <span style="color:#75715e">-- 🤔 Returns &#39;John&#39; if _ci  
+</span></span></span></code></pre></div></li>
+<li><strong>Sorting (ORDER BY)</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> name <span style="color:#66d9ef">COLLATE</span> utf8mb4_swedish_ci; <span style="color:#75715e">-- Sorts Z → Å → Ä → Ö  
+</span></span></span></code></pre></div></li>
+<li><strong>Unique Constraints</strong>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">UNIQUE</span> (email) <span style="color:#75715e">-- Blocks &#39;Email@x.com&#39; vs &#39;email@x.com&#39; if _cs  
+</span></span></span></code></pre></div></li>
+</ol>
+<hr>
+<h3 id="-classic-collation-conflicts">💥 <strong>Classic Collation Conflicts</strong></h3>
+<p><strong>Problem</strong>: The dreaded <code>Illegal mix of collations</code> error!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> table1  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">JOIN</span> table2 <span style="color:#66d9ef">ON</span> table1.name <span style="color:#f92672">=</span> table2.name <span style="color:#75715e">-- 💥 Error if collations differ!  
+</span></span></span></code></pre></div><p><strong>Fix</strong>: Harmonize with <code>COLLATE</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ON</span> table1.name <span style="color:#66d9ef">COLLATE</span> utf8mb4_unicode_ci <span style="color:#f92672">=</span> table2.name  
+</span></span></code></pre></div><p><strong>Problem</strong>: Slow queries because indexes are ignored due to mismatched collations! ⏳</p>
+<hr>
+<h3 id="-best-practices">🏆 <strong>Best Practices</strong></h3>
+<ol>
+<li>✅ <strong>Default to Unicode</strong>: Use <code>utf8mb4_unicode_ci</code> for multilingual support 🌍</li>
+<li>✅ <strong>Consistency is key</strong>: Use same collation across DB/server/tables</li>
+<li>⚠️ Avoid <code>_bin</code> unless you need binary precision (e.g., passwords) 🔒</li>
+<li>🧪 Test sort behavior with:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#e6db74">&#39;ä&#39;</span> <span style="color:#66d9ef">COLLATE</span> utf8mb4_german2_ci <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ae&#39;</span>; <span style="color:#75715e">-- Returns 1 (TRUE)!  
+</span></span></span></code></pre></div></li>
+</ol>
+<hr>
+<h3 id="-how-to-inspect-collations">🔍 <strong>How to Inspect Collations</strong></h3>
+<p><strong>In MySQL</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SHOW</span> <span style="color:#66d9ef">COLLATION</span>; <span style="color:#75715e">-- List all  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">SHOW</span> <span style="color:#66d9ef">FULL</span> COLUMNS <span style="color:#66d9ef">FROM</span> users; <span style="color:#75715e">-- See per-column collation  
+</span></span></span></code></pre></div><p><strong>In SQL Server</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> name, description <span style="color:#66d9ef">FROM</span> sys.fn_helpcollations();  
+</span></span></code></pre></div><hr>
+<h3 id="-pro-tip-collation-in-action">💡 <strong>Pro Tip: Collation in Action</strong></h3>
+<p>Need <strong>case-sensitive search</strong> in a <code>_ci</code> column? Override per query:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> products  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> name <span style="color:#66d9ef">COLLATE</span> utf8mb4_bin <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;iPhone&#39;</span>; <span style="color:#75715e">-- Matches exact casing!  
+</span></span></span></code></pre></div><hr>
+<h3 id="-key-takeaway">🚀 <strong>Key Takeaway</strong></h3>
+<blockquote>
+<p>Collation is your <strong>silent string referee</strong> 🥋! Choosing wisely means:</p>
+<ul>
+<li>✅ Accurate sorting &amp; searches</li>
+<li>🚀 Optimal performance</li>
+<li>💥 Avoiding &ldquo;mystery&rdquo; errors</li>
+</ul>
+<p><strong>Golden rule</strong>: When in doubt, <code>utf8mb4_unicode_ci</code> is your friend!</p></blockquote>
+<p><strong>Found this helpful?</strong><br>
+👉 Like &amp; share! 💬 Comment your collation horror stories! 👇</p>
+<p><img src="https://example.com/collation-visual.png" alt="Database sorting chaos vs order"> <em>(Imagine: Chaos vs. sorted data)</em></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags//" rel="tag"></a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags//" rel="tag"></a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/object_data_provider/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">ObjectDataProvider: Your Data Waiter in WPF Applications</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/preflight_options/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Understanding Preflight OPTIONS Requests: The CORS Gatekeeper</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.1.0/mermaid.min.js"></script>
+<script>
+    window.onload = function () {
+        mermaid.init(undefined, ".language-mermaid");
+    };
+</script></body>
+</html>

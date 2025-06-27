@@ -16,6 +16,13 @@
       <description>&lt;p&gt;When building web apps, you&amp;rsquo;ve likely encountered mysterious &lt;code&gt;OPTIONS&lt;/code&gt; requests in your network logs. These aren&amp;rsquo;t errors—they&amp;rsquo;re your browser&amp;rsquo;s &lt;strong&gt;security guardians&lt;/strong&gt;! Let&amp;rsquo;s demystify this crucial CORS mechanism.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Understanding SQL Collation: The Secret Sauce Behind String Sorting &amp; Comparison</title>
+      <link>https://xingelf.github.io/tech/sql_collation/</link>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/sql_collation/</guid>
+      <description>&lt;p&gt;Collation is SQL&amp;rsquo;s rulebook for &lt;strong&gt;text data handling&lt;/strong&gt;! It defines:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>ObjectDataProvider: Your Data Waiter in WPF Applications</title>
       <link>https://xingelf.github.io/tech/object_data_provider/</link>
       <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>

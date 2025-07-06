@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>XML CDATA Complete Guide: How to Handle Special Characters in XML - Try Harder</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Master XML CDATA sections with practical examples. Learn when to use CDATA vs escaping, security best practices, and real-world applications for JavaScript, CSS, and HTML embedding.">
+		<meta property="og:url" content="https://xingelf.github.io/tech/xml-cdata/">
+  <meta property="og:site_name" content="Try Harder">
+  <meta property="og:title" content="XML CDATA Complete Guide: How to Handle Special Characters in XML">
+  <meta property="og:description" content="Master XML CDATA sections with practical examples. Learn when to use CDATA vs escaping, security best practices, and real-world applications for JavaScript, CSS, and HTML embedding.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-07-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-07-07T00:00:00+00:00">
+    <meta property="article:tag" content="XML">
+    <meta property="article:tag" content="CDATA">
+    <meta property="article:tag" content="Web Security">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Tutorial">
+    <meta property="article:tag" content="Best Practices">
+
+		
+  <meta itemprop="name" content="XML CDATA Complete Guide: How to Handle Special Characters in XML">
+  <meta itemprop="description" content="Master XML CDATA sections with practical examples. Learn when to use CDATA vs escaping, security best practices, and real-world applications for JavaScript, CSS, and HTML embedding.">
+  <meta itemprop="datePublished" content="2025-07-06T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-07-07T00:00:00+00:00">
+  <meta itemprop="wordCount" content="453">
+  <meta itemprop="keywords" content="XML CDATA,XML special characters,XML escaping,CDATA sections,XML security,XML parser,XML development,XML best practices,XML tutorial,XML examples">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="XML CDATA Complete Guide: How to Handle Special Characters in XML">
+  <meta name="twitter:description" content="Master XML CDATA sections with practical examples. Learn when to use CDATA vs escaping, security best practices, and real-world applications for JavaScript, CSS, and HTML embedding.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Try Harder" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Try Harder</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech👻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">XML CDATA Complete Guide: How to Handle Special Characters in XML</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-07-06T00:00:00Z">2025-07-06</time>
+	<time class="meta__text" datetime="2025-07-07T00:00:00Z">(Last Modified: 2025-07-07)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cyber-security/" rel="category">Cyber Security</a>, <a class="meta__link" href="/categories/coding/" rel="category">Coding</a>, <a class="meta__link" href="/categories/web-development/" rel="category">Web Development</a>, <a class="meta__link" href="/categories/xml/" rel="category">XML</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/img_5.png" alt="XML CDATA Complete Guide: How to Handle Special Characters in XML">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#mastering-xml-cdata-your-essential-guide-to-handling-special-characters">Mastering XML CDATA: Your Essential Guide to Handling Special Characters</a>
+      <ul>
+        <li><a href="#-what-is-cdata-and-why-it-matters">✨ What is CDATA and Why It Matters</a></li>
+        <li><a href="#-key-benefits-of-using-cdata">🔑 Key Benefits of Using CDATA</a></li>
+        <li><a href="#-core-syntax-rules">⚙️ Core Syntax Rules</a></li>
+        <li><a href="#-practical-use-cases-with-examples">🚀 Practical Use Cases with Examples</a></li>
+        <li><a href="#-cdata-vs-escaping-when-to-use-which">⚖️ CDATA vs. Escaping: When to Use Which</a></li>
+        <li><a href="#-critical-limitations--security-notes">⚠️ Critical Limitations &amp; Security Notes</a></li>
+        <li><a href="#-pro-tips-for-developers">💡 Pro Tips for Developers</a></li>
+        <li><a href="#-cdata-faq-quick-answers">❓ CDATA FAQ Quick Answers</a></li>
+        <li><a href="#-the-bottom-line">📌 The Bottom Line</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Master XML CDATA sections with practical examples. Learn when to use CDATA vs escaping, security best practices, and real-world applications for JavaScript, CSS, and HTML embedding.</p>
+<h2 id="mastering-xml-cdata-your-essential-guide-to-handling-special-characters">Mastering XML CDATA: Your Essential Guide to Handling Special Characters</h2>
+<h3 id="-what-is-cdata-and-why-it-matters">✨ What is CDATA and Why It Matters</h3>
+<p>CDATA (Character Data) creates <strong>safe zones in XML</strong> where special characters like <code>&lt;</code>, <code>&gt;</code>, and <code>&amp;</code> can appear without escaping. It tells XML parsers: <em>&ldquo;Don&rsquo;t interpret this text as markup!&rdquo;</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Without CDATA --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;expression&gt;</span>5 &amp;lt; 10 &amp;amp; 3 &amp;gt; 1<span style="color:#f92672">&lt;/expression&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- With CDATA --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;expression&gt;</span><span style="color:#75715e">&lt;![CDATA[5 &lt; 10 &amp; 3 &gt; 1]]&gt;</span><span style="color:#f92672">&lt;/expression&gt;</span>
+</span></span></code></pre></div><h3 id="-key-benefits-of-using-cdata">🔑 Key Benefits of Using CDATA</h3>
+<ul>
+<li>✅ <strong>Escape-free formatting</strong>: Use <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code> directly</li>
+<li>✅ <strong>Code embedding</strong>: Perfect for scripts/CSS/HTML fragments</li>
+<li>✅ <strong>Readability boost</strong>: Keeps code and formulas clean</li>
+<li>✅ <strong>Data integrity</strong>: Preserves original whitespace/formatting</li>
+</ul>
+<h3 id="-core-syntax-rules">⚙️ Core Syntax Rules</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;![CDATA[ Your content here ]]&gt;</span>
+</span></span></code></pre></div><ul>
+<li>🚫 <strong>Never nest</strong> CDATA sections</li>
+<li>🚫 <strong>Never include</strong> <code>]]&gt;</code> in content</li>
+<li>⚠️ Case-sensitive: Must be uppercase <code>CDATA</code></li>
+<li>📏 Whitespace and line breaks are preserved</li>
+</ul>
+<h3 id="-practical-use-cases-with-examples">🚀 Practical Use Cases with Examples</h3>
+<h4 id="-embedding-javascript">💻 Embedding JavaScript</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;script&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;![CDATA[
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  if (age &lt; 18 || age &gt; 65) {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    alert(&#34;Invalid age: &#34; + age);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">]]&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/script&gt;</span>
+</span></span></code></pre></div><h4 id="-storing-css">🎨 Storing CSS</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;style&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;![CDATA[
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  body &gt; .container { 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    width: 100%; 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    background: url(&#34;image.jpg?size=large&amp;quality=high&#34;);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">]]&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/style&gt;</span>
+</span></span></code></pre></div><h4 id="-preserving-xmlhtml-fragments">📦 Preserving XML/HTML Fragments</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;template&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;![CDATA[
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  &lt;div class=&#34;alert&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &lt;h1&gt;Warning!&lt;/h1&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &lt;p&gt;Value must be &gt; 0&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  &lt;/div&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">]]&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/template&gt;</span>
+</span></span></code></pre></div><h3 id="-cdata-vs-escaping-when-to-use-which">⚖️ CDATA vs. Escaping: When to Use Which</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Scenario</th>
+          <th>Use CDATA</th>
+          <th>Use Escaping</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Code blocks</strong></td>
+          <td>✅ JavaScript/CSS</td>
+          <td>❌</td>
+      </tr>
+      <tr>
+          <td><strong>Short text</strong></td>
+          <td>❌</td>
+          <td>✅ Single expressions</td>
+      </tr>
+      <tr>
+          <td><strong>Multiple special chars</strong></td>
+          <td>✅ &gt;2 special characters</td>
+          <td>❌</td>
+      </tr>
+      <tr>
+          <td><strong>External content</strong></td>
+          <td>✅ HTML/XML fragments</td>
+          <td>❌</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="-critical-limitations--security-notes">⚠️ Critical Limitations &amp; Security Notes</h3>
+<ul>
+<li>
+<p><strong>The <code>]]&gt;</code> Problem</strong>:<br>
+Split sections when needed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;data&gt;</span><span style="color:#75715e">&lt;![CDATA[Part1]]&gt;</span>]]&amp;gt;<span style="color:#75715e">&lt;![CDATA[Part2]]&gt;</span><span style="color:#f92672">&lt;/data&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>XXE Attack Risk</strong>:<br>
+Malicious actors might exploit CDATA:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE hack [
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  &lt;!ENTITY % secret SYSTEM &#34;file:///passwd&#34;&gt;</span>
+</span></span><span style="display:flex;"><span>]&gt;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;data&gt;</span><span style="color:#75715e">&lt;![CDATA[&amp;secret;]]&gt;</span><span style="color:#f92672">&lt;/data&gt;</span>
+</span></span></code></pre></div></li>
+</ul>
+<p>🔒 <strong>Security Best Practices</strong>:</p>
+<ol>
+<li>Disable external entities in XML parsers</li>
+<li>Validate all input XML</li>
+<li>Use CDATA only for trusted content</li>
+</ol>
+<h3 id="-pro-tips-for-developers">💡 Pro Tips for Developers</h3>
+<ul>
+<li><strong>Combine with comments</strong>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;![CDATA[ /* Valid JS/C# code */ ]]&gt;</span>
+</span></span></code></pre></div></li>
+<li><strong>Handle file paths</strong>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;log&gt;</span><span style="color:#75715e">&lt;![CDATA[File saved at C:\Programs\app\config.xml]]&gt;</span><span style="color:#f92672">&lt;/log&gt;</span>
+</span></span></code></pre></div></li>
+<li><strong>Debugging trick</strong>: Temporarily replace CDATA with text to test parsing</li>
+</ul>
+<h3 id="-cdata-faq-quick-answers">❓ CDATA FAQ Quick Answers</h3>
+<p><strong>Q: Can I use comments inside CDATA?</strong><br>
+→ ✅ Yes! <code>&lt;!-- This works --&gt;</code></p>
+<p><strong>Q: Does JSON need CDATA in XML?</strong><br>
+→ ✅ Recommended for special characters:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;response&gt;</span><span style="color:#75715e">&lt;![CDATA[{&#34;error&#34;:&#34;&lt;500&gt;&#34;,&#34;message&#34;:&#34;5&gt;3&#34;}]]&gt;</span><span style="color:#f92672">&lt;/response&gt;</span>
+</span></span></code></pre></div><p><strong>Q: Is CDATA content searchable?</strong><br>
+→ ✅ Yes! Parsers treat it as regular text</p>
+<h3 id="-the-bottom-line">📌 The Bottom Line</h3>
+<p>CDATA is XML&rsquo;s <strong>secret weapon for handling special content</strong>—use it when:</p>
+<ol>
+<li>Embedding code snippets 🖥️</li>
+<li>Preserving external formats 📦</li>
+<li>Maintaining complex formulas ➗</li>
+</ol>
+<p>Remember: With great power comes great responsibility! Always:<br>
+🔹 Validate inputs<br>
+🔹 Disable external entities<br>
+🔹 Prefer CDATA over escaping for code/fragments</p>
+<p>Master CDATA to build cleaner, more readable XML documents! 🚀</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/xml/" rel="tag">XML</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/cdata/" rel="tag">CDATA</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/web-security/" rel="tag">Web Security</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/programming/" rel="tag">Programming</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/tutorial/" rel="tag">Tutorial</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/best-practices/" rel="tag">Best Practices</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/javascript/" rel="tag">JavaScript</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/css/" rel="tag">CSS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/html/" rel="tag">HTML</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/data-processing/" rel="tag">Data Processing</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/preflight_options/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Understanding Preflight OPTIONS Requests: The CORS Gatekeeper</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.1.0/mermaid.min.js"></script>
+<script>
+    window.onload = function () {
+        mermaid.init(undefined, ".language-mermaid");
+    };
+</script></body>
+</html>

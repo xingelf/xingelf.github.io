@@ -3,24 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/best-practices/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/cdata/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/coding/</loc>
-    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/css/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/categories/cyber-security/</loc>
-    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/</loc>
-    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/http/</loc>
-    <lastmod>2025-06-21T00:00:00+00:00</lastmod>
+    <loc>https://xingelf.github.io/tags/data-processing/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/html/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/javascript/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/programming/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/tutorial/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/web-development/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/web-security/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/xml/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/xml/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/xml-cdata/</loc>
+    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/http/</loc>
     <lastmod>2025-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/preflight_options/</loc>
@@ -49,9 +88,6 @@
   </url><url>
     <loc>https://xingelf.github.io/tech/source_sink2/</loc>
     <lastmod>2025-06-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/javascript/</loc>
-    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/buffer_object/</loc>
     <lastmod>2025-05-22T00:00:00+00:00</lastmod>
@@ -237,9 +273,6 @@
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/cyberkillchain/</loc>
-    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/xml/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tech/xml_serialization/</loc>

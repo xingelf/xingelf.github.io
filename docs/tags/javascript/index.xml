@@ -6,8 +6,15 @@
     <description>Recent content in JavaScript on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XML CDATA Complete Guide: How to Handle Special Characters in XML</title>
+      <link>https://xingelf.github.io/tech/xml-cdata/</link>
+      <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/xml-cdata/</guid>
+      <description>&lt;p&gt;Master XML CDATA sections with practical examples. Learn when to use CDATA vs escaping, security best practices, and real-world applications for JavaScript, CSS, and HTML embedding.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Node.js Buffer Objects: A Comprehensive Guide to Binary Data Manipulation</title>
       <link>https://xingelf.github.io/tech/buffer_object/</link>

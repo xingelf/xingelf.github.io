@@ -9,7 +9,9 @@
 		<meta property="og:url" content="https://xingelf.github.io/tech/_pre-edit/">
   <meta property="og:site_name" content="Try Harder">
   <meta property="og:title" content="機械学習前処理">
-  <meta property="og:description" content="前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。">
+  <meta property="og:description" content="前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。
+欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完します。 どのように欠損値を扱うかがポイントです。 処理としては、fillna,dropnaなどの関数で簡単に対処可能です。
+欠損値の確認 df.isnull.sum() 欠損値の対応 平均値で補完 df = df.fillna(df.mean()) 中央値で補完 df = df.fillna(df.mean()) 最煩値で補完 df = df.fillna(df.mode()) 欠損データを削除 dropnaで削除する場合">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="tech">
@@ -21,15 +23,19 @@
 
 		
   <meta itemprop="name" content="機械学習前処理">
-  <meta itemprop="description" content="前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。">
+  <meta itemprop="description" content="前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。
+欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完します。 どのように欠損値を扱うかがポイントです。 処理としては、fillna,dropnaなどの関数で簡単に対処可能です。
+欠損値の確認 df.isnull.sum() 欠損値の対応 平均値で補完 df = df.fillna(df.mean()) 中央値で補完 df = df.fillna(df.mean()) 最煩値で補完 df = df.fillna(df.mode()) 欠損データを削除 dropnaで削除する場合">
   <meta itemprop="datePublished" content="2021-07-22T00:00:00+00:00">
   <meta itemprop="dateModified" content="2021-07-22T00:00:00+00:00">
-  <meta itemprop="wordCount" content="639">
+  <meta itemprop="wordCount" content="86">
   <meta itemprop="keywords" content="Deep Learning,Machine Learning,Python">
 		
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="機械学習前処理">
-  <meta name="twitter:description" content="前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。">
+  <meta name="twitter:description" content="前処理 機械学習は前処理が8割と言われます。前処理の手法をまとめました。
+欠損値の処理 データの一部数字がblankである場合、該当データを削除、または、代替値で補完します。 どのように欠損値を扱うかがポイントです。 処理としては、fillna,dropnaなどの関数で簡単に対処可能です。
+欠損値の確認 df.isnull.sum() 欠損値の対応 平均値で補完 df = df.fillna(df.mean()) 中央値で補完 df = df.fillna(df.mean()) 最煩値で補完 df = df.fillna(df.mode()) 欠損データを削除 dropnaで削除する場合">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">

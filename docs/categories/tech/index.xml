@@ -160,7 +160,7 @@
       <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
-      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;欠損値の処理&#34;&gt;欠損値の処理&lt;/h2&gt;&#xA;&lt;p&gt;データの一部数字がblankである場合、該当データを削除、または、代替値で補完します。&#xA;どのように欠損値を扱うかがポイントです。&#xA;処理としては、fillna,dropnaなどの関数で簡単に対処可能です。&lt;/p&gt;&#xA;&lt;h3 id=&#34;欠損値の確認&#34;&gt;欠損値の確認&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df.isnull.sum()&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;欠損値の対応&#34;&gt;欠損値の対応&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;平均値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mean())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;中央値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mean())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;最煩値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mode())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;欠損データを削除&#34;&gt;欠損データを削除&lt;/h3&gt;&#xA;&lt;p&gt;dropnaで削除する場合&lt;/p&gt;</description>
     </item>
     <item>
       <title>ショートカット - Shortcut</title>
@@ -174,21 +174,21 @@
       <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/github/</guid>
-      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-push-がreject&#34;&gt;git push がreject&lt;/h2&gt;&#xA;&lt;p&gt;ローカルが正/originであることを確認して、強制的にpushします。&lt;/p&gt;</description>
     </item>
     <item>
       <title>IUT and abc</title>
       <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/iut-abc/</guid>
-      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;</description>
+      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;&#xA;&lt;h1 id=&#34;iutabc予想&#34;&gt;IUT・abc予想&lt;/h1&gt;&#xA;&lt;p&gt;足し算と掛け算に関わる関係を明らかにする理論と言われます。&#xA;また、強いabc予想のもとでは、フェルマーの最終定理が背理法により簡単に導出されます。&lt;/p&gt;&#xA;&lt;p&gt;ABC予想のよくある間違い&#xA;&lt;a href=&#34;https://tsujimotter.hatenablog.com/entry/misunderstanding-of-abc-conjecture&#34;&gt;https://tsujimotter.hatenablog.com/entry/misunderstanding-of-abc-conjecture&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ブログweb&#34;&gt;ブログ/Web&lt;/h2&gt;&#xA;&lt;h3 id=&#34;新一の心の一票---楽天ブログ&#34;&gt;新一の「心の一票」 - 楽天ブログ&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://plaza.rakuten.co.jp/shinichi0329/&#34;&gt;https://plaza.rakuten.co.jp/shinichi0329/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
-      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ta-lib.org/&#34;&gt;https://ta-lib.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;macososx-ta-libのインストール&#34;&gt;MacOS/OSX ta-libのインストール&lt;/h2&gt;&#xA;&lt;p&gt;OSXにインストールする場合はbrewを使うと簡単です。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install ta-lib &#xA;pip3 install TA-Lib&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;azure-ta-libのインストール&#34;&gt;Azure ta-libのインストール&lt;/h2&gt;&#xA;&lt;p&gt;メモリは1G以上で実行しないとエラーになりました。&#xA;ta-libをインストールする際のみ1G以上に変更しましょう。&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Install Freqtrade: Step-by-Step Guide</title>

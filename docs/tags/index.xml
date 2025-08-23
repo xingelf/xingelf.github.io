@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deserialization</title>
+      <link>https://xingelf.github.io/tags/deserialization/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/deserialization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jsonpickle</title>
+      <link>https://xingelf.github.io/tags/jsonpickle/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/jsonpickle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://xingelf.github.io/tags/python/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://xingelf.github.io/tags/security/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vulnerability</title>
+      <link>https://xingelf.github.io/tags/vulnerability/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/vulnerability/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CDATA</title>
       <link>https://xingelf.github.io/tags/cdata/</link>
@@ -223,13 +258,6 @@
       <link>https://xingelf.github.io/tags/data-analysis/</link>
       <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/data-analysis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://xingelf.github.io/tags/python/</link>
-      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>

@@ -20,7 +20,7 @@
       <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/github/</guid>
-      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-push-がreject&#34;&gt;git push がreject&lt;/h2&gt;&#xA;&lt;p&gt;ローカルが正/originであることを確認して、強制的にpushします。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

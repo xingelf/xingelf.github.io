@@ -27,7 +27,7 @@
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
-      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ta-lib.org/&#34;&gt;https://ta-lib.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;macososx-ta-libのインストール&#34;&gt;MacOS/OSX ta-libのインストール&lt;/h2&gt;&#xA;&lt;p&gt;OSXにインストールする場合はbrewを使うと簡単です。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install ta-lib &#xA;pip3 install TA-Lib&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;azure-ta-libのインストール&#34;&gt;Azure ta-libのインストール&lt;/h2&gt;&#xA;&lt;p&gt;メモリは1G以上で実行しないとエラーになりました。&#xA;ta-libをインストールする際のみ1G以上に変更しましょう。&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Install Freqtrade: Step-by-Step Guide</title>

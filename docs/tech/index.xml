@@ -6,8 +6,15 @@
     <description>Recent content in Cyber Security on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jsonpickle Deserialization: Understanding Arbitrary Code Execution Vulnerabilities</title>
+      <link>https://xingelf.github.io/tech/jsonpickle-deserialization/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/jsonpickle-deserialization/</guid>
+      <description>&lt;h1 id=&#34;the-dangers-of-serialization-understanding-arbitrary-code-execution-vulnerabilities&#34;&gt;The Dangers of Serialization: Understanding Arbitrary Code Execution Vulnerabilities&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In modern web development, data serialization and deserialization are common practices. However, these processes can introduce serious security vulnerabilities if not handled properly. In this article, we&amp;rsquo;ll explore the risks associated with serialization using Python&amp;rsquo;s &lt;code&gt;jsonpickle&lt;/code&gt; library as an example.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>XML CDATA Complete Guide: How to Handle Special Characters in XML</title>
       <link>https://xingelf.github.io/tech/xml-cdata/</link>
@@ -398,7 +405,7 @@
       <link>https://xingelf.github.io/tech/social_engineering/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/social_engineering/</guid>
-      <description>&lt;h1 id=&#34;social-engineeringとは&#34;&gt;Social Engineeringとは&lt;/h1&gt;&#xA;&lt;p&gt;ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、&#xA;特定の行動を取らせたりすることを目的としたすべてのテクニックのことを指す。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;social-engineeringとは&#34;&gt;Social Engineeringとは&lt;/h1&gt;&#xA;&lt;p&gt;ソーシャルエンジニアリングとは、不正な理由でターゲットに特定の情報を開示させたり、&#xA;特定の行動を取らせたりすることを目的としたすべてのテクニックのことを指す。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.enisa.europa.eu/topics/csirts-in-europe/glossary/what-is-social-engineering&#34;&gt;https://www.enisa.europa.eu/topics/csirts-in-europe/glossary/what-is-social-engineering&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;quid-pro-quo何かのための何か&#34;&gt;Quid pro quo　何かのための何か&lt;/h2&gt;&#xA;&lt;p&gt;Quid pro quoはギリシャ語で、代わり・代替などの意味。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computer Virus 101</title>
@@ -440,7 +447,7 @@
       <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
-      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;欠損値の処理&#34;&gt;欠損値の処理&lt;/h2&gt;&#xA;&lt;p&gt;データの一部数字がblankである場合、該当データを削除、または、代替値で補完します。&#xA;どのように欠損値を扱うかがポイントです。&#xA;処理としては、fillna,dropnaなどの関数で簡単に対処可能です。&lt;/p&gt;&#xA;&lt;h3 id=&#34;欠損値の確認&#34;&gt;欠損値の確認&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df.isnull.sum()&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;欠損値の対応&#34;&gt;欠損値の対応&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;平均値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mean())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;中央値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mean())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;最煩値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mode())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;欠損データを削除&#34;&gt;欠損データを削除&lt;/h3&gt;&#xA;&lt;p&gt;dropnaで削除する場合&lt;/p&gt;</description>
     </item>
     <item>
       <title>ショートカット - Shortcut</title>
@@ -454,21 +461,21 @@
       <link>https://xingelf.github.io/tech/github/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/github/</guid>
-      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;gitignoreが効かない&#34;&gt;.gitignoreが効かない&lt;/h2&gt;&#xA;&lt;p&gt;キャッシュ削除による解決を試みます。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git rm -r --cached .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;git-push-がreject&#34;&gt;git push がreject&lt;/h2&gt;&#xA;&lt;p&gt;ローカルが正/originであることを確認して、強制的にpushします。&lt;/p&gt;</description>
     </item>
     <item>
       <title>IUT and abc</title>
       <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/iut-abc/</guid>
-      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;</description>
+      <description>&lt;p&gt;一般向けIUT・abc予想について。&lt;/p&gt;&#xA;&lt;h1 id=&#34;iutabc予想&#34;&gt;IUT・abc予想&lt;/h1&gt;&#xA;&lt;p&gt;足し算と掛け算に関わる関係を明らかにする理論と言われます。&#xA;また、強いabc予想のもとでは、フェルマーの最終定理が背理法により簡単に導出されます。&lt;/p&gt;&#xA;&lt;p&gt;ABC予想のよくある間違い&#xA;&lt;a href=&#34;https://tsujimotter.hatenablog.com/entry/misunderstanding-of-abc-conjecture&#34;&gt;https://tsujimotter.hatenablog.com/entry/misunderstanding-of-abc-conjecture&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ブログweb&#34;&gt;ブログ/Web&lt;/h2&gt;&#xA;&lt;h3 id=&#34;新一の心の一票---楽天ブログ&#34;&gt;新一の「心の一票」 - 楽天ブログ&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://plaza.rakuten.co.jp/shinichi0329/&#34;&gt;https://plaza.rakuten.co.jp/shinichi0329/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
-      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ta-lib.org/&#34;&gt;https://ta-lib.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;macososx-ta-libのインストール&#34;&gt;MacOS/OSX ta-libのインストール&lt;/h2&gt;&#xA;&lt;p&gt;OSXにインストールする場合はbrewを使うと簡単です。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install ta-lib &#xA;pip3 install TA-Lib&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;azure-ta-libのインストール&#34;&gt;Azure ta-libのインストール&lt;/h2&gt;&#xA;&lt;p&gt;メモリは1G以上で実行しないとエラーになりました。&#xA;ta-libをインストールする際のみ1G以上に変更しましょう。&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Install Freqtrade: Step-by-Step Guide</title>
@@ -482,7 +489,7 @@
       <link>https://xingelf.github.io/tech/kaggle/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/kaggle/</guid>
-      <description>&lt;h2 id=&#34;書籍-kaggleで勝つデータ分析---門脇-大輔&#34;&gt;書籍 Kaggleで勝つデータ分析   門脇 大輔&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;良い点：網羅的、リファレンス多数&lt;/li&gt;&#xA;&lt;li&gt;注意点：精読が必要、中級者向け&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/dp/B07YTDBC3Z/&#34;&gt;https://www.amazon.co.jp/dp/B07YTDBC3Z/&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;書籍-kaggleで勝つデータ分析---門脇-大輔&#34;&gt;書籍 Kaggleで勝つデータ分析   門脇 大輔&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;良い点：網羅的、リファレンス多数&lt;/li&gt;&#xA;&lt;li&gt;注意点：精読が必要、中級者向け&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/dp/B07YTDBC3Z/&#34;&gt;https://www.amazon.co.jp/dp/B07YTDBC3Z/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;概要&#34;&gt;&lt;strong&gt;概要&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;書籍「Kaggleで勝つデータ分析」は、データサイエンスコンペティションサイトKaggleで上位入賞を果たしている著者が、勝つためのデータ分析の技術とノウハウを解説した書籍です。&lt;/p&gt;&#xA;&lt;h3 id=&#34;内容&#34;&gt;&lt;strong&gt;内容&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;本書では、データ分析の基礎知識から、Kaggleで実際に使用される機械学習モデルや前処理の手法、コンペティションに臨むための戦略まで、幅広く解説されています。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

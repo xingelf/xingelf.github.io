@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deserialization on Try Harder</title>
+    <link>https://xingelf.github.io/tags/deserialization/</link>
+    <description>Recent content in Deserialization on Try Harder</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/deserialization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jsonpickle Deserialization: Understanding Arbitrary Code Execution Vulnerabilities</title>
+      <link>https://xingelf.github.io/tech/jsonpickle-deserialization/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/jsonpickle-deserialization/</guid>
+      <description>&lt;h1 id=&#34;the-dangers-of-serialization-understanding-arbitrary-code-execution-vulnerabilities&#34;&gt;The Dangers of Serialization: Understanding Arbitrary Code Execution Vulnerabilities&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In modern web development, data serialization and deserialization are common practices. However, these processes can introduce serious security vulnerabilities if not handled properly. In this article, we&amp;rsquo;ll explore the risks associated with serialization using Python&amp;rsquo;s &lt;code&gt;jsonpickle&lt;/code&gt; library as an example.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

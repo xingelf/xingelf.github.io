@@ -6,8 +6,15 @@
     <description>Recent content in Python on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jsonpickle Deserialization: Understanding Arbitrary Code Execution Vulnerabilities</title>
+      <link>https://xingelf.github.io/tech/jsonpickle-deserialization/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/jsonpickle-deserialization/</guid>
+      <description>&lt;h1 id=&#34;the-dangers-of-serialization-understanding-arbitrary-code-execution-vulnerabilities&#34;&gt;The Dangers of Serialization: Understanding Arbitrary Code Execution Vulnerabilities&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In modern web development, data serialization and deserialization are common practices. However, these processes can introduce serious security vulnerabilities if not handled properly. In this article, we&amp;rsquo;ll explore the risks associated with serialization using Python&amp;rsquo;s &lt;code&gt;jsonpickle&lt;/code&gt; library as an example.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Comprehensive Guide to Decision Trees: Theory, Applications, and Best Practices</title>
       <link>https://xingelf.github.io/tech/decision_trees/</link>
@@ -48,14 +55,14 @@
       <link>https://xingelf.github.io/tech/_pre-edit/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/_pre-edit/</guid>
-      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;前処理&#34;&gt;前処理&lt;/h1&gt;&#xA;&lt;p&gt;機械学習は前処理が8割と言われます。前処理の手法をまとめました。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;欠損値の処理&#34;&gt;欠損値の処理&lt;/h2&gt;&#xA;&lt;p&gt;データの一部数字がblankである場合、該当データを削除、または、代替値で補完します。&#xA;どのように欠損値を扱うかがポイントです。&#xA;処理としては、fillna,dropnaなどの関数で簡単に対処可能です。&lt;/p&gt;&#xA;&lt;h3 id=&#34;欠損値の確認&#34;&gt;欠損値の確認&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df.isnull.sum()&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;欠損値の対応&#34;&gt;欠損値の対応&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;平均値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mean())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;中央値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mean())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;最煩値で補完&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;df = df.fillna(df.mode())&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;欠損データを削除&#34;&gt;欠損データを削除&lt;/h3&gt;&#xA;&lt;p&gt;dropnaで削除する場合&lt;/p&gt;</description>
     </item>
     <item>
       <title>ta-libのインストール</title>
       <link>https://xingelf.github.io/tech/ta-lib/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/ta-lib/</guid>
-      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;ta-lib&#34;&gt;ta-lib&lt;/h1&gt;&#xA;&lt;p&gt;Ta-Libはテクニカル分析ライブラリです。&#xA;テクニカル教の信者にとってはインストール必須のツールになります。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ta-lib.org/&#34;&gt;https://ta-lib.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;macososx-ta-libのインストール&#34;&gt;MacOS/OSX ta-libのインストール&lt;/h2&gt;&#xA;&lt;p&gt;OSXにインストールする場合はbrewを使うと簡単です。&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install ta-lib &#xA;pip3 install TA-Lib&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;azure-ta-libのインストール&#34;&gt;Azure ta-libのインストール&lt;/h2&gt;&#xA;&lt;p&gt;メモリは1G以上で実行しないとエラーになりました。&#xA;ta-libをインストールする際のみ1G以上に変更しましょう。&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Install Freqtrade: Step-by-Step Guide</title>

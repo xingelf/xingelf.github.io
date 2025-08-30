@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Py/Reduce on Try Harder</title>
+    <link>https://xingelf.github.io/tags/py/reduce/</link>
+    <description>Recent content in Py/Reduce on Try Harder</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/py/reduce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python jsonpickle Security Vulnerability: Understanding Arbitrary Code Execution Risks and Countermeasures</title>
+      <link>https://xingelf.github.io/tech/jsonpickle-deserialization/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/jsonpickle-deserialization/</guid>
+      <description>&lt;h1 id=&#34;python-jsonpickle-security-vulnerability-understanding-arbitrary-code-execution-risks-and-countermeasures&#34;&gt;Python jsonpickle Security Vulnerability: Understanding Arbitrary Code Execution Risks and Countermeasures&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;⚠️ Critical Warning&lt;/strong&gt;: Python&amp;rsquo;s &lt;code&gt;jsonpickle&lt;/code&gt; library contains a severe security vulnerability that allows attackers to execute arbitrary Python code. This article provides a detailed explanation of the mechanism, attack examples, and secure serialization best practices.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

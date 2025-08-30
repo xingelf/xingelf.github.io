@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Jsonpickle Deserialization: Understanding Arbitrary Code Execution Vulnerabilities</title>
+      <title>Python jsonpickle Security Vulnerability: Understanding Arbitrary Code Execution Risks and Countermeasures</title>
       <link>https://xingelf.github.io/tech/jsonpickle-deserialization/</link>
       <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tech/jsonpickle-deserialization/</guid>
-      <description>&lt;h1 id=&#34;the-dangers-of-serialization-understanding-arbitrary-code-execution-vulnerabilities&#34;&gt;The Dangers of Serialization: Understanding Arbitrary Code Execution Vulnerabilities&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In modern web development, data serialization and deserialization are common practices. However, these processes can introduce serious security vulnerabilities if not handled properly. In this article, we&amp;rsquo;ll explore the risks associated with serialization using Python&amp;rsquo;s &lt;code&gt;jsonpickle&lt;/code&gt; library as an example.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;python-jsonpickle-security-vulnerability-understanding-arbitrary-code-execution-risks-and-countermeasures&#34;&gt;Python jsonpickle Security Vulnerability: Understanding Arbitrary Code Execution Risks and Countermeasures&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;⚠️ Critical Warning&lt;/strong&gt;: Python&amp;rsquo;s &lt;code&gt;jsonpickle&lt;/code&gt; library contains a severe security vulnerability that allows attackers to execute arbitrary Python code. This article provides a detailed explanation of the mechanism, attack examples, and secure serialization best practices.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Comprehensive Guide to Decision Trees: Theory, Applications, and Best Practices</title>

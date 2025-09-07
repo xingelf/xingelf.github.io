@@ -3,21 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingelf.github.io/</loc>
-    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/cyber-security/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/file-inclusion/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/lfi/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tech/lfi/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/penetration-testing/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/vulnerability/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/categories/web-development/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xingelf.github.io/tags/web-security/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/arbitrary-code-execution/</loc>
     <lastmod>2025-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/categories/</loc>
-    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/code-injection/</loc>
-    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/cyber-security/</loc>
-    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tech/</loc>
     <lastmod>2025-08-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/deserialization/</loc>
@@ -44,12 +68,6 @@
     <loc>https://xingelf.github.io/tags/security/</loc>
     <lastmod>2025-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://xingelf.github.io/tags/</loc>
-    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/vulnerability/</loc>
-    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://xingelf.github.io/tags/web-application-security/</loc>
     <lastmod>2025-08-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -63,12 +81,6 @@
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/tutorial/</loc>
-    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/categories/web-development/</loc>
-    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://xingelf.github.io/tags/web-security/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xingelf.github.io/tags/xml/</loc>

@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Inclusion</title>
+      <link>https://xingelf.github.io/tags/file-inclusion/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/file-inclusion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LFI</title>
+      <link>https://xingelf.github.io/tags/lfi/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/lfi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Penetration Testing</title>
+      <link>https://xingelf.github.io/tags/penetration-testing/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/penetration-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vulnerability</title>
+      <link>https://xingelf.github.io/tags/vulnerability/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/vulnerability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Security</title>
+      <link>https://xingelf.github.io/tags/web-security/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tags/web-security/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Arbitrary Code Execution</title>
       <link>https://xingelf.github.io/tags/arbitrary-code-execution/</link>
@@ -65,13 +100,6 @@
       <description></description>
     </item>
     <item>
-      <title>Vulnerability</title>
-      <link>https://xingelf.github.io/tags/vulnerability/</link>
-      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/vulnerability/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Web Application Security</title>
       <link>https://xingelf.github.io/tags/web-application-security/</link>
       <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
@@ -97,13 +125,6 @@
       <link>https://xingelf.github.io/tags/tutorial/</link>
       <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web Security</title>
-      <link>https://xingelf.github.io/tags/web-security/</link>
-      <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tags/web-security/</guid>
       <description></description>
     </item>
     <item>

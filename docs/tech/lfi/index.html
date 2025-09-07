@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Local File Inclusion (LFI) Vulnerability: Complete Guide for Developers - Try Harder</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Learn about Local File Inclusion vulnerabilities, how they work, common attack vectors, and effective prevention strategies to secure your web applications.">
+		<meta property="og:url" content="https://xingelf.github.io/tech/lfi/">
+  <meta property="og:site_name" content="Try Harder">
+  <meta property="og:title" content="Local File Inclusion (LFI) Vulnerability: Complete Guide for Developers">
+  <meta property="og:description" content="Learn about Local File Inclusion vulnerabilities, how they work, common attack vectors, and effective prevention strategies to secure your web applications.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tech">
+    <meta property="article:published_time" content="2025-09-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-07T00:00:00+00:00">
+    <meta property="article:tag" content="LFI">
+    <meta property="article:tag" content="Web Security">
+    <meta property="article:tag" content="Vulnerability">
+    <meta property="article:tag" content="File Inclusion">
+    <meta property="article:tag" content="Penetration Testing">
+
+		
+  <meta itemprop="name" content="Local File Inclusion (LFI) Vulnerability: Complete Guide for Developers">
+  <meta itemprop="description" content="Learn about Local File Inclusion vulnerabilities, how they work, common attack vectors, and effective prevention strategies to secure your web applications.">
+  <meta itemprop="datePublished" content="2025-09-07T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-09-07T00:00:00+00:00">
+  <meta itemprop="wordCount" content="897">
+  <meta itemprop="keywords" content="local file inclusion,LFI vulnerability,file inclusion attack,web security,directory traversal,path traversal,file disclosure,web application security,OWASP Top 10,secure coding">
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Local File Inclusion (LFI) Vulnerability: Complete Guide for Developers">
+  <meta name="twitter:description" content="Learn about Local File Inclusion vulnerabilities, how they work, common attack vectors, and effective prevention strategies to secure your web applications.">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+		
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C3VFJB0MW"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1C3VFJB0MW');
+        }
+      </script>
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Try Harder" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/icons/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Try Harder</div>
+					<div class="logo__tagline">Control your own destiny or someone else will</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">Top</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tech">
+				
+				<span class="menu__text">Tech👻</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dapps">
+				
+				<span class="menu__text">Blockchain🔗</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/mlai">
+				
+				<span class="menu__text">ML/AI🤖</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts">
+				
+				<span class="menu__text">Posts📝</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about">
+				
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Local File Inclusion (LFI) Vulnerability: Complete Guide for Developers</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-09-07T00:00:00Z">2025-09-07</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/cyber-security/" rel="category">Cyber Security</a>, <a class="meta__link" href="/categories/web-development/" rel="category">Web Development</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/images/img_2.png" alt="Local File Inclusion (LFI) Vulnerability: Complete Guide for Developers">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-local-file-inclusion-lfi-">What is Local File Inclusion (LFI)? 🔍</a></li>
+    <li><a href="#how-lfi-vulnerabilities-work">How LFI Vulnerabilities Work</a>
+      <ul>
+        <li><a href="#basic-lfi-attack-vector">Basic LFI Attack Vector</a></li>
+        <li><a href="#common-vulnerable-functions">Common Vulnerable Functions</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-lfi-attack-techniques">Common LFI Attack Techniques</a>
+      <ul>
+        <li><a href="#1-directory-traversal-path-traversal">1. Directory Traversal (Path Traversal)</a></li>
+        <li><a href="#2-null-byte-injection">2. Null Byte Injection</a></li>
+        <li><a href="#3-encoding-techniques">3. Encoding Techniques</a></li>
+        <li><a href="#4-log-file-poisoning">4. Log File Poisoning</a></li>
+      </ul>
+    </li>
+    <li><a href="#real-world-lfi-examples">Real-World LFI Examples</a>
+      <ul>
+        <li><a href="#example-1-basic-lfi-in-php">Example 1: Basic LFI in PHP</a></li>
+        <li><a href="#example-2-lfi-with-file-extension">Example 2: LFI with File Extension</a></li>
+        <li><a href="#example-3-lfi-in-file-upload">Example 3: LFI in File Upload</a></li>
+      </ul>
+    </li>
+    <li><a href="#critical-files-to-target">Critical Files to Target</a>
+      <ul>
+        <li><a href="#linuxunix-systems">Linux/Unix Systems</a></li>
+        <li><a href="#windows-systems">Windows Systems</a></li>
+        <li><a href="#application-specific-files">Application-Specific Files</a></li>
+      </ul>
+    </li>
+    <li><a href="#prevention-and-mitigation-strategies">Prevention and Mitigation Strategies</a>
+      <ul>
+        <li><a href="#1-input-validation-and-sanitization">1. Input Validation and Sanitization</a></li>
+        <li><a href="#2-use-absolute-paths">2. Use Absolute Paths</a></li>
+        <li><a href="#3-file-extension-validation">3. File Extension Validation</a></li>
+        <li><a href="#4-use-file-inclusion-maps">4. Use File Inclusion Maps</a></li>
+        <li><a href="#5-server-configuration">5. Server Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#testing-for-lfi-vulnerabilities">Testing for LFI Vulnerabilities</a>
+      <ul>
+        <li><a href="#manual-testing">Manual Testing</a></li>
+        <li><a href="#automated-tools">Automated Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#owasp-top-10-and-lfi">OWASP Top 10 and LFI</a></li>
+    <li><a href="#best-practices-for-developers">Best Practices for Developers</a>
+      <ul>
+        <li><a href="#1-never-trust-user-input">1. Never Trust User Input</a></li>
+        <li><a href="#2-use-whitelisting">2. Use Whitelisting</a></li>
+        <li><a href="#3-implement-proper-access-controls">3. Implement Proper Access Controls</a></li>
+        <li><a href="#4-regular-security-testing">4. Regular Security Testing</a></li>
+        <li><a href="#5-keep-software-updated">5. Keep Software Updated</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="local-file-inclusion-lfi-vulnerability-complete-guide-for-developers">Local File Inclusion (LFI) Vulnerability: Complete Guide for Developers</h1>
+<h2 id="what-is-local-file-inclusion-lfi-">What is Local File Inclusion (LFI)? 🔍</h2>
+<p>Local File Inclusion (LFI) is a critical web application vulnerability that allows attackers to include and execute files from the local server. This vulnerability occurs when web applications dynamically include files based on user input without proper validation or sanitization.</p>
+<p>Unlike Remote File Inclusion (RFI), LFI attacks are limited to files that already exist on the target server, but they can still lead to serious security breaches including:</p>
+<ul>
+<li><strong>Sensitive file disclosure</strong> (passwords, configuration files)</li>
+<li><strong>Source code exposure</strong></li>
+<li><strong>Session hijacking</strong></li>
+<li><strong>Cross-site scripting (XSS)</strong></li>
+<li><strong>Remote code execution</strong> (in some cases)</li>
+</ul>
+<h2 id="how-lfi-vulnerabilities-work">How LFI Vulnerabilities Work</h2>
+<h3 id="basic-lfi-attack-vector">Basic LFI Attack Vector</h3>
+<p>LFI vulnerabilities typically occur in applications that use file inclusion functions with user-controlled parameters:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Vulnerable code example
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$file <span style="color:#f92672">=</span> $_GET[<span style="color:#e6db74">&#39;page&#39;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">include</span>($file <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;.php&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>An attacker could exploit this by requesting:</p>
+<pre tabindex="0"><code>http://example.com/index.php?page=../../../etc/passwd
+</code></pre><h3 id="common-vulnerable-functions">Common Vulnerable Functions</h3>
+<p><strong>PHP:</strong></p>
+<ul>
+<li><code>include()</code></li>
+<li><code>require()</code></li>
+<li><code>include_once()</code></li>
+<li><code>require_once()</code></li>
+<li><code>file_get_contents()</code></li>
+<li><code>fopen()</code></li>
+<li><code>readfile()</code></li>
+</ul>
+<p><strong>Other Languages:</strong></p>
+<ul>
+<li><strong>JSP:</strong> <code>&lt;%@ include file=&quot;...&quot; %&gt;</code></li>
+<li><strong>ASP:</strong> <code>&lt;!--#include file=&quot;...&quot; --&gt;</code></li>
+<li><strong>Node.js:</strong> <code>fs.readFileSync()</code></li>
+</ul>
+<h2 id="common-lfi-attack-techniques">Common LFI Attack Techniques</h2>
+<h3 id="1-directory-traversal-path-traversal">1. Directory Traversal (Path Traversal)</h3>
+<p>The most common LFI technique uses directory traversal sequences:</p>
+<pre tabindex="0"><code>../../../etc/passwd
+..\..\..\windows\system32\drivers\etc\hosts
+....//....//....//etc/passwd
+</code></pre><h3 id="2-null-byte-injection">2. Null Byte Injection</h3>
+<p>In older PHP versions, null bytes could terminate file paths:</p>
+<pre tabindex="0"><code>../../../etc/passwd%00
+</code></pre><h3 id="3-encoding-techniques">3. Encoding Techniques</h3>
+<p>Attackers often use various encoding methods to bypass filters:</p>
+<pre tabindex="0"><code>%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd
+..%252f..%252f..%252fetc%252fpasswd
+</code></pre><h3 id="4-log-file-poisoning">4. Log File Poisoning</h3>
+<p>When log files are accessible, attackers can inject malicious code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Inject PHP code into access logs</span>
+</span></span><span style="display:flex;"><span>curl <span style="color:#e6db74">&#34;http://target.com/&lt;?php system(</span>$_GET<span style="color:#e6db74">[&#39;cmd&#39;]); ?&gt;&#34;</span> -H <span style="color:#e6db74">&#34;User-Agent: &lt;?php system(</span>$_GET<span style="color:#e6db74">[&#39;cmd&#39;]); ?&gt;&#34;</span>
+</span></span></code></pre></div><h2 id="real-world-lfi-examples">Real-World LFI Examples</h2>
+<h3 id="example-1-basic-lfi-in-php">Example 1: Basic LFI in PHP</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Vulnerable code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($_GET[<span style="color:#e6db74">&#39;file&#39;</span>])) {
+</span></span><span style="display:flex;"><span>    $file <span style="color:#f92672">=</span> $_GET[<span style="color:#e6db74">&#39;file&#39;</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">include</span>($file <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;.php&#39;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p><strong>Attack:</strong></p>
+<pre tabindex="0"><code>http://target.com/index.php?file=../../../etc/passwd
+</code></pre><h3 id="example-2-lfi-with-file-extension">Example 2: LFI with File Extension</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Vulnerable code with extension
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$page <span style="color:#f92672">=</span> $_GET[<span style="color:#e6db74">&#39;page&#39;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">include</span>($page <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;.php&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p><strong>Attack:</strong></p>
+<pre tabindex="0"><code>http://target.com/index.php?page=../../../etc/passwd%00
+</code></pre><h3 id="example-3-lfi-in-file-upload">Example 3: LFI in File Upload</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Vulnerable file upload
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($_FILES[<span style="color:#e6db74">&#39;file&#39;</span>])) {
+</span></span><span style="display:flex;"><span>    $upload_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;uploads/&#39;</span>;
+</span></span><span style="display:flex;"><span>    $file_name <span style="color:#f92672">=</span> $_FILES[<span style="color:#e6db74">&#39;file&#39;</span>][<span style="color:#e6db74">&#39;name&#39;</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">move_uploaded_file</span>($_FILES[<span style="color:#e6db74">&#39;file&#39;</span>][<span style="color:#e6db74">&#39;tmp_name&#39;</span>], $upload_dir <span style="color:#f92672">.</span> $file_name);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">include</span>($upload_dir <span style="color:#f92672">.</span> $file_name);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="critical-files-to-target">Critical Files to Target</h2>
+<h3 id="linuxunix-systems">Linux/Unix Systems</h3>
+<pre tabindex="0"><code>/etc/passwd          # User account information
+/etc/shadow          # Password hashes
+/etc/hosts           # Hostname resolution
+/etc/hostname        # System hostname
+/proc/version        # Kernel version
+/proc/cpuinfo        # CPU information
+/var/log/apache2/access.log    # Web server logs
+/var/log/apache2/error.log     # Error logs
+</code></pre><h3 id="windows-systems">Windows Systems</h3>
+<pre tabindex="0"><code>C:\Windows\System32\drivers\etc\hosts
+C:\Windows\win.ini
+C:\boot.ini
+C:\Windows\System32\config\SAM
+</code></pre><h3 id="application-specific-files">Application-Specific Files</h3>
+<pre tabindex="0"><code>config.php
+database.php
+.htaccess
+web.config
+wp-config.php (WordPress)
+settings.py (Django)
+</code></pre><h2 id="prevention-and-mitigation-strategies">Prevention and Mitigation Strategies</h2>
+<h3 id="1-input-validation-and-sanitization">1. Input Validation and Sanitization</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Secure implementation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">validateFile</span>($filename) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Whitelist allowed files
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $allowed_files <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;home.php&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;about.php&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;contact.php&#39;</span>
+</span></span><span style="display:flex;"><span>    ];
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Remove directory traversal sequences
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $filename <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace</span>([<span style="color:#e6db74">&#39;../&#39;</span>, <span style="color:#e6db74">&#39;..\\&#39;</span>, <span style="color:#e6db74">&#39;..%2f&#39;</span>, <span style="color:#e6db74">&#39;..%5c&#39;</span>], <span style="color:#e6db74">&#39;&#39;</span>, $filename);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Check if file is in whitelist
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">in_array</span>($filename, $allowed_files)) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> $filename;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;home.php&#39;</span>; <span style="color:#75715e">// Default safe file
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$file <span style="color:#f92672">=</span> <span style="color:#a6e22e">validateFile</span>($_GET[<span style="color:#e6db74">&#39;page&#39;</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">include</span>($file);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="2-use-absolute-paths">2. Use Absolute Paths</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Define base directory
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$base_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/var/www/html/pages/&#39;</span>;
+</span></span><span style="display:flex;"><span>$file <span style="color:#f92672">=</span> <span style="color:#a6e22e">basename</span>($_GET[<span style="color:#e6db74">&#39;page&#39;</span>]); <span style="color:#75715e">// Remove path components
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$full_path <span style="color:#f92672">=</span> $base_dir <span style="color:#f92672">.</span> $file <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;.php&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Verify file exists and is within base directory
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">file_exists</span>($full_path) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">strpos</span>(<span style="color:#a6e22e">realpath</span>($full_path), $base_dir) <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">include</span>($full_path);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">include</span>($base_dir <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;error.php&#39;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="3-file-extension-validation">3. File Extension Validation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>$file <span style="color:#f92672">=</span> $_GET[<span style="color:#e6db74">&#39;page&#39;</span>];
+</span></span><span style="display:flex;"><span>$allowed_extensions <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;.php&#39;</span>, <span style="color:#e6db74">&#39;.html&#39;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Check file extension
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$extension <span style="color:#f92672">=</span> <span style="color:#a6e22e">strtolower</span>(<span style="color:#a6e22e">substr</span>($file, <span style="color:#a6e22e">strrpos</span>($file, <span style="color:#e6db74">&#39;.&#39;</span>)));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">in_array</span>($extension, $allowed_extensions)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">include</span>($file);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">die</span>(<span style="color:#e6db74">&#39;Invalid file type&#39;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="4-use-file-inclusion-maps">4. Use File Inclusion Maps</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Map user input to actual files
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$page_map <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;home&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;home.php&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;about&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;about.php&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;contact&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;contact.php&#39;</span>
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$page <span style="color:#f92672">=</span> $_GET[<span style="color:#e6db74">&#39;page&#39;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($page_map[$page])) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">include</span>($page_map[$page]);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">include</span>(<span style="color:#e6db74">&#39;error.php&#39;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="5-server-configuration">5. Server Configuration</h3>
+<p><strong>Apache (.htaccess):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#75715e"># Prevent access to sensitive files</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Files</span> <span style="color:#e6db74">&#34;*.log&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    Order allow,deny
+</span></span><span style="display:flex;"><span>    Deny from <span style="color:#66d9ef">all</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Files&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Disable PHP execution in upload directories</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;Directory</span> <span style="color:#e6db74">&#34;/var/www/uploads&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    php_flag engine <span style="color:#66d9ef">off</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Directory&gt;</span>
+</span></span></code></pre></div><p><strong>Nginx:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#75715e"># Block access to sensitive files
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">location</span> ~<span style="color:#e6db74">*</span> <span style="color:#e6db74">\.(log|conf|ini)</span>$ {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">deny</span> <span style="color:#e6db74">all</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Disable PHP execution in uploads
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">location</span> <span style="color:#e6db74">/uploads/</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span> ~ <span style="color:#e6db74">\.php$</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">deny</span> <span style="color:#e6db74">all</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="testing-for-lfi-vulnerabilities">Testing for LFI Vulnerabilities</h2>
+<h3 id="manual-testing">Manual Testing</h3>
+<ol>
+<li>
+<p><strong>Identify file inclusion parameters:</strong></p>
+<pre tabindex="0"><code>?file=index
+?page=home
+?include=about
+</code></pre></li>
+<li>
+<p><strong>Test directory traversal:</strong></p>
+<pre tabindex="0"><code>?file=../../../etc/passwd
+?file=..\..\..\windows\system32\drivers\etc\hosts
+</code></pre></li>
+<li>
+<p><strong>Try different encodings:</strong></p>
+<pre tabindex="0"><code>?file=..%2f..%2f..%2fetc%2fpasswd
+?file=....//....//....//etc//passwd
+</code></pre></li>
+</ol>
+<h3 id="automated-tools">Automated Tools</h3>
+<ul>
+<li><strong>Burp Suite</strong> - Professional web application testing</li>
+<li><strong>OWASP ZAP</strong> - Free and open-source security scanner</li>
+<li><strong>Nikto</strong> - Web server scanner</li>
+<li><strong>Dirb/Dirbuster</strong> - Directory brute-forcing tools</li>
+</ul>
+<h2 id="owasp-top-10-and-lfi">OWASP Top 10 and LFI</h2>
+<p>LFI vulnerabilities are part of the <strong>OWASP Top 10</strong> under:</p>
+<ul>
+<li><strong>A03:2021 – Injection</strong> (File inclusion attacks)</li>
+<li><strong>A05:2021 – Security Misconfiguration</strong> (Improper file access controls)</li>
+</ul>
+<h2 id="best-practices-for-developers">Best Practices for Developers</h2>
+<h3 id="1-never-trust-user-input">1. Never Trust User Input</h3>
+<p>Always validate and sanitize any user input that will be used in file operations.</p>
+<h3 id="2-use-whitelisting">2. Use Whitelisting</h3>
+<p>Maintain a whitelist of allowed files rather than trying to blacklist dangerous ones.</p>
+<h3 id="3-implement-proper-access-controls">3. Implement Proper Access Controls</h3>
+<p>Ensure that sensitive files are not accessible through web requests.</p>
+<h3 id="4-regular-security-testing">4. Regular Security Testing</h3>
+<p>Conduct regular penetration testing and code reviews to identify LFI vulnerabilities.</p>
+<h3 id="5-keep-software-updated">5. Keep Software Updated</h3>
+<p>Ensure your web server, PHP, and other components are up to date with security patches.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Local File Inclusion vulnerabilities pose a significant threat to web applications, potentially leading to sensitive data exposure and system compromise. By understanding how these attacks work and implementing proper security measures, developers can effectively protect their applications from LFI attacks.</p>
+<p>Remember: <strong>Security is not a feature, it&rsquo;s a requirement.</strong> Always validate user input, use whitelisting approaches, and conduct regular security assessments to keep your applications secure.</p>
+<hr>
+<p><em>This guide provides a comprehensive overview of LFI vulnerabilities. For hands-on practice, consider using vulnerable applications like DVWA (Damn Vulnerable Web Application) or WebGoat in controlled environments.</em></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/lfi/" rel="tag">LFI</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/web-security/" rel="tag">Web Security</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/vulnerability/" rel="tag">Vulnerability</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/file-inclusion/" rel="tag">File Inclusion</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/penetration-testing/" rel="tag">Penetration Testing</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/tech/jsonpickle-deserialization/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Python jsonpickle Security Vulnerability: Understanding Arbitrary Code Execution Risks and Countermeasures</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 @xingelf.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.1.0/mermaid.min.js"></script>
+<script>
+    window.onload = function () {
+        mermaid.init(undefined, ".language-mermaid");
+    };
+</script></body>
+</html>

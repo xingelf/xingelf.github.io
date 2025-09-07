@@ -30,13 +30,6 @@
       <description>&lt;h1 id=&#34;-understanding-odds-ratio-and-risk-ratio&#34;&gt;📊 Understanding Odds Ratio and Risk Ratio&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-what-is-risk-ratio&#34;&gt;🎯 What is Risk Ratio?&lt;/h2&gt;&#xA;&lt;p&gt;Risk Ratio is a measure that represents the ratio of risks (incidence rates) between two groups. Let&amp;rsquo;s explain using hypothetical data:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Information Theory</title>
-      <link>https://xingelf.github.io/mlai/entropy/</link>
-      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/mlai/entropy/</guid>
-      <description>&lt;p&gt;Purpose: To understand the basics of information theory.&lt;/p&gt;&#xA;&lt;h2 id=&#34;information-quantity&#34;&gt;Information Quantity&lt;/h2&gt;&#xA;&lt;p&gt;When the probability of event A occurring is denoted as P(A), the information quantity I(A) is defined as follows.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>IUT and abc</title>
       <link>https://xingelf.github.io/tech/iut-abc/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>

@@ -6,21 +6,42 @@
     <description>Recent content in Blockchain on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Zero Knowledge Proofs</title>
+      <title>Creating Your First Simple Solidity Smart Contract with Remix IDE</title>
+      <link>https://xingelf.github.io/dapps/solidity-1stcontract/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-1stcontract/</guid>
+      <description>&lt;p&gt;Learn how to create your first simple Solidity smart contract using the popular Remix IDE. This tutorial covers the most basic contract that&amp;rsquo;s often introduced in Solidity learning resources.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solidity SafeMath Library: Secure Arithmetic Operations</title>
+      <link>https://xingelf.github.io/dapps/solidity-safemath/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-safemath/</guid>
+      <description>&lt;h1 id=&#34;solidity-safemath-library-secure-arithmetic-operations-&#34;&gt;Solidity SafeMath Library: Secure Arithmetic Operations 🔒&lt;/h1&gt;&#xA;&lt;p&gt;The SafeMath library provides secure arithmetic operations that prevent overflow and underflow vulnerabilities using assert statements.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding ERC20 Token Standard in Solidity</title>
+      <link>https://xingelf.github.io/dapps/solidity-erc20/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-erc20/</guid>
+      <description>&lt;h1 id=&#34;understanding-erc20-token-standard-in-solidity&#34;&gt;Understanding ERC20 Token Standard in Solidity&lt;/h1&gt;&#xA;&lt;p&gt;The ERC20 standard is a specification for tokens that operate on the Ethereum blockchain. It defines a common set of rules that all Ethereum-based tokens must follow, ensuring compatibility across different platforms and applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zero Knowledge Proofs: Complete Guide to Privacy-Preserving Cryptography</title>
       <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s an article in English explaining Zero-Knowledge Proofs:&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-zero-knowledge-proofs&#34;&gt;Understanding Zero-Knowledge Proofs&lt;/h2&gt;&#xA;&lt;p&gt;Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;understanding-zero-knowledge-proofs-&#34;&gt;Understanding Zero-Knowledge Proofs 🔐&lt;/h1&gt;&#xA;&lt;p&gt;Zero-Knowledge Proof (ZKP) is a revolutionary cryptographic method that allows one party (the prover) to prove to another party (the verifier) that they know specific information without revealing any details about that information.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Data Types in Solidity</title>
+      <title>Solidity Data Types: Complete Guide for Smart Contract Development</title>
       <link>https://xingelf.github.io/dapps/solidity-type/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/dapps/solidity-type/</guid>
-      <description>&lt;h1 id=&#34;data-types-in-solidity&#34;&gt;Data Types in Solidity&lt;/h1&gt;&#xA;&lt;p&gt;Solidity is a statically-typed language, meaning that you need to specify the data type of a variable when you declare it. This allows the compiler to check for type errors and ensure that your code is safe and efficient.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;solidity-data-types-complete-guide-for-smart-contract-development&#34;&gt;Solidity Data Types: Complete Guide for Smart Contract Development&lt;/h1&gt;&#xA;&lt;p&gt;Solidity is a statically-typed programming language designed for writing smart contracts on the Ethereum blockchain. This means you must specify the data type of every variable when declaring it, which helps the compiler catch errors and ensures your code is both safe and efficient.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

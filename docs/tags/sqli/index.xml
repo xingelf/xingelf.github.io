@@ -6,15 +6,8 @@
     <description>Recent content in SQLi on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xingelf.github.io/tags/sqli/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>SQL Injection (SQLi) Unmasked: Advanced Exploits, Defense Tactics, and Industry Lessons</title>
-      <link>https://xingelf.github.io/tech/sql-injection/</link>
-      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/tech/sql-injection/</guid>
-      <description>&lt;p&gt;SQL Injection (SQLi) remains one of the most pervasive and damaging web application vulnerabilities, accounting for &lt;strong&gt;33% of all web breaches&lt;/strong&gt; in 2023. This deep dive explores its mechanics, evolving attack vectors, and cutting-edge mitigation strategies for cybersecurity professionals.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>UNION SQL and the Potential for SQL Injection</title>
       <link>https://xingelf.github.io/tech/sqli_union/</link>

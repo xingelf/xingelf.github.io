@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ERC20 on Try Harder</title>
+    <link>https://xingelf.github.io/tags/erc20/</link>
+    <description>Recent content in ERC20 on Try Harder</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/erc20/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding ERC20 Token Standard in Solidity</title>
+      <link>https://xingelf.github.io/dapps/solidity-erc20/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-erc20/</guid>
+      <description>&lt;h1 id=&#34;understanding-erc20-token-standard-in-solidity&#34;&gt;Understanding ERC20 Token Standard in Solidity&lt;/h1&gt;&#xA;&lt;p&gt;The ERC20 standard is a specification for tokens that operate on the Ethereum blockchain. It defines a common set of rules that all Ethereum-based tokens must follow, ensuring compatibility across different platforms and applications.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -15,5 +15,19 @@
       <guid>https://xingelf.github.io/tech/jsonpickle-deserialization/</guid>
       <description>&lt;h1 id=&#34;python-jsonpickle-security-vulnerability-understanding-arbitrary-code-execution-risks-and-countermeasures&#34;&gt;Python jsonpickle Security Vulnerability: Understanding Arbitrary Code Execution Risks and Countermeasures&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;⚠️ Critical Warning&lt;/strong&gt;: Python&amp;rsquo;s &lt;code&gt;jsonpickle&lt;/code&gt; library contains a severe security vulnerability that allows attackers to execute arbitrary Python code. This article provides a detailed explanation of the mechanism, attack examples, and secure serialization best practices.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Solidity SafeMath Library: Secure Arithmetic Operations</title>
+      <link>https://xingelf.github.io/dapps/solidity-safemath/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-safemath/</guid>
+      <description>&lt;h1 id=&#34;solidity-safemath-library-secure-arithmetic-operations-&#34;&gt;Solidity SafeMath Library: Secure Arithmetic Operations 🔒&lt;/h1&gt;&#xA;&lt;p&gt;The SafeMath library provides secure arithmetic operations that prevent overflow and underflow vulnerabilities using assert statements.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zero Knowledge Proofs: Complete Guide to Privacy-Preserving Cryptography</title>
+      <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
+      <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
+      <description>&lt;h1 id=&#34;understanding-zero-knowledge-proofs-&#34;&gt;Understanding Zero-Knowledge Proofs 🔐&lt;/h1&gt;&#xA;&lt;p&gt;Zero-Knowledge Proof (ZKP) is a revolutionary cryptographic method that allows one party (the prover) to prove to another party (the verifier) that they know specific information without revealing any details about that information.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

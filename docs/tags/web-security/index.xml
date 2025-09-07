@@ -16,6 +16,13 @@
       <description>&lt;h1 id=&#34;local-file-inclusion-lfi-vulnerability-complete-guide-for-developers&#34;&gt;Local File Inclusion (LFI) Vulnerability: Complete Guide for Developers&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-local-file-inclusion-lfi-&#34;&gt;What is Local File Inclusion (LFI)? 🔍&lt;/h2&gt;&#xA;&lt;p&gt;Local File Inclusion (LFI) is a critical web application vulnerability that allows attackers to include and execute files from the local server. This vulnerability occurs when web applications dynamically include files based on user input without proper validation or sanitization.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>SQL Injection Attacks: Complete Guide to Prevention and Defense</title>
+      <link>https://xingelf.github.io/tech/sql-injection/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/sql-injection/</guid>
+      <description>&lt;p&gt;SQL injection remains one of the most dangerous web application vulnerabilities, responsible for &lt;strong&gt;33% of all web breaches&lt;/strong&gt; in 2023. This comprehensive guide explains how these attacks work, their real-world impact, and effective defense strategies for developers and security professionals.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>XML CDATA Complete Guide: How to Handle Special Characters in XML</title>
       <link>https://xingelf.github.io/tech/xml-cdata/</link>
       <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>

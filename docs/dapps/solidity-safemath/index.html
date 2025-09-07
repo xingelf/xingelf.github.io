@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Solidity文法　SafeMath - Try Harder</title>
+	<title>Solidity SafeMath Library: Secure Arithmetic Operations - Try Harder</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="">
+	<meta name="description" content="Learn how to use SafeMath library in Solidity to prevent overflow and underflow vulnerabilities in smart contracts with practical examples and best practices.">
 		<meta property="og:url" content="https://xingelf.github.io/dapps/solidity-safemath/">
   <meta property="og:site_name" content="Try Harder">
-  <meta property="og:title" content="Solidity文法　SafeMath">
-  <meta property="og:description" content="Solidity SafeMath 四足演算ライブラリ assertによりオーバーフロー対策を行うことができます。
-/** * @title SafeMath * @dev Math operations with safety checks that throw on error */ library SafeMath { /** * @dev Multiplies two numbers, throws on overflow. */ function mul(uint256 a, uint256 b) internal pure returns (uint256) { if (a == 0) { return 0; } uint256 c = a * b; assert(c / a == b); return c; } /** * @dev Integer division of two numbers, truncating the quotient. */ function div(uint256 a, uint256 b) internal pure returns (uint256) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint256 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } /** * @dev Substracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend). */ function sub(uint256 a, uint256 b) internal pure returns (uint256) { assert(b &lt;= a); return a - b; } /** * @dev Adds two numbers, throws on overflow. */ function add(uint256 a, uint256 b) internal pure returns (uint256) { uint256 c = a &#43; b; assert(c &gt;= a); return c; } } /** * @title SafeMath32 * @dev SafeMath library implemented for uint32 */ library SafeMath32 { function mul(uint32 a, uint32 b) internal pure returns (uint32) { if (a == 0) { return 0; } uint32 c = a * b; assert(c / a == b); return c; } function div(uint32 a, uint32 b) internal pure returns (uint32) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint32 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } function sub(uint32 a, uint32 b) internal pure returns (uint32) { assert(b &lt;= a); return a - b; } function add(uint32 a, uint32 b) internal pure returns (uint32) { uint32 c = a &#43; b; assert(c &gt;= a); return c; } } /** * @title SafeMath16 * @dev SafeMath library implemented for uint16 */ library SafeMath16 { function mul(uint16 a, uint16 b) internal pure returns (uint16) { if (a == 0) { return 0; } uint16 c = a * b; assert(c / a == b); return c; } function div(uint16 a, uint16 b) internal pure returns (uint16) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint16 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } function sub(uint16 a, uint16 b) internal pure returns (uint16) { assert(b &lt;= a); return a - b; } function add(uint16 a, uint16 b) internal pure returns (uint16) { uint16 c = a &#43; b; assert(c &gt;= a); return c; } } このライブラリを利用して、&#43;&#43;などは.add(1)に変更することが推奨されます。">
+  <meta property="og:title" content="Solidity SafeMath Library: Secure Arithmetic Operations">
+  <meta property="og:description" content="Learn how to use SafeMath library in Solidity to prevent overflow and underflow vulnerabilities in smart contracts with practical examples and best practices.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="dapps">
@@ -18,20 +17,21 @@
     <meta property="article:modified_time" content="2022-09-11T00:00:00+00:00">
     <meta property="article:tag" content="Solidity">
     <meta property="article:tag" content="SafeMath">
+    <meta property="article:tag" content="Smart Contracts">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Overflow">
 
 		
-  <meta itemprop="name" content="Solidity文法　SafeMath">
-  <meta itemprop="description" content="Solidity SafeMath 四足演算ライブラリ assertによりオーバーフロー対策を行うことができます。
-/** * @title SafeMath * @dev Math operations with safety checks that throw on error */ library SafeMath { /** * @dev Multiplies two numbers, throws on overflow. */ function mul(uint256 a, uint256 b) internal pure returns (uint256) { if (a == 0) { return 0; } uint256 c = a * b; assert(c / a == b); return c; } /** * @dev Integer division of two numbers, truncating the quotient. */ function div(uint256 a, uint256 b) internal pure returns (uint256) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint256 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } /** * @dev Substracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend). */ function sub(uint256 a, uint256 b) internal pure returns (uint256) { assert(b &lt;= a); return a - b; } /** * @dev Adds two numbers, throws on overflow. */ function add(uint256 a, uint256 b) internal pure returns (uint256) { uint256 c = a &#43; b; assert(c &gt;= a); return c; } } /** * @title SafeMath32 * @dev SafeMath library implemented for uint32 */ library SafeMath32 { function mul(uint32 a, uint32 b) internal pure returns (uint32) { if (a == 0) { return 0; } uint32 c = a * b; assert(c / a == b); return c; } function div(uint32 a, uint32 b) internal pure returns (uint32) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint32 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } function sub(uint32 a, uint32 b) internal pure returns (uint32) { assert(b &lt;= a); return a - b; } function add(uint32 a, uint32 b) internal pure returns (uint32) { uint32 c = a &#43; b; assert(c &gt;= a); return c; } } /** * @title SafeMath16 * @dev SafeMath library implemented for uint16 */ library SafeMath16 { function mul(uint16 a, uint16 b) internal pure returns (uint16) { if (a == 0) { return 0; } uint16 c = a * b; assert(c / a == b); return c; } function div(uint16 a, uint16 b) internal pure returns (uint16) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint16 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } function sub(uint16 a, uint16 b) internal pure returns (uint16) { assert(b &lt;= a); return a - b; } function add(uint16 a, uint16 b) internal pure returns (uint16) { uint16 c = a &#43; b; assert(c &gt;= a); return c; } } このライブラリを利用して、&#43;&#43;などは.add(1)に変更することが推奨されます。">
+  <meta itemprop="name" content="Solidity SafeMath Library: Secure Arithmetic Operations">
+  <meta itemprop="description" content="Learn how to use SafeMath library in Solidity to prevent overflow and underflow vulnerabilities in smart contracts with practical examples and best practices.">
   <meta itemprop="datePublished" content="2022-09-11T00:00:00+00:00">
   <meta itemprop="dateModified" content="2022-09-11T00:00:00+00:00">
-  <meta itemprop="wordCount" content="480">
-  <meta itemprop="keywords" content="Solidity,SafeMath">
+  <meta itemprop="wordCount" content="571">
+  <meta itemprop="keywords" content="Solidity SafeMath,overflow prevention,smart contract security,arithmetic operations,uint256 operations,underflow protection,assert statements,library functions,safe math operations,blockchain development">
 		
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Solidity文法　SafeMath">
-  <meta name="twitter:description" content="Solidity SafeMath 四足演算ライブラリ assertによりオーバーフロー対策を行うことができます。
-/** * @title SafeMath * @dev Math operations with safety checks that throw on error */ library SafeMath { /** * @dev Multiplies two numbers, throws on overflow. */ function mul(uint256 a, uint256 b) internal pure returns (uint256) { if (a == 0) { return 0; } uint256 c = a * b; assert(c / a == b); return c; } /** * @dev Integer division of two numbers, truncating the quotient. */ function div(uint256 a, uint256 b) internal pure returns (uint256) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint256 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } /** * @dev Substracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend). */ function sub(uint256 a, uint256 b) internal pure returns (uint256) { assert(b &lt;= a); return a - b; } /** * @dev Adds two numbers, throws on overflow. */ function add(uint256 a, uint256 b) internal pure returns (uint256) { uint256 c = a &#43; b; assert(c &gt;= a); return c; } } /** * @title SafeMath32 * @dev SafeMath library implemented for uint32 */ library SafeMath32 { function mul(uint32 a, uint32 b) internal pure returns (uint32) { if (a == 0) { return 0; } uint32 c = a * b; assert(c / a == b); return c; } function div(uint32 a, uint32 b) internal pure returns (uint32) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint32 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } function sub(uint32 a, uint32 b) internal pure returns (uint32) { assert(b &lt;= a); return a - b; } function add(uint32 a, uint32 b) internal pure returns (uint32) { uint32 c = a &#43; b; assert(c &gt;= a); return c; } } /** * @title SafeMath16 * @dev SafeMath library implemented for uint16 */ library SafeMath16 { function mul(uint16 a, uint16 b) internal pure returns (uint16) { if (a == 0) { return 0; } uint16 c = a * b; assert(c / a == b); return c; } function div(uint16 a, uint16 b) internal pure returns (uint16) { // assert(b &gt; 0); // Solidity automatically throws when dividing by 0 uint16 c = a / b; // assert(a == b * c &#43; a % b); // There is no case in which this doesn&#39;t hold return c; } function sub(uint16 a, uint16 b) internal pure returns (uint16) { assert(b &lt;= a); return a - b; } function add(uint16 a, uint16 b) internal pure returns (uint16) { uint16 c = a &#43; b; assert(c &gt;= a); return c; } } このライブラリを利用して、&#43;&#43;などは.add(1)に変更することが推奨されます。">
+  <meta name="twitter:title" content="Solidity SafeMath Library: Secure Arithmetic Operations">
+  <meta name="twitter:description" content="Learn how to use SafeMath library in Solidity to prevent overflow and underflow vulnerabilities in smart contracts with practical examples and best practices.">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -133,21 +133,32 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Solidity文法　SafeMath</h1>
+			<h1 class="post__title">Solidity SafeMath Library: Secure Arithmetic Operations</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-09-11T00:00:00Z">2022-09-11</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/dapps/" rel="category">Dapps</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2022-09-11T00:00:00Z">2022-09-11</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/dapps/" rel="category">Dapps</a>, <a class="meta__link" href="/categories/blockchain/" rel="category">Blockchain</a>
 	</span>
 </div></div>
 		</header>
 		
 	<figure class="post__thumbnail thumbnail">
 		
-		<img class="thumbnail__image" src="/images/img_2.jpeg" alt="Solidity文法　SafeMath">
+		<img class="thumbnail__image" src="/images/img_2.png" alt="Solidity SafeMath Library: Secure Arithmetic Operations">
 		
-	</figure><div class="content post__content clearfix">
-			<h1 id="solidity-safemath-四足演算ライブラリ">Solidity SafeMath 四足演算ライブラリ</h1>
-<p>assertによりオーバーフロー対策を行うことができます。</p>
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#usage-best-practices">Usage Best Practices</a></li>
+    <li><a href="#key-benefits">Key Benefits</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h1 id="solidity-safemath-library-secure-arithmetic-operations-">Solidity SafeMath Library: Secure Arithmetic Operations 🔒</h1>
+<p>The SafeMath library provides secure arithmetic operations that prevent overflow and underflow vulnerabilities using assert statements.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/**
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * @title SafeMath
@@ -262,11 +273,21 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> c;
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>このライブラリを利用して、++などは.add(1)に変更することが推奨されます。</p>
+</span></span></code></pre></div><h2 id="usage-best-practices">Usage Best Practices</h2>
+<p>When using this library, it&rsquo;s recommended to replace increment operators like <code>++</code> with SafeMath&rsquo;s <code>.add(1)</code> method.</p>
+<p>❌ <strong>Avoid unsafe operations:</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span>a<span style="color:#f92672">++</span>;
-</span></span></code></pre></div><p>ではなくSafeMathを使い次のようにします。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span> a <span style="color:#f92672">=</span> a.add(<span style="color:#ae81ff">1</span>);
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>✅ <strong>Use SafeMath instead:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-solidity" data-lang="solidity"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> a.add(<span style="color:#ae81ff">1</span>);
+</span></span></code></pre></div><h2 id="key-benefits">Key Benefits</h2>
+<ul>
+<li><strong>Overflow Protection</strong>: Prevents integer overflow in multiplication and addition operations</li>
+<li><strong>Underflow Protection</strong>: Prevents integer underflow in subtraction operations</li>
+<li><strong>Zero Division Safety</strong>: Automatic protection against division by zero</li>
+<li><strong>Gas Efficient</strong>: Minimal gas overhead for security checks</li>
+<li><strong>Multiple Data Types</strong>: Support for uint256, uint32, and uint16 operations</li>
+</ul>
+
 		</div>
 		<footer class="post__footer">
 			
@@ -279,6 +300,15 @@
 		<li class="tags__item">
 			<a class="tags__link btn" href="/tags/safemath/" rel="tag">SafeMath</a>
 		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/smart-contracts/" rel="tag">Smart Contracts</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/security/" rel="tag">Security</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/overflow/" rel="tag">Overflow</a>
+		</li>
 	</ul>
 </div>
 		</footer>
@@ -288,15 +318,15 @@
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/dapps/zeroknowledge/" rel="prev">
+		<a class="pager__link" href="/dapps/solidity-erc20/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Zero Knowledge Proofs</p>
+			<p class="pager__title">Understanding ERC20 Token Standard in Solidity</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="/dapps/solidity-1stcontract/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Solidity 最も簡単なコントラクトの作成</p>
+			<p class="pager__title">Creating Your First Simple Solidity Smart Contract with Remix IDE</p>
 		</a>
 	</div>
 </nav>

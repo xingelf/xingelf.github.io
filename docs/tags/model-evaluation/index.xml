@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Model Evaluation on Try Harder</title>
+    <link>https://xingelf.github.io/tags/model-evaluation/</link>
+    <description>Recent content in Model Evaluation on Try Harder</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/model-evaluation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Complete Guide to Machine Learning Model Evaluation Methods</title>
+      <link>https://xingelf.github.io/mlai/eval_model/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/mlai/eval_model/</guid>
+      <description>&lt;h2 id=&#34;core-data-concepts-in-model-evaluation-&#34;&gt;Core Data Concepts in Model Evaluation 📊&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Training Set:&lt;/strong&gt; Dataset used to train machine learning models (parameter optimization)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Validation Set:&lt;/strong&gt; Dataset used for hyperparameter tuning and model selection during development&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Test Set:&lt;/strong&gt; Dataset reserved exclusively for assessing generalization performance → Used for final model evaluation &lt;em&gt;after&lt;/em&gt; development completion&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;evaluation-methodologies&#34;&gt;Evaluation Methodologies&lt;/h2&gt;&#xA;&lt;h3 id=&#34;holdout-method&#34;&gt;Holdout Method&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Randomly splits the dataset into two mutually exclusive subsets:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Typical split:&lt;/strong&gt; 80% training / 20% testing (ratio varies by use case)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Strengths:&lt;/strong&gt; Computationally efficient, simple implementation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Limitations:&lt;/strong&gt; High variance in performance estimates with small datasets&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;k-fold-cross-validation&#34;&gt;k-Fold Cross-Validation&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Systematic evaluation protocol:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Partition dataset into &lt;em&gt;k&lt;/em&gt; equal-sized folds&lt;/li&gt;&#xA;&lt;li&gt;Iteratively use each fold as validation set while training on remaining &lt;em&gt;k-1&lt;/em&gt; folds&lt;/li&gt;&#xA;&lt;li&gt;Aggregate results (mean ± standard deviation) across all folds&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Key Advantages:&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduces variance in performance estimates&lt;/li&gt;&#xA;&lt;li&gt;Maximizes data utilization (critical for small datasets)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Common Variants:&lt;/strong&gt; Stratified k-fold (preserves class distribution)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;leave-one-out-cross-validation-loocv&#34;&gt;Leave-One-Out Cross-Validation (LOOCV)&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extreme case of k-fold where &lt;em&gt;k = n&lt;/em&gt; (number of samples)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Use Case:&lt;/strong&gt; Small-scale datasets with &amp;lt;100 samples&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tradeoff:&lt;/strong&gt; Computationally prohibitive for large &lt;em&gt;n&lt;/em&gt; (requires &lt;em&gt;n&lt;/em&gt; model fits)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

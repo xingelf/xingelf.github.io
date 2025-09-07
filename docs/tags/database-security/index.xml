@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database Security on Try Harder</title>
+    <link>https://xingelf.github.io/tags/database-security/</link>
+    <description>Recent content in Database Security on Try Harder</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/database-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Injection Attacks: Complete Guide to Prevention and Defense</title>
+      <link>https://xingelf.github.io/tech/sql-injection/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/tech/sql-injection/</guid>
+      <description>&lt;p&gt;SQL injection remains one of the most dangerous web application vulnerabilities, responsible for &lt;strong&gt;33% of all web breaches&lt;/strong&gt; in 2023. This comprehensive guide explains how these attacks work, their real-world impact, and effective defense strategies for developers and security professionals.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

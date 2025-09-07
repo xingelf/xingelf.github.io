@@ -16,6 +16,13 @@
       <description></description>
     </item>
     <item>
+      <title>Cybersecurity</title>
+      <link>https://xingelf.github.io/categories/cybersecurity/</link>
+      <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Web Development</title>
       <link>https://xingelf.github.io/categories/web-development/</link>
       <pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
@@ -107,10 +114,38 @@
       <description></description>
     </item>
     <item>
+      <title>Data Science</title>
+      <link>https://xingelf.github.io/categories/data-science/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>https://xingelf.github.io/categories/mathematics/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/mathematics/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Blockchain</title>
       <link>https://xingelf.github.io/categories/blockchain/</link>
-      <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://xingelf.github.io/categories/blockchain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cryptography</title>
+      <link>https://xingelf.github.io/categories/cryptography/</link>
+      <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/cryptography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://xingelf.github.io/categories/programming/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/categories/programming/</guid>
       <description></description>
     </item>
   </channel>

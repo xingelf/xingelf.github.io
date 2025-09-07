@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ZKP on Try Harder</title>
-    <link>https://xingelf.github.io/tags/zkp/</link>
+    <link>http://localhost:1313/tags/zkp/</link>
     <description>Recent content in ZKP on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/tags/zkp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/zkp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zero Knowledge Proofs</title>
-      <link>https://xingelf.github.io/dapps/zeroknowledge/</link>
+      <link>http://localhost:1313/dapps/zeroknowledge/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/zeroknowledge/</guid>
+      <guid>http://localhost:1313/dapps/zeroknowledge/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s an article in English explaining Zero-Knowledge Proofs:&lt;/p&gt;&#xA;&lt;h2 id=&#34;understanding-zero-knowledge-proofs&#34;&gt;Understanding Zero-Knowledge Proofs&lt;/h2&gt;&#xA;&lt;p&gt;Zero-Knowledge Proof (ZKP) is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value, fact, or piece of information without conveying any information apart from the fact that they possess that knowledge. Here are the key characteristics:&lt;/p&gt;</description>
     </item>
   </channel>

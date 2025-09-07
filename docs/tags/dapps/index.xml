@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DApps on Try Harder</title>
-    <link>https://xingelf.github.io/tags/dapps/</link>
+    <link>http://localhost:1313/tags/dapps/</link>
     <description>Recent content in DApps on Try Harder</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xingelf.github.io/tags/dapps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dapps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solidity 最も簡単なコントラクトの作成</title>
-      <link>https://xingelf.github.io/dapps/solidity-1stcontract/</link>
+      <link>http://localhost:1313/dapps/solidity-1stcontract/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingelf.github.io/dapps/solidity-1stcontract/</guid>
+      <guid>http://localhost:1313/dapps/solidity-1stcontract/</guid>
       <description>&lt;p&gt;Solidity学習リソースでよく紹介されている最も簡単なコントラクトを&#xA;REMIXを利用して作成します。&lt;/p&gt;&#xA;&lt;p&gt;コントラクトの動作としては数字をセット/setしてそれを表示/getするだけの単純なものです。&lt;/p&gt;&#xA;&lt;p&gt;これを実行するだけでもGAS代が消費されることを確認します。&lt;/p&gt;&#xA;&lt;p&gt;もちろん、ローカルEVM(テスト環境)で実行します。&lt;/p&gt;&#xA;&lt;h1 id=&#34;remixで最も簡単なコントラクトを作成&#34;&gt;REMIXで最も簡単なコントラクトを作成&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-remixにアクセス&#34;&gt;1. REMIXにアクセス&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://remix.ethereum.org/&#34;&gt;https://remix.ethereum.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Environmentには[Remix VM (London)]と設定されていることを確認します。&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart Contracts on Try Harder</title>
+    <link>https://xingelf.github.io/tags/smart-contracts/</link>
+    <description>Recent content in Smart Contracts on Try Harder</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/smart-contracts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating Your First Simple Solidity Smart Contract with Remix IDE</title>
+      <link>https://xingelf.github.io/dapps/solidity-1stcontract/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-1stcontract/</guid>
+      <description>&lt;p&gt;Learn how to create your first simple Solidity smart contract using the popular Remix IDE. This tutorial covers the most basic contract that&amp;rsquo;s often introduced in Solidity learning resources.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solidity SafeMath Library: Secure Arithmetic Operations</title>
+      <link>https://xingelf.github.io/dapps/solidity-safemath/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-safemath/</guid>
+      <description>&lt;h1 id=&#34;solidity-safemath-library-secure-arithmetic-operations-&#34;&gt;Solidity SafeMath Library: Secure Arithmetic Operations 🔒&lt;/h1&gt;&#xA;&lt;p&gt;The SafeMath library provides secure arithmetic operations that prevent overflow and underflow vulnerabilities using assert statements.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Understanding ERC20 Token Standard in Solidity</title>
+      <link>https://xingelf.github.io/dapps/solidity-erc20/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-erc20/</guid>
+      <description>&lt;h1 id=&#34;understanding-erc20-token-standard-in-solidity&#34;&gt;Understanding ERC20 Token Standard in Solidity&lt;/h1&gt;&#xA;&lt;p&gt;The ERC20 standard is a specification for tokens that operate on the Ethereum blockchain. It defines a common set of rules that all Ethereum-based tokens must follow, ensuring compatibility across different platforms and applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solidity Data Types: Complete Guide for Smart Contract Development</title>
+      <link>https://xingelf.github.io/dapps/solidity-type/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-type/</guid>
+      <description>&lt;h1 id=&#34;solidity-data-types-complete-guide-for-smart-contract-development&#34;&gt;Solidity Data Types: Complete Guide for Smart Contract Development&lt;/h1&gt;&#xA;&lt;p&gt;Solidity is a statically-typed programming language designed for writing smart contracts on the Ethereum blockchain. This means you must specify the data type of every variable when declaring it, which helps the compiler catch errors and ensures your code is both safe and efficient.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overflow on Try Harder</title>
+    <link>https://xingelf.github.io/tags/overflow/</link>
+    <description>Recent content in Overflow on Try Harder</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xingelf.github.io/tags/overflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solidity SafeMath Library: Secure Arithmetic Operations</title>
+      <link>https://xingelf.github.io/dapps/solidity-safemath/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingelf.github.io/dapps/solidity-safemath/</guid>
+      <description>&lt;h1 id=&#34;solidity-safemath-library-secure-arithmetic-operations-&#34;&gt;Solidity SafeMath Library: Secure Arithmetic Operations 🔒&lt;/h1&gt;&#xA;&lt;p&gt;The SafeMath library provides secure arithmetic operations that prevent overflow and underflow vulnerabilities using assert statements.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
